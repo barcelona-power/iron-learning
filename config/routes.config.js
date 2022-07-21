@@ -4,6 +4,7 @@ const router = express.Router();
 const{frontpage} = require("../controllers")
 
 router.get("/", frontpage.frontpage)
+router.get("/main", frontpage.mainpage)
 
 
 module.exports = router;
