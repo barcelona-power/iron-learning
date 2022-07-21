@@ -1,0 +1,32 @@
+#image1{
+    position:absolute;
+    display: flex;
+    margin:30px;
+    right: 30%;
+    top: 23.7%
+}
+#image2{
+    position:absolute;
+    display: flex;
+    margin:30px;
+    right: 20%;
+    top: 24.5%
+    
+}
+#image3{
+    position:absolute;
+    display: flex;
+    margin:30px;
+    right: 6%;
+    top: 25.3%
+
+}
+#log-in{
+    display: inline-block;
+    background-color: #2ec5fc;
+    border-radius: 20px;
+}
+#create-acount{
+    display: inline-block;
+    border-radius: 30px;
+}

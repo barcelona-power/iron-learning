@@ -1,1 +1,97 @@
-<a href="/main"> Bienvenido! Clica si quieres entrar como invitado..! </a>
+<img id="image1" src="/imagenes/prado.png" width="18%" alt="Donde está carlos">
+<img id="image2" src="/imagenes/edgar.png" width="11%" alt="Donde está carlos">
+<img id="image3" src="/imagenes/julio.png" width="11%" alt="Donde está carlos">
+<body  style="background-color: #b0e8f9">
+
+    <hr>
+    <a  href="/main" class="btn btn-primary fs-2 d-grid gap-2 col-6 mx-auto" tabindex="-1" role="button" >Bienvenido! Clica aquí si quieres entrar como invitado..!</a>
+    <hr>
+    <hr>
+
+    <hr>
+
+<div id="log-in" style="background-color: #2ec5fc" class="p-3 mb-3">
+<form >
+  <div class="col-12">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">Solo usaremos tu Email para fines malvados</div>
+  </div>
+  <div class="col-20">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+        <div id="emailHelp" class="form-text">Es la mejor contraseña que hemos leído</div>
+  </div>
+  <div class="">   Me comprometo a no usar esta información para fines malvados</div>
+  <div class=" form-check  col-5 ">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div  >
+  <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+</form>
+</div >
+{{!--  --}}
+<div id="create-acount" style="background-color: #d2d2f1" class="p-3">
+    <form class="row g-3">
+  <div class="col-md-3">
+    <label for="validationDefaultUsername" class="form-label">Nickname</label>
+    <div class="input-group">
+      <span class="input-group-text" id="inputGroupPrepend2">*</span>
+      <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" placeholder="Tu apodo favorito"required>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationDefaultUsername" class="form-label">Email</label>
+    <div class="input-group">
+      <span class="input-group-text" id="inputGroupPrepend2">@</span>
+      <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" placeholder="Algún Email para mandarte mucho spam"required>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationDefaultUsername" class="form-label">Contraseña</label>
+    <div class="input-group">
+      <span class="input-group-text" id="inputGroupPrepend2">@</span>
+      <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" placeholder="Lo esconderemos bajo la almohada"required>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationDefaultUsername" class="form-label">Ciudad</label>
+    <div class="input-group">
+      <span class="input-group-text" id="inputGroupPrepend2">#</span>
+      <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" placeholder="De dónde eres? a dónde vas? qué quieres?"required>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="validationDefault03" class="form-label">Conocimientos</label>
+    <input type="text" class="form-control" id="validationDefault03"  placeholder="Algo sabrás..." required>
+  </div>
+  <div class="col-md-3">
+    <label for="validationDefault04" class="form-label">Formación en...</label>
+    <select class="form-select" id="validationDefault04" required>
+      <option selected disabled value="">Rol preferido...</option>
+      <option>Front-end</option>
+      <option>Back-end</option>
+      <option>Full-stack</option>
+      <option>Mago</option>
+      <option>Paladín</option>
+      <option>Viejo gruñón</option>
+    </select>
+  </div>
+  <div class="col-md-3">
+    <label for="validationDefault05" class="form-label">Palabra favorita</label>
+    <input type="text" class="form-control" id="validationDefault05" placeholder="No la usaremos para nada" required>
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+      <label class="form-check-label" for="invalidCheck2">
+        Me comprometo a no usar esta información para fines malvados
+      </label>
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Crear cuenta</button>
+  </div>
+</form>
+</div>
+</body>
