@@ -33,3 +33,10 @@
 .content-container{
     margin-top: 4%;
 }
+
+.definitions{
+    margin: auto;
+    margin-top: 4%;
+    width: 50%;
+    padding: 10px;
+}

@@ -3,7 +3,7 @@ const { Definition } = require("../models");
 
 
 module.exports.createDefinition = (req, res, next) => {
-    res.render("definition/frontpage")
+    res.render("definition/definition")
     }
 
 module.exports.doCreateDefinition = (req, res, next) => {

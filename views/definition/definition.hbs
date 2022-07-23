@@ -1,36 +1,38 @@
     {{> navbar}}
-    <div class="content-container">
-<form action="/profile" method="post" >
-<div class="input-group mb-1"> 
-      <span class="input-group-text"><i class="fa fa-tag fa-fw"></i>Palabra</span>
-<input type="text" name="nombre" value="" placeholder="Término o concepto">
+  
+  <div class="definitions">
+<div class="d-flex">
+  <div class="mb-3 content-container p-1 col-5 ">
+  <label for="exampleFormControlInput1" class="form-label">Concepto</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
 </div>
-<div class="input-group mb-1"> 
-      <span class="input-group-text"><i class="fa fa-tag fa-fw"></i>Texto</span>
-  <textarea name="descripción" id="descripción" cols="40" rows="5" placeholder="Definición o ejemplo"></textarea>
+
+<div class="mb-3 content-container p-1 col-5" >
+  <label for="exampleFormControlInput1" class="form-label">Categoria</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
 </div>
-<div class="input-group mb-1"> 
-      <span class="input-group-text"><i class="fa fa-tag fa-fw">Nuevo</i></span>
-<input type="text" name="categoría" value="" placeholder="Crea nuevo término/concepto o ..">
-<select class=" form-select-lg mb-1" size="1" aria-label="size 3 select example" >
-  <option value="0">Selecciona existente...</option>
-  <option value="1">internet</option>
-  <option value="2">librería</option>
-  <option value="3">Bulala</option>
-</select>
 </div>
-<div class="input-group mb-1"> 
-      <span class="input-group-text"><i class="fa fa-tag fa-fw"></i>Enlace</span>
-<input type="text" name="enlace" value="" placeholder="Descripción visual">
-<div class="input-group mb-1">
-  <label for="formFile" class="form-label"></label>
+<div class="mb-3 p-1 col-10">
+  <label for="exampleFormControlTextarea1" class="form-label">Definición</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+
+<div class="mb-3 p-1 col-10">
+  <label for="exampleFormControlTextarea1" class="form-label">Ejemplo</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+
+<div class="mb-3 col-10">
+  <label for="formFile" class="form-label">Archivo</label>
   <input class="form-control" type="file" id="formFile">
 </div>
-</div>
-<div>
-<button type="submit">Subbbbmit</button>
-</div>
-</form>
 
+<div class="mb-3 col-10">
+<label for="basic-url" class="form-label">Link</label>
+<div class="input-group mb-3">
+  <span class="input-group-text " id="basic-addon3">https://example.com/users/</span>
+  <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+</div>
+</div>
 
-    </div>
+</div>
