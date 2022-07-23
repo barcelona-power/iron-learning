@@ -1,0 +1,36 @@
+    {{> navbar}}
+    <div class="content-container">
+<form action="/profile" method="post" >
+<div class="input-group mb-1"> 
+      <span class="input-group-text"><i class="fa fa-tag fa-fw"></i>Palabra</span>
+<input type="text" name="nombre" value="" placeholder="Término o concepto">
+</div>
+<div class="input-group mb-1"> 
+      <span class="input-group-text"><i class="fa fa-tag fa-fw"></i>Texto</span>
+  <textarea name="descripción" id="descripción" cols="40" rows="5" placeholder="Definición o ejemplo"></textarea>
+</div>
+<div class="input-group mb-1"> 
+      <span class="input-group-text"><i class="fa fa-tag fa-fw">Nuevo</i></span>
+<input type="text" name="categoría" value="" placeholder="Crea nuevo término/concepto o ..">
+<select class=" form-select-lg mb-1" size="1" aria-label="size 3 select example" >
+  <option value="0">Selecciona existente...</option>
+  <option value="1">internet</option>
+  <option value="2">librería</option>
+  <option value="3">Bulala</option>
+</select>
+</div>
+<div class="input-group mb-1"> 
+      <span class="input-group-text"><i class="fa fa-tag fa-fw"></i>Enlace</span>
+<input type="text" name="enlace" value="" placeholder="Descripción visual">
+<div class="input-group mb-1">
+  <label for="formFile" class="form-label"></label>
+  <input class="form-control" type="file" id="formFile">
+</div>
+</div>
+<div>
+<button type="submit">Subbbbmit</button>
+</div>
+</form>
+
+
+    </div>
