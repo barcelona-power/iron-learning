@@ -31,7 +31,7 @@
     border-radius: 30px;
 }
 .content-container{
-    margin-top: 4%;
+    margin-top: 1%;
 }
 
 .definitions{
@@ -39,4 +39,8 @@
     margin-top: 4%;
     width: 50%;
     padding: 10px;
+}
+
+#list-of{
+    margin: 5%
 }

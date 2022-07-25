@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const definitionSchema = new Schema ({
     name:{
         type:String,
-        required: "Término necesario",
+        // required: "Término necesario",
         maxLength: [20, "No se aceptan términos en élfico"],
         trim: true
     },
@@ -21,13 +21,18 @@ const definitionSchema = new Schema ({
     category: {
         type:String,
     },
+    file: {
+        type:String,
+        default: "/public/imagenes/3688989.jpeg",
+
+    },
     link: {
         type:String,
         default: "https://media.makeameme.org/created/something-is-missing-6838a8d575.jpg",
 
     },
     author: {
-        
+        type:String
     }
 
 })
