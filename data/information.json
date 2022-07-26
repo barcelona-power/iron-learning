@@ -1,0 +1,26 @@
+[
+    {
+        "name": "IP",
+        "description": "algo",
+        "example": "otro algo",
+        "category": "algo más",
+        "file": "none",
+        "link":"https://media.makeameme.org/created/something-is-missing-6838a8d575.jpg"
+    },
+    {
+        "name": "IP",
+        "description": "bulala",
+        "example": "otro bulala",
+        "category": "bulala más",
+        "file": "none",
+        "link":"https://media.makeameme.org/created/something-is-missing-6838a8d575.jpg"
+    },
+    {
+        "name": "IP",
+        "description": "uuuuuu",
+        "example": "otro uuuuuu",
+        "category": "uuuuuu más",
+        "file": "none",
+        "link":"https://media.makeameme.org/created/something-is-missing-6838a8d575.jpg"
+    }
+]

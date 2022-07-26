@@ -1,5 +1,9 @@
     {{> navbar}}
 
+
+
+
+
 <div class="row" id="list-of">
     {{#each definitions as |definition|}}
         <div class="col-3">
@@ -9,9 +13,9 @@
                     <h5 class="card-title">Término: {{definition.name}}</h5>
                     <p class="card-text">Descripción: {{definition.description}}</p>
                     <p class="card-text">Ejemplo: {{definition.example}}</p>
-                    <p class="card-text">Link: {{definition.link}}</p>
+                    <p class="card-text">Fuente: {{definition.link}}</p>
                     <p class="card-text">Autor: {{definition.author}}</p>
-                    <a href="definitions/{{definition.id}}" class="btn btn-primary">See detail</a>
+                    <a href="list/{{definition.id}}" class="btn btn-primary">Ver detalles</a>
                 <form action="/list/{{definition.id}}/delete" method="post">
                     <button type="submit">Borrar ejemplo</button>
                 </form>

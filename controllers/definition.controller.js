@@ -10,7 +10,7 @@ module.exports.listOfDefinitions = (req, res, next) => {
 
 module.exports.exampleDefinition = (req, res, next) => {
     Definition.findById(req.params.id)
-      .then((definition) => res.render("definition/exampleDefinition", { definition }))
+      .then((definition) => res.render("definition/edit", { definition }))
   };
    
 
@@ -30,6 +30,6 @@ module.exports.createDefinition = (req, res, next) => {
 module.exports.delete = (req, res, next) => {
     Definition.findByIdAndDelete(req.params.id)
     .then(() => {
-        res.redirect("/create-definition")
+        res.redirect("/list")
     })
 }

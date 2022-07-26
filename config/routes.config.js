@@ -6,9 +6,9 @@ const{frontpage, user, definition} = require("../controllers");
 
 router.get("/create-definition", definition.formDefinition);
 router.get("/create-definition", definition.listOfDefinitions);
-router.get("/create-definition/:id", definition.exampleDefinition)
 router.post("/create-definition", definition.createDefinition)
-router.post("/create-definition/:id/delete", definition.delete)
+router.get("/list/:id", definition.exampleDefinition)
+router.post("/list/:id/delete", definition.delete)
 
 
 
