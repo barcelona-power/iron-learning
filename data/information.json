@@ -22,5 +22,21 @@
         "category": "uuuuuu más",
         "file": "none",
         "link":"https://media.makeameme.org/created/something-is-missing-6838a8d575.jpg"
+    },
+    {
+        "name": "hooooo",
+        "description": "mufasa",
+        "example": "otro mufasa",
+        "category": "mufasa más",
+        "file": "none",
+        "link":"https://media.makeameme.org/created/something-is-missing-6838a8d575.jpg"
+    },
+    {
+        "name": "HTTP",
+        "description": "tutut",
+        "example": "otro tutut",
+        "category": "tutut más",
+        "file": "none",
+        "link":"https://media.makeameme.org/created/something-is-missing-6838a8d575.jpg"
     }
 ]

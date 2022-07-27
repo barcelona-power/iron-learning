@@ -11,11 +11,11 @@ router.get("/list/:id", definition.exampleDefinition)
 router.post("/list/:id/delete", definition.delete)
 
 
-
-
 router.get("/", frontpage.frontpage)
 router.get("/main", frontpage.mainpage)
 router.get("/profile", user.profile)
 router.get("/list", definition.listOfDefinitions)
+
+
 
 module.exports = router;
