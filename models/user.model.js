@@ -17,7 +17,7 @@ const userSchema = new Schema({
         maxLength: [33, "Eso no existe"],
         trim: true
     }, 
-    city: {
+    country: {
         type: String,
         required: "De alguna ciudad debes de ser...",
         maxLength: [20, "Esa ciudad es del señor de los anillos?"],

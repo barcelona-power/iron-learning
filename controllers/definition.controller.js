@@ -1,10 +1,12 @@
 const mongoose = require("mongoose");
-const { Definition } = require("../models");
+const { Definition, Database } = require("../models");
 
 module.exports.listOfDefinitions = (req, res, next) => {
     Definition.find(req.query)
     .then((definitions) => {
-        res.render("definition/list", {definitions})
+        return Database.find(req.query)
+        .then((databases) => 
+        res.render("definition/list", {definitions, databases}))
     })
 }
 
