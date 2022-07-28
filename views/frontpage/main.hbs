@@ -1,5 +1,27 @@
     {{> navbar}}
 
+    {{> navbar}}
+
+<div class="row" id="list-of">
+    {{#each databases as |database|}}
+        <div class="col-3">
+            <div class="card mb-4">
+                <img src="{{database.link}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Término: {{database.name}}</h5>
+                    <p class="card-text">Descripción: {{database.description}}</p>
+                    <p class="card-text">Ejemplo: {{database.example}}</p>
+                    <p class="card-text">Fuente: <a href="{{database.link}}">{{database.link}}</a> </p>
+                    <p class="card-text">Autor: {{database.author}}</p>
+                    <a href="list/{{database.id}}" class="btn btn-primary">Ver detalles</a>
+                <form action="/list/{{database.id}}/delete" method="post">
+                    <button type="submit">Borrar ejemplo</button>
+                </form>
+                </div>
+            </div>
+        </div>
+    {{/each}}
+</div>
 
 <hr>
 <hr>

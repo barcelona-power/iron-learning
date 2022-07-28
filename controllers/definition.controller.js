@@ -7,6 +7,8 @@ module.exports.listOfDefinitions = (req, res, next) => {
         return Database.find(req.query)
         .then((databases) => 
         res.render("definition/list", {definitions, databases}))
+    .catch(console.error("algo va mal en listOfDefinitions"))
+
     })
 }
 
