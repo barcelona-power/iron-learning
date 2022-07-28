@@ -1,6 +1,7 @@
-<img id="image1" src="/imagenes/prado.png" width="18%" alt="Donde está carlos">
+{{!-- <img id="image1" src="/imagenes/prado.png" width="18%" alt="Donde está carlos">
 <img id="image2" src="/imagenes/edgar.png" width="11%" alt="Donde está carlos">
 <img id="image3" src="/imagenes/julio.png" width="11%" alt="Donde está carlos">
+ --}}
 <body  style="background-color: #b0e8f9">
     <hr>
     <a  href="/main" class="btn btn-primary fs-2 d-grid gap-2 col-6 mx-auto" tabindex="-1" role="button" >Bienvenido! Clica aquí si quieres entrar como invitado..!</a>
@@ -29,28 +30,28 @@
 <div id="create-acount" style="background-color: #d2d2f1" class="p-3">
     <form method="POST" action="/create" class="row g-3">
   <div class="col-md-3">
-    <label for="validationDefaultUsername" class="form-label">Nickname</label>
+    <label for="validationDefaultUsername"  class="form-label">Nickname</label>
     <div class="input-group">
       <span class="input-group-text" id="inputGroupPrepend2">*</span>
-      <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" placeholder="Tu apodo favorito"required>
+      <input type="text" name="Nickname" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" placeholder="Tu apodo favorito"required>
     </div>
   </div>
   <div class="col-md-3">
-    <label for="validationDefaultUsername" class="form-label">Email</label>
+    <label for="validationDefaultUsername"  class="form-label">Email</label>
     <div class="input-group">
       <span class="input-group-text" id="inputGroupPrepend2">@</span>
-      <input type="email" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" placeholder="Algún Email para mandarte mucho spam"required>
+      <input type="email" name="email" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" placeholder="Algún Email para mandarte mucho spam"required>
     </div>
   </div>
   <div class="col-md-3">
-    <label for="validationDefaultUsername" class="form-label">Contraseña</label>
+    <label for="validationDefaultUsername"  class="form-label">Contraseña</label>
     <div class="input-group">
       <span class="input-group-text" id="inputGroupPrepend2">#</span>
-      <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" placeholder="Lo esconderemos bajo la almohada"required>
+      <input type="text"  name="password" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" placeholder="Lo esconderemos bajo la almohada"required>
     </div>
   </div>
   <div class="col-md-3">
-    <label for="validationDefaultUsername" class="form-label">Ciudad</label>
+    <label for="validationDefaultUsername" class="form-label">País</label>
     <div class="input-group">
       <span class="input-group-text" id="inputGroupPrepend2">-<|>-</span>
       <select name="country">
@@ -294,7 +295,7 @@
   </div>
   <div class="col-md-6">
     <label for="validationDefault03" class="form-label">Conocimientos</label>
-    <textarea type="text" class="form-control" id="validationDefault03"  placeholder="Algo sabrás..."  cols="10" rows="1"></textarea>
+    <textarea type="text" name="knowledge" class="form-control" id="validationDefault03"  placeholder="Algo sabrás..."  cols="10" rows="1"></textarea>
   </div>
   <div class="col-md-2">
     <label for="validationDefault04" class="form-label">Preferencia por ...</label>
@@ -326,7 +327,7 @@
   </div>
   <div class="col-md-2">
     <label for="validationDefault05" class="form-label">Palabra favorita</label>
-    <input type="text" class="form-control" id="validationDefault05" placeholder="No la usaremos para nada" required>
+    <input type="text" name="favouriteWord" class="form-control" id="validationDefault05" placeholder="No la usaremos para nada" required>
   </div>
   <div class="col-12">
     <div class="form-check">

@@ -24,6 +24,7 @@ module.exports.formDefinition = (req, res, next) => {
 
 module.exports.createDefinition = (req, res, next) => {
     const data = req.body;
+   product.image = req.file.path;
     
     Definition.create(data)
     .then((definition) =>{
