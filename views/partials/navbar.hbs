@@ -29,24 +29,20 @@
         </li>
 
       </ul>
-      <select
-        class="form-select-lg mb-1"
-        size="1"
-        aria-label="size 3 select example"
-      >
+{{!-- <details>
+  <summary>Categoría</summary>
+<form action="GET" name="bulala">
+  <a href="/main">Bulala</a>
+</form>
+</details> --}}
+      <select action="get" class="form-select-lg mb-1"  size="1"  aria-label="size 1 select example"  >
         <option selected disabled value="0">Selecciona existente...</option>
-        <option href="/" value="1">HTTP</option>
-        <option value="2">IP</option>
-        <option value="3">Bulala</option>
+        <option href="/" value="Internet" name="category" >Internet</option>
+        <option  value="2" name="category">Librerías/Frameworks</option>
+        <option value="3" name="category">Programas/aplicaciones</option>
       </select>
-
-      <form class="d-flex" role="search">
-        <input
-          class="form-control me-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        />
+      <form class="d-flex" role="search" name="filterer"  method="GET">
+        <input class="form-control me-2" type="text" name="name" placeholder="Search" aria-label="Search" required/>
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
     </div>
