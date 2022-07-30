@@ -1,5 +1,6 @@
 require("dotenv").config()
 const express = require("express");
+const createError = require("http-errors")
 
 
 const app = express();
@@ -15,6 +16,22 @@ require("./config/hbs.config");
 
 const routes = require("./config/routes.config");
 app.use("/", routes);
+
+//errores--404
+app.use((req, res, next) => {
+    next(createError(404, "Página no encontrada"))
+})
+
+//error-- 500
+app.use((error, req, res, next) => {
+    console.error(error);
+    const message = error.message;
+    const metadata = app.get('env') === 'development' ? error: {};
+    const status = error.status || 500;
+    res.status(status)
+        .render(`errors/500`, { message, metadata })
+});
+
 
 const port = 3001;
 app.listen(port, () => console.log(`here we go!`))

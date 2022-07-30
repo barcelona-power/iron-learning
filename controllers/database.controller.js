@@ -1,9 +1,17 @@
 const {Database} = require("../models")
 
 module.exports.listOfDatabase = (req, res, next) => {
-    Database.find(req.query)
+    const { name }= req.query;
+    const criterial = {};
+    
+    if (name){
+        criterial.name = new RegExp (name, "i");
+    }
+
+
+    Database.find(criterial)
     .then((databases) => {
-        res.render("frontpage/main", {databases})
+        res.render("frontpage/main", {databases, name})
     })
-    .catch(console.error("algo va mal en ListOfDatabase"))
+    .catch(console.error("algo va mal en ListOfData"))
 }
