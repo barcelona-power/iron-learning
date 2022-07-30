@@ -32,11 +32,12 @@ module.exports.formDefinition = (req, res, next) => {
 
 module.exports.createDefinition = (req, res, next) => {
   const data = req.body;
+ 
   Definition.create(data)
   .then((definition) => {res.redirect("/create-definition")})
   .catch((error) => {
     if(error instanceof mongoose.Error.ValidationError) {
-        res.render("/create-definition")
+        res.render("/create-definition", {errors: error.errors, data});
     } else {
         next(error);
     }
