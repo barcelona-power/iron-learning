@@ -10,28 +10,46 @@
                 <input type="text" value="{{definition.name}}" class="form-control {{#if errors.name}} is-invalid {{/if}}" name="name" id="name"  >
                 {{#if errors.name}}<div class="invalid-feedback">{{errors.name}}</div>{{/if}}
         </div>
+
+
         <div class=" content-container col-5">
                 <label for="category" class="form-label">Categoría</label>
-                <input type="text" value="{{definition.name}}" class="form-control {{#if errors.name}} is-invalid {{/if}}" name="category" id="category">
+                {{!-- <input type="text" value="{{definition.gategory}}" class="form-control {{#if errors.gategory}} is-invalid {{/if}}" name="category" id="category">
+                {{#if errors.category}}<div class="invalid-feedback">{{errors.category}}</div>{{/if}} --}}
+            <select name="category" value="{{definition.category}}" class="form-control {{#if errors.category}} is-invalid {{/if}}" id="validationDefault04" >
+            <option selected disabled value="">Selecciona la categoría...</option>
+            <option value="internet">Internet</option>
+            <option value="program">Programa</option>
+            <option value="library">Librería</option>
+            </select>
         </div>
+         {{#if errors.category}}<div class="invalid-feedback">{{errors.category}}</div>{{/if}}
     </div>
+{{!-- value en el textarea value="{{definition.name}}" --}}
+
     <div class=" content-container col-10">
         <label for="description" class="form-label">Definición</label>
-        <textarea rows="3" name="description" id="description" value="{{definition.name}}" class="form-control {{#if errors.name}} is-invalid {{/if}}"></textarea>
+        <textarea rows="3" name="description" id="description" class="form-control {{#if errors.description}} is-invalid {{/if}}"></textarea>
+                {{#if errors.description}}<div class="invalid-feedback">{{errors.description}}</div>{{/if}}
     </div>
+
+    
     <div class=" content-container col-10">
         <label for="example" class="form-label">Ejemplo</label>
-        <textarea rows="3" name="example" id="example" value="{{definition.name}}" class="form-control {{#if errors.name}} is-invalid {{/if}}"></textarea>
+        <textarea rows="3" name="example" id="example" class="form-control {{#if errors.example}} is-invalid {{/if}}"></textarea>
+                 {{#if errors.example}}<div class="invalid-feedback">{{errors.example}}</div>{{/if}} 
     </div>
     <div class=" col-10">
         <label for="file" class="form-label">Archivo</label>
-        <input type="file" value="{{definition.name}}" class="form-control {{#if errors.name}} is-invalid {{/if}}" type="file" id="file">
+        <input type="file" value="{{definition.file}}" class="form-control {{#if errors.file}} is-invalid {{/if}}" type="file" id="file">
+                {{#if errors.file}}<div class="invalid-feedback">{{errors.file}}</div>{{/if}}
     </div>
     <div class=" col-10">
       <label for="link" class="form-label">Fuente</label>
         <div class="input-group mb-2">
             <span for="link" class="input-group-text">https://example.go..</span>
-            <input type="text" value="{{definition.name}}" class="form-control {{#if errors.name}} is-invalid {{/if}}" id="link" name="link">
+            <input type="text" name="link" value="{{definition.link}}" class="form-control {{#if errors.link}} is-invalid {{/if}}" id="link" >
+                {{#if errors.link}}<div class="invalid-feedback">{{errors.link}}</div>{{/if}}
         </div>
     </div>
         <button type="submit" class="btn btn-primary p-3 col-10">Crear ejemplo</button>

@@ -4,15 +4,14 @@ const Schema = mongoose.Schema;
 const definitionSchema = new Schema ({
     name:{
         type:String,
-        // required: "Término necesario",
+        required: "Término necesario",
         maxLength: [20, "No se aceptan términos en élfico"],
-        //minLength: [2, "No se aceptan términos en élfico"],
-
+        minLength: [2, "No existen términos tan cortos"],
         trim: true
     },
     description:{
         type:String,
-        maxLength: [500, "Seguro que puedes hacerlo más corto..."],
+        maxLength: [10, "Seguro que puedes hacerlo más corto..."],
         trim: true
     },
     example:{
@@ -22,6 +21,7 @@ const definitionSchema = new Schema ({
     },
     category: {
         type:String,
+        required: "debe pertenecer a alguna categoría"
     },
     file: {
         type:String,

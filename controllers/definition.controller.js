@@ -14,8 +14,7 @@ module.exports.listOfDefinitions = (req, res, next) => {
       .then((databases) =>
         res.render("definition/list", { definitions, databases, name })
       )
-      .catch(console.error("algo va mal en listOfDefinitions"));
-      //.catch((error) => next(error))
+      .catch((error) => next(error))
   });
 };
 
@@ -37,7 +36,7 @@ module.exports.createDefinition = (req, res, next) => {
   .then((definition) => {res.redirect("/create-definition")})
   .catch((error) => {
     if(error instanceof mongoose.Error.ValidationError) {
-        res.render("/create-definition", {errors: error.errors, data});
+        res.render("definition/definition", {errors: error.errors, data});
     } else {
         next(error);
     }

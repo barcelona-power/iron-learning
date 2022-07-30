@@ -13,5 +13,5 @@ module.exports.listOfDatabase = (req, res, next) => {
     .then((databases) => {
         res.render("frontpage/main", {databases, name})
     })
-    .catch(console.error("algo va mal en ListOfData"))
+    .catch((error) => next.error)
 }
