@@ -2,9 +2,15 @@ const mongoose = require("mongoose");
 const { Definition, Database } = require("../models");
 
 module.exports.listOfDefinitions = (req, res, next) => {
-    Definition.find(req.query)
+    const name = req.query;
+    const criterial = {};
+    
+    if (name){
+        criterial.name = new RegExp (name, "i");
+    }
+    Definition.find(criterial)
     .then((definitions) => {
-        return Database.find(req.query)
+        return Database.find(criterial)
         .then((databases) => 
         res.render("definition/list", {definitions, databases}))
     .catch(console.error("algo va mal en listOfDefinitions"))
@@ -37,3 +43,4 @@ module.exports.delete = (req, res, next) => {
         res.redirect("/list")
     })
 }
+
