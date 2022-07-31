@@ -21,14 +21,70 @@
     top: 44.8%
 
 }
-#log-in{
+#iniciar-sesión{
+    font-size: 30px;    
+    font-family: Lobster;
+}
+
+#btn-invitado {
+    display: flex;
+    position: absolute;
+    right: 30%;
+    border-radius: 4px;
+    background-image:   linear-gradient(to bottom, rgba(14, 9, 98, 0.907), rgba(4, 72, 80, 0.5));
+    color: #f9fbff;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    width: 400px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  
+  #btn-invitado span {
+    cursor: pointer;
     display: inline-block;
-    background-color: #2ec5fc;
+    position: relative;
+    transition: 0.5s;
+  
+  }
+  
+  #btn-invitado span:after {
+    content: url(../imagenes/edgar1.png);
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -500px;
+    transition: 1.5s;
+  }
+  
+  #btn-invitado:hover span {
+    padding-right: 65px;
+  }
+  
+  #btn-invitado:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+#log-in{
+    background-image:   linear-gradient(to bottom, rgba(78, 237, 29, 0.907), rgba(234, 236, 104, 0.5), rgba(78, 237, 29, 0.907));
+    display: inline-flex;
     border-radius: 20px;
+    font-family: Permanent Marker;
+
+
 }
 #create-acount{
-    display: inline-block;
+    background-image:   linear-gradient(to bottom, rgba(38, 38, 236, 0.5), rgba(203, 218, 224, 0.907), rgba(203, 218, 224, 0.907), rgba(38, 38, 236, 0.5));
+    background-color: #d2d2f1;
+    display: flex;
     border-radius: 30px;
+    font-family: Permanent Marker;
+    font-size: 15px;
+
 }
 .content-container{
     margin-top: 1%;

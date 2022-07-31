@@ -4,7 +4,6 @@
 <form action="/create-definition" method="POST" enctype="multipart/form-data">
 <div class="definitions">
     <div class="d-flex" >
-
         <div class=" content-container col-5">
                 <label for="name" class="form-label">Concepto</label>
                 <input type="text" value="{{definition.name}}" class="form-control {{#if errors.name}} is-invalid {{/if}}" name="name" id="name"  >

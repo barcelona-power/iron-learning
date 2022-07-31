@@ -3,61 +3,49 @@
 <img id="image3" src="/imagenes/julio.png" width="11%" alt="Donde está carlos">
  --}}
 <body  style="background-color: #b0e8f9">
-    <hr>
-    <a  href="/main" class="btn btn-primary fs-2 d-grid gap-2 col-6 mx-auto" tabindex="-1" role="button" >Bienvenido! Clica aquí si quieres entrar como invitado..!</a>
-    <hr>
+    <a  href="/main" id="btn-invitado" role="button"> <span>Bienvenido! <br> Clica aquí si quieres entrar como invitado..!</span> </a>
 
 
-<div id="log-in" class="p-3 mb-3">
+<div id="log-in" class="p-2 m-2 col-md-4">
 <form >
-  <div class="col-12">
+  <label id="iniciar-sesión" for="exampleInputEmail1" class="form-label ">Iniciar Sesión</label>
+  <div class="d-flex">
+  <div class="col-md-7">
     <label for="exampleInputEmail1" class="form-label">Dirección de correo</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <div id="emailHelp" class="form-text">Solo usaremos tu Email para fines malvados</div>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="IronStundent@bulala.com">
+    <div id="emailHelp" class="form-text">Usaremos tu Email para espiar</div>
   </div>
-  <div class="col-20">
+  <div class="col-md-6  ps-3">
     <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-        <div id="emailHelp" class="form-text">Seguro que es una contraseña super original</div>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="@ # $ % & ] *">
+    <div id="emailHelp" class="form-text">Seguro que es bonita</div>
   </div>
-  <div class="">   No soy un robot. Solo un estudiante</div>
-  <div class=" form-check  col-5 ">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div  >
+  </div>
   <button type="submit" class="btn btn-primary">Iniciar sesión</button>
 </form>
 </div >
 {{!--  --}}
-<div id="create-acount" style="background-color: #d2d2f1" class="p-3">
+<div id="create-acount" class="p-2  m-2 col-md-4">
     <form method="POST" action="/create" class="row g-3">
-  <div class="col-md-3">
-    <label for="validationDefaultUsername"  class="form-label">Nickname</label>
-    <div class="input-group">
-      <span class="input-group-text" id="inputGroupPrepend2">*</span>
-      <input type="text" name="Nickname" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" placeholder="Tu apodo favorito"required>
-    </div>
-  </div>
-  <div class="col-md-3">
-    <label for="validationDefaultUsername"  class="form-label">Email</label>
-    <div class="input-group">
-      <span class="input-group-text" id="inputGroupPrepend2">@</span>
-      <input type="email" name="email" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" placeholder="Algún Email para mandarte mucho spam"required>
-    </div>
-  </div>
-  <div class="col-md-3">
-    <label for="validationDefaultUsername"  class="form-label">Contraseña</label>
-    <div class="input-group">
-      <span class="input-group-text" id="inputGroupPrepend2">#</span>
-      <input type="text"  name="password" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" placeholder="Lo esconderemos bajo la almohada"required>
-    </div>
-  </div>
-  <div class="col-md-3">
-    <label for="validationDefaultUsername" class="form-label">País</label>
-    <div class="input-group">
-      <span class="input-group-text" id="inputGroupPrepend2">-<|>-</span>
-      <select name="country">
-        <option value="AL">Albania</option>
+  <label id="iniciar-sesión" class="form-label">Registrarse</label>
+
+<div class="d-flex col-md-12">
+       <div class="col-md-6">
+           <label for="validationDefaultUsername"  class="form-label">Nickname</label>
+           <div class="input-group">
+              <span class="input-group-text" id="inputGroupPrepend2">*</span>
+              <input type="text" name="Nickname" class="form-control"  aria-describedby="inputGroupPrepend2" placeholder="Tu apodo favorito"required>
+           </div>
+       </div>
+
+    <div class="col-md-12 px-3">
+         <div class="p-1 col-md-12">
+         <label for="validationDefaultUsername">País</label>
+        </div>
+      <div class="input-group">
+           <span class="input-group-text" id="inputGroupPrepend2">-<|>-</span>
+           <select class="col-md-4" name="country">
+ <option value="AL">Albania</option>
         <option value="DE">Alemania</option>
         <option value="AF">Afganistán</option>
         <option value="AD">Andorra</option>
@@ -291,18 +279,42 @@
         <option value="YU">Yugoslavia</option>
         <option value="ZM">Zambia</option>
         <option value="ZW">Zimbabue</option>
+
       </select>
-      {{!-- <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" placeholder="De dónde eres? a dónde vas? qué quieres?"required> --}}
+    </div>
+ </div>
+
+
+
+</div>
+{{!-- email y contraseña --}}
+<div class="d-flex">
+  <div class="col-md-6">
+    <label for="validationDefaultUsername"  class="form-label">Email</label>
+    <div class="input-group">
+      <span class="input-group-text" id="inputGroupPrepend2">@</span>
+      <input type="email" name="email" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" placeholder="Para mandarte spam ..."required>
     </div>
   </div>
-  <div class="col-md-6">
-    <label for="validationDefault03" class="form-label">Conocimientos</label>
-    <textarea type="text" name="knowledge" class="form-control" id="validationDefault03"  placeholder="Algo sabrás..."  cols="10" rows="1"></textarea>
+
+
+  <div class="col-md-6 ps-3">
+    <label for="validationDefaultUsername"  class="form-label">Contraseña</label>
+    <div class="input-group">
+      <span class="input-group-text" id="inputGroupPrepend2">#</span>
+      <input type="text"  name="password" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" placeholder="No te compliques.."required>
+    </div>
   </div>
-  <div class="col-md-2">
+</div>
+{{!-- email y contraseña --}}
+  <div class="col-md-7">
+    <label for="validationDefault03" class="form-label">Conocimientos</label>
+    <textarea type="text" name="knowledge" class="form-control" id="validationDefault03"  placeholder="Algo sabrás..."  cols="4" rows="1"></textarea>
+  </div>
+  <div class="col-md-5"> 
     <label for="validationDefault04" class="form-label">Preferencia por ...</label>
-    <select name="select-preference" class="form-select" id="validationDefault04" required>
-      <option selected disabled value="">Rol preferido...</option>
+    <select name="select-preference" size="1" class="form-select" id="validationDefault04" required>
+      <option selected disabled >Rol preferido...</option>
       <option value="front">Front-end</option>
       <option value="back">Back-end</option>
       <option value="full">Full-stack</option>
@@ -311,31 +323,29 @@
       <option value="viejo">Viejo gruñón</option>
     </select>
   </div>
-  <div class="col-md-1">
+  <div class="col-md-3">
     <input type="radio" id="html" name="fav_language" value="HTML">
     <label for="html">HTML</label><br>
     <input type="radio" id="css" name="fav_language" value="CSS">
     <label for="css">CSS</label><br>
+  </div>
+    <div class="col-md-3 ps-2">
     <input type="radio" id="javascript" name="fav_language" value="JavaScript">
     <label for="javascript">JavaScript</label>
-  </div>
-    <div class="col-md-1">
     <input type="radio" id="hbs" name="fav_language" value="hbs">
     <label for="hbs">HBS</label><br>
+  </div>
+  <div class="col-md-6 px-5">
     <input type="radio" id="Tinder" name="fav_language" value="Tinder">
     <label for="Tinder">Tinder</label><br>
     <input type="radio" id="Netflix" name="fav_language" value="Netflix">
     <label for="Netflix">CodeWars</label>
   </div>
-  <div class="col-md-2">
-    <label for="validationDefault05" class="form-label">Palabra favorita</label>
-    <input type="text" name="favouriteWord" class="form-control" id="validationDefault05" placeholder="No la usaremos para nada" required>
-  </div>
   <div class="col-12">
     <div class="form-check">
       <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
       <label class="form-check-label" for="invalidCheck2">
-        Me comprometo a no usar esta información para fines malvados
+       Prometo no usar esta información con fines malvados
       </label>
     </div>
   </div>
