@@ -10,12 +10,12 @@
     <form>
         <label id="iniciar-sesión" for="exampleInputEmail1" class="form-label ">Iniciar Sesión</label>
             <div class="d-flex" id="form-login">
-                <div class="col-md-8">
+                <div class="col-md-6">
                   <label for="exampleInputEmail1" class="form-label">Dirección de correo</label>
                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="IronStundent@bulala.com">
                   <div id="emailHelp" class="form-text">Usaremos tu Email para espiar</div>
                 </div>
-                <div class="col-md-8  ps-3">
+                <div class="col-md-5  ps-3">
                   <label for="exampleInputPassword1" class="form-label">Contraseña</label>
                   <input type="password" class="form-control" id="exampleInputPassword1" placeholder="@ # $ % & ] *">
                   <div id="emailHelp" class="form-text">Seguro que es bonita</div>
@@ -28,21 +28,21 @@
 <div id="create-acount" class="p-2  m-2 col-md-4">
     <form method="POST" action="/create" class="row g-3">
         <label id="iniciar-sesión" class="form-label">Registrarse</label>
-    <div class="d-flex col-md-12">
-          <div class="col-md-6">
+    <div class="d-flex col-md-8">
+          <div class="col-md-8">
               <label for="nickname"  class="form-label"> Nickname</label>
               <div class="input-group">
                   <span class="input-group-text" id="inputGroupPrepend2">*</span>
                   <input id="nickname" type="text" name="Nickname" class="form-control"  aria-describedby="inputGroupPrepend2" placeholder="Tu apodo favorito"required>
               </div>
           </div>
-        <div class="col-md-12 px-3">
+        <div class="col-md-12 px-1">
             <div class="p-1 col-md-12">
               <label for="validationDefaultUsername">País</label>
             </div>
         <div class="input-group">
             <span class="input-group-text" id="inputGroupPrepend2">-<|>-</span>
-            <select class="col-md-4" name="country">
+            <select class="col-md-7" name="country">
                 <option value="AL">Albania</option>
                     <option value="DE">Alemania</option>
                     <option value="AF">Afganistán</option>
@@ -305,7 +305,7 @@
           <label for="validationDefault03" class="form-label">Conocimientos</label>
           <textarea type="text" name="knowledge" class="form-control" id="validationDefault03"  placeholder="Algo sabrás..."  cols="4" rows="1"></textarea>
       </div>
-      <div class="col-md-5"> 
+      <div class="col-md-4"> 
           <label for="validationDefault04" class="form-label">Preferencia por ...</label>
           <select name="select-preference" size="1" class="form-select" id="validationDefault04" required>
               <option selected disabled >Rol preferido...</option>
@@ -317,11 +317,11 @@
               <option value="viejo">Viejo gruñón</option>
           </select>
       </div>
-      <div class="col-md-3 d-flex px-5">
+      <div class="col-md-8 d-flex px-2  ">
           <input  type="radio" id="html" name="fav_language" value="HTML">
-          <label  class="pe-5" for="html">HTML</label><br>
+          <label  class="pe-3" for="html">HTML</label><br>
           <input type="radio" id="css" name="fav_language" value="CSS">
-          <label class="pe-5"for="css">CSS</label><br>
+          <label class="pe-3"for="css">CSS</label><br>
           <input type="radio" id="javascript" name="fav_language" value="JavaScript">
           <label class="pe-3" for="javascript">JScript</label>
           <input type="radio" id="hbs" name="fav_language" value="hbs">

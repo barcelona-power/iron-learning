@@ -41,18 +41,18 @@
   <a href="/main">Bulala</a>
 </form>
 </details> --}}
-<form method="GET" role="search" name="filterer"> 
-      <select name="category" class="form-select-lg mb-1"  size="1"  aria-label="size 1 select example"  >
+<form  method="GET" role="search" name="filterer"> 
+      {{!-- <button  type="submit">Dale</button> --}}
+      <select id="form-category"  name="category" class="form-select col-md-8 searcher"  size="1"  aria-label="select example"  >
         <option selected disabled value="0">Por categoría...</option>
         <option value="Internet" name="category" >Internet</option>
         <option  value="Librería" name="category">Librerías/Frameworks</option>
         <option value="Programa" name="category">Programas/aplicaciones</option>
       </select>
-      <button type="submit">Dale</button>
        </form>
       <form class="d-flex" role="search" name="filterer"  method="GET">
-        <input class="form-control me-2" type="text" name="name" value="{{query.name}}" placeholder="Search" aria-label="Search" />
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <input id="form-word" class="form-select searcher" type="text" name="name" value="{{query.name}}" placeholder="Search" aria-label="Search" />
+        <button class="btn btn-outline-success searcher" type="submit">Buscar</button>
       </form>
     </div>
   </div>

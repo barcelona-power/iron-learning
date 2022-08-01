@@ -14,3 +14,5 @@ mongoose.connection.once('open', () => {
     .catch(error => console.error('An error ocurred running seeds', error))
     .then(() => mongoose.disconnect())
 })
+const selectElement = document.querySelector('#form-category');
+
