@@ -231,3 +231,24 @@ a:link{
   background-color: rgb(49, 18, 18);
   font-size: 10px;
 }
+
+#list-of{
+  display: flex;
+  border-radius: 30px;
+  font-family: Permanent Marker;
+  font-size: 15px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.card-img-top{
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 20px;
+  background-image: linear-gradient(to bottom, rgb(187, 127, 214) 0%, rgb(75, 21, 100) 100%), linear-gradient(to bottom, rgb(161, 223, 241) 0%, rgb(37, 199, 248) 100%);
+  background-clip: content-box, padding-box;
+  width: 50%;
+  height: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}

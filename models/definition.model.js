@@ -15,7 +15,7 @@ const definitionSchema = new Schema ({
     },
     description:{
         type:String,
-        maxLength: [10, "Seguro que puedes hacerlo más corto..."],
+        maxLength: [500, "Seguro que puedes hacerlo más corto..."],
         trim: true
     },
     example:{
