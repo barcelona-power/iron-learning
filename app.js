@@ -2,7 +2,6 @@ require("dotenv").config()
 const express = require("express");
 const createError = require("http-errors")
 
-
 const app = express();
 
 app.set("views", __dirname + "/views");
@@ -21,7 +20,6 @@ app.use("/", routes);
 app.use((req, res, next) => {
     next(createError(404, "Página no encontrada"))
 })
-
 //error-- 500
 app.use((error, req, res, next) => {
     console.error(error);

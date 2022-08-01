@@ -2,17 +2,19 @@ const mongoose = require("mongoose");
 const { Definition, Database } = require("../models");
 
 module.exports.listOfDefinitions = (req, res, next) => {
-  const { name } = req.query;
+  const { name, category } = req.query;
   const criterial = {};
 
   if (name) {
     criterial.name = new RegExp(name, "i");
   }
-
+  if (category){
+    criterial.category = new RegExp (category, "i");
+}
   Definition.find(criterial).then((definitions) => {
     return Database.find(criterial)
       .then((databases) =>
-        res.render("definition/list", { definitions, databases, name })
+        res.render("definition/list", { definitions, databases, name, category })
       )
       .catch((error) => next(error))
   });

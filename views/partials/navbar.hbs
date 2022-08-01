@@ -1,6 +1,16 @@
 <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #2ec5fc">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/main">IRON HACK MAIN PAGE</a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active nav-btn-in" id="iniciar-btn" aria-current="page" href="/"><span>Iniciar sesión / Regístrate</span></a>
+        </li>
+          </ul>
+    <a id="logo-iron" href="https://www.ironhack.com/es"><img src="/imagenes/iron.png" alt="ups, logo? que logo=" width="100%"> </a>
+    <a id="logo-gitHub" href="https://github.com/"><img src="/imagenes/gitHub.png" alt="ups, logo? que logo=" width="100%"> </a>
+    <a id="logo-wiki" href="https://es.wikipedia.org/wiki/Wikipedia:Portada"><img src="/imagenes/wiki.png" alt="ups, logo? que logo=" width="100%"> </a>
+    <a id="logo-student" href="https://my.ironhack.com/cohorts"><img src="/imagenes/ironstudent.png" alt="ups, logo? que logo=" width="100%"> </a>
+
+    <a class="navbar-brand nav-btn" href="/main"><span>IRON HACK MAIN PAGE</span></a>
     <button
       class="navbar-toggler"
       type="button"
@@ -15,17 +25,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Iniciar sesión
-            / Regístrate</a>
+          <a class="nav-link nav-btn" href="/profile"> <span>Mi perfil</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/profile"> Mi perfil</a>
+          <a class="nav-link nav-btn" href="/create-definition"> <span>Crear definición</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/create-definition"> Crear definición</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/list">Lista de las definiciones</a>
+          <a class="nav-link nav-btn" href="/list"><span>Lista de las definiciones</span></a>
         </li>
 
       </ul>
@@ -35,12 +41,15 @@
   <a href="/main">Bulala</a>
 </form>
 </details> --}}
-      <select action="get" class="form-select-lg mb-1"  size="1"  aria-label="size 1 select example"  >
-        <option selected disabled value="0">Selecciona existente...</option>
-        <option href="/" value="Internet" name="category" >Internet</option>
-        <option  value="2" name="category">Librerías/Frameworks</option>
-        <option value="3" name="category">Programas/aplicaciones</option>
+<form method="GET" role="search" name="filterer"> 
+      <select name="category" class="form-select-lg mb-1"  size="1"  aria-label="size 1 select example"  >
+        <option selected disabled value="0">Por categoría...</option>
+        <option value="Internet" name="category" >Internet</option>
+        <option  value="Librería" name="category">Librerías/Frameworks</option>
+        <option value="Programa" name="category">Programas/aplicaciones</option>
       </select>
+      <button type="submit">Dale</button>
+       </form>
       <form class="d-flex" role="search" name="filterer"  method="GET">
         <input class="form-control me-2" type="text" name="name" value="{{query.name}}" placeholder="Search" aria-label="Search" />
         <button class="btn btn-outline-success" type="submit">Search</button>

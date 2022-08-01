@@ -6,8 +6,12 @@ const definitionSchema = new Schema ({
         type:String,
         required: "Término necesario",
         maxLength: [20, "No se aceptan términos en élfico"],
-        minLength: [2, "No existen términos tan cortos"],
+        minLength: [2, "Define términos o conceptos, no letras!"],
         trim: true
+    },
+    category: {
+        type:String,
+        required: "Debe pertenecer a alguna categoría"
     },
     description:{
         type:String,
@@ -16,13 +20,10 @@ const definitionSchema = new Schema ({
     },
     example:{
         type:String,
-        maxLength: [500, "Seguro que puedes hacerlo más corto..."],
+        maxLength: [500, "Haz ejemplos fáciles y más cortos..."],
         trim: true
     },
-    category: {
-        type:String,
-        required: "debe pertenecer a alguna categoría"
-    },
+
     file: {
         type:String,
         //default: "/public/imagenes/3688989.jpeg",

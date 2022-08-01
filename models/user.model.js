@@ -11,12 +11,6 @@ const userSchema = new Schema({
         maxLength: [23, "te has pasado tres pueblos con el tamaño"],
         trim: true
     },
-    knowledge: {
-        type : String,
-        required: "Algún conocimiento tendrás... ",
-        maxLength: [33, "Eso no existe"],
-        trim: true
-    }, 
     country: {
         type: String,
         required: "De alguna ciudad debes de ser...",
@@ -35,15 +29,20 @@ const userSchema = new Schema({
         type: String,
         required: "Necesitas proporcionar un mail. Es por tu seguridad y la nuestra",
         match: [PW_PATTERN, "Necesitas al menos 5 caracteres"]
-    }
+    },
+    knowledge: {
+        type : String,
+        required: "Algún conocimiento tendrás... ",
+        maxLength: [33, "Eso no existe"],
+        trim: true
+    }, 
+    preference1: {
+        type:String
+    },
+    preference2:{
+        type:String
+    },
 })
 
 const User = mongoose.model("User", userSchema);
 module.exports = User;
-
-
-// User.create({
-//     nickname: "Saitama",
-//     knowledge: "nothing",
-//     city:
-// })

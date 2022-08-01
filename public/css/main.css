@@ -1,126 +1,223 @@
-#image1{
-    position:absolute;
-    display: flex;
-    margin:30px;
-    right: 30%;
-    top: 42.7%
+/* #body-cursor{
+    cursor: url("/imagenes/edNor.cur"), pointer;
 }
-#image2{
-    position:absolute;
-    display: flex;
-    margin:30px;
-    right: 20%;
-    top: 43.5%
-    
+
+img{
+    cursor:wait
 }
-#image3{
-    position:absolute;
-    display: flex;
-    margin:30px;
-    right: 6%;
-    top: 44.8%
+a:link{
+    cursor: url("/imagenes/edBus.cur"), pointer;
+}
+
+select{
+    cursor: url("/imagenes/edPreg.cur"), pointer;
+}
+input{
+    cursor: url("/imagenes/edPreg.cur"), pointer;
+} */
+a:link{
+  cursor: url("/imagenes/edBus.cur"), pointer;
+}
+#logo-iron{
+  width: 2%;
+  margin-left: 3%;
+  cursor: url("/imagenes/edGo.cur"), pointer;
 
 }
-#iniciar-sesión{
-    font-size: 30px;    
-    font-family: Lobster;
+#logo-gitHub{
+  width: 2.5%;
+  margin-left: 1%;
+  cursor: url("/imagenes/edGo.cur"), pointer;
+
+}
+#logo-wiki{
+  width: 2%;
+  margin-left: 1%;
+  cursor: url("/imagenes/edGo.cur"), pointer;
+}
+#logo-student{
+  width: 2%;
+  margin-right: 3%;
+  margin-left: 1%;
+  cursor: url("/imagenes/edGo.cur"), pointer;
+
+}
+
+.space-evenly {
+  padding: 130px;
+}
+#image1 {
+  position: absolute;
+  display: flex;
+  margin: 30px;
+  right: 30%;
+  top: 42.7%;
+}
+#image2 {
+  position: absolute;
+  display: flex;
+  margin: 30px;
+  right: 20%;
+  top: 43.5%;
+}
+#image3 {
+  position: absolute;
+  display: flex;
+  margin: 30px;
+  right: 6%;
+  top: 44.8%;
+}
+#iniciar-sesión {
+  font-size: 30px;
+  font-family: Lobster;
 }
 
 #btn-invitado {
-    display: flex;
-    position: absolute;
-    right: 30%;
-    border-radius: 4px;
-    background-image:   linear-gradient(to bottom, rgba(14, 9, 98, 0.907), rgba(4, 72, 80, 0.5));
-    color: #f9fbff;
-    text-align: center;
-    font-size: 28px;
-    padding: 10px;
-    width: 400px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 10px;
-    border-radius: 10px;
-  }
-  
-  #btn-invitado span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  
-  }
-  
-  #btn-invitado span:after {
-    content: url(../imagenes/edgar1.png);
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -500px;
-    transition: 1.5s;
-  }
-  
-  #btn-invitado:hover span {
-    padding-right: 65px;
-  }
-  
-  #btn-invitado:hover span:after {
-    opacity: 1;
-    right: 0;
-  }
-
-#log-in{
-    background-image:   linear-gradient(to bottom, rgba(78, 237, 29, 0.907), rgba(234, 236, 104, 0.5), rgba(78, 237, 29, 0.907));
-    display: inline-flex;
-    border-radius: 20px;
-    font-family: Permanent Marker;
-
-
-}
-#create-acount{
-    background-image:   linear-gradient(to bottom, rgba(38, 38, 236, 0.5), rgba(203, 218, 224, 0.907), rgba(203, 218, 224, 0.907), rgba(38, 38, 236, 0.5));
-    background-color: #d2d2f1;
-    display: flex;
-    border-radius: 30px;
-    font-family: Permanent Marker;
-    font-size: 15px;
-
-}
-.content-container{
-    margin-top: 1%;
+  display: flex;
+  position: absolute;
+  font-family: Lobster;
+  text-decoration: none;
+  right: 30%;
+  border-radius: 4px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(14, 9, 98, 0.907),
+    rgba(4, 72, 80, 0.5)
+  );
+  color: #f9fbff;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  width: 420px;
+  transition: all 0.5s;
+  cursor: url("/imagenes/edNor.cur"), pointer;
+  margin: 10px;
+  border-radius: 60px;
 }
 
-.definitions{
-    margin: auto;
-    margin-top: 4%;
-    width: 50%;
-    padding: 10px;
+#btn-invitado span {
+  cursor: url("/imagenes/edBus.cur"), pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
 
-#list-of{
-    margin: 5%
+#btn-invitado span:after {
+  content: url(../imagenes/ed1.png);
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  top: 200px;
+  right: -900px;
+  transition: 0.5s;
 }
-.ua{
-    display: flex;
-}
-
-.formulario{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-}
-.new-form{
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    
+#btn-invitado:hover span {
+  padding-right: 5px;
+  font-size: 32px;
+  transform: 1s;
+  font-family: Permanent Marker;
 }
 
+#btn-invitado:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 
-.enter-form{
-    display: flex;
-    justify-content: right;
-    align-items: center;
-   
+#log-in {
+  padding: 4%;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(77, 237, 29, 0.239),
+    rgba(234, 236, 104, 0.236),
+    rgba(77, 237, 29, 0.21)
+  );
+  display: inline-flex;
+  border-radius: 20px;
+  font-family: Permanent Marker;
+}
+#form-login{
+  padding-left: 3%;
+}
+#create-acount {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(38, 38, 236, 0.087),
+    rgb(203, 218, 224),
+    rgba(203, 218, 224, 0.973),
+    rgba(38, 38, 236, 0.171)
+  );
+  display: flex;
+  border-radius: 30px;
+  font-family: Permanent Marker;
+  font-size: 15px;
+}
+.content-container {
+  margin-top: 1%;
+}
+
+.definitions {
+  margin: auto;
+  margin-top: 4%;
+  width: 50%;
+  padding: 10px;
+}
+
+#list-of {
+  margin: 5%;
+}
+.ua {
+  display: flex;
+}
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.new-form {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+#iniciar-btn{
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+.enter-form {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+
+.nav-btn span {
+  cursor: url("/imagenes/edBus.cur"), pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  font-family: Courgette;
+
+}
+
+.nav-btn:hover span {
+  padding-right: 5px;
+  font-size: 20px;
+  transform: 1s;
+  font-family: Permanent Marker;
+}
+
+.nav-btn-in span {
+  font-family: Courgette;
+  cursor: url("/imagenes/edBus.cur"), pointer;
+  display: inline-block;
+  position: relative;
+  transition: 1s;
+}
+
+.nav-btn-in:hover span {
+  padding-right: 5px;
+  font-size: 20px;
+  transform: 2s;
+  font-family: Permanent Marker;
+  color:rgb(0, 0, 0)
 }

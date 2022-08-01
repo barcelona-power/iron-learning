@@ -12,19 +12,17 @@
 
 
         <div class=" content-container col-5">
-                <label for="category" class="form-label">Categoría</label>
-                {{!-- <input type="text" value="{{definition.gategory}}" class="form-control {{#if errors.gategory}} is-invalid {{/if}}" name="category" id="category">
-                {{#if errors.category}}<div class="invalid-feedback">{{errors.category}}</div>{{/if}} --}}
-            <select name="category" value="{{definition.category}}" class="form-control {{#if errors.category}} is-invalid {{/if}}" id="validationDefault04" >
-            <option selected disabled value="">Selecciona la categoría...</option>
-            <option value="internet">Internet</option>
-            <option value="program">Programa</option>
-            <option value="library">Librería</option>
+            <label for="category" class="form-label">Categoría</label>
+            <select name="category" value="{{definition.category}}" class="form-control {{#if errors.category}} is-invalid {{/if}}" id="category" >
+                <option selected disabled value="">Selecciona la categoría...</option>
+                <option value="Internet">Internet</option>
+                <option value="Library">Librería/Framework</option>
+                <option value="Program">Programa/Aplicación</option>
+                <option value="Otros">Otros...</option>
             </select>
-        </div>
          {{#if errors.category}}<div class="invalid-feedback">{{errors.category}}</div>{{/if}}
+        </div>
     </div>
-{{!-- value en el textarea value="{{definition.name}}" --}}
 
     <div class=" content-container col-10">
         <label for="description" class="form-label">Definición</label>

@@ -3,7 +3,7 @@
         "name": "IP",
         "description": "algo",
         "example": "otro algo",
-        "category": "algo más",
+        "category": "librería",
         "file": "none",
         "link":"https://media.makeameme.org/created/something-is-missing-6838a8d575.jpg"
     },
@@ -11,7 +11,7 @@
         "name": "IP",
         "description": "bulala",
         "example": "otro bulala",
-        "category": "bulala más",
+        "category": "internet",
         "file": "none",
         "link":"https://media.makeameme.org/created/something-is-missing-6838a8d575.jpg"
     },
@@ -19,7 +19,7 @@
         "name": "IP",
         "description": "uuuuuu",
         "example": "otro uuuuuu",
-        "category": "uuuuuu más",
+        "category": "programa",
         "file": "none",
         "link":"https://media.makeameme.org/created/something-is-missing-6838a8d575.jpg"
     },
@@ -27,7 +27,7 @@
         "name": "hooooo",
         "description": "mufasa",
         "example": "otro mufasa",
-        "category": "mufasa más",
+        "category": "lib",
         "file": "none",
         "link":"https://media.makeameme.org/created/something-is-missing-6838a8d575.jpg"
     },
@@ -35,7 +35,7 @@
         "name": "HTTP",
         "description": "tutut",
         "example": "otro tutut",
-        "category": "tutut más",
+        "category": "pro",
         "file": "none",
         "link":"https://media.makeameme.org/created/something-is-missing-6838a8d575.jpg"
     }
