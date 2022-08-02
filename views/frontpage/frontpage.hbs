@@ -2,11 +2,30 @@
 <img id="image2" src="/imagenes/edgar.png" width="11%" alt="Donde está carlos">
 <img id="image3" src="/imagenes/julio.png" width="11%" alt="Donde está carlos">
  --}}
+
+
+ {{!--  BUSCAR GRID PARA ALINEAR TODO
+ 
+ MODULE 2 WEEK4 day 3 --}} 
+
+
+
 <body id="body-front-img">
     <a  href="/main" id="btn-invitado" role="button"> <span>Bienvenido! <br> Pulsa aquí para entrar como invitado</span> </a>
 
 
 <div id="log-in" class="p-2 m-2 col-md-4">
+
+
+
+{{#if errors}}
+<div class="alert alert-danger" role="alert">
+    Existen errores en tu registro, por favor comprueba tus datos!
+</div>
+{{/if}}
+
+
+
     <form>
         <label id="iniciar-sesión" for="exampleInputEmail1" class="form-label ">Iniciar Sesión</label>
             <div class="d-flex" id="form-login">
@@ -25,21 +44,28 @@
     </form>
 </div >
 {{!--  --}} 
+
+{{!--  poner .div class="row"??? --}} 
 <div id="create-acount" class="p-2  m-2 col-md-4">
     <form method="POST" action="/create" class="row g-3">
+
         <label id="iniciar-sesión" class="form-label">Registrarse</label>
     <div class="d-flex col-md-8">
           <div class="col-md-8">
+
               <label for="nickname"  class="form-label"> Nickname</label>
               <div class="input-group">
                   <span class="input-group-text" id="inputGroupPrepend2">*</span>
-                  <input id="nickname" type="text" name="Nickname" class="form-control"  aria-describedby="inputGroupPrepend2" placeholder="Tu apodo favorito"required>
+                  <input id="nickname" type="text" name="Nickname" class="form-control {{#if error.id}}is-invalid{{/if}}"  aria-describedby="inputGroupPrepend2" placeholder="Tu apodo favorito">
+                  {{#if errors.id}}<div class=" invalid-feedback"> {{error.id}}</div>{{/if}}
               </div>
           </div>
+
         <div class="col-md-12 px-1">
             <div class="p-1 col-md-12">
               <label for="validationDefaultUsername">País</label>
             </div>
+
         <div class="input-group">
             <span class="input-group-text" id="inputGroupPrepend2">-<|>-</span>
             <select class="col-md-7" name="country">

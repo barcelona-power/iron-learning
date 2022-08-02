@@ -9,7 +9,8 @@ const userSchema = new Schema({
         type : String,
         required: "Nombre obligatorio",
         maxLength: [23, "te has pasado tres pueblos con el tamaño"],
-        trim: true
+        trim: true,
+        unique: true
     },
     country: {
         type: String,
