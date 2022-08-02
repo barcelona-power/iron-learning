@@ -1,11 +1,8 @@
-/* #body-cursor{
-    cursor: url("/imagenes/edNor.cur"), pointer;
-}
 
-img{
-    cursor:wait
+body{
+  cursor: url("/imagenes/curs0.cur"), pointer;
 }
-a:link{
+/* a:link{
     cursor: url("/imagenes/edBus.cur"), pointer;
 }
 
@@ -14,32 +11,57 @@ select{
 }
 input{
     cursor: url("/imagenes/edPreg.cur"), pointer;
-} */
+}  */
+#body-front-img{
+  background-image: url("../imagenes/fondos/wall5.jpeg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#body-def-img{
+  background-image: url("../imagenes/fondos/wall3.jpeg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#body-list-img{
+  background-image: url("../imagenes/fondos/wall12.jpeg");
+  background-size: 100%;
+  background-repeat: repeat;
+}
+#body-profile-img{
+  background-image: url("../imagenes/fondos/wall4.jpeg");
+  background-size: 100%;
+  background-repeat: repeat;
+}
+.body-img{
+  background-image: url("../imagenes/fondos/wall8.jpeg");
+  background-repeat: repeat;
+}
+
 a:link{
-  cursor: url("/imagenes/edBus.cur"), pointer;
+  cursor: url("/imagenes/curs.cur"), pointer;
 }
 #logo-iron{
   width: 2%;
   margin-left: 0.7%;
-  cursor: url("/imagenes/edGo.cur"), pointer;
+  cursor: url("/imagenes/curs.cur"), pointer;
 
 }
 #logo-gitHub{
   width: 2.5%;
   margin-left: 0.7%;
-  cursor: url("/imagenes/edGo.cur"), pointer;
+  cursor: url("/imagenes/curs.cur"), pointer;
 
 }
 #logo-wiki{
   width: 2%;
   margin-left: 0.7%;
-  cursor: url("/imagenes/edGo.cur"), pointer;
+  cursor: url("/imagenes/curs.cur"), pointer;
 }
 #logo-student{
   width: 2%;
   margin-right: 2%;
   margin-left: 0.7%;
-  cursor: url("/imagenes/edGo.cur"), pointer;
+  cursor: url("/imagenes/curs.cur"), pointer;
 
 }
 
@@ -90,13 +112,13 @@ a:link{
   padding: 10px;
   width: 420px;
   transition: all 0.5s;
-  cursor: url("/imagenes/edNor.cur"), pointer;
+  cursor: url("/imagenes/curs.cur"), pointer;
   margin: 10px;
   border-radius: 60px;
 }
 
 #btn-invitado span {
-  cursor: url("/imagenes/edBus.cur"), pointer;
+  cursor: url("/imagenes/curs.cur"), pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
@@ -127,9 +149,9 @@ a:link{
   padding: 4%;
   background-image: linear-gradient(
     to bottom,
-    rgba(77, 237, 29, 0.239),
-    rgba(234, 236, 104, 0.236),
-    rgba(77, 237, 29, 0.21)
+    rgba(77, 237, 29, 0.078),
+    rgba(234, 236, 104, 0.351),
+    rgba(77, 237, 29, 0.038)
   );
   display: inline-flex;
   border-radius: 20px;
@@ -141,10 +163,10 @@ a:link{
 #create-acount {
   background-image: linear-gradient(
     to bottom,
-    rgba(38, 38, 236, 0.087),
+    rgba(38, 38, 236, 0.023),
     rgb(203, 218, 224),
     rgba(203, 218, 224, 0.973),
-    rgba(38, 38, 236, 0.171)
+    rgba(38, 38, 236, 0.043)
   );
   display: flex;
   border-radius: 30px;
@@ -191,7 +213,7 @@ a:link{
 
 
 .nav-btn span {
-  cursor: url("/imagenes/edBus.cur"), pointer;
+  cursor: url("/imagenes/curs.cur"), pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
@@ -209,7 +231,7 @@ a:link{
 
 .nav-btn-in span {
   font-family: Permanent Marker;
-  cursor: url("/imagenes/edBus.cur"), pointer;
+  cursor: url("/imagenes/curs.cur"), pointer;
   display: inline-block;
   position: relative;
   transition: 1s;
@@ -252,3 +274,52 @@ a:link{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   
 }
+
+
+
+
+
+/* eyes */
+/* 
+.eyes{
+  position: absolute;
+  top: 48%;
+  left: 5%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+.eye{
+  width: 50px;
+  height: 50px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(38, 38, 236, 0.153),
+    rgb(203, 218, 224),
+    rgba(203, 218, 224, 0.973),
+    rgba(38, 38, 236, 0.271)
+  );
+  display: inline-block;
+  margin: 3px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.ball{
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(
+    to bottom,
+    rgba(38, 38, 236, 0.023),
+    rgb(203, 218, 224),
+    rgba(203, 218, 224, 0.973),
+    rgba(38, 38, 236, 0.043)
+  );
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  border: 10px dotted rgb(27, 154, 188);
+} */
+/* eyes */
