@@ -16,12 +16,15 @@ const definitionSchema = new Schema ({
     description:{
         type:String,
         maxLength: [500, "Seguro que puedes hacerlo más corto..."],
-        trim: true
+        trim: true,
+        required: "bulala"
     },
     example:{
         type:String,
         maxLength: [500, "Haz ejemplos fáciles y más cortos..."],
-        trim: true
+        trim: true,
+        required: "bulala"
+
     },
 
     file: {

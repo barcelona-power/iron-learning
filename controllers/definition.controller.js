@@ -35,15 +35,15 @@ module.exports.createDefinition = (req, res, next) => {
   const data = req.body;
  
   Definition.create(data)
-  .then((definition) => {res.redirect("/create-definition")})
+  .then(() => res.redirect("/create-definition"))
   .catch((error) => {
     if(error instanceof mongoose.Error.ValidationError) {
-        res.render("definition/definition", {errors: error.errors, data});
+        res.render("definition/definition", {errors: error.errors, definition: data});
     } else {
         next(error);
     }
   })
-};
+}; 
 
 module.exports.delete = (req, res, next) => {
   Definition.findByIdAndDelete(req.params.id)
