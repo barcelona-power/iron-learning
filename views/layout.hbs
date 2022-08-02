@@ -17,34 +17,15 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette">
 </head>
-<body>
+<body class="overflow-ojos">
         {{{body}}}
-    <div class="eyes">
-      <div class="eye">
-        <div class="ball"></div>
-      </div>
 
-      <div class="eye">
-        <div class="ball"></div>
-      </div>
-    </div>
 
 
 
         <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.10/dist/clipboard.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <script>
-      let balls = document.getElementsByClassName("ball");
-      document.onmousemove = function(){
-        let x = event.clientX * 120/ window.innerWidth +"%";
-        let y = event.clientY * 120/ window.innerHeight +"%";
-        for(let i=0;i<2;i++){
-          balls[i].style.left= x;
-          balls[i].style.top= y;
-          balls[i].style.transform= "translate(-"+x+",-"+y+")";
-        }
-      }
-    </script>
+
 </body>
 </html>

@@ -280,12 +280,15 @@ a:link{
 
 
 /* eyes */
-/* 
+
+.eyes-fixed{
+  position: fixed;
+  width: 100%;
+  margin-top: 60px;
+}
 .eyes{
   position: absolute;
-  top: 48%;
-  left: 5%;
-  transform: translateY(-50%);
+  left: 40%;
   width: 100%;
   text-align: center;
 }
@@ -321,5 +324,9 @@ a:link{
   transform: translate(-50%,-50%);
   border-radius: 50%;
   border: 10px dotted rgb(27, 154, 188);
-} */
+}
 /* eyes */
+
+.overflow-ojos{
+  overflow-x:hidden;
+}

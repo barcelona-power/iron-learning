@@ -8,7 +8,7 @@
     <a id="logo-iron" href="https://www.ironhack.com/es"><img src="/imagenes/iron.png" alt="ups, logo? que logo=" width="100%"> </a>
     <a id="logo-gitHub" href="https://github.com/"><img src="/imagenes/gitHub.png" alt="ups, logo? que logo=" width="100%"> </a>
     <a id="logo-wiki" href="https://es.wikipedia.org/wiki/Wikipedia:Portada"><img src="/imagenes/wiki.png" alt="ups, logo? que logo=" width="100%"> </a>
-    <a id="logo-student" href="https://my.ironhack.com/cohorts"><img src="/imagenes/ironstudent.png" alt="ups, logo? que logo=" width="100%"> </a>
+    <a id="logo-student" href="https://my.ironhack.com"><img src="/imagenes/ironstudent.png" alt="ups, logo? que logo=" width="100%"> </a>
 
     <a class="navbar-brand nav-btn" href="/main"><span>IRON HACK MAIN PAGE</span></a>
     <button
@@ -57,3 +57,28 @@
     </div>
   </div>
 </nav>
+<div class="eyes-fixed">
+  <div class="eyes">
+      <div class="eye">
+        <div class="ball"></div>
+      </div>
+
+      <div class="eye">
+        <div class="ball"></div>
+      </div>
+    </div>
+</div>
+  
+      <script>
+      let balls = document.getElementsByClassName("ball");
+      document.onmousemove = function(){
+        let x = event.clientX * 60/ window.innerWidth +"%";
+        let y = event.clientY * 150/ window.innerHeight +"%";
+        console.log(event.clientX)
+        for(let i=0;i<2;i++){
+          balls[i].style.left= x;
+          balls[i].style.top= y;
+          balls[i].style.transform= "translate(-"+x+",-"+y+")";
+        }
+      }
+    </script>
