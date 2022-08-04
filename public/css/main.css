@@ -2,6 +2,9 @@
 body{
   cursor: url("/imagenes/curs0.cur"), pointer;
 }
+body, html{
+height: 5%;
+}
 /* a:link{
     cursor: url("/imagenes/edBus.cur"), pointer;
 }
@@ -18,9 +21,12 @@ input{
   background-repeat: no-repeat;
 }
 #body-def-img{
-  background-image: url("../imagenes/fondos/wall3.jpeg");
-  background-size: 100%;
-  background-repeat: no-repeat;
+  background-image: url("../imagenes/fondos/wall4.jpeg");
+    /* Full height */
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 120px;
 }
 #body-list-img{
   background-image: url("../imagenes/fondos/wall12.jpeg");
@@ -28,13 +34,10 @@ input{
   background-repeat: repeat;
 }
 #body-profile-img{
-  background-image: url("../imagenes/fondos/wall4.jpeg");
-  background-size: 100%;
-  background-repeat: repeat;
+  background: url("../imagenes/fondos/wall3.jpeg") repeat 100%;
 }
-.body-img{
-  background-image: url("../imagenes/fondos/wall8.jpeg");
-  background-repeat: repeat;
+.body-main-img{
+  background: url("../imagenes/fondos/wall8.jpeg") repeat;
 }
 
 a:link{
@@ -65,30 +68,10 @@ a:link{
 
 }
 
-.space-evenly {
-  padding: 130px;
-}
-#image1 {
-  position: absolute;
-  display: flex;
-  margin: 30px;
-  right: 30%;
-  top: 42.7%;
-}
-#image2 {
-  position: absolute;
-  display: flex;
-  margin: 30px;
-  right: 20%;
-  top: 43.5%;
-}
-#image3 {
-  position: absolute;
-  display: flex;
-  margin: 30px;
-  right: 6%;
-  top: 44.8%;
-}
+/* .space-evenly {
+  padding: 10px;
+} */
+
 #iniciar-sesión {
   font-size: 30px;
   font-family: Lobster;
@@ -160,6 +143,7 @@ a:link{
 #form-login{
   padding-left: 3%;
 }
+
 #create-acount {
   background-image: linear-gradient(
     to bottom,
@@ -186,6 +170,9 @@ a:link{
 
 #list-of {
   margin: 5%;
+}
+#main-page{
+  margin: 3% 4%;
 }
 .ua {
   display: flex;

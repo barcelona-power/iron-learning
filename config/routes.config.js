@@ -11,12 +11,12 @@ router.get("/list/:id", definition.exampleDefinition)
 router.post("/list/:id/delete", definition.delete)
 
 
-router.get("/", frontpage.frontpage)
 router.get("/main", database.listOfDatabase)
 router.get("/profile", user.profile)
 router.get("/list", definition.listOfDefinitions)
 
-router.post("/create", auth.register);
+router.get("/", auth.register);
+router.post("/", auth.doRegister);
 
 
 

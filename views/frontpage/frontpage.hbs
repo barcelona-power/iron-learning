@@ -1,14 +1,9 @@
-{{!-- <img id="image1" src="/imagenes/prado.png" width="18%" alt="Donde está carlos">
-<img id="image2" src="/imagenes/edgar.png" width="11%" alt="Donde está carlos">
-<img id="image3" src="/imagenes/julio.png" width="11%" alt="Donde está carlos">
- --}}
-
 
  {{!--  BUSCAR GRID PARA ALINEAR TODO
  
  MODULE 2 WEEK4 day 3 --}} 
 
-
+{{!-- <div class="row"></div>     para después ponerlo todo bien organizado --}}
 
 <body id="body-front-img">
     <a  href="/main" id="btn-invitado" role="button"> <span>Bienvenido! <br> Pulsa aquí para entrar como invitado</span> </a>
@@ -18,11 +13,6 @@
 
 
 
-{{#if errors}}
-<div class="alert alert-danger" role="alert">
-    Existen errores en tu registro, por favor comprueba tus datos!
-</div>
-{{/if}}
 
 
 
@@ -46,20 +36,25 @@
 {{!--  --}} 
 
 {{!--  poner .div class="row"??? --}} 
-<div id="create-acount" class="p-2  m-2 col-md-4">
-    <form method="POST" action="/create" class="row g-3">
+<div id="create-acount" class="p-2  m-2 col-md-4" >
+    <form method="POST" action="/" class="row g-3">
 
         <label id="iniciar-sesión" class="form-label">Registrarse</label>
-    <div class="d-flex col-md-8">
-          <div class="col-md-8">
+        {{#if errors}}
+<div class="alert alert-danger d-inline-block" role="alert">
+    Existen errores en tu registro, por favor comprueba tus datos!
+</div>
+{{/if}}
+            <div class="d-flex col-md-8">
+                <div class="col-md-8">
 
-              <label for="nickname"  class="form-label"> Nickname</label>
-              <div class="input-group">
-                  <span class="input-group-text" id="inputGroupPrepend2">*</span>
-                  <input id="nickname" type="text" name="Nickname" class="form-control {{#if error.id}}is-invalid{{/if}}"  aria-describedby="inputGroupPrepend2" placeholder="Tu apodo favorito">
-                  {{#if errors.id}}<div class=" invalid-feedback"> {{error.id}}</div>{{/if}}
-              </div>
-          </div>
+                    <label for="nickname"  class="form-label"> Nickname</label>
+                    <div class="input-group">
+                        <span class="input-group-text fa-fw">*</span>
+                        <input id="nickname" type="text" name="nickname"  class="form-control {{#if errors.nickname}}is-invalid{{/if}}" value="{{user.nickname}}"  placeholder="Tu apodo favorito" required>
+                        {{#if errors.nickname}}<div class=" invalid-feedback"> {{errors.nickname}}</div>{{/if}}
+                    </div>
+                </div>
 
         <div class="col-md-12 px-1">
             <div class="p-1 col-md-12">
@@ -67,8 +62,8 @@
             </div>
 
         <div class="input-group">
-            <span class="input-group-text" id="inputGroupPrepend2">-<|>-</span>
-            <select class="col-md-7" name="country">
+            <span class="input-group-text fa-fw"><|></span>
+            <select class="col-md-7" name="country" class="form-control {{#if errors.country}}is-invalid{{/if}}" value="{{user.country}}">
                 <option value="AL">Albania</option>
                     <option value="DE">Alemania</option>
                     <option value="AF">Afganistán</option>
@@ -304,6 +299,8 @@
                     <option value="ZM">Zambia</option>
                     <option value="ZW">Zimbabue</option>
                 </select>
+                        {{#if errors.country}}<div class=" invalid-feedback"> {{errors.country}}</div>{{/if}}
+
           </div>
         </div>
     </div>
@@ -312,8 +309,9 @@
           <div class="col-md-6">
               <label for="email"  class="form-label">Email</label>
               <div class="input-group">
-                  <span class="input-group-text" id="inputGroupPrepend2">@</span>
-                  <input type="email" name="email" class="form-control" id="email"  aria-describedby="inputGroupPrepend2" placeholder="Para mandarte spam ..."required>
+                  <span class="input-group-text fa-fw" id="inputGroupPrepend2">@</span>
+                  <input type="email" name="email"  id="email"class="form-control {{#if errors.email}}is-invalid{{/if}}" value="{{user.email}}"  aria-describedby="inputGroupPrepend2" placeholder="Para mandarte spam ..."required>
+                        {{#if errors.email}}<div class=" invalid-feedback"> {{errors.email}}</div>{{/if}}
               </div>
           </div>
 
@@ -321,19 +319,22 @@
           <div class="col-md-6 ps-3">
               <label for="password"  class="form-label">Contraseña</label>
               <div class="input-group">
-                  <span class="input-group-text" id="inputGroupPrepend2">#</span>
-                  <input type="text"  name="password" class="form-control" id="password"  aria-describedby="inputGroupPrepend2" placeholder="No te compliques.."required>
+                  <span class="input-group-text fa-fw" id="inputGroupPrepend2">#</span>
+                  <input type="text"  name="password"  id="password"  class="form-control {{#if errors.password}}is-invalid{{/if}}" value="{{user.password}}" aria-describedby="inputGroupPrepend2" placeholder="No te compliques.."required>
+                        {{#if errors.password}}<div class=" invalid-feedback"> {{errors.password}}</div>{{/if}}
               </div>
           </div>
       </div>
       {{!-- email y contraseña --}}
       <div class="col-md-7">
           <label for="validationDefault03" class="form-label">Conocimientos</label>
-          <textarea type="text" name="knowledge" class="form-control" id="validationDefault03"  placeholder="Algo sabrás..."  cols="4" rows="1"></textarea>
+          <textarea type="text" name="knowledge"  id="validationDefault03" class="form-control {{#if errors.knowledge}}is-invalid{{/if}}" value="{{user.knowledge}}" placeholder="Algo sabrás..."  cols="4" rows="1">{{user.knowledge}}</textarea>
+        {{#if errors.knowledge}}<div class=" invalid-feedback"> {{errors.knowledge}}</div>{{/if}}
+
       </div>
       <div class="col-md-4"> 
           <label for="validationDefault04" class="form-label">Preferencia por ...</label>
-          <select name="select-preference" size="1" class="form-select" id="validationDefault04" required>
+          <select name="preference1" size="1" class="form-select {{#if errors.preference1}}is-invalid{{/if}}" value="{{user.preference1}}" id="validationDefault04" >
               <option selected disabled >Rol preferido...</option>
               <option value="front">Front-end</option>
               <option value="back">Back-end</option>
@@ -342,6 +343,7 @@
               <option value="paladin">Paladín</option>
               <option value="viejo">Viejo gruñón</option>
           </select>
+        {{#if errors.preference1}}<div class=" invalid-feedback"> {{errors.preference1}}</div>{{/if}}
       </div>
       <div class="col-md-8 d-flex px-2  ">
           <input  type="radio" id="html" name="fav_language" value="HTML">
@@ -369,5 +371,9 @@
       </div>
     </form>
 </div>
+
 </body>
 
+
+
+{{!--  --}}

@@ -5,13 +5,16 @@ module.exports.register = (req, res, next) => {
     res.render(`frontpage/frontpage`)
 }
 
-module.exports.doRegister = (res, req, next) => {
-    const user = req.body;
+
+
+module.exports.doRegister = (req, res, next) => {
+ const user = req.body;
+
     User.create(user)
-    .then(user => res.redirect("/frontpage"))
+    .then(() => res.redirect("/"))
     .catch(error => {
         if (error instanceof mongoose.Error.ValidationError){
-            res.render('frontpage/frontpage', { user, errors: error.errors });
+            res.render("frontpage/frontpage", { user, errors: error.errors});
         } else {
             next(error);
         }

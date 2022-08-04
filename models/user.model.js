@@ -24,21 +24,22 @@ const userSchema = new Schema({
         trim: true,
         lowercase: true,
         unique: true,
-        match: [EMAIL_PATTERN, "Email no válido. Necesitas proporcionar otro mail"]
+        match: [EMAIL_PATTERN, "Email no válido. Ya tendrás cuenta o lo que sea, pero necesitas proporcionar otro mail"]
     },
     password: {
         type: String,
         required: "Necesitas proporcionar un mail. Es por tu seguridad y la nuestra",
-        match: [PW_PATTERN, "Necesitas al menos 5 caracteres"]
+        match: [PW_PATTERN, "Necesitas al menos 5 caracteres. No será muy seguro de todas formas, pero la vida es así..."],
     },
     knowledge: {
         type : String,
         required: "Algún conocimiento tendrás... ",
-        maxLength: [33, "Eso no existe"],
+        maxLength: [500, "Sabes demasiadas cosas... debes olvidar algo para aprender nueva información. Limítate a 500 caracteres"],
         trim: true
     }, 
     preference1: {
-        type:String
+        type:String,
+        required: "Será más facil si nos dices tus preferencias. Así te facilitamos la información adecuada"
     },
     preference2:{
         type:String
