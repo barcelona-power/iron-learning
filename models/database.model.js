@@ -28,7 +28,27 @@ const databaseSchema = new Schema ({
     },
     link: {
         type:String,
-        default: "https://media.makeameme.org/created/something-is-missing-6838a8d575.jpg",
+        default: "https://media.makeameme.org/created/something-is-missing-6838a8d575.jpg"  
+
+    },
+    example1: {
+        type:String, 
+
+    },
+    example2: {
+        type:String, 
+
+    },
+    example3: {
+        type:String, 
+        
+    },
+    example4: {
+        type:String, 
+
+    },
+    example5: {
+        type:String, 
 
     },
     author: {

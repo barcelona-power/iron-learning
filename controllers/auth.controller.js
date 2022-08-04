@@ -1,22 +1,39 @@
-const mongoose = require('mongoose')
-const { User } = require('../models')
+const mongoose = require("mongoose");
+const { User } = require("../models");
 
 module.exports.register = (req, res, next) => {
-    res.render(`frontpage/frontpage`)
-}
-
-
+  res.render(`frontpage/frontpage`);
+};
 
 module.exports.doRegister = (req, res, next) => {
- const user = req.body;
+  function renderWithErrors(errors) {
+    res.render("frontpage/frontpage", {
+      user: req.body,
+      errors,
+    });
+  }
 
-    User.create(user)
-    .then(() => res.redirect("/"))
-    .catch(error => {
-        if (error instanceof mongoose.Error.ValidationError){
-            res.render("frontpage/frontpage", { user, errors: error.errors});
-        } else {
-            next(error);
+  const { email, nickname } = req.body;
+  User.findOne({ $or: [{ email }, { nickname }] })
+    .then((user) => {
+      if (user) {
+        const errors = {};
+        if (user.email === email) {
+          errors.email = "Este correo electrónico ya existe!";
         }
+        if (user.nickname === nickname) {
+          errors.nickname = "Este nickname ya existe!";
+        }
+        renderWithErrors(errors);
+      } else {
+        return User.create(req.body).then((user) => res.redirect("/"));
+      }
     })
-}
+    .catch((error) => {
+      if (error instanceof mongoose.Error.ValidationError) {
+        renderWithErrors(error.errors);
+      } else {
+        next(error);
+      }
+    });
+};

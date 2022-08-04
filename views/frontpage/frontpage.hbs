@@ -320,7 +320,7 @@
               <label for="password"  class="form-label">Contraseña</label>
               <div class="input-group">
                   <span class="input-group-text fa-fw" id="inputGroupPrepend2">#</span>
-                  <input type="text"  name="password"  id="password"  class="form-control {{#if errors.password}}is-invalid{{/if}}" value="{{user.password}}" aria-describedby="inputGroupPrepend2" placeholder="No te compliques.."required>
+                  <input type="password"  name="password"  id="password"  class="form-control {{#if errors.password}}is-invalid{{/if}}" value="{{user.password}}" aria-describedby="inputGroupPrepend2" placeholder="No te compliques.."required>
                         {{#if errors.password}}<div class=" invalid-feedback"> {{errors.password}}</div>{{/if}}
               </div>
           </div>
@@ -346,17 +346,17 @@
         {{#if errors.preference1}}<div class=" invalid-feedback"> {{errors.preference1}}</div>{{/if}}
       </div>
       <div class="col-md-8 d-flex px-2  ">
-          <input  type="radio" id="html" name="fav_language" value="HTML">
+          <input  type="radio" id="html" name="preference2" value="HTML">
           <label  class="pe-3" for="html">HTML</label><br>
-          <input type="radio" id="css" name="fav_language" value="CSS">
+          <input type="radio" id="css" name="preference2" value="CSS">
           <label class="pe-3"for="css">CSS</label><br>
-          <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+          <input type="radio" id="javascript" name="preference2" value="JavaScript">
           <label class="pe-3" for="javascript">JScript</label>
-          <input type="radio" id="hbs" name="fav_language" value="hbs">
+          <input type="radio" id="hbs" name="preference2" value="hbs">
           <label class="pe-3" for="hbs">HBS</label><br>
-          <input type="radio" id="Tinder" name="fav_language" value="Tinder">
+          <input type="radio" id="Tinder" name="preference2" value="Tinder">
           <label class="pe-3" for="Tinder">Tinder</label><br>
-          <input type="radio" id="Netflix" name="fav_language" value="Netflix">
+          <input type="radio" id="Netflix" name="preference2" value="Netflix">
           <label class="pe-3" for="Netflix">CodeWars</label>
       </div>
       <div class="col-12">
@@ -377,3 +377,4 @@
 
 
 {{!--  --}}
+
