@@ -19,6 +19,10 @@ router.get("/", auth.register);
 router.post("/", auth.doRegister);
 
 
+router.get("/login", auth.login);
+router.post("/login", auth.doLogin);
+
+
 
 
 

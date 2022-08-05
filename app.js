@@ -8,7 +8,8 @@ app.set("views", __dirname + "/views");
 app.set("view engine", "hbs");
 app.use(express.static(`${__dirname}/public`));
 app.use(express.urlencoded({ extended: false }));
-
+const {session} = require('./config/session.config')
+app.use(session)
 
 require("./config/db.config")
 require("./config/hbs.config");

@@ -108,7 +108,7 @@ a:link{
 }
 
 #btn-invitado span:after {
-  content: url(../imagenes/ed1.png);
+  content: url(../imagenes/rod-1.png);
   position: absolute;
   opacity: 0;
   top: 0;
@@ -125,7 +125,7 @@ a:link{
 
 #btn-invitado:hover span:after {
   opacity: 1;
-  right: 0;
+  right: -150px;
 }
 
 #log-in {

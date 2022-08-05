@@ -26,7 +26,8 @@ module.exports.doRegister = (req, res, next) => {
         }
         renderWithErrors(errors);
       } else {
-        return User.create(req.body).then((user) => res.redirect("/"));
+        return User.create(req.body)
+        .then((user) => res.redirect("/login"));
       }
     })
     .catch((error) => {
@@ -37,3 +38,36 @@ module.exports.doRegister = (req, res, next) => {
       }
     });
 };
+
+module.exports.login = (req, res, next) => {
+  res.render("login/login")
+}
+
+module.exports.doLogin = (req, res, next) => {
+
+  function renderInvalidLogin() {
+    res.render("login/login", {
+      user: req.body,
+      errors: {email: 'Nickname o contraseña incorrectas'}
+    });
+  }
+
+  const {email, password} = req.body;
+  User.findOne({email})
+  .then(user =>{
+    if(!user){
+      renderInvalidLogin()
+    } else {
+      return user.checkPassword(password)
+      .then(match => {
+        if(match) {
+          req.session.userId = user.id;
+          res.redirect('/main')
+        } else {
+          renderInvalidLogin()
+        }
+      })
+    }
+  })
+  .catch(error => next(error))
+}

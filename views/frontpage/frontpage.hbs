@@ -9,33 +9,9 @@
     <a  href="/main" id="btn-invitado" role="button"> <span>Bienvenido! <br> Pulsa aquí para entrar como invitado</span> </a>
 
 
-<div id="log-in" class="p-2 m-2 col-md-4">
-
-
-
-
-
-
-    <form>
-        <label id="iniciar-sesión" for="exampleInputEmail1" class="form-label ">Iniciar Sesión</label>
-            <div class="d-flex" id="form-login">
-                <div class="col-md-6">
-                  <label for="exampleInputEmail1" class="form-label">Dirección de correo</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="IronStundent@bulala.com">
-                  <div id="emailHelp" class="form-text">Usaremos tu Email para espiar</div>
-                </div>
-                <div class="col-md-5  ps-3">
-                  <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="@ # $ % & ] *">
-                  <div id="emailHelp" class="form-text">Seguro que es bonita</div>
-                </div>
-            </div>
-      <button type="submit" class="btn btn-primary">Iniciar sesión</button>
-    </form>
-</div >
 {{!--  --}} 
 
-{{!--  poner .div class="row"??? --}} 
+
 <div id="create-acount" class="p-2  m-2 col-md-4" >
     <form method="POST" action="/" class="row g-3">
 
@@ -369,9 +345,13 @@
           <button class="btn btn-primary" type="submit">Crear cuenta</button>
           <input class="btn btn-terciary" type="reset">
       </div>
+ 
     </form>
-</div>
 
+</div>    
+ <div class="d-grid col-md-4">
+        <a  class="btn btn-secondary" href="/login"> <span>Ir a Login</span> </a>
+     </div>
 </body>
 
 

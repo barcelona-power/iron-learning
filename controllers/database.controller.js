@@ -10,8 +10,6 @@ module.exports.listOfDatabase = (req, res, next) => {
     if (category){
         criterial.category = new RegExp (category, "i");
     }
-
-
     Database.find(criterial)
     .then((databases) => {
         res.render("frontpage/main", {databases, name, category})

@@ -1,0 +1,25 @@
+<div id="log-in" class="p-2 m-2 col-md-4">
+
+
+    <form acton="/login" method="post">
+        <label id="iniciar-sesión" class="form-label ">Iniciar Sesión</label>
+            <div class="d-flex" id="form-login">
+                <div class="col-md-6">
+                  <label  class="form-label">Dirección de correo</label>
+                  <input type="email" name="email" value="{{user.email}}" class="form-control {{#if errors.email}}is-invalid{{/if}}" value="{{user.email}}" placeholder="IronStundent@bulala.com">
+                  <div id="emailHelp" class="form-text">Usaremos tu Email para espiar</div>
+                 {{#if errors.email}}<div class=" invalid-feedback"> {{errors.email}}</div>{{/if}}
+
+                </div>
+                <div class="col-md-5  ps-3">
+                  <label class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="@ # $ % & ] *">
+                  <div id="emailHelp" class="form-text">Seguro que es bonita</div>
+                </div>
+            </div>
+      <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+    </form>
+</div >
+         <div class="d-grid col-md-4">
+        <a  class="btn btn-secondary" href="/"> <span>Ir a la página de Registro</span> </a>
+      </div>
