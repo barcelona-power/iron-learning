@@ -1,7 +1,7 @@
 require("dotenv").config()
 const express = require("express");
 const logger = require("morgan");
-const createError = require("http-errors")
+const createError = require("http-errors");
 
 const app = express();
 
@@ -10,10 +10,11 @@ app.set("view engine", "hbs");
 app.use(logger("dev"));
 app.use(express.static(`${__dirname}/public`));
 app.use(express.urlencoded({ extended: false }));
-const {session} = require('./config/session.config')
-app.use(session)
+const {session, loadUser } = require('./config/session.config');
+app.use(session);
+app.use(loadUser);
 
-require("./config/db.config")
+require("./config/db.config");
 require("./config/hbs.config");
 
 const routes = require("./config/routes.config");
