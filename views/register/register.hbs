@@ -13,7 +13,9 @@
 
                     <label for="nickname"  class="form-label"> Nickname</label>
                     <div class="input-group">
-                        <span class="input-group-text fa-fw">*</span>
+                        {{!-- <span class="input-group-text fa-fw">*</span> --}}
+        <span class="input-group-text"><i class="fa fa-user fa-fw"></i></span>
+
                         <input id="nickname" type="text" name="nickname"  class="form-control {{#if errors.nickname}}is-invalid{{/if}}" value="{{user.nickname}}"  placeholder="Tu apodo favorito" required>
                         {{#if errors.nickname}}<div class=" invalid-feedback"> {{errors.nickname}}</div>{{/if}}
                     </div>
@@ -272,7 +274,8 @@
           <div class="col-md-6">
               <label for="email"  class="form-label">Email</label>
               <div class="input-group">
-                  <span class="input-group-text fa-fw" id="inputGroupPrepend2">@</span>
+        <span class="input-group-text"><i class="fa fa-envelope fa-fw"></i></span>
+
                   <input type="email" name="email"  id="email"class="form-control {{#if errors.email}}is-invalid{{/if}}" value="{{user.email}}"  aria-describedby="inputGroupPrepend2" placeholder="Para mandarte spam ..."required>
                         {{#if errors.email}}<div class=" invalid-feedback"> {{errors.email}}</div>{{/if}}
               </div>

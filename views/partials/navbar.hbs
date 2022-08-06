@@ -25,22 +25,21 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link nav-btn" href="/profile"> <span>Mi perfil</span></a>
+          {{#if currentUser}}
+          <a class="nav-link nav-btn" href="/profile"> <span>Mi perfil: {{currentUser.nickname}}</span></a>
+          {{/if}}
         </li>
         <li class="nav-item">
+          {{#if currentUser}}
           <a class="nav-link nav-btn" href="/create-definition"> <span>Crear definición</span></a>
+          {{/if}}
         </li>
         <li class="nav-item">
           <a class="nav-link nav-btn" href="/list"><span>Lista de las definiciones</span></a>
         </li>
 
       </ul>
-{{!-- <details>
-  <summary>Categoría</summary>
-<form action="GET" name="bulala">
-  <a href="/main">Bulala</a>
-</form>
-</details> --}}
+
 <form class="d-flex" method="GET" role="search" name="filterer"> 
 
       <select id="form-category"  name="category" class="form-select searcher"  size="1"  aria-label="select example"  onchange="this.form.submit()">
@@ -49,7 +48,6 @@
         <option  value="Librería" name="category">Librerías/Frameworks</option>
         <option value="Programa" name="category">Programas/aplicaciones</option>
       </select>
-      {{!-- <button class="mx-1" type="submit">Dale</button>   --}}
         <input id="form-word" class="form-select searcher" type="text" name="name" value="{{query.name}}" placeholder="Search" aria-label="Search" />
         <button class="btn btn-outline-success searcher" type="submit">Buscar</button>
       </form>

@@ -11,7 +11,7 @@ const session = expressSession({
     cookie: {
         secure: process.env.SESSION_SECURE === 'true',
         httpOnly: true,
-    
+        maxAge: 1000 * 60 * 60 * 24 * 14
     }
 });
 
@@ -21,6 +21,7 @@ const loadUser = (req, res, next) => {
     User.findById(userId)
     .then(user => {
         req.user = user;
+        res.locals.currentUser = user;
         next();
     })
     .catch(error => next(error));
