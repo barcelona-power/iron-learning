@@ -15,12 +15,12 @@ router.get("/main", database.listOfDatabase)
 router.get("/profile", user.profile)
 router.get("/list", definition.listOfDefinitions)
 
-router.get("/", auth.register);
-router.post("/", auth.doRegister);
+router.get("/register", auth.register);
+router.post("/register", auth.doRegister);
 
 
-router.get("/login", auth.login);
-router.post("/login", auth.doLogin);
+router.get("/", auth.login);
+router.post("/", auth.doLogin);
 
 
 

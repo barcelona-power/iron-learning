@@ -2,12 +2,12 @@ const mongoose = require("mongoose");
 const { User } = require("../models");
 
 module.exports.register = (req, res, next) => {
-  res.render(`frontpage/frontpage`);
+  res.render(`register/register`);
 };
 
 module.exports.doRegister = (req, res, next) => {
   function renderWithErrors(errors) {
-    res.render("frontpage/frontpage", {
+    res.render("register/register", {
       user: req.body,
       errors,
     });
@@ -27,7 +27,7 @@ module.exports.doRegister = (req, res, next) => {
         renderWithErrors(errors);
       } else {
         return User.create(req.body)
-        .then((user) => res.redirect("/login"));
+        .then((user) => res.redirect("/"));
       }
     })
     .catch((error) => {
@@ -40,18 +40,18 @@ module.exports.doRegister = (req, res, next) => {
 };
 
 module.exports.login = (req, res, next) => {
-  res.render("login/login")
+  res.render("frontpage/frontpage")
 }
 
 module.exports.doLogin = (req, res, next) => {
 
   function renderInvalidLogin() {
-    res.render("login/login", {
+    res.render("frontpage/frontpage", {
       user: req.body,
       errors: {email: 'Nickname o contraseña incorrectas'}
     });
   }
-
+console.log(req.body)
   const { email, password } = req.body;
   User.findOne({ email })
   .then(user =>{
