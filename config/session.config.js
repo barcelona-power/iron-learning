@@ -17,7 +17,7 @@ const session = expressSession({
 
 const loadUser = (req, res, next) => {
     const { userId } = req.session;
-    if(!userId){
+    if(userId){
     User.findById(userId)
     .then(user => {
         req.user = user;

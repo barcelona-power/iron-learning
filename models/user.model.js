@@ -59,12 +59,13 @@ userSchema.pre('save', function (next) {
           next();
         })
         .catch(error => next(error))
+    } else{
+        next();
     }
   })
   
 userSchema.methods.checkPassword = function (passwordToCheck) {
-    console.log('ptc', passwordToCheck)
-    console.log('p', this.password)
+
     return bcrypt.compare(passwordToCheck, this.password);
     
 }

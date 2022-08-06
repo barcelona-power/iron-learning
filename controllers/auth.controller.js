@@ -7,7 +7,7 @@ module.exports.register = (req, res, next) => {
 
 module.exports.doRegister = (req, res, next) => {
   function renderWithErrors(errors) {
-    res.render("register/register", {
+    res.status(400).render("register/register", {
       user: req.body,
       errors,
     });
