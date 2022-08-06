@@ -1,11 +1,13 @@
 require("dotenv").config()
 const express = require("express");
+const logger = require("morgan");
 const createError = require("http-errors")
 
 const app = express();
 
 app.set("views", __dirname + "/views");
 app.set("view engine", "hbs");
+app.use(logger("dev"));
 app.use(express.static(`${__dirname}/public`));
 app.use(express.urlencoded({ extended: false }));
 const {session} = require('./config/session.config')

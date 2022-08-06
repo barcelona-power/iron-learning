@@ -52,8 +52,8 @@ module.exports.doLogin = (req, res, next) => {
     });
   }
 
-  const {email, password} = req.body;
-  User.findOne({email})
+  const { email, password } = req.body;
+  User.findOne({ email })
   .then(user =>{
     if(!user){
       renderInvalidLogin()
