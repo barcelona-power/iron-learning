@@ -5,71 +5,34 @@
 
 {{!-- <div class="row"></div>     para después ponerlo todo bien organizado --}}
 
-<body id="body-front-img">
     <a  href="/main" id="btn-invitado" role="button"> <span>Bienvenido! <br> Pulsa aquí para entrar como invitado</span> </a>
+<img class="d-flex position-absolute p-5" src="/vids/a.gif" alt="" width="30%">
 
+<div class="body-front-img">
 
-{{!--  --}} 
+  {{!--  --}} 
+  
+  <div class="row justify-content-center" id="log-in-position">
+    <div id="log-in" class="p-4 m-2 col-lg-4">
+        <form acton="/" method="post">
+            <label id="iniciar-sesión" class="form-label ">Inicia Sesión... <span id="iniciar-info"> para obtener ventajas al navegar</span></label>
+                <div class="d-flex" id="form-login">
+                    <div class="col-md-7">
+                      <label  class="form-label">Dirección de correo</label>
+                      <input type="email" name="email"  class="form-control {{#if errors.email}}is-invalid{{/if}}" value="{{user.email}}" placeholder="IronStundent@bulala.com">
+                      <div id="emailHelp" class="form-text">Usaremos tu Email para espiar</div>
+                    {{#if errors.email}}<div class=" invalid-feedback"> {{errors.email}}</div>{{/if}}
 
-<div id="log-in" class="p-2 m-2 col-md-4">
-
-
-    <form acton="/" method="post">
-        <label id="iniciar-sesión" class="form-label ">Iniciar Sesión </label>
-            <div class="d-flex" id="form-login">
-                <div class="col-md-6">
-                  <label  class="form-label">Dirección de correo</label>
-                  <input type="email" name="email" value="{{user.email}}" class="form-control {{#if errors.email}}is-invalid{{/if}}" value="{{user.email}}" placeholder="IronStundent@bulala.com">
-                  <div id="emailHelp" class="form-text">Usaremos tu Email para espiar</div>
-                 {{#if errors.email}}<div class=" invalid-feedback"> {{errors.email}}</div>{{/if}}
-
+                    </div>
+                    <div class="col-md-5  ps-3">
+                      <label class="form-label">Contraseña</label>
+                      <input  name="password" type="password" class="form-control seeOrNot" id="exampleInputPassword1" placeholder="@ # $ % & ] *">
+                      <div id="emailHelp" class="form-text">Seguro que es bonita</div>
+                    </div>
                 </div>
-                <div class="col-md-5  ps-3">
-                  <label class="form-label">Contraseña</label>
-                  <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="@ # $ % & ] *">
-                  <div id="emailHelp" class="form-text">Seguro que es bonita</div>
-                </div>
-            </div>
-      <button type="submit" class="btn btn-primary">Iniciar sesión</button>
-    </form>
-</div >
-         <div class="d-grid col-md-4">
-        <a  class="btn btn-secondary" href="/register"> <span>Ir a la página de Registro</span> </a>
-      </div>
-
-
-
-<div class="row justify-content-center">
-  <div class="col-12 col-md-6 col-lg-4">
-    <h2>Register</h2>
-
-    <form action="/register" method="post">
-    
-      <div class="input-group mb-1">
-        <span class="input-group-text"><i class="fa fa-user fa-fw"></i></span>
-        <input type="text" name="name" value="{{ user.name }}" class="form-control {{#if errors.name }}is-invalid{{/if}}" placeholder="User name">
-        {{#if errors.name}}<div class="invalid-feedback">{{ errors.name }}</div>{{/if}}
-      </div>
-    
-      <div class="input-group mb-1">
-        <span class="input-group-text"><i class="fa fa-envelope fa-fw"></i></span>
-        <input type="text" name="email" value="{{ user.email }}" class="form-control {{#if errors.email }}is-invalid{{/if}}" placeholder="name@exaple.org">
-        {{#if errors.email}}<div class="invalid-feedback">{{ errors.email }}</div>{{/if}}
-      </div>
-    
-      <div class="input-group mb-1">
-        <span class="input-group-text"><i class="fa fa-lock fa-fw"></i></span>
-        <input type="password" name="password" class="form-control {{#if errors.password }}is-invalid{{/if}}" placeholder="User password">
-        {{#if errors.password}}<div class="invalid-feedback">{{ errors.password }}</div>{{/if}}
-      </div>
-    
-      <div class="d-grid">
-        <button class="btn btn-primary" type="submit">Register</button>
-      </div>
-    </form>
-    <hr>
-    <div class="d-grid">
-      <a class="btn btn-secondary" href="/login">Login</a>
-    </div>
+          <button type="submit" class="btn ms-5 ma-3 btn-primary ">Iniciar sesión</button>
+          <a  class="btn btn-secondary mx-5" href="/register"> <span>Regístrate!</span> </a>
+        </form>
+    </div >
   </div>
 </div>

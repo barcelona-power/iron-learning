@@ -34,7 +34,6 @@ app.use((error, req, res, next) => {
         .render(`errors/500`, { message, metadata })
 });
 
-
 const port = process.env.PORT || 3001;
 app.listen(port, () => console.log(`here we go!`))
 

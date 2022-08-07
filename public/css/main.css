@@ -15,10 +15,11 @@ select{
 input{
     cursor: url("/imagenes/edPreg.cur"), pointer;
 }  */
-#body-front-img{
+.body-front-img{
   background-image: url("../imagenes/fondos/wall5.jpeg");
   background-size: 100%;
   background-repeat: no-repeat;
+  padding-bottom: 20%;
 }
 #body-def-img{
   background-image: url("../imagenes/fondos/wall4.jpeg");
@@ -82,7 +83,7 @@ a:link{
   position: absolute;
   font-family: Lobster;
   text-decoration: none;
-  right: 30%;
+  align-items: center;
   border-radius: 4px;
   background-image: linear-gradient(
     to bottom,
@@ -96,7 +97,7 @@ a:link{
   width: 420px;
   transition: all 0.5s;
   cursor: url("/imagenes/curs.cur"), pointer;
-  margin: 10px;
+  margin: 1% 35%;
   border-radius: 60px;
 }
 
@@ -111,8 +112,7 @@ a:link{
   content: url(../imagenes/rod-1.png);
   position: absolute;
   opacity: 0;
-  top: 0;
-  top: 200px;
+  top: 80%;
   right: -900px;
   transition: 0.5s;
 }
@@ -125,16 +125,17 @@ a:link{
 
 #btn-invitado:hover span:after {
   opacity: 1;
-  right: -150px;
+  right: -600px;
 }
-
+#log-in-position{
+  padding-top: 23%;
+}
 #log-in {
-  padding: 4%;
   background-image: linear-gradient(
     to bottom,
-    rgba(77, 237, 29, 0.078),
-    rgba(234, 236, 104, 0.351),
-    rgba(77, 237, 29, 0.038)
+    rgba(77, 237, 29, 0.334),
+    rgba(234, 236, 104, 0.908),
+    rgba(77, 237, 29, 0.243)
   );
   display: inline-flex;
   border-radius: 20px;
@@ -316,4 +317,8 @@ a:link{
 
 .overflow-ojos{
   overflow-x:hidden;
+}
+
+#iniciar-info{
+  font-size: 18px;
 }
