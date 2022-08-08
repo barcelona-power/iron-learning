@@ -8,25 +8,23 @@
     Existen errores en tu registro, por favor comprueba tus datos!
 </div>
 {{/if}}
-            <div class="d-flex col-md-8">
-                <div class="col-md-8">
+    <div class="d-flex col-md-8">
+        <div class="col-md-8">
 
-                    <label for="nickname"  class="form-label"> Nickname</label>
-                    <div class="input-group">
-                        {{!-- <span class="input-group-text fa-fw">*</span> --}}
-        <span class="input-group-text"><i class="fa fa-user fa-fw"></i></span>
-
-                        <input id="nickname" type="text" name="nickname"  class="form-control {{#if errors.nickname}}is-invalid{{/if}}" value="{{user.nickname}}"  placeholder="Tu apodo favorito" required>
+            <label for="nickname"  class="form-label"> Nickname</label>
+            <div class="input-group">
+            <span class="input-group-text"><i class="fa fa-user fa-fw"></i></span>
+            <input id="nickname" type="text" name="nickname"  class="form-control {{#if errors.nickname}}is-invalid{{/if}}" value="{{user.nickname}}"  placeholder="Tu apodo favorito" required>
                         {{#if errors.nickname}}<div class=" invalid-feedback"> {{errors.nickname}}</div>{{/if}}
                     </div>
-                </div>
+        </div>
 
         <div class="col-md-12 px-1">
             <div class="p-1 col-md-12">
               <label for="validationDefaultUsername">País</label>
             </div>
 
-        <div class="input-group">
+            <div class="input-group">
             <span class="input-group-text fa-fw"><|></span>
             <select class="col-md-7" name="country" class="form-control {{#if errors.country}}is-invalid{{/if}}" value="{{user.country}}">
                 <option value="AL">Albania</option>
