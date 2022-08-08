@@ -11,7 +11,8 @@ module.exports.listOfDefinitions = (req, res, next) => {
   if (category){
     criterial.category = new RegExp (category, "i");
 }
-  Definition.find(criterial).then((definitions) => {
+  Definition.find(criterial)
+  .then((definitions) => {
     return Database.find(criterial)
       .then((databases) =>
         res.render("definition/list", { definitions, databases, name, category })
