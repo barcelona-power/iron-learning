@@ -236,6 +236,10 @@ a:link{
 }
 #form-category{
   font-size: 16px;
+  background-color: #e8feff;
+}
+#form-word{
+  background-color: #eff5bb;
 }
 .searcher{
   background-color: rgb(49, 18, 18);
@@ -356,7 +360,7 @@ a:link{
   margin-bottom: -4.1%;
   display: inline-block;
   position: absolute;
-  color: black
+  color: black;
   background-image: url("../imagenes/fondos/backg-def.webp");
   background-repeat: no-repeat;
   background-size: 100%;
