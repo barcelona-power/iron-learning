@@ -1,23 +1,26 @@
     {{> navbar}}
-<div id="body-profile-img">
-<hr>
-<hr>
-<hr>
-...Página perfil pendiente por codificar
-<hr>  
-dsalkjndls
+    {{#each definitions as |definition|}}
 
-<hr>        
-<hr>        
-<hr>        
-<hr>        
-<hr>        
-<hr>        
-<hr>        
-<hr>        
-<hr>        
-<hr>        
-<hr>      
-ds  
-</div>
-
+<div class="card card-box" style="max-width: 1540px;">
+  <div class="row ">
+    <div class="col-md-2">
+     <img src="{{definition.link}}" width="100%" class="" alt="..." class="d-flex">
+    </div>
+    <div class="col-md-8">
+ <h5 class="card-title d-inline-flex mx-5">Término: {{definition.name}}</h5>
+                    <h5 class="pads d-inline-flex mx-5">Categoría: {{definition.category}}</h5>
+                    <p class="pads ">Descripción: {{definition.description}}</p>
+                    <p class="pads">Ejemplo: {{definition.example}}</p>
+                    <p class="pads">Fuente: <a href="{{definition.link}}">{{definition.link}}</a> </p>
+                    <p class="pads">Autor: {{definition.author.nickname}}</p>
+                    {{#if ...currentUser}}
+                    
+                    <a href="profile/{{definition.id}}" class="btn btn-primary">Ver detalles</a>
+                <form action="/profile/{{definition.id}}/delete" method="post">
+                    <button type="submit">Borrar ejemplo</button>
+                    {{/if}}
+                </form>
+      </div>
+    </div>
+  </div>
+  {{/each}}

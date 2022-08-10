@@ -15,8 +15,8 @@
                 <select name="category"  class="form-control {{#if errors.category}} is-invalid {{/if}}" id="category" value="{{definition.category}}">
                     <option selected disabled value="">Selecciona la categoría...</option>
                     <option value="Internet">Internet</option>
-                    <option value="Library">Librería/Framework</option>
-                    <option value="Program">Programa/Aplicación</option>
+                    <option value="Librería/Framework">Librería/Framework</option>
+                    <option value="Programa/Aplicación">Programa/Aplicación</option>
                     <option value="Otros">Otros...</option>
                 </select>
             {{#if errors.category}}<div class="invalid-feedback">{{errors.category}}</div>{{/if}}
@@ -41,6 +41,12 @@
             <input type="file" value="{{definition.file}}" class="p-4 custom-file-input form-control {{#if errors.file}} is-invalid {{/if}}" type="file" id="file">
                     {{#if errors.file}}<div class="invalid-feedback">{{errors.file}}</div>{{/if}}
         </div>
+
+
+
+
+
+        
         <div class=" col-10">
         <label for="link" class="form-label">Fuente</label>
             <div class="input-group mb-2">

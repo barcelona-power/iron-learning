@@ -35,21 +35,21 @@
           {{/if}}
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-btn" href="/list"><span>Lista de las definiciones</span></a>
+          <a class="nav-link nav-btn" href="/list"><span>Definiciones de usuarios</span></a>
         </li>
 
       </ul>
 
-<form class="d-flex" method="GET" role="search" name="filterer"> 
+<form class="d-flex col-6" method="GET" role="search" name="filterer"> 
 
-      <select id="form-category"  name="category" class="form-select searcher"  size="1"  aria-label="select example"  onchange="this.form.submit()">
+      <select id="form-category"  name="category" class="form-select searcher "  size="1"  aria-label="select example"  onchange="this.form.submit()">
         <option selected disabled value="0">Por categoría...</option>
         <option value="Internet" name="category" >Internet</option>
         <option  value="Librería" name="category">Librerías/Frameworks</option>
         <option value="Programa" name="category">Programas/aplicaciones</option>
-      </select>
+      </select  >
         <input id="form-word" class="form-select searcher" type="text" name="name" value="{{query.name}}" placeholder="Search" aria-label="Search" />
-        <button class="btn btn-outline-success searcher" type="submit">Buscar</button>
+        <button class="btn button-74 searcher" type="submit">Buscar</button>
       </form>
     </div>
   </div>

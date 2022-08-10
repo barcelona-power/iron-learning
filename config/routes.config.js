@@ -15,6 +15,10 @@ router.post("/list/:id/delete",secure.isAuthenticated, definition.delete)
 
 router.get("/main", database.listOfDatabase)
 router.get("/profile", secure.isAuthenticated, user.profile)
+router.post("/profile/:id/delete", secure.isAuthenticated, user.delete)
+
+
+
 router.get("/list", secure.isAuthenticated, definition.listOfDefinitions)
 
 router.get("/register", auth.register);

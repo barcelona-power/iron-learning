@@ -15,13 +15,13 @@
   {{!--  --}} 
   
   <div class="row justify-content-center" id="log-in-position">
-    <div id="log-in" class="p-4 m-2 col-lg-3">
-        <form acton="/" method="post">
+    <div id="log-in" class="p-1 m-2 col-lg-4">
+        <form acton="/" method="post" class="p-3">
             <label id="iniciar-sesión" class="form-label ">Inicia Sesión... <span id="iniciar-info"> para obtener ventajas al navegar</span></label>
                 <div class="d-flex" id="form-login">
-                    <div class="col-md-7">
+                    <div class="col-md-7 ma-2">
                       <label  class="form-label">Dirección de correo</label>
-                      <input type="email" name="email"  class="form-control {{#if errors.email}}is-invalid{{/if}}" value="{{user.email}}" placeholder="IronStundent@bulala.com">
+                      <input type="email" name="email"  class="form-control  {{#if errors.email}}is-invalid{{/if}}" value="{{user.email}}" placeholder="IronStundent@bulala.com">
                       <div id="emailHelp" class="form-text">Usaremos tu Email para espiar</div>
                     {{#if errors.email}}<div class=" invalid-feedback"> {{errors.email}}</div>{{/if}}
 
@@ -32,9 +32,11 @@
                       <div id="emailHelp" class="form-text">Seguro que es bonita</div>
                     </div>
                 </div>
-                <div class="frame"></div>
-          <button type="submit" class="btn custom-btn btn-14 ">Iniciar sesión</button>
-          <a  class="button-49 btn btn-secondary mx-5" href="/register"> <span>Regístrate!</span> </a>
+                <div class="justify-content-center px-3">           
+                    <button type="submit" class="btn  mx-2 button-50 ">Iniciar sesión</button>
+                    <a  class="button-49 btn mx-2" href="/register"> <span>Regístrate!</span> </a>
+                </div>
+
         </form>
     </div >
   </div>

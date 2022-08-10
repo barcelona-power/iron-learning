@@ -350,3 +350,17 @@ a:link{
 .custom-file-input:active::before {
   background: -webkit-linear-gradient(top, #d4ea15, #0cc109);
 }
+.card-box{
+  font-family: Lobster;
+  margin-top: 5%;
+  margin-bottom: -4.1%;
+  display: inline-block;
+  position: absolute;
+  color: black
+  background-image: url("../imagenes/fondos/backg-def.webp");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.pads{
+  margin: 0px;
+}
