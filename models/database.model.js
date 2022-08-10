@@ -51,10 +51,6 @@ const databaseSchema = new Schema ({
         type:String, 
 
     },
-    author: {
-        type:String
-    }
-
 })
 
 const Database = mongoose.model("Database", databaseSchema);

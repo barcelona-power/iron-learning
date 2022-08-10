@@ -11,7 +11,7 @@
                     <p class="card-text">Descripción: {{definition.description}}</p>
                     <p class="card-text">Ejemplo: {{definition.example}}</p>
                     <p class="card-text">Fuente: <a href="{{definition.link}}">{{definition.link}}</a> </p>
-                    <p class="card-text">Autor: {{definition.author}}</p>
+                    <p class="card-text">Autor: {{definition.author.nickname}}</p>
                     <a href="list/{{definition.id}}" class="btn btn-primary">Ver detalles</a>
                 <form action="/list/{{definition.id}}/delete" method="post">
                     <button type="submit">Borrar ejemplo</button>

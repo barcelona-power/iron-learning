@@ -1,8 +1,8 @@
-<div class="body-front-img">  
-<div id="create-acount" class="p-2  m-2 col-md-4" >
+<div class="body-front-img row justify-content-center ">  
+<div id="create-acount" class="p-3  m-5 col-md-4" >
     <form method="POST" action="/register" class="row g-3">
 
-        <label id="iniciar-sesión" class="form-label">Registrarse</label>
+        <label id="iniciar-sesión" class="form-label px-4">Registrarse</label>
         {{#if errors}}
 <div class="alert alert-danger d-inline-block" role="alert">
     Existen errores en tu registro, por favor comprueba tus datos!
@@ -269,7 +269,7 @@
     </div>
 {{!-- email y contraseña --}}
       <div class="d-flex">
-          <div class="col-md-6">
+          <div class="col-md-5">
               <label for="email"  class="form-label">Email</label>
               <div class="input-group">
         <span class="input-group-text"><i class="fa fa-envelope fa-fw"></i></span>
@@ -280,7 +280,7 @@
           </div>
 
 
-          <div class="col-md-6 ps-3">
+          <div class="col-md-5 ps-3">
               <label for="password"  class="form-label">Contraseña</label>
               <div class="input-group">
                   <span class="input-group-text fa-fw" id="inputGroupPrepend2">#</span>
@@ -330,16 +330,15 @@
           </div>
       </div>
       <div class="col-12">
-          <button class="btn btn-primary" type="submit">Crear cuenta</button>
+          <button class=" btn btn-primary" type="submit">Crear cuenta</button>
           <input class="btn btn-terciary" type="reset">
+        <a  class="btn btn-secondary" href="/"> <span>Volver a Login</span> </a>
+
       </div>
  
     </form>
 
 </div>    
- <div class="d-grid col-md-4">
-        <a  class="btn btn-secondary" href="/"> <span>Ir a Login</span> </a>
-     </div>
 </div> 
 
 

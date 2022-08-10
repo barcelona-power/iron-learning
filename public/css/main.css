@@ -95,9 +95,9 @@ a:link{
   font-size: 28px;
   padding: 10px;
   width: 420px;
+  margin-top: 3%;
   transition: all 0.5s;
   cursor: url("/imagenes/curs.cur"), pointer;
-  margin: 1% 35%;
   border-radius: 60px;
 }
 
@@ -334,7 +334,7 @@ a:link{
 }
 .custom-file-input::before {
   content: 'Selecciona una imagen = = >  vale mas que mil palabras y ayudará a esclarecer tu explicación';
-  background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+  background: -webkit-linear-gradient(top, #e51818, #e8d1d1);
   border: 1px solid #999;
   border-radius: 3px;
   padding: 10px 13px;
@@ -348,5 +348,5 @@ a:link{
   border-color: black;
 }
 .custom-file-input:active::before {
-  background: -webkit-linear-gradient(top, #d4ea15, #f9f9f9);
+  background: -webkit-linear-gradient(top, #d4ea15, #0cc109);
 }

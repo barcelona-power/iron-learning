@@ -50,7 +50,9 @@ const definitionSchema = new Schema ({
 
     },
     author: {
-        type: String
+        type: Schema.Types.ObjectId,
+        required: true,
+        ref: "User",
     }
 
 })

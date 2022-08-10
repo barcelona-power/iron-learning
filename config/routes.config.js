@@ -7,10 +7,10 @@ const{ user, definition, database, auth } = require("../controllers");
 
 const secure = require('../middlewares/secure.mid');
 
-router.get("/create-definition",  definition.formDefinition);
-router.post("/create-definition", upload.single('image'),  definition.createDefinition)
-router.get("/list/:id", definition.exampleDefinition)
-router.post("/list/:id/delete", definition.delete)
+router.get("/create-definition", secure.isAuthenticated, definition.formDefinition);
+router.post("/create-definition", upload.single('image'), secure.isAuthenticated, definition.createDefinition)
+router.get("/list/:id", secure.isAuthenticated, definition.exampleDefinition)
+router.post("/list/:id/delete",secure.isAuthenticated, definition.delete)
 
 
 router.get("/main", database.listOfDatabase)

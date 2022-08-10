@@ -3,17 +3,21 @@ const { Definition, Database } = require("../models");
 
 module.exports.listOfDefinitions = (req, res, next) => {
   const { name, category } = req.query;
-  const criterial = {};
+  const criteria = {};
+  if (!req.user.admin) {
+    criteria.author = req.user.id
+  }
 
   if (name) {
-    criterial.name = new RegExp(name, "i");
+    criteria.name = new RegExp(name, "i");
   }
   if (category){
-    criterial.category = new RegExp (category, "i");
+    criteria.category = new RegExp (category, "i");
 }
-  Definition.find(criterial)
+  Definition.find(criteria)
+  .populate("author")
   .then((definitions) => {
-    return Database.find(criterial)
+    return Database.find(criteria)
       .then((databases) =>
         res.render("definition/list", { definitions, databases, name, category })
       )
@@ -33,8 +37,11 @@ module.exports.formDefinition = (req, res, next) => {
 };
 
 module.exports.createDefinition = (req, res, next) => {
-  const data = req.body;
- 
+  const data = {
+    ...req.body,
+    author: req.user.id
+  }
+
   Definition.create(data)
   .then(() => res.redirect("/create-definition"))
   .catch((error) => {

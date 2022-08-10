@@ -47,6 +47,9 @@ const userSchema = new Schema({
     preference2:{
         type:String
     },
+    admin: {
+        type: Boolean,
+    }
 })
 
 
