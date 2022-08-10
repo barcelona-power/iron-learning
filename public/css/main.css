@@ -337,8 +337,8 @@ a:link{
   visibility: hidden;
 }
 .custom-file-input::before {
-  content: 'Selecciona una imagen = = >  vale mas que mil palabras y ayudará a esclarecer tu explicación';
-  background: -webkit-linear-gradient(top, #e51818, #e8d1d1);
+  content: '        Selecciona una imagen.  Ayudará a esclarecer tu explicación       ';
+  background: -webkit-linear-gradient(top, #266ff7, #d3cff8);
   border: 1px solid #999;
   border-radius: 3px;
   padding: 10px 13px;
