@@ -41,12 +41,10 @@ const definitionSchema = new Schema ({
             },
             message: image => `URL no valida`
         }
-
-
     },
     link: {
         type: String,
-        //default: "https://media.makeameme.org/created/something-is-missing-6838a8d575.jpg",
+        default: "https://media.makeameme.org/created/something-is-missing-6838a8d575.jpg",
 
     },
     author: {

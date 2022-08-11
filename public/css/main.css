@@ -35,8 +35,10 @@ input{
   background-repeat: repeat;
 }
 #body-profile-img{
-  background: url("../imagenes/fondos/wall3.jpeg") repeat 100%;
+  background: url("../imagenes/fondos/body-back.webp") repeat 100%;
+  background-size: 100%;
 }
+
 .body-main-img{
   background: url("../imagenes/fondos/wall8.jpeg") repeat;
 }
@@ -255,17 +257,7 @@ a:link{
   margin-right: 20%;
 }
 
-.card-img-top{
-  border: 1px solid #ddd;
-  border-radius: 15px;
-  padding: 20px;
-  background-image: linear-gradient(to bottom, rgb(187, 127, 214) 0%, rgb(75, 21, 100) 100%), linear-gradient(to bottom, rgb(161, 223, 241) 0%, rgb(37, 199, 248) 100%);
-  background-clip: content-box, padding-box;
-  width: 50%;
-  height: 50%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  
-}
+
 
 
 
@@ -353,18 +345,4 @@ a:link{
 }
 .custom-file-input:active::before {
   background: -webkit-linear-gradient(top, #d4ea15, #0cc109);
-}
-.card-box{
-  font-family: Lobster;
-  margin-top: 5%;
-  margin-bottom: -4.1%;
-  display: inline-block;
-  position: absolute;
-  color: black;
-  background-image: url("../imagenes/fondos/backg-def.webp");
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-.pads{
-  margin: 0px;
 }
