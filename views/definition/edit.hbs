@@ -1,14 +1,62 @@
-<h1>Editar información</h1>
+<div id="body-def-img">
+
+<form action="/profile/{{definition.id}}" method="POST" enctype="multipart/form-data">
+    <div class="definitions">
+        <div class="d-flex" >
+            <div class=" content-container col-5">
+                    <label for="name" class="form-label">Concepto </label>
+                    <input type="text"  class="form-control {{#if errors.name}} is-invalid {{/if}}" name="name" id="name" value="{{definition.name}}"> 
+                    {{#if errors.name}}<div class="invalid-feedback">{{errors.name}}</div>{{/if}}
+            </div>
+
+            <div class=" content-container col-5">
+                <label for="category" class="form-label">Categoría</label>
+                <select name="category"  class="form-control {{#if errors.category}} is-invalid {{/if}}" id="category" value="{{definition.category}}">
+                    <option selected disabled value="">Selecciona la categoría...</option>
+                    <option value="Internet">Internet</option>
+                    <option value="Librería/Framework">Librería/Framework</option>
+                    <option value="Programa/Aplicación">Programa/Aplicación</option>
+                    <option value="Otros">Otros...</option>
+                </select>
+            {{#if errors.category}}<div class="invalid-feedback">{{errors.category}}</div>{{/if}}
+            </div>
+        </div>
+
+        <div class="content-container col-10">
+            <label for="description" class="form-label">Definición</label>
+            <textarea rows="3" name="description" id="description" class="form-control {{#if errors.description}} is-invalid {{/if}}" value="{{definition.description}}">{{definition.description}}</textarea>
+                    {{#if errors.description}}<div class="invalid-feedback">{{errors.description}}</div>{{/if}}
+        </div>
+
+        
+        <div class=" content-container col-10">
+            <label for="example" class="form-label">Ejemplo</label>
+            <textarea rows="3" name="example" id="example" class="form-control {{#if errors.example}} is-invalid {{/if}}" value="{{definition.example}}">{{definition.example}}</textarea>
+                    {{#if errors.example}}<div class="invalid-feedback">{{errors.example}}</div>{{/if}} 
+        </div>
+        <div class="px-5 col-10">
+            {{!-- <input type="file" class="custom-file-input"> --}}
+            <label for="file" class=" form-label">Archivo</label>
+            <input type="file" value="{{definition.file}}" class="p-4 custom-file-input form-control {{#if errors.file}} is-invalid {{/if}}" type="file" id="file">
+                    {{#if errors.file}}<div class="invalid-feedback">{{errors.file}}</div>{{/if}}
+        </div>
 
 
-<p>{{definition.name}}</p>
-<p>{{definition.description}}</p>
-<p>{{definition.example}}</p>
-<p>{{definition.link}}</p>
-<p>{{definition.author}}</p>
-<p>{{definition.description}}</p>
-<form action="/list/{{definition.id}}/delete" method="post">
-    <button type="submit">Borrar ejemplo</button>
-</form>
-<a href="/list">Volver</a>
 
+
+
+        
+        <div class=" col-10">
+        <label for="link" class="form-label">Fuente</label>
+            <div class="input-group mb-2">
+                <span for="link" class="input-group-text">www.bulala.com/tutut</span>
+                <input type="text" name="link" value="{{definition.link}}" class="form-control {{#if errors.link}} is-invalid {{/if}}" id="link" placeholder="Proporciona un link que ayude con tu aportación" >
+                    {{#if errors.link}}<div class="invalid-feedback">{{errors.link}}</div>{{/if}}
+            </div>
+        </div>
+            <button type="submit" class="btn btn-primary p-3 col-10">Editar ejemplo</button>
+            <a href="/profile" class="btn btn-primary p-3 col-10"> volver al perfil</a>
+    </div>
+    </form>
+
+</div>

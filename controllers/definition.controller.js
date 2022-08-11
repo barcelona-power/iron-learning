@@ -37,10 +37,10 @@ module.exports.formDefinition = (req, res, next) => {
 };
 
 module.exports.createDefinition = (req, res, next) => {
-  const data = {
+  const data = ({name, category, description, example, file, link} = {
     ...req.body,
     author: req.user.id
-  }
+  })
 
   Definition.create(data)
   .then(() => res.redirect("/create-definition"))
@@ -58,3 +58,37 @@ module.exports.delete = (req, res, next) => {
     .then(() => {res.redirect("/list")})
     .catch((error) => next(error))
 };
+
+
+
+
+
+module.exports.edit = (req, res, next) => {
+  Definition.findById(req.params.id)
+  .then(definition => {
+    if(definition) {
+      res.render("definition/edit", {definition})
+    } else{
+      res.redirect("/profile")
+    }
+  })
+  .catch((error) => next(error))
+}
+
+module.exports.doEdit = (req, res, next) => {
+  const data = ({name, category, description, example, file, link} = {
+    ...req.body,
+    author: req.user.id
+  })
+  Definition.findByIdAndUpdate(req.params.id, data)
+  .then(data => {
+    res.redirect("/profile")
+  })
+  .catch((error=> {
+    if(error instanceof mongoose.Error.ValidationError) {
+      res.render("definition/definition", {errors: error.errors, definition: data});
+  } else {
+      next(error);
+  }
+  }) )
+}

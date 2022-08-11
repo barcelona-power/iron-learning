@@ -2,9 +2,7 @@
 body{
   cursor: url("/imagenes/curs0.cur"), pointer;
 }
-body, html{
-height: 5%;
-}
+
 /* a:link{
     cursor: url("/imagenes/edBus.cur"), pointer;
 }
@@ -35,8 +33,19 @@ input{
   background-repeat: repeat;
 }
 #body-profile-img{
-  background: url("../imagenes/fondos/body-back.webp") repeat 100%;
+  background: url("../imagenes/fondos/body-back.webp") repeat;
   background-size: 100%;
+}
+#body-profile-top-img{
+  background: url("../imagenes/fondos/body-back.webp") repeat;
+  background-size: 100%;
+  margin-bottom: -5%;
+  margin-top:3%;
+  color: white;
+  font-family: Permanent Marker;
+  text-shadow: 2px 2px rgb(9, 187, 232);
+  text-shadow: -2px -2px rgb(25, 31, 217);
+  text-align: center;
 }
 
 .body-main-img{
