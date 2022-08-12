@@ -1,7 +1,7 @@
 .card-box{
   font-family: Lobster;
   margin-top: 5%;
-  margin-bottom: -4.1%;
+  margin-bottom: -3.2%;
   padding: 10px 0px;
   max-width: 100%;
   width: initial;
@@ -93,11 +93,18 @@
   text-align: center;
 }
 #text-end-profile{
-  margin-top: 100px;
+  margin-top: 120px;
   font-family: 'Times New Roman', Times, serif;
   color: white;
   background-color: rgba(0, 0, 0, 0.31);
   text-shadow: 2px 2px rgb(0, 2, 3);
   padding: 20px 20px 10px 20px;
   text-align: center;
+}
+
+#never{
+  display: flex;
+  position: absolute;
+  top: 40%;
+  left: 40%;
 }

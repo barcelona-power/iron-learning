@@ -13,8 +13,8 @@ router.post("/create-definition", upload.single('image'), secure.isAuthenticated
 router.get("/list", secure.isAuthenticated, definition.listOfDefinitions)
 router.post("/list/:id/delete",secure.isAuthenticated, definition.delete)
 
-
 router.get("/main", database.listOfDatabase)
+router.get("/never", user.never)
 router.post("/profile/:id/delete", secure.isAuthenticated, user.delete)
 router.get("/profile/:id",  secure.isAuthenticated, definition.edit)
 router.post("/profile/:id",  secure.isAuthenticated, definition.doEdit)

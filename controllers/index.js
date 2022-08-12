@@ -4,3 +4,4 @@ module.exports = {
     database: require("./database.controller"),
     auth: require("./auth.controller")
 }
+

@@ -27,3 +27,8 @@ module.exports.profile = (req, res, next) => {
       .then(() => {res.redirect("/profile")})
       .catch((error) => next(error))
   };
+
+
+  module.exports.never =(req, res, next) => {
+    res.render("users/never")
+}
