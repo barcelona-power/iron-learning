@@ -52,29 +52,35 @@ a:link{
 }
 #logo-iron{
   width: 2%;
-  margin-left: 0.7%;
   cursor: url("/imagenes/curs.cur"), pointer;
 
 }
 #logo-gitHub{
   width: 2.5%;
-  margin-left: 0.7%;
   cursor: url("/imagenes/curs.cur"), pointer;
 
 }
 #logo-wiki{
   width: 2%;
-  margin-left: 0.7%;
   cursor: url("/imagenes/curs.cur"), pointer;
 }
 #logo-student{
   width: 2%;
-  margin-right: 2%;
-  margin-left: 0.7%;
+  margin-right: 1%;
+  margin-left: 0.3%;
   cursor: url("/imagenes/curs.cur"), pointer;
 
 }
+.zoom-logo {
+  transition: transform .2s;
+}
 
+.zoom-logo:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 1.5-8 */
+  transform: scale(1.5);
+  z-index: 4;
+}
 /* .space-evenly {
   padding: 10px;
 } */
@@ -212,15 +218,16 @@ a:link{
   position: relative;
   transition: 0.5s;
   font-family: Permanent Marker;
-
-  font-size: 65%;
+  font-size:74%;
+  
 }
 
 .nav-btn:hover span {
-  padding-right: 5px;
-  font-size: 80%;
+  font-size: 110%;
   transform: 1s;
   font-family: Permanent Marker;
+  text-shadow: 2px 2px rgb(255, 255, 255);
+
 }
 
 .nav-btn-in span {
@@ -234,18 +241,35 @@ a:link{
 }
 
 .nav-btn-in:hover span {
-  padding-right: 5px;
   font-size: 80%;
   transform: 2s;
   font-family: Permanent Marker;
   color:rgb(0, 0, 0)
 }
+
+
+
 #form-category{
-  font-size: 16px;
-  background-color: #e8feff;
+  font-size: 15px;
+  background: -webkit-linear-gradient(top, #8cade9, #ffffff);
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+  border-style: solid double ;
+  border-width: 4px;
 }
+
 #form-word{
-  background-color: #eff5bb;
+  font-size: 15px;
+  font-weight: 900;
+  background: -webkit-linear-gradient(top, #0b0b0b, #dde1ea, #dbe0e9, #000000);
+  color: rgb(0, 10, 12);
+  text-shadow: -2.5px -0.5px rgb(229, 11, 11);
+  text-shadow: -1px -1px rgb(223, 27, 27);
+  text-shadow: 1px 1px white;
+  text-shadow: 1.3px 1.3px white;
+  border-radius: 20px;
+  border-style: solid double ;
+  border-width: 4px;
 }
 .searcher{
   background-color: rgb(49, 18, 18);
@@ -349,4 +373,33 @@ a:link{
 }
 .custom-file-input:active::before {
   background: -webkit-linear-gradient(top, #d4ea15, #0cc109);
+}
+
+.card-text-col1{
+  background: -webkit-linear-gradient(top, #97ea7043, #ffffff, #97ea7043);
+  font-size: 20px;
+  font-family: Courgette;
+  padding: -33px;
+  margin: -10px;
+}
+.card-text-col2{
+  background: -webkit-linear-gradient(top, #f29b6c37, #ffffff, #f29b6c37);
+  font-size: 20px;
+  font-family: Courgette;
+  padding: -33px;
+  margin: -10px;
+}
+.card-text-col3{
+  background: -webkit-linear-gradient(top, #709bea2c, #ffffff, #709bea2c);
+  font-size: 20px;
+  font-family: Courgette;
+  padding: -33px;
+  margin: -10px;
+}
+.card-text-col4{
+  background: -webkit-linear-gradient(top, #b9ea7031, #ffffff, #b9ea7031);
+  font-size: 20px;
+  font-family: Courgette;
+  padding: -33px;
+  margin: -10px;
 }

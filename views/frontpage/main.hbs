@@ -1,52 +1,54 @@
     {{> navbar}}
- 
-        
-<div class="body-main-img"  >
-    <div class="row " id="main-page">
-        {{#each databases as |database|}}
-            <div class="col-3">
-                <div class="card mt-5">
-
-                    <img src="{{database.link}}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Término: {{database.name}}</h5>
-                        <h5 class="card-title">Categoría: {{database.category}}</h5>
-                        <p class="card-text">Descripción: {{database.description}}</p>
-                        <p class="card-text">Ejemplo: {{database.example}}</p>
-                        <p class="card-text">Fuente: <a href="{{database.link}}">{{database.link}}</a> </p>
-                        <p class="card-text">Autor: {{database.author}}</p>
-                        <a href="list/{{database.id}}" class="btn btn-primary">Ver detalles</a>
-                    </div>
-                    
-                </div>
-<div>
-<img src="/imagenes/iron.png" width="20%" alt="lala" type="button" class="" data-bs-toggle="collapse" data-bs-target="#{{database.name}}{{database.example4}}" aria-expanded="false" aria-controls="collapseExample">
-<img src="/imagenes/iconos/cine.png" width="33%" alt="lala" type="button" class="" data-bs-toggle="collapse" data-bs-target="#{{database.name}}{{database.example1}}" aria-expanded="false" aria-controls="collapseExample">
-<img src="/imagenes/iconos/cocina.png" width="18%"  alt="lala" type="button" class="" data-bs-toggle="collapse" data-bs-target="#{{database.name}}{{database.example2}}" aria-expanded="false" aria-controls="collapseExample">
-<img src="/imagenes/iconos/deporte.png" width="20%"  alt="lala" type="button" class="" data-bs-toggle="collapse" data-bs-target="#{{database.name}}{{database.example3}}" aria-expanded="false" aria-controls="collapseExample">
-    
-</div>
-<div class="collapse" id="{{database.name}}{{database.example4}}">
+ <div id="body-profile-img">
+ {{#each databases as |database|}}
+<div class="body-profile  -img">
+<div class="card card-box">
+  <div class="row ">
+    <div class="col-md-2 img-boxing zoom">
+   <a href="{{database.link}}"><img src="{{database.link}}" width="100%" height="100%" class="" alt="..." class="d-flex"> </a> 
+    </div>
+    <div class="col-md-8">
+                    <h5 class="card-title d-inline-flex mx-3 ">Término: <span class="def-term"> {{database.name}}</span></h5>               
+                    <h5 class="pads d-inline-flex mx-3">Categoría:  <span class="def-term"> {{database.category}}</span></h5>
+                    <div id="text-desc-container">
+                        <div class="shadow-text1">
+                          <p class="pads"><span class="shadow-text-title1">Descripción:</span>   <span class="def-term-text">{{database.description}}</span> </p>
+                        </div>
+                        <div class="shadow-text2">
+                          <p class="pads"><span class="shadow-text-title2">Ejemplo:</span>   <span class="def-term-text">{{database.example}}</span> </p>
+                        </div>  
+                    </div>           
+                    <img src="/imagenes/iron.png" width="5%" alt="lala" type="button" class="" data-bs-toggle="collapse" data-bs-target="#{{database.name}}{{database.example4}}" aria-expanded="false" aria-controls="collapseExample">
+<img src="/imagenes/iconos/cine.png" width="8%" alt="lala" type="button" class="" data-bs-toggle="collapse" data-bs-target="#{{database.name}}{{database.example1}}" aria-expanded="false" aria-controls="collapseExample">
+<img src="/imagenes/iconos/cocina.png" width="4.5%"  alt="lala" type="button" class="" data-bs-toggle="collapse" data-bs-target="#{{database.name}}{{database.example2}}" aria-expanded="false" aria-controls="collapseExample">
+<img src="/imagenes/iconos/deporte.png" width="6%"  alt="lala" type="button" class="" data-bs-toggle="collapse" data-bs-target="#{{database.name}}{{database.example3}}" aria-expanded="false" aria-controls="collapseExample">
+                </form>
+      </div>
+    </div>
+  </div>
+<div class="collapse card-text-box" id="{{database.name}}{{database.example4}}">
   <div class="card card-body">
-<p class="card-text">Ironhack Definition: {{database.example}}">{{database.example}} </p>
+<p class="card-text-col1"><span style="font-weight:bolder; font-family: Permanent Marker" >Ironhack dice:</span> {{database.example}}">{{database.example}} </p>
   </div>
 </div>
-<div class="collapse" id="{{database.name}}{{database.example1}}">
+<div class="collapse card-text-box" id="{{database.name}}{{database.example1}}">
   <div class="card card-body">
-<p class="card-text">Ejemplo: <a href="{{database.example}}">{{database.example}}</a> </p>
+<p class="card-text-col2"><span style="font-weight:bolder; font-family: Permanent Marker" >Cine:</span> <a href="{{database.example}}">{{database.example}}</a> </p>
   </div>
 </div>
-<div class="collapse " id="{{database.name}}{{database.example2}}">
+<div class="collapse  card-text-box" id="{{database.name}}{{database.example2}}">
   <div class="card card-body">
-<p class="card-text">Ejemplo: {{database.category}}
+<p class="card-text-col3"><span style="font-weight:bolder; font-family: Permanent Marker" >Cocina:</span> {{database.category}}
   </div>
 </div>
-<div class="collapse " id="{{database.name}}{{database.example3}}">
+<div class="collapse  card-text-box" id="{{database.name}}{{database.example3}}">
   <div class="card card-body">
-<p class="card-text">Ejemplo: {{database.name}}
+<p class="card-text-col4"> <span style="font-weight:bolder; font-family: Permanent Marker" >Deporte:</span>  {{database.name}}
   </div>
 </div>
             </div>
         {{/each}}
-    </div>
-</div>
+
+
+ </div>
+   
