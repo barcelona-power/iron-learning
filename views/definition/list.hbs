@@ -4,7 +4,7 @@
     {{#each definitions as |definition|}}
         <div class="col-10">
             <div class="card mb-4">
-                <img src="{{definition.link}}" class="card-img-top" alt="...">
+                <img width="1%" src="{{definition.link}}"  class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Término: {{definition.name}}</h5>
                     <h5 class="card-title">Categoría: {{definition.category}}</h5>
@@ -13,7 +13,6 @@
                     <p class="card-text">Fuente: <a href="{{definition.link}}">{{definition.link}}</a> </p>
                     <p class="card-text">Autor: {{definition.author.nickname}}</p>
                     {{#if ...currentUser.admin}}
-                    <a href="list/{{definition.id}}" class="btn btn-primary">Ver detalles</a>
                 <form action="/list/{{definition.id}}/delete" method="post">
                     <button type="submit">Borrar ejemplo</button>
                     {{/if}}

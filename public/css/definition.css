@@ -75,3 +75,29 @@
 #text-desc-container{
   background-color: rgba(255, 255, 255, 0.306);
 }
+
+#text-welcome-user{
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.31);
+  text-shadow: 2px 2px rgb(0, 2, 3);
+  padding: 0px 20px 30px 20px;
+  font-size: 22px;
+}
+
+#text-welcome{
+  color: white;
+  font-family: Permanent Marker;
+  text-shadow: 2px 2px rgb(9, 187, 232);
+  text-shadow: -2px -2px rgb(19, 186, 233);
+  text-align: center;
+}
+#text-end-profile{
+  margin-top: 100px;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.31);
+  text-shadow: 2px 2px rgb(0, 2, 3);
+  padding: 20px 20px 10px 20px;
+  text-align: center;
+}

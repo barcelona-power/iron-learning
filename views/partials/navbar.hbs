@@ -71,7 +71,6 @@
       document.onmousemove = function(){
         let x = event.clientX * 60/ window.innerWidth +"%";
         let y = event.clientY * 150/ window.innerHeight +"%";
-        console.log(event.clientX)
         for(let i=0;i<2;i++){
           balls[i].style.left= x;
           balls[i].style.top= y;

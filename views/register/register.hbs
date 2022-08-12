@@ -291,8 +291,8 @@
       </div>
       {{!-- email y contraseña --}}
       <div class="col-md-7">
-          <label for="validationDefault03" class="form-label">Conocimientos</label>
-          <textarea type="text" name="knowledge"  id="validationDefault03" class="form-control {{#if errors.knowledge}}is-invalid{{/if}}" value="{{user.knowledge}}" placeholder="Algo sabrás..."  cols="4" rows="1">{{user.knowledge}}</textarea>
+          <label for="validationDefault03" class="form-label">Aficiones</label>
+          <textarea type="text" name="knowledge"  id="validationDefault03" class="form-control {{#if errors.knowledge}}is-invalid{{/if}}" value="{{user.knowledge}}" placeholder="Me gusta..."  cols="4" rows="1">{{user.knowledge}}</textarea>
         {{#if errors.knowledge}}<div class=" invalid-feedback"> {{errors.knowledge}}</div>{{/if}}
 
       </div>
@@ -300,27 +300,29 @@
           <label for="validationDefault04" class="form-label">Preferencia por ...</label>
           <select name="preference1" size="1" class="form-select {{#if errors.preference1}}is-invalid{{/if}}" value="{{user.preference1}}" id="validationDefault04" >
               <option selected disabled >Rol preferido...</option>
-              <option value="front">Front-end</option>
-              <option value="back">Back-end</option>
-              <option value="full">Full-stack</option>
-              <option value="mago">Mago</option>
-              <option value="paladin">Paladín</option>
-              <option value="viejo">Viejo gruñón</option>
+              <option value="Front-end. ¿A quien no le gusta pinta y colorea?">Front-end</option>
+              <option value="Back-end. Se ve que has elegido una vida llena de sufrimiento">Back-end</option>
+              <option value="Full-stack. ¿Qué será lo siguiente? ¿Explicar física cuántica en menos de 10 palabras?">Full-stack</option>
+              <option value="Tiktoker. Tu follower preferirá verte de programador..">Tiktoker</option>
+              <option value="Clerigo. Aunque rezar no te ayudará con los bugs y los clientes...">Clérigo</option>
+              <option value="Viejo gruñon. Vas adelantado a tu tiempo! De programador lo habrías conseguido en 2 años!">Viejo gruñón</option>
+              <option value="Hada madrina. Algo muy útil para ser senior developer para cuidar de los novatos">Hada madrina</option>
+              <option value="Plañidero profesional. Llorar es esencial para los programadores">Plañidero profesional</option>
           </select>
         {{#if errors.preference1}}<div class=" invalid-feedback"> {{errors.preference1}}</div>{{/if}}
       </div>
       <div class="col-md-8 d-flex px-2  ">
-          <input  type="radio" id="html" name="preference2" value="HTML">
+          <input  type="radio" id="html" name="preference2" value="HTML. Recuerda que nunca podrás hacerlo tan mal como el que puso style (triangulo de las bermudas : none)">
           <label  class="pe-3" for="html">HTML</label><br>
-          <input type="radio" id="css" name="preference2" value="CSS">
+          <input type="radio" id="css" name="preference2" value="CSS. Por si no habías probado: #titanic{ float: none }; #lego { display: block}; #ninja{ visibility: hidden }">
           <label class="pe-3"for="css">CSS</label><br>
-          <input type="radio" id="javascript" name="preference2" value="JavaScript">
+          <input type="radio" id="javascript" name="preference2" value="JavaScript, pero alguna vez te has preguntado: ¿eres tú el que testea el código o el código el que te testea a ti? ">
           <label class="pe-3" for="javascript">JScript</label>
-          <input type="radio" id="hbs" name="preference2" value="hbs">
+          <input type="radio" id="hbs" name="preference2" value="hbs. Si usando grid, con class=('col-4 mx-5 r-2 p-3 position-center display-absolute') no consigues colocar el texto donde quieres, recuerda que una sierra eléctrica hace cualquier ajuste de pantalla">
           <label class="pe-3" for="hbs">HBS</label><br>
-          <input type="radio" id="Tinder" name="preference2" value="Tinder">
+          <input type="radio" id="Tinder" name="preference2" value="Tinder. Alguna vez usaste la frase: `¿Qué hace una persona tan atractiva, divertida y original como yo sin tu número?`">
           <label class="pe-3" for="Tinder">Tinder</label><br>
-          <input type="radio" id="Netflix" name="preference2" value="Netflix">
+          <input type="radio" id="Netflix" name="preference2" value="Netflix. Entonces no conoces la aventura de que buscando una pelicula se te abran 15 links, 8 tabs, 10 viruses y las solteras te quieren conocer...">
           <label class="pe-3" for="Netflix">CodeWars</label>
       </div>
       <div class="col-12">

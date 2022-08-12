@@ -51,7 +51,6 @@ module.exports.doLogin = (req, res, next) => {
       errors: {email: 'Nickname o contraseña incorrectas'}
     });
   }
-console.log(req.body)
   const { email, password } = req.body;
   User.findOne({ email })
   .then(user =>{
