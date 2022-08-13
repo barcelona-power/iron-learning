@@ -1,7 +1,7 @@
     {{> navbar}}  
     <div id="body-profile-top-img">
       <hr>
-    <h2 id="text-welcome" class="mt-5">Este es tu perfil con tus definiciones y podrás modificarlos como quieras </h2>
+    <h1 id="text-welcome" class="mt-5">En tu libreta tendrás todas las definiciones que has creado y podrás modificarlos</h1>
     <hr>
     <h3 id="text-welcome-user">... Bienvenido <span style="color:rgb(14, 228, 248)">{{currentUser.nickname}}</span>!, nos encanta que nos visites desde <span style="color:rgb(14, 228, 248)">{{currentUser.country}}</span>. 
       Nos consta que eres fan de ser <span style="color:rgb(14, 228, 248)">{{currentUser.preference1}}</span>.
@@ -32,7 +32,7 @@
                     
                     {{#if ...currentUser}}
                     <div class="d-flex float-end mt-3">
-                    <a href="/profile/{{definition.id}}" class="btn-8 custom-btn-9">Inspeccionar</a>
+                    <a href="/profile/{{definition.id}}/edit" class="btn-8 custom-btn-9">Editar definición</a>
                 <form action="/profile/{{definition.id}}/delete" method="post">
                     <button class="btn-9 custom-btn-9" type="submit">Borrar</button>
                     </div>
