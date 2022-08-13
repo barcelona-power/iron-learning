@@ -88,13 +88,13 @@ a:link{
 
 #iniciar-sesión {
   font-size: 30px;
-  font-family: Lobster;
+  font-family: "Varela Round";
 }
 
 #btn-invitado {
   display: flex;
   position: absolute;
-  font-family: Lobster;
+  font-family: "Varela Round";
   text-decoration: none;
   align-items: center;
   border-radius: 4px;
@@ -133,7 +133,7 @@ a:link{
   padding-right: 5px;
   font-size: 32px;
   transform: 1s;
-  font-family: Permanent Marker;
+  font-family: "Varela Round";
 }
 
 #btn-invitado:hover span:after {
@@ -152,7 +152,7 @@ a:link{
   );
   display: inline-flex;
   border-radius: 20px;
-  font-family: Permanent Marker;
+  font-family: "Varela Round";
 }
 #form-login{
   padding-left: 3%;
@@ -168,7 +168,7 @@ a:link{
   );
   display: flex;
   border-radius: 30px;
-  font-family: Permanent Marker;
+  font-family: "Varela Round";
   font-size: 15px;
 }
 .content-container {
@@ -218,7 +218,7 @@ a:link{
   display: inline-block;
   position: relative;
   transition: 0.5s;
-  font-family: Permanent Marker;
+  font-family: "Varela Round";
   font-size:74%;
   
 }
@@ -226,13 +226,13 @@ a:link{
 .nav-btn:hover span {
   font-size: 110%;
   transform: 1s;
-  font-family: Permanent Marker;
+  font-family: "Varela Round";
   text-shadow: 2px 2px rgb(255, 255, 255);
 
 }
 
 .nav-btn-in span {
-  font-family: Permanent Marker;
+  font-family: "Varela Round";
   cursor: url("/imagenes/curs.cur"), pointer;
   display: inline-block;
   position: relative;
@@ -244,7 +244,7 @@ a:link{
 .nav-btn-in:hover span {
   font-size: 80%;
   transform: 2s;
-  font-family: Permanent Marker;
+  font-family: "Varela Round";
   color:rgb(0, 0, 0)
 }
 
@@ -280,7 +280,7 @@ a:link{
 #list-of{
   display: flex;
   border-radius: 30px;
-  font-family: Permanent Marker;
+  font-family: "Varela Round";
   font-size: 15px;
   margin-left: 20%;
   margin-right: 20%;
@@ -379,28 +379,28 @@ a:link{
 .card-text-col1{
   background: -webkit-linear-gradient(top, #97ea7043, #ffffff, #97ea7043);
   font-size: 20px;
-  font-family: Courgette;
+  font-family: "Varela Round";
   padding: -33px;
   margin: -10px;
 }
 .card-text-col2{
   background: -webkit-linear-gradient(top, #f29b6c37, #ffffff, #f29b6c37);
   font-size: 20px;
-  font-family: Courgette;
+  font-family: "Varela Round";
   padding: -33px;
   margin: -10px;
 }
 .card-text-col3{
   background: -webkit-linear-gradient(top, #709bea2c, #ffffff, #709bea2c);
   font-size: 20px;
-  font-family: Courgette;
+  font-family: "Varela Round";
   padding: -33px;
   margin: -10px;
 }
 .card-text-col4{
   background: -webkit-linear-gradient(top, #b9ea7031, #ffffff, #b9ea7031);
   font-size: 20px;
-  font-family: Courgette;
+  font-family: "Varela Round";
   padding: -33px;
   margin: -10px;
 }
