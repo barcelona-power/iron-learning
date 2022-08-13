@@ -22,12 +22,19 @@
                     <h5 class="pads d-inline-flex mx-3">Categoría:  <span class="def-term"> {{definition.category}}</span></h5>
                     <h5 class="card-title d-inline-flex mx-3 ">Autor: <span class="def-term"> {{definition.author.nickname}}</span></h5>    
                     <div id="text-desc-container">
+                      {{#if definition.description}}
                         <div class="shadow-text1">
                           <p class="pads"><span class="shadow-text-title1">Descripción:</span>   <span class="def-term-text">{{definition.description}}</span> </p>
                         </div>
+                        {{else}}
+                          <p class="pads"><span class="shadow-text-title1">Gracias por crear un término</span>   <span class="def-term-text">pero sería de gran ayuda si aportases alguna definición</span> </p>
+
+                        {{/if}}
+                        {{#if definition.example}}
                         <div class="shadow-text2">
                           <p class="pads"><span class="shadow-text-title2">Ejemplo:</span>   <span class="def-term-text">{{definition.example}}</span> </p>
                         </div>  
+                        {{/if}}
                     </div>           
                     
                     {{#if ...currentUser}}

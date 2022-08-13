@@ -6,7 +6,7 @@ const definitionSchema = new Schema(
     name: {
       type: String,
       required: "Término necesario",
-      maxLength: [20, "No se aceptan términos en élfico"],
+      maxLength: [30, "No se aceptan términos en élfico"],
       minLength: [2, "Define términos o conceptos, no letras!"],
       trim: true,
     },
@@ -18,13 +18,13 @@ const definitionSchema = new Schema(
       type: String,
       maxLength: [500, "Seguro que puedes hacerlo más corto..."],
       trim: true,
-      required: "bulala",
+      // required: "Necesitas proporcionar alguna explicación del término que estás creando",
     },
     example: {
       type: String,
       maxLength: [500, "Haz ejemplos fáciles y más cortos..."],
       trim: true,
-      required: "bulala",
+      default: "Wikipedia"
     },
 
     file: {

@@ -14,10 +14,10 @@
                 <label for="category" class="form-label">Categoría</label>
                 <select name="category"  class="form-control {{#if errors.category}} is-invalid {{/if}}" id="category" value="{{definition.category}}">
                     <option selected disabled value="">Selecciona la categoría...</option>
-                    <option value="Internet">Internet</option>
-                    <option value="Librería/Framework">Librería/Framework</option>
-                    <option value="Programa/Aplicación">Programa/Aplicación</option>
-                    <option value="Otros">Otros...</option>
+                    <option value="&#128187 Internet">Internet</option>
+                    <option value="&#128218 Librería/Framework">Librería/Framework</option>
+                    <option value="&#127899 Programa/Aplicación">Programa/Aplicación</option>
+                    <option value="&#128391 Otros">Otros...</option>
                 </select>
             {{#if errors.category}}<div class="invalid-feedback">{{errors.category}}</div>{{/if}}
             </div>
