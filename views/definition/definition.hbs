@@ -4,9 +4,9 @@
 <form action="/create-definition" method="POST" enctype="multipart/form-data">
     <div class="definitions">
         <div class="d-flex" >
-            <div class=" content-container col-5">
+            <div class=" content-container col-5 placeholder-glow ">
                     <label for="name" class="form-label">Concepto </label>
-                    <input type="text"  class="form-control {{#if errors.name}} is-invalid {{/if}}" name="name" id="name" value="{{definition.name}}"> 
+                    <input type="text"  class="form-control bg-info placeholder-glow {{#if errors.name}} is-invalid {{/if}}" name="name" id="name" value="{{definition.name}}"> 
                     {{#if errors.name}}<div class="invalid-feedback">{{errors.name}}</div>{{/if}}
             </div>
 

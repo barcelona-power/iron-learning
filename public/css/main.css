@@ -110,12 +110,10 @@ a:link{
   width: 420px;
   margin-top: 3%;
   transition: all 0.5s;
-  cursor: url("/imagenes/curs.cur"), pointer;
   border-radius: 60px;
 }
 
 #btn-invitado span {
-  cursor: url("/imagenes/curs.cur"), pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
@@ -252,7 +250,7 @@ a:link{
 
 #form-category{
   font-size: 15px;
-  background: -webkit-linear-gradient(left, #8cade9, #5e5858);
+  background: -webkit-linear-gradient(left, #7a8494, #ffffff,#7a8494);
   color: rgb(0, 0, 0);
   border-radius: 20px;
   border-style: solid double ;
@@ -265,7 +263,7 @@ a:link{
   font-size: 15px;
   font-weight: 900;
   margin-top: 1%;
-  background: -webkit-linear-gradient(top, #8cade9, #ffffff);
+  background: -webkit-linear-gradient(top, #8cade9, #ffffff, #ffffff, #ffffff, #8cade9);
   color: rgb(1, 18, 68);
   text-shadow: 1px 1px white;
   text-shadow: 1.3px 1.3px white;
@@ -373,14 +371,19 @@ a:link{
 .custom-file-input:active::before {
   background: -webkit-linear-gradient(top, #d4ea15, #0cc109);
 }
-
+.card-text-box{
+  margin-top: 80px;
+  margin-bottom: -79px
+}
 .card-text-col1{
   background: -webkit-linear-gradient(top, #97ea7043, #ffffff, #97ea7043);
   font-size: 20px;
   font-family: "Varela Round";
   padding: -33px;
   margin: -10px;
+  top:300px
 }
+
 .card-text-col2{
   background: -webkit-linear-gradient(top, #f29b6c37, #ffffff, #f29b6c37);
   font-size: 20px;
