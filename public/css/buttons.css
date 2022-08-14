@@ -679,13 +679,48 @@
   color: rgb(0, 0, 0);
 }
 
-
-
-.hide {
-  display: none;
+#icon-container{
+  padding: 40px 0 5px 20px;
 }
-    
-.myDIV:hover + .hide {
+
+#info-example-container{
+  position:absolute;
+  display: inline-block;
+  right: 10px;
+  z-index: 80;
+}
+.card-text-box{
   display: block;
-  color: red;
+  max-width: 420px;
+}
+
+.card-text-col1{
+  background: -webkit-linear-gradient(top, #97ea7043, #ffffff, #97ea7043);
+  font-size: 14px;
+  font-family: "Varela Round";
+  padding: -33px;
+  margin: -10px;
+  top:300px;
+}
+
+.card-text-col2{
+  background: -webkit-linear-gradient(top, #f29b6c37, #ffffff, #f29b6c37);
+  font-size: 15px;
+  font-family: "Varela Round";
+  padding: -33px;
+  margin: -10px;
+}
+.card-text-col3{
+  background: -webkit-linear-gradient(top, #709bea2c, #ffffff, #709bea2c);
+  font-size: 15px;
+  font-family: "Varela Round";
+  padding: -33px;
+  margin: -10px;
+}
+.card-text-col4{
+  background: -webkit-linear-gradient(top, #b9ea7031, #ffffff, #b9ea7031);
+  font-size: 15px;
+  font-family: "Varela Round";
+  padding: -33px;
+  margin: -10px;
 }

@@ -1,9 +1,9 @@
     {{> navbar}}
  <div id="body-profile-img">
  {{#each databases as |database|}}
-<div class="body-profile  -img">
+<div class="body-profile-img">
 <div class="card card-box">
-  <div class="row ">
+  <div class="row">
     <div class="col-md-2 img-boxing zoom">
    <a href="{{database.link}}"><img src="{{database.link}}" width="100%" height="100%" class="" alt="..." class="d-flex"> </a> 
     </div>
@@ -18,22 +18,20 @@
                           <p class="pads"><span class="shadow-text-title2">Ejemplo:</span>   <span class="def-term-text">{{database.example}}</span> </p>
                         </div>  
                     </div>
-                    <div  class="pt-5" >
-                    <img src="/imagenes/iron.png" width="3%" alt="lala" type="button" id="iron-img" class="myDIV"  data-bs-toggle="collapse" data-bs-target="#{{database.name}}{{database.example4}}" aria-expanded="false" aria-controls="collapseExample">
-                    <img src="/imagenes/iconos/cine.png" width="6%" alt="lala" type="button"  class="zoom-logo" data-bs-toggle="collapse" data-bs-target="#{{database.name}}{{database.example1}}" aria-expanded="false" aria-controls="collapseExample">
-                    <img src="/imagenes/iconos/cocina.png" width="2.8%"  alt="lala" type="button"  class="zoom-logo"  data-bs-toggle="collapse" data-bs-target="#{{database.name}}{{database.example2}}" aria-expanded="false" aria-controls="collapseExample">
-                  <img src="/imagenes/iconos/deporte.png" width="3.3%"  alt="lala" type="button"  class="zoom-logo" data-bs-toggle="collapse" data-bs-target="#{{database.name}}{{database.example3}}" aria-expanded="false" aria-controls="collapseExample">
-                                        <div class="myDIV">Hover over me.</div>
-<div class="hide">I am shown when someone hovers over the div above.</div>
-                    </div>
-
+                    <div  id="icon-container" >
+                    <img src="/imagenes/iron.png" width="3%" alt="lala" type="button"  class="zoom-example"  data-bs-toggle="collapse" data-bs-target="#{{database.name}}{{database.example4}}" aria-expanded="false" aria-controls="collapseExample">
+                    <img src="/imagenes/iconos/cine.png" width="6%" alt="lala" type="button"  class="zoom-example" data-bs-toggle="collapse" data-bs-target="#{{database.name}}{{database.example1}}" aria-expanded="false" aria-controls="collapseExample">
+                    <img src="/imagenes/iconos/cocina.png" width="2.8%"  alt="lala" type="button"  class="zoom-example"  data-bs-toggle="collapse" data-bs-target="#{{database.name}}{{database.example2}}" aria-expanded="false" aria-controls="collapseExample">
+                  <img src="/imagenes/iconos/deporte.png" width="3.3%"  alt="lala" type="button"  class="zoom-example" data-bs-toggle="collapse" data-bs-target="#{{database.name}}{{database.example3}}" aria-expanded="false" aria-controls="collapseExample">
                   </form>
       </div>
     </div>
   </div>
+  <div id="info-example-container">
+
 <div class="collapse card-text-box " id="{{database.name}}{{database.example4}}">
   <div class="card card-body">
-<p class="card-text-col1"><span style="font-weight:bolder; font-family: Permanent Marker" >Ironhack dice:</span> {{database.example}}">{{database.example}} </p>
+<p class="card-text-col1"><span style="font-weight:bolder; font-family: Permanent Marker" >Ironhack dice:</span>x{{database.example}} </p>
   </div>
 </div>
 <div class="collapse card-text-box" id="{{database.name}}{{database.example1}}">
@@ -51,6 +49,8 @@
 <p class="card-text-col4"> <span style="font-weight:bolder; font-family: Permanent Marker" >Deporte:</span>  {{database.name}}
   </div>
 </div>
+  </div>
+
             </div>
         {{/each}}
 
