@@ -38,13 +38,14 @@
                     </div>           
                     
                     {{#if ...currentUser}}
-                    <div class="d-flex float-end mt-3">
+                    <div class="d-flex float-end mt-5 ">
                     <a href="/profile/{{definition.id}}/edit" class="btn-8 custom-btn-9">&#9997   Editar </a>
                 <form action="/profile/{{definition.id}}/delete" method="post">
                     <button class="btn-9 custom-btn-9" type="submit">&#128163 Borrar</button>
-                    </div>
-                    {{/if}}
                 </form>
+                </div>
+                    {{/if}}
+                  
 
       </div>
     </div>
