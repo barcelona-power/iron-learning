@@ -3,7 +3,7 @@ const router = express.Router();
 //const upload = multer({ dest: 'uploads/' })
 const upload = require("../config/multer.config")
 
-const{ user, definition, database, auth } = require("../controllers");
+const{ user, definition, database, auth, example } = require("../controllers");
 
 const secure = require('../middlewares/secure.mid');
 
@@ -29,5 +29,7 @@ router.get("/", auth.login);
 router.post("/", auth.doLogin);
 
 
+router.get("/main/example", example.new)
+router.post("/main/example", example.doNew)
 
 module.exports = router;

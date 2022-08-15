@@ -738,7 +738,7 @@
   position: absolute;
   justify-content: center;
   align-items: center;
-  font-family: "Luckiest Guy", cursive;
+  font-family: "Varela Round";
 }
 .h1-bien {
   margin: 0;
@@ -773,3 +773,7 @@
     transform: scale(1) rotateZ(-3deg);
   }
 }
+
+
+
+

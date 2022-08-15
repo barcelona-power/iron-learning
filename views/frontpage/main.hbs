@@ -1,7 +1,7 @@
     {{> navbar}}
     
  <div id="body-profile-img">
- {{#each databases as |database|}}
+ {{#each databases as |database|}} 
 <div class="body-profile-img">
 <div class="card card-box">
   <div class="row">
@@ -15,6 +15,8 @@
                         <div class="shadow-text1">
                           <p class="pads"><span class="shadow-text-title1">Descripción:</span>   <span class="def-term-text">{{database.description}}</span> </p>
                         </div>
+  <a href="/main/example">Example</a>
+
                         <div class="shadow-text2">
                           <p class="pads"><span class="shadow-text-title2">Ejemplo:</span>   <span class="def-term-text">{{database.example}}</span> </p>
                         </div>  

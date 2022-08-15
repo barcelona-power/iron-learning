@@ -1,5 +1,6 @@
 module.exports = {
     Definition: require('./definition.model'),
     User: require("./user.model"),
-    Database: require("./database.model")
+    Database: require("./database.model"),
+    Example: require("./example.model")
 }

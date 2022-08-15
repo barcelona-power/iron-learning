@@ -25,7 +25,7 @@
             </div>
 
             <div class="input-group">
-            <span class="input-group-text fa-fw"><|></span>
+            <span class="input-group-text"><i class="fa fa-earth-oceania fa-fw"></i></span>
             <select class="col-md-7" name="country" class="form-control {{#if errors.country}}is-invalid{{/if}}" value="{{user.country}}">
                 <option value="AL">Albania</option>
                     <option value="DE">Alemania</option>
@@ -283,7 +283,8 @@
           <div class="col-md-5 ps-3">
               <label for="password"  class="form-label">Contraseña</label>
               <div class="input-group">
-                  <span class="input-group-text fa-fw" id="inputGroupPrepend2">#</span>
+            <span class="input-group-text"><i class="fa fa-lock fa-fw"></i></span>
+
                   <input type="password"  name="password"  id="password"  class="form-control {{#if errors.password}}is-invalid{{/if}}" value="{{user.password}}" aria-describedby="inputGroupPrepend2" placeholder="No te compliques.."required>
                         {{#if errors.password}}<div class=" invalid-feedback"> {{errors.password}}</div>{{/if}}
               </div>
