@@ -2,12 +2,35 @@
     <div id="body-profile-top-img">
       <hr>
     <h1 id="text-welcome" class="mt-5">En tu libreta tendrás todas las definiciones que has creado y podrás modificarlos</h1>
-    <hr>
-    <h3 id="text-welcome-user">... Bienvenido <span style="color:rgb(14, 228, 248)">{{currentUser.nickname}}</span>!, nos encanta que nos visites desde <span style="color:rgb(14, 228, 248)">{{currentUser.country}}</span>. 
-      Nos consta que eres fan de ser <span style="color:rgb(14, 228, 248)">{{currentUser.preference1}}</span>.
-      Encontrarás usuarios con aficiones parecidas ya que nos dijiste "<span style="color:rgb(14, 228, 248)">{{currentUser.knowledge}}</span>" Se nota que eres valiente y audaz.
-       Nos vendrá bien la sabiduría de un experto en <span style="color:rgb(14, 228, 248)">{{currentUser.preference2}}</span>. <br> Gracias de antemano por tus aportaciones
+                  
+
+<!-- Button trigger modal -->
+
+<button type="button" id="modal-profile" class="button-53 " data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Mensaje para {{currentUser.nickname}}
+</button>
+
+<!-- Modal -->
+<div  class="modal fade" id="staticBackdrop" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Bienvenid@  {{currentUser.nickname}}!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <h3 id="text-welcome-user">  &nbsp;&nbsp;&nbsp;&nbsp; Nos encanta que nos visites desde  {{currentUser.country}}. 
+      Nos consta que eres fan de ser  {{currentUser.preference1}}.
+      Encontrarás usuarios con aficiones parecidas ya que nos dijiste " {{currentUser.knowledge}}" Se nota que eres valiente y vives la vida a tope.
+       Nos vendrá bien la sabiduría de un expert@ en  {{currentUser.preference2}}. <br> &nbsp;&nbsp;&nbsp;&nbsp; Gracias de antemano por tus aportaciones
       </h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
     </div>
 
     {{#each definitions as |definition|}}

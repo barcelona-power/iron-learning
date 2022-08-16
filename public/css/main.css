@@ -13,6 +13,11 @@ select{
 input{
     cursor: url("/imagenes/edPreg.cur"), pointer;
 }  */
+.spm{
+  font-family: "Varela Round";
+  font-weight: 900;
+  font-size: 16px;
+}
 .body-front-img{
   background-image: url("../imagenes/fondos/wall5.jpeg");
   background-size: 100%;
@@ -105,56 +110,6 @@ a:link{
   font-family: "Varela Round";
 }
 
-#btn-invitado {
-  display: flex;
-  position: absolute;
-  font-family: "Varela Round";
-  text-decoration: none;
-  align-items: center;
-  border-radius: 4px;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(14, 9, 98, 0.907),
-    rgba(4, 72, 80, 0.5)
-  );
-  color: #f9fbff;
-  text-align: center;
-  font-size: 28px;
-  padding: 10px;
-  width: 420px;
-  margin-top: 6%;
-  transition: all 0.5s;
-  border-radius: 60px;
-}
-
-#btn-invitado span {
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-  text-align: center;
-}
-
-#btn-invitado span:after {
-  content: url(../imagenes/rod-1.png);
-  position: absolute;
-  opacity: 0;
-  top: 80%;
-  right: -900px;
-  transition: 0.5s;
-}
-#btn-invitado:hover span {
-  padding-right: 5px;
-  font-size: 32px;
-  transform: 1s;
-  font-family: "Varela Round";
-}
-
-#btn-invitado:hover span:after {
-  opacity: 1;
-  right: -600px;
-}
-
-
 
 
 #log-in-position{
@@ -163,9 +118,9 @@ a:link{
 #log-in {
   background-image: linear-gradient(
     to bottom,
-    rgba(77, 237, 29, 0.334),
-    rgba(234, 236, 104, 0.908),
-    rgba(77, 237, 29, 0.243)
+    rgba(0, 234, 255, 0.396),
+    rgba(255, 255, 255, 0.401),
+    rgba(255, 255, 255, 0)
   );
   display: inline-flex;
   border-radius: 20px;
@@ -269,7 +224,7 @@ a:link{
 
 #form-category{
   font-size: 15px;
-  background: -webkit-linear-gradient(left, #7a8494, #ffffff,#7a8494);
+  background: -webkit-linear-gradient(top, #7a8494, #ffffff,#7a8494);
   color: rgb(0, 0, 0);
   border-radius: 20px;
   border-style: solid double ;
@@ -310,21 +265,30 @@ a:link{
 
 
 /* eyes */
-/* 
+
+#edgar{
+  display: flex;
+  position: fixed;
+  z-index: 49;
+  right: 2%;
+  top: 12.4%
+  
+}
 .eyes-fixed{
+  z-index: 50;
   position: fixed;
   width: 100%;
-  margin-top: 60px;
+  margin-top: 70px;
 }
 .eyes{
   position: absolute;
-  left: 40%;
+  left: 44%;
   width: 100%;
   text-align: center;
 }
 .eye{
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 25px;
   background-image: linear-gradient(
     to bottom,
     rgba(38, 38, 236, 0.153),
@@ -334,13 +298,13 @@ a:link{
   );
   display: inline-block;
   margin: 3px;
-  border-radius: 50%;
+  border-radius: 10%;
   position: relative;
   overflow: hidden;
 }
 .ball{
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   background: linear-gradient(
     to bottom,
     rgba(38, 38, 236, 0.023),
@@ -353,8 +317,8 @@ a:link{
   left: 50%;
   transform: translate(-50%,-50%);
   border-radius: 50%;
-  border: 10px dotted rgb(27, 154, 188);
-} */
+  border: 6px solid rgb(109, 74, 8);
+}
 /* eyes */
 
 .overflow-ojos{
@@ -364,3 +328,13 @@ a:link{
 #iniciar-info{
   font-size: 14px;
 }
+
+#modal-profile{
+  z-index: 90;
+  font-size: 12px;
+  display: flex;
+  position: absolute;
+  top: 11%;
+  
+}
+

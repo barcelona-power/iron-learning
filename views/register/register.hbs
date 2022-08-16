@@ -1,5 +1,5 @@
 <div class="body-front-img row justify-content-center ">  
-<div id="create-acount" class="p-3  m-5 col-md-4" >
+<div id="create-acount" class="p-3  m-5 col-md-6" >
     <form method="POST" action="/register" class="row g-3">
 
         <label id="iniciar-sesión" class="form-label px-4">Registrarse</label>
@@ -8,7 +8,7 @@
     Existen errores en tu registro, por favor comprueba tus datos!
 </div>
 {{/if}}
-    <div class="d-flex col-md-8">
+    <div class="d-flex col-md-9">
         <div class="col-md-8">
 
             <label for="nickname"  class="form-label"> Nickname</label>
@@ -28,25 +28,25 @@
             <span class="input-group-text"><i class="fa fa-earth-oceania fa-fw"></i></span>
             <select class="col-md-7" name="country" class="form-control {{#if errors.country}}is-invalid{{/if}}" value="{{user.country}}">
                 <option value="AL">Albania</option>
-                    <option value="DE">Alemania</option>
-                    <option value="AF">Afganistán</option>
-                    <option value="AD">Andorra</option>
-                    <option value="AO">Angola</option>
-                    <option value="AI">Anguilla</option>
-                    <option value="AQ">Antártida</option>
-                    <option value="AG">Antigua y Barbuda</option>
-                    <option value="AN">Antillas Holandesas</option>
-                    <option value="SA">Arabia Saudí</option>
-                    <option value="DZ">Argelia</option>
-                    <option value="AR">Argentina</option>
-                    <option value="AM">Armenia</option>
-                    <option value="AW">Aruba</option>
-                    <option value="AU">Australia</option>
-                    <option value="AT">Austria</option>
-                    <option value="AZ">Azerbaiyán</option>
-                    <option value="BS">Bahamas</option>
-                    <option value="BH">Bahrein</option>
-                    <option value="BD">Bangladesh</option>
+                    <option value="Alemania">Alemania</option>
+                    <option value="Afganistán">Afganistán</option>
+                    <option value="Andorra">Andorra</option>
+                    <option value="Angola">Angola</option>
+                    <option value="Anguilla">Anguilla</option>
+                    <option value="Antártida">Antártida</option>
+                    <option value="Antigua y Barbuda">Antigua y Barbuda</option>
+                    <option value="Antillas Holandesas">Antillas Holandesas</option>
+                    <option value="Arabia Saudí">Arabia Saudí</option>
+                    <option value="Argelia">Argelia</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Armenia">Armenia</option>
+                    <option value="Aruba">Aruba</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Austria">Austria</option>
+                    <option value="Azerbaiyán">Azerbaiyán</option>
+                    <option value="Bahamas">Bahamas</option>
+                    <option value="Bahrein">Bahrein</option>
+                    <option value="Bangladesh">Bangladesh</option>
                     <option value="BB">Barbados</option>
                     <option value="BE">Bélgica</option>
                     <option value="BZ">Belice</option>
@@ -88,10 +88,10 @@
                     <option value="EC">Ecuador</option>
                     <option value="EG">Egipto</option>
                     <option value="SV">El Salvador</option>
-                    <option value="AE">Emiratos Árabes Unidos</option>
+                    <option value="Emiratos Árabes Unidos">Emiratos Árabes Unidos</option>
                     <option value="ER">Eritrea</option>
                     <option value="SI">Eslovenia</option>
-                    <option value="ES" selected>España</option>
+                    <option value="Bangladesh" selected>España</option>
                     <option value="US">Estados Unidos</option>
                     <option value="EE">Estonia</option>
                     <option value="ET">Etiopía</option>
@@ -101,7 +101,7 @@
                     <option value="FR">Francia</option>
                     <option value="GA">Gabón</option>
                     <option value="GM">Gambia</option>
-                    <option value="GE">Georgia</option>
+                    <option value="Georgia">Georgia</option>
                     <option value="GH">Ghana</option>
                     <option value="GI">Gibraltar</option>
                     <option value="GD">Granada</option>
@@ -269,7 +269,7 @@
     </div>
 {{!-- email y contraseña --}}
       <div class="d-flex">
-          <div class="col-md-5">
+          <div class="col-md-6">
               <label for="email"  class="form-label">Email</label>
               <div class="input-group">
         <span class="input-group-text"><i class="fa fa-envelope fa-fw"></i></span>
@@ -280,7 +280,7 @@
           </div>
 
 
-          <div class="col-md-5 ps-3">
+          <div class="col-md-6 ">
               <label for="password"  class="form-label">Contraseña</label>
               <div class="input-group">
             <span class="input-group-text"><i class="fa fa-lock fa-fw"></i></span>
@@ -291,7 +291,7 @@
           </div>
       </div>
       {{!-- email y contraseña --}}
-      <div class="col-md-7">
+      <div class="col-md-8">
           <label for="validationDefault03" class="form-label">Aficiones</label>
           <textarea type="text" name="knowledge"  id="validationDefault03" class="form-control {{#if errors.knowledge}}is-invalid{{/if}}" value="{{user.knowledge}}" placeholder="Me gusta..."  cols="4" rows="1">{{user.knowledge}}</textarea>
         {{#if errors.knowledge}}<div class=" invalid-feedback"> {{errors.knowledge}}</div>{{/if}}
@@ -330,6 +330,12 @@
           <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
             <label class="form-check-label" for="invalidCheck2">Prometo no usar esta información con fines malvados</label>
+          </div>
+      </div>
+      <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+            <label class="form-check-label" for="invalidCheck2">Creo que no soy un robót</label>
           </div>
       </div>
       <div class="col-12">
