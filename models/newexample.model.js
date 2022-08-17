@@ -2,9 +2,10 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const exampleSchema = new Schema ({
-    example:{
+    newexample:{
         type:String,
         maxLength: [500, "Seguro que puedes hacerlo más corto..."],
+        minLength: [1, "puedes esforzarte un poco más en el ejemplo..."],
         trim: true
     },
     belongs: {
@@ -17,6 +18,7 @@ const exampleSchema = new Schema ({
       }
 })
 
-const Example = mongoose.model("Example", exampleSchema);
 
-module.exports = Example;
+const Newexample = mongoose.model("Newexample", exampleSchema);
+
+module.exports = Newexample;

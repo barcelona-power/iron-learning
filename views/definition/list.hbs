@@ -16,7 +16,8 @@
                     <h5 class="card-title d-inline-flex mx-3 ">Término: <span class="def-term"> {{definition.name}}</span></h5>               
                     <h5 class="pads d-inline-flex mx-3">Categoría:  <span class="def-term"> {{definition.category}}</span></h5>
                     <h5 class="card-title d-inline-flex mx-3 ">Autor: <span class="def-term"> {{definition.author.nickname}}</span></h5>    
-                    <h5 class="card-text">{{prettyDate definition.createdAt}}</h5>
+                    <h5 class="card-text">Creado el {{prettyDate definition.createdAt}}</h5>
+
                     <div id="text-desc-container">
                       {{#if definition.description}}
                         <div class="shadow-text1">

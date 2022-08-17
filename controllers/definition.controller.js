@@ -14,6 +14,7 @@ module.exports.listOfDefinitions = (req, res, next) => {
   if (category){
     criteria.category = new RegExp (category, "i");
 }
+
   Definition.find(criteria)
   .populate("author")
   .then((definitions) => {
@@ -49,12 +50,20 @@ module.exports.createDefinition = (req, res, next) => {
   })
 }; 
 
+
+
+
+
+
+
+
+
+
 module.exports.delete = (req, res, next) => {
   Definition.findByIdAndDelete(req.params.id)
     .then(() => {res.redirect("/list")})
     .catch((error) => next(error))
 };
-
 
 
 
@@ -70,8 +79,6 @@ module.exports.edit = (req, res, next) => {
   })
   .catch((error) => next(error))
 }
-
-
 
 
 module.exports.doEdit = (req, res, next) => {

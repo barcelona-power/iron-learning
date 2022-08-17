@@ -3,6 +3,6 @@ module.exports = {
     definition: require("./definition.controller"),
     database: require("./database.controller"),
     auth: require("./auth.controller"),
-    example: require("./example.controller")
+    newexample: require("./newexample.controller")
 }
 

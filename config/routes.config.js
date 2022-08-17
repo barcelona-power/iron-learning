@@ -3,7 +3,7 @@ const router = express.Router();
 //const upload = multer({ dest: 'uploads/' })
 const upload = require("../config/multer.config")
 
-const{ user, definition, database, auth, example } = require("../controllers");
+const{ user, definition, database, auth, newexample } = require("../controllers");
 
 const secure = require('../middlewares/secure.mid');
 
@@ -13,12 +13,12 @@ router.post("/create-definition", upload.single('image'), secure.isAuthenticated
 router.get("/list", secure.isAuthenticated, definition.listOfDefinitions)
 router.post("/list/:id/delete",secure.isAuthenticated, definition.delete)
 
-router.get("/main", database.listOfDatabase)
 router.get("/never", user.never)
-router.post("/profile/:id/delete", secure.isAuthenticated, user.delete)
-router.get("/profile/:id/edit",  secure.isAuthenticated, definition.edit)
-router.post("/profile/:id",  secure.isAuthenticated, definition.doEdit)
+
 router.get("/profile", secure.isAuthenticated, user.profile)
+router.post("/profile/:id",  secure.isAuthenticated, definition.doEdit)
+router.get("/profile/:id/edit",  secure.isAuthenticated, definition.edit)
+router.post("/profile/:id/delete", secure.isAuthenticated, user.delete)
 
 
 router.get("/register", auth.register);
@@ -28,8 +28,11 @@ router.post("/register",auth.doRegister);
 router.get("/", auth.login);
 router.post("/", auth.doLogin);
 
+router.get("/main", database.listOfDatabase)
+router.get("/main/newexample", newexample.new)
+router.post("/main/newexample", newexample.doNew)
 
-router.get("/main/example", example.new)
-router.post("/main/example", example.doNew)
+
+
 
 module.exports = router;

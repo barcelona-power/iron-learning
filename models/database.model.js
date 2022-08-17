@@ -5,7 +5,6 @@ const databaseSchema = new Schema ({
     name:{
         type:String,
         required: "Término necesario",
-        maxLength: [20, "No se aceptan términos en élfico"],
         trim: true
     },
     description:{

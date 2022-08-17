@@ -1,5 +1,29 @@
 [
     {
+        "name": "lala es la nueva lulu",
+        "description": "algo",
+        "example": "si yo fuera un pirata sería otro algo",
+        "category": "librería",
+        "file": "none",
+        "link":"https://media.makeameme.org/created/something-is-missing-6838a8d575.jpg",
+        "example1": "misc",
+        "example2": "sports",
+        "example3": "movies",
+        "example4": "coocking"
+    },
+    {
+        "name": "Al fin sin espacios",
+        "description": "algo",
+        "example": "si yo fuera un pirata sería otro algo",
+        "category": "librería",
+        "file": "none",
+        "link":"https://media.makeameme.org/created/something-is-missing-6838a8d575.jpg",
+        "example1": "misc",
+        "example2": "sports",
+        "example3": "movies",
+        "example4": "coocking"
+    },
+    {
         "name": "IP_for_your_mother",
         "description": "algo",
         "example": "si yo fuera un pirata sería otro algo",
