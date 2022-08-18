@@ -40,7 +40,7 @@ module.exports.createDefinition = (req, res, next) => {
   })
 
   Definition.create(data)
-  .then(() => res.redirect("/create-definition"))
+  .then((data) => res.redirect("/create-definition"))
   .catch((error) => {
     if(error instanceof mongoose.Error.ValidationError) {
         res.render("definition/definition", {errors: error.errors, definition: data});

@@ -3,10 +3,12 @@
 
 
 
-    <form action="/main/newexample" method="POST">
-                    <label for="name" class="form-label">Concepto </label>
+    <form action="/main/:id/newexample" method="POST">
+                    <label for="name" class="form-label">Concepto {{query.params.id}}</label>
                     <input type="text"  class="form-control" name="newexample" id="newexample"> 
+                    <input type="hidden" name="belongs" value="{{query.params.id}}">
             <button type="submit" class="btn btn-primary p-3 col-10">Crear nuevo ejemplo</button>
+            <a href="/main"class="btn btn-primary p-3 col-10">Volver al main</a>
     </form>
 
 </div>
