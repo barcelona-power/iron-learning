@@ -2,11 +2,18 @@ const mongoose = require("mongoose")
 const {Newexample} = require("../models")
 
 module.exports.new = (req, res, next) => {
+    
     res.render("frontpage/newexample")
 }
 
 module.exports.doNew = (req, res, next) => {
-    const data = req.body;
+
+
+
+    const data = ({newexample} = {
+        ...req.body,
+        belongs: req.user.id
+      })
     Newexample.create(data)
     .then((data) => res.redirect("/main"))
     .catch((error) => {

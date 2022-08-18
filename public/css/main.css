@@ -33,6 +33,13 @@ display: flex;
 position: absolute;
 z-index: -1;
 }
+.img-list{
+  display: flex;
+  position: absolute;
+  margin-top: -30%;
+  z-index: -5;
+
+}
 #body-list-img{
   background-image: url("../imagenes/fondos/wall12.jpeg");
   background-size: 100%;

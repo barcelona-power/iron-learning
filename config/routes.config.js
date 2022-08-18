@@ -29,8 +29,8 @@ router.get("/", auth.login);
 router.post("/", auth.doLogin);
 
 router.get("/main", database.listOfDatabase)
-router.get("/main/newexample", newexample.new)
-router.post("/main/newexample", newexample.doNew)
+router.get("/main/:id/newexample", newexample.new)
+router.post("/main/:id/newexample", newexample.doNew)
 
 
 
