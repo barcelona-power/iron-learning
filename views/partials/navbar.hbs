@@ -58,24 +58,12 @@
 
 
 
-{{!-- <img id="edgar" src="../imagenes/edg-ojos.png" width="10%" alt="">
 
-<div class="eyes-fixed">
-  <div class="eyes">
-      <div class="eye">
-        <div class="ball"></div>
-      </div>
-
-      <div class="eye">
-        <div class="ball"></div>
-      </div>
-    </div>
-</div>
-   --}}
+  
       <script>
       let balls = document.getElementsByClassName("ball");
       document.onmousemove = function(){
-        let x = event.clientX * 60/ window.innerWidth +"%";
+        let x = event.clientX * 55/ window.innerWidth +"%";
         let y = event.clientY * 150/ window.innerHeight +"%";
         for(let i=0;i<2;i++){
           balls[i].style.left= x;

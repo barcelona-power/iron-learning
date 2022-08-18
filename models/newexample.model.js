@@ -8,14 +8,11 @@ const exampleSchema = new Schema ({
         minLength: [1, "puedes esforzarte un poco más en el ejemplo..."],
         trim: true
     },
-    belongs: {
-        type:String,
-    },
-   /* exUser: {
-        type: Schema.Types.ObjectId,
-        required: true,
-        ref: "User",
-      } */
+    // belong: {
+    //     type: Schema.Types.ObjectId,
+    //     required: true,
+    //     ref: "definition",
+    //   } 
 })
 
 

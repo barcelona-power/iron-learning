@@ -2,10 +2,11 @@
     
  <div id="body-profile-img">
   <h1>d</h1>
-                      {{#each newexamples as |newexample|}}
-                    <h5 class="card-title d-inline-flex mx-3 ">NewExample: <span class="def-term"> {{newexample.newexample}}</span></h5>               
+  <h1>d</h1>
+  <h1>d</h1>
+  <h1>d</h1>
+
                     
-                    {{/each}}
  {{#each databases as |database|}} 
 <div class="body-profile-img">
 <div class="card card-box">
@@ -40,10 +41,14 @@
   <div id="info-example-container">
 
 <div class="toast collapse card-text-box" id="{{spacesGone database.name}}">
+
     <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
  <spam class="spm">Ironhack</spam class="spm">
   <div class="card card-body">
 <p class="card-text-col1"><span style="font-weight:bolder; font-family: Permanent Marker" ></span>{{spacesGone database.name}} </p>
+                        {{#each ...newexamples as |newexample|}}
+                    <h5>NewExample: {{newexample.newexample}}</h5>               
+                    {{/each}}
   </div>
 </div>
 <div class="toast collapse card-text-box" id="{{spacesGone database.name}}{{database.example1}}">
@@ -73,4 +78,5 @@
 
 
  </div>
-   
+
+  

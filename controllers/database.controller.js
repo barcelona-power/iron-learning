@@ -1,18 +1,22 @@
-const {Database} = require("../models")
+const {Database, Newexample} = require("../models")
 
 module.exports.listOfDatabase = (req, res, next) => {
     const { name, category }= req.query;
-    const criterial = {};
+    const criteria = {};
     
     if (name){
-        criterial.name = new RegExp (name, "i");
+        criteria.name = new RegExp (name, "i");
     }
     if (category){
-        criterial.category = new RegExp (category, "i");
+        criteria.category = new RegExp (category, "i");
     }
-    Database.find(criterial)
+    Database.find(criteria)
     .then((databases) => {
-        res.render("frontpage/main", {databases, name, category})
-    })
+        return Newexample.find(criteria)
+        .then((newexamples) => 
+        res.render("frontpage/main", {newexamples, databases, name, category})
+        )
     .catch((error) => next.error)
+
+    })
 }

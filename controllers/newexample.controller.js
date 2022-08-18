@@ -21,8 +21,9 @@ module.exports.doNew = (req, res, next) => {
 
 module.exports.newlist = (req, res, next) => {
     Newexample.find()
-    .then(newlistofexamples =>{
-        res.render("frontpage/main", {newlistofexamples})
+    .then((list)=>{
+        console.log(list)
+        res.render("frontpage/newexample", {list})
     })
-    .catch((error) => next.error)
+    .catch((error) => next(error))
 }
