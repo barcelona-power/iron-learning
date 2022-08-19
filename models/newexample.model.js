@@ -9,8 +9,8 @@ const exampleSchema = new Schema ({
         trim: true
     },
     belongs: {
-        type: String,
-        // type: Schema.Types.ObjectId,
+        // type: String,
+        type: Schema.Types.ObjectId,
         ref: "Definition",
     } ,
     categoryexample:{

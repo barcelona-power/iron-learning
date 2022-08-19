@@ -1105,13 +1105,14 @@
 
 #info-example-container{
   position:absolute;
-  display: inline-block;
-  max-width: 90%;
   right: 10px;
+  width: 20%;
   z-index: 80;
 }
 .card-text-box{
+  margin-right: 130px;
   display: block;
+  width: 530px;
 }
 
 .card-text-col1{
