@@ -30,7 +30,7 @@ router.post("/", auth.doLogin);
 router.get("/logout", auth.logOut)
 
 router.get("/main", database.listOfDatabase)
-router.get("/main/:id/newexample", newexample.new)
+router.get("/main/:id/newexample/:categoryexample", newexample.new)
 router.post("/main/:id/newexample", newexample.doNew)
 
 

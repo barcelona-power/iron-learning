@@ -82,12 +82,11 @@ module.exports.edit = (req, res, next) => {
 
 
 module.exports.doEdit = (req, res, next) => {
-  const data = ({name, category, description, example, file, link} = {
-    ...req.body,
-    author: req.user.id
-  })
+  const data = ({name, category, description, example, link} = {...req.body})
+  console.log(data)
   Definition.findByIdAndUpdate(req.params.id, data)
-  .then(() => {
+  .then((data) => {
+    console.log(data)
     res.redirect("/profile")
   })
   .catch((error=> {

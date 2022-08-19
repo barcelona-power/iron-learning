@@ -470,13 +470,13 @@ a:link{
 #body-cloud{
   width: 100%; 
   height:100%;
-  margin-top: 3%;
+  margin-top: 1.5%;
   background-color:#8ec1da;
-  background-image: url("/imagenes/fondos/fondoperfil.webp");
+  background-image: url("https://fondosmil.com/fondo/20893.jpg");
   background-position: center bottom;
   animation: animatedBackground 30s linear infinite;
   /* Safari and Chrome: */
-  -webkit-animation: animatedBackground 550s linear infinite;
+  -webkit-animation: animatedBackground 150s linear infinite;
 }
 @keyframes animatedBackground 
 {

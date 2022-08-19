@@ -10,9 +10,11 @@ const exampleSchema = new Schema ({
     },
     belongs: {
         type: Schema.Types.ObjectId,
-        required: true,
-        ref: "User",
-      } 
+        ref: "Definition",
+    } ,
+    categoryexample:{
+        type: String
+    }
 })
 
 

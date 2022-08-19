@@ -9,6 +9,20 @@
   background-image: url("../imagenes/fondos/101.jpg");
   background-size: 100%;  
 }
+.card-box-profile{
+  font-family: "Varela Round";
+  margin-bottom: 1%;
+  padding: 10px 0px;
+  max-width: 100%;
+  width: initial;
+  display: block;
+  color: black;
+  background-image: url("../imagenes/fondos/wall4.jpeg");
+  border: 40px solid;
+  background-position-y: 230px;
+  background-size:100%;
+  
+}
 .img-boxing{
   border: 1px solid #ddd;
   border-radius: 15px;

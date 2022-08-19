@@ -17,7 +17,6 @@
                         <div class="shadow-text1">
                           <p class="pads"><span class="shadow-text-title1">Descripción:</span>   <span class="def-term-text">{{database.description}}</span> </p>
                         </div>
-              <a href="/main/{{database.id}}/newexample">Example</a>
 
                         <div class="shadow-text2">
                           <p class="pads"><span class="shadow-text-title2">Ejemplo:</span>   <span class="def-term-text">{{database.example}}</span> </p>
@@ -39,12 +38,13 @@
 <div class="toast collapse card-text-box" id="{{spacesGone database.name}}">
 
     <button type="button" class="btn" data-bs-dismiss="toast" aria-label="Close">&#10060</button>
+              <a href="/main/{{database.id}}/newexample/ironhack">Example</a>
  <spam class="spm">Ironhack</spam class="spm">
   <div class="card card-body">
 <p class="card-text-col1"><span style="font-weight:bolder; font-family: Permanent Marker" ></span>{{spacesGone database.name}} </p>
-                        {{!-- {{#each ...newexamples as |newexample|}}
+                        {{#each ...newexamples as |newexample|}}
                     <h5>NewExample: {{newexample.newexample}}</h5>               
-                    {{/each}} --}}
+                    {{/each}}
   </div>
 </div>
 <div class="toast collapse card-text-box" id="{{spacesGone database.name}}{{database.example1}}">

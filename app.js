@@ -3,7 +3,7 @@ require("dotenv").config()
 const express = require("express");
 const logger = require("morgan");
 const createError = require("http-errors");
-
+// const bodyparser = require("body-parser")
 const app = express();
 
 app.set("views", __dirname + "/views");
@@ -11,6 +11,7 @@ app.set("view engine", "hbs");
 app.use(logger("dev"));
 app.use(express.static(`${__dirname}/public`));
 app.use(express.urlencoded({ extended: false }));
+// app.use(bodyparser.urlencoded())
 
 require("./config/db.config");
 require("./config/hbs.config");

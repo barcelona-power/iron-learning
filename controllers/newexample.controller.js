@@ -2,17 +2,15 @@ const mongoose = require("mongoose")
 const {Newexample} = require("../models")
 
 module.exports.new = (req, res, next) => {
-    
-    res.render("frontpage/newexample")
+
+    res.render("frontpage/newexample", {data:req.params})
 }
 
 module.exports.doNew = (req, res, next) => {
 
-
-
-    const data = ({newexample} = {
+    const data = ({newexample, categoryexample} = {
         ...req.body,
-        belongs: req.user.id
+        belongs: req.params.id
       })
     Newexample.create(data)
     .then((data) => res.redirect("/main"))
@@ -28,6 +26,7 @@ module.exports.doNew = (req, res, next) => {
 
 module.exports.newlist = (req, res, next) => {
     Newexample.find()
+    .populate("belongs")
     .then((list)=>{
         console.log(list)
         res.render("frontpage/newexample", {list})
