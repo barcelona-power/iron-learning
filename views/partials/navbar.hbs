@@ -1,16 +1,60 @@
-<nav class="navbar navbar-expand-lg fixed-top" style="background-color: #2ec5fc">
+<nav
+  class="navbar navbar-expand-lg fixed-top"
+  style="background-color: #2ec5fc"
+>
   <div class="container-fluid">
-          <ul class="navbar-nav me-auto mb-5 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active nav-btn-in custom-btn1 btn-12" id="iniciar-btn" aria-current="page" href="/"> <span>Nos vemos pronto!</span> <span>Regístrate o logeate!</span></a>
-        </li>
-          </ul>
-    <a id="logo-iron" class="zoom-logo" href="https://www.ironhack.com/es"><img src="/imagenes/iron.png" alt="ups, logo? que logo=" width="100%"> </a>
-    <a id="logo-gitHub" class="zoom-logo" href="https://github.com/"><img src="/imagenes/gitHub.png" alt="ups, logo? que logo=" width="100%"> </a>
-    <a id="logo-wiki" class="zoom-logo"href="https://es.wikipedia.org/wiki/Wikipedia:Portada"><img src="/imagenes/wiki.png" alt="ups, logo? que logo=" width="100%"> </a>
-    <a id="logo-student" class="zoom-logo" href="https://my.ironhack.com"><img src="/imagenes/ironstudent.png" alt="ups, logo? que logo=" width="100%"> </a>
+    <ul class="navbar-nav me-auto mb-5 mb-lg-0">
+      <li class="nav-item">
+        {{#if currentUser}}
+          <a
+            class="nav-link active nav-btn-in custom-btn1 btn-12"
+            id="iniciar-btn"
+            aria-current="page"
+            href="/logout"
+          >
+            <span>Te esperamos!</span>
+            <span>Desconectarse</span></a>
 
-    <a class="navbar-brand nav-btn" href="/main"><span>IRON HACK MAIN PAGE</span></a>
+        {{else}}
+          <a
+            class="nav-link active nav-btn-in custom-btn1 btn-12"
+            id="iniciar-btn"
+            aria-current="page"
+            href="/"
+          >
+            <span>Nos vemos pronto!</span>
+            <span>Regístrate o logeate!</span></a>
+
+        {{/if}}
+
+      </li>
+    </ul>
+    <a id="logo-iron" class="zoom-logo" href="https://www.ironhack.com/es"><img
+        src="/imagenes/iron.png"
+        alt="ups, logo? que logo="
+        width="100%"
+      />
+    </a>
+    <a id="logo-gitHub" class="zoom-logo" href="https://github.com/"><img
+        src="/imagenes/gitHub.png"
+        alt="ups, logo? que logo="
+        width="100%"
+      />
+    </a>
+    <a
+      id="logo-wiki"
+      class="zoom-logo"
+      href="https://es.wikipedia.org/wiki/Wikipedia:Portada"
+    ><img src="/imagenes/wiki.png" alt="ups, logo? que logo=" width="100%" />
+    </a>
+    <a id="logo-student" class="zoom-logo" href="https://my.ironhack.com"><img
+        src="/imagenes/ironstudent.png"
+        alt="ups, logo? que logo="
+        width="100%"
+      />
+    </a>
+
+    <a class="navbar-brand nav-btn" href="/main"><span>Página principal</span></a>
     <button
       class="navbar-toggler"
       type="button"
@@ -23,52 +67,68 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto  mb-lg-0">
+      <ul class="navbar-nav me-auto mb-lg-0">
         <li class="nav-item">
           {{#if currentUser}}
-          <a class="nav-link nav-btn" href="/profile"> <span> &#128100 Mi perfil: {{currentUser.nickname}}</span></a>
+            <a class="nav-link nav-btn" href="/profile">
+              <span>
+                &#128100 Perfil:
+                {{upperCase currentUser.nickname}}</span></a>
           {{/if}}
         </li>
         <li class="nav-item">
           {{#if currentUser}}
-          <a class="nav-link nav-btn" href="/create-definition"> <span>&#128167 Crear definición</span></a>
+            <a class="nav-link nav-btn" href="/create-definition">
+              <span>&#128167 Crear definición</span></a>
           {{/if}}
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-btn" href="/list"><span>&#128166 Definiciones de usuarios</span></a>
+          <a class="nav-link nav-btn" href="/list"><span>&#128166 Definiciones
+              de usuarios</span></a>
         </li>
 
       </ul>
 
-<form class="d-flex col-6" method="GET" role="search" name="filterer"> 
-      <select id="form-category"  name="category" class="form-select "  size="1"  aria-label="select example"  onchange="this.form.submit()">
-        <option selected disabled value="0">&#10549 Por categoría...  </option>
-        <option  value="Internet" name="category" >&#128187 Internet</option>
-        <option  value="Librería" name="category">&#128218 Librerías/Frameworks</option>
-        <option value="Programa" name="category">&#127899 Programas/aplicaciones</option>
-        <option value="Otros" name="category">&#128391 Otros...</option>
-      </select  >
-        <input id="form-word" class="form-select" type="text" name="name" value="{{query.name}}" placeholder="&#128394   Por término..." aria-label="Search" />
-        <button class="nav-btn-in custom-btn1 btn-11" id="iniciar-btn" type="submit"><span>Suerte!</span> <span>Buscar</span></button>
+      <form class="d-flex col-5" method="GET" role="search" name="filterer">
+        <select
+          id="form-category"
+          name="category"
+          class="form-select"
+          size="1"
+          aria-label="select example"
+          onchange="this.form.submit()"
+        >
+          <option selected disabled value="0">&#10549 Por categoría... </option>
+          <option value="Internet" name="category">&#128187 Internet</option>
+          <option value="Librería" name="category">&#128218 Librerías/Frameworks</option>
+          <option value="Programa" name="category">&#127899
+            Programas/aplicaciones</option>
+          <option value="Otros" name="category">&#128391 Otros...</option>
+        </select>
+        <input
+          id="form-word"
+          class="form-select"
+          type="text"
+          name="name"
+          value="{{query.name}}"
+          placeholder="&#128394   Por término..."
+          aria-label="Search"
+        />
+        <button
+          class="nav-btn-in custom-btn1 btn-11"
+          id="iniciar-btn"
+          type="submit"
+        ><span>Suerte!</span> <span>Buscar</span></button>
 
       </form>
     </div>
   </div>
 </nav>
 
-
-
-
-  
-      <script>
-      let balls = document.getElementsByClassName("ball");
-      document.onmousemove = function(){
-        let x = event.clientX * 55/ window.innerWidth +"%";
-        let y = event.clientY * 150/ window.innerHeight +"%";
-        for(let i=0;i<2;i++){
-          balls[i].style.left= x;
-          balls[i].style.top= y;
-          balls[i].style.transform= "translate(-"+x+",-"+y+")";
-        }
-      }
-    </script>
+<script>
+  let balls = document.getElementsByClassName("ball"); document.onmousemove =
+  function(){ let x = event.clientX * 55/ window.innerWidth +"%"; let y =
+  event.clientY * 150/ window.innerHeight +"%"; for(let i=0;i<2;i++){
+  balls[i].style.left= x; balls[i].style.top= y; balls[i].style.transform=
+  "translate(-"+x+",-"+y+")"; } }
+</script>

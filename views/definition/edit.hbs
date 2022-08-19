@@ -1,15 +1,15 @@
-<div id="body-def-img">
-
+<div  id="edit-definitions">
+<img id="edit-img" src="/imagenes/fondos/edit.jpg" alt="">
 <form  action="/profile/{{definition.id}}" method="POST" enctype="multipart/form-data">
     <div class="definitions">
         <div class="d-flex" >
             <div class=" content-container col-5">
-                    <label for="name" class="form-label">Concepto </label>
+                    <label for="name" class="form-label edit-word-back">Concepto </label>
                     <input type="text"  class="form-control {{#if errors.name}} is-invalid {{/if}}" name="name" id="name" value="{{definition.name}}"> 
                     {{#if errors.name}}<div class="invalid-feedback">{{errors.name}}</div>{{/if}}
             </div>
             <div class=" content-container col-5">
-                <label for="category" class="form-label">Categoría</label>
+                <label for="category" class="form-label edit-word-back">Categoría</label>
                 <select name="category"  class="form-control {{#if errors.category}} is-invalid {{/if}}" id="category" value="{{definition.category}}">
                     <option selected disabled value="">Selecciona la categoría...</option>
                     <option value="Internet">Internet</option>
@@ -21,13 +21,13 @@
             </div>
         </div>
         <div class="content-container col-10">
-            <label for="description" class="form-label">Definición</label>
+            <label for="description" class="form-label edit-word-back">Definición</label>
             <textarea rows="3" name="description" id="description" class="form-control {{#if errors.description}} is-invalid {{/if}}" value="{{definition.description}}">{{definition.description}}</textarea>
                     {{#if errors.description}}<div class="invalid-feedback">{{errors.description}}</div>{{/if}}
         </div>
         
         <div class=" content-container col-10">
-            <label for="example" class="form-label">Ejemplo</label>
+            <label for="example" class="form-label edit-word-back">Ejemplo</label>
             <textarea rows="3" name="example" id="example" class="form-control {{#if errors.example}} is-invalid {{/if}}" value="{{definition.example}}">{{definition.example}}</textarea>
                     {{#if errors.example}}<div class="invalid-feedback">{{errors.example}}</div>{{/if}} 
         </div>
@@ -44,13 +44,13 @@
 
         
         <div class=" col-10">
-        <label for="link" class="form-label">Fuente</label>
+        <label for="link" class="form-label edit-word-back" >Fuente</label>
             <div class="input-group mb-2">
                 <span for="link" class="input-group-text">www.bulala.com/tutut</span>
                 <input type="text" name="link" value="{{definition.link}}" class="form-control {{#if errors.link}} is-invalid {{/if}}" id="link" placeholder="Proporciona un link que ayude con tu aportación" >
                     {{#if errors.link}}<div class="invalid-feedback">{{errors.link}}</div>{{/if}}
             </div>
-                            <div class="justify-content-center px-3">           
+                <div class="justify-content-center px-3 justify-buttons">           
                     <button type="submit" class="btn  ms-5  button-51 ">Editar ejemplo</button>
                     <a  class="button-52 btn ms-5" href="/profile"> <span>Volver al perfil</span> </a>
                 </div>

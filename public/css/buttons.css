@@ -317,6 +317,317 @@
 /* botones de log-in */
 
 
+/*  botones de  register */
+.button-21,
+.button-21:after {
+  width: 120px;
+  height: 40px;
+  line-height: 78px;
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  background: linear-gradient(45deg, transparent 5%, #f5f5f5 5%, #60e7ce 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  box-shadow: 6px 0px 0px #76addb;
+  outline: transparent;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-21:after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(20% -6px 0 0);
+    --slice-2: inset(30% -6px 30% 0);
+    --slice-3: inset(10% -6px 825% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+  
+  content: 'JOIN US';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #d3f10e 3%, #744ed2 5%, #414d02 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  clip-path: var(--slice-0);
+}
+
+.button-21:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .button-21,
+  .button-21:after {
+    width: 190px;
+    height: 46px;
+  }
+}
+
+
+.button-22,
+.button-22:after {
+  width: 100px;
+  height: 40px;
+  line-height: 78px;
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  background: linear-gradient(45deg, transparent 5%, #a7eda77b 5%, #2a1d1d8c 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  box-shadow: 6px 0px 0px #000000;
+  outline: transparent;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-22:after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(20% -6px 0 0);
+    --slice-2: inset(30% -6px 30% 0);
+    --slice-3: inset(10% -6px 825% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+  
+  content: 'SOON';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #d3f10e 3%, #744ed2 5%, #024d12 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  clip-path: var(--slice-0);
+}
+
+.button-22:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .button-22,
+  .button-22:after {
+    width: 220px;
+    height: 46px;
+  }
+}
+
+
+
+.button-23,
+.button-23:after {
+  width: 100px;
+  height: 40px;
+  line-height: 78px;
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  background: linear-gradient(45deg, transparent 5%, #a7eda77b 5%, #ffffff7b 5%);
+  border: 0;
+  color: rgb(0, 0, 0);
+  letter-spacing: 3px;
+  box-shadow: 6px 0px 0px #908f8f;
+  outline: transparent;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-23:after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(20% -6px 0 0);
+    --slice-2: inset(30% -6px 30% 0);
+    --slice-3: inset(10% -6px 825% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+  
+  content: 'JOIN US';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #d3f10e 3%, #744ed2 5%, #024d12 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  clip-path: var(--slice-0);
+}
+
+.button-23:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+  background-color: black;
+
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .button-23,
+  .button-23:after {
+    width: 150px;
+    height: 46px;
+    line-height: 88px;
+  }
+}
+
+/* botones de register */
+
+
+
+
+
+
 
 
 .button-52,
@@ -940,3 +1251,7 @@
   }
 }
 
+.justify-buttons{
+  display: flex;
+  justify-content: space-evenly;
+}

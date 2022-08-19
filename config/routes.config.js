@@ -27,6 +27,7 @@ router.post("/register",auth.doRegister);
 
 router.get("/", auth.login);
 router.post("/", auth.doLogin);
+router.get("/logout", auth.logOut)
 
 router.get("/main", database.listOfDatabase)
 router.get("/main/:id/newexample", newexample.new)
