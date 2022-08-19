@@ -1,6 +1,7 @@
 .card-box{
   font-family: "Varela Round";
   margin-bottom: 1%;
+  margin: 0 1% 1% 1%;
   padding: 10px 0px;
   max-width: 100%;
   width: initial;
@@ -17,20 +18,20 @@
   width: initial;
   display: block;
   color: black;
-  background-image: url("../imagenes/fondos/wall4.jpeg");
+  background-image: url("https://fondosmil.com/fondo/20924.jpg");
   border: 40px solid;
-  background-position-y: 230px;
+  background-position-y: 830px;
   background-size:100%;
   
 }
 .img-boxing{
   border: 1px solid #ddd;
   border-radius: 15px;
-  padding: 20px;
+  margin-left: 20px;
+  padding: 10px;
   background-image: linear-gradient(to bottom, rgb(253, 250, 255) 0%, rgb(75, 21, 100) 100%);
   background-clip: content-box, padding-box;
-  width: 50%;
-  height: 50%;
+
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .pads{
@@ -39,6 +40,7 @@
 
 center{
   font-size: 28px;
+  text-shadow: 2px 2px rgb(115, 118, 115);
 }
 .def-term{
   background-image:  linear-gradient(to bottom, rgba(255, 255, 255, 0.196), rgba(255, 255, 255, 0.196), rgba(255, 255, 255, 0.196) 0%, rgba(0, 0, 0, 0.146) 100%);
@@ -128,20 +130,29 @@ center{
 #text-welcome{
   color: rgb(255, 255, 255);
   font-family: Heebo;
-  text-shadow: 2px 2px rgb(9, 187, 232);
-  text-shadow: -2px -2px rgb(19, 186, 233);
+  text-shadow: 2px 2px rgb(97, 102, 104);
+  text-shadow: -2px -2px rgb(88, 88, 88);
   text-align: center;
   font-size: 28px;
 }
 #text-end-profile{
-  margin-top: 4%;
+  display: inline-block;
+  margin-top: 20%;
+  margin-bottom: 10%;
   font-family: "Varela Round";
   color: white;
-  background-color: rgba(0, 0, 0, 0.31);
   text-shadow: 2px 2px rgb(0, 2, 3);
-  padding: 20px 20px 3% 20px;
   text-align: center;
-  border-radius: 30px;
+  text-shadow: 2px 2px black;
+}
+#text-end-list{
+  display: inline-block;
+  padding-bottom: 40px;
+  font-family: "Varela Round";
+  color: white;
+  text-shadow: 2px 2px rgb(0, 2, 3);
+  text-align: center;
+  text-shadow: 2px 2px black;
 }
 #text-end-list{
   margin-top: 4%;

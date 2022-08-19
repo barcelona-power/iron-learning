@@ -7,13 +7,16 @@ module.exports.new = (req, res, next) => {
 }
 
 module.exports.doNew = (req, res, next) => {
-
+    // const id = mongoose.Types.ObjectId(req.params.id.trim())
+    // const result =  await deleteOne({_id:new mongodb.ObjectId(id)});
     const data = ({newexample, categoryexample} = {
         ...req.body,
         belongs: req.params.id
       })
+      console.log(data)
     Newexample.create(data)
     .then((data) => res.redirect("/main"))
+    console.log(data)
     .catch((error) => {
         if(error instanceof mongoose.Error.ValidationError) {
             res.render("frontpage/newexample", {errors: error.errors, newexample: data});

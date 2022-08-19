@@ -1106,12 +1106,12 @@
 #info-example-container{
   position:absolute;
   display: inline-block;
+  max-width: 90%;
   right: 10px;
   z-index: 80;
 }
 .card-text-box{
   display: block;
-  max-width: 420px;
 }
 
 .card-text-col1{

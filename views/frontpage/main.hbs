@@ -42,10 +42,16 @@
  <spam class="spm">Ironhack</spam class="spm">
   <div class="card card-body">
 <p class="card-text-col1"><span style="font-weight:bolder; font-family: Permanent Marker" ></span>{{spacesGone database.name}} </p>
-                        {{#each ...newexamples as |newexample|}}
-                    <h5>NewExample: {{newexample.newexample}}</h5>               
-                    {{/each}}
+
+
+                   
   </div>
+    <div class="card ">
+          <p class="card-text-box"><span style="font-weight:bolder; font-family: Permanent Marker" ></span>       {{#each ...newexamples as |newexample|}}
+                    <h5>Ironhack: {{newexample.newexample}}</h5>               
+                    {{/each}}</p>
+      </div>
+
 </div>
 <div class="toast collapse card-text-box" id="{{spacesGone database.name}}{{database.example1}}">
       <button type="button" class="btn" data-bs-dismiss="toast" aria-label="Close">&#10060</button>
@@ -75,7 +81,7 @@
 
 
  </div>
-
+<h1 id="relax-un-rato">Relájate y disfruta un rato mirando el firmamento...</h1>
   <div class="background-container">
 <img class="moon-is-here" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png" alt="Mooooon">
 <div class="stars"></div>
