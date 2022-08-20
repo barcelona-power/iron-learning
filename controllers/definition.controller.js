@@ -5,7 +5,7 @@ const { Definition, Database } = require("../models");
 module.exports.listOfDefinitions = (req, res, next) => {
   const { name, category } = req.query;
   const criteria = {};
-  if (!req.user.admin) {
+  if (req.user.admin) {
     criteria.author = req.user.id
   }
 
