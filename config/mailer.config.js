@@ -16,7 +16,7 @@ module.exports.sendRegistrationEmail = (user) => {
       to: user.email,
       subject: "Aprende! comparte! disfruta! crea!",
       html: `
-        <h3>Hi ${user.nickname}!</h3>
+        <h3>Hola ${user.nickname}!</h3>
         <p>Welcome to <b>todo list app</b></p>
         <p>please confirm your account using the following link:</p>
         <a href="http://localhost:3000/users/${user.id}/confirm">

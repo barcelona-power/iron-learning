@@ -29,7 +29,7 @@ const definitionSchema = new Schema(
 
     file: {
       type: String,
-      //default: "/public/imagenes/3688989.jpeg",
+      default: "/public/imagenes/3688989.jpeg",
       validate: {
         validator: function (image) {
           try {

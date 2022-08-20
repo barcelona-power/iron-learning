@@ -5,9 +5,11 @@ const { Definition } = require("../models");
 module.exports.profile = (req, res, next) => {
   const { name, category } = req.query;
     const criteria = {};
+
     if (!req.user.admin) {
       criteria.author = req.user.id
     }
+    
     if (name) {
       criteria.name = new RegExp(name, "i");
     }

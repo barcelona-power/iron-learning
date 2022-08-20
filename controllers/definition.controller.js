@@ -21,6 +21,7 @@ module.exports.listOfDefinitions = (req, res, next) => {
     return Database.find(criteria)
       .then((databases) =>
         res.render("definition/list", { definitions, databases, name, category })
+        
       )
       .catch((error) => next(error))
   });
