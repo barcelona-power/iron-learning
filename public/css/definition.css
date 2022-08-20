@@ -189,3 +189,9 @@ center{
   border-radius: 10px;
   padding: 5px 10px;
 }
+#no-definition{
+  position: absolute;
+  display: flex;
+  margin: 5% 0% 0% 23%;
+  font-size: 30px;
+}

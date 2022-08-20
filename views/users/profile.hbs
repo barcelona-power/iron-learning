@@ -9,8 +9,7 @@
 
         <div id="body-profile-top-img">
         <center>En tu libreta tendrás todas las definiciones que has creado y podrás modificarlas</center>
-                      
-
+        <span id="no-definition">Aun no tienes una definición propia. Por favor, pulsa -><a href="/create-definition">aqui</a> <-para crear</span>
 
     <button type="button" id="modal-profile" class="button-53 " data-bs-toggle="modal" data-bs-target="#staticBackdrop">
       Mensaje para {{currentUser.nickname}}
@@ -56,13 +55,16 @@
                               <p class="pads"><span class="shadow-text-title1">Descripción:</span>   <span class="def-term-text">{{definition.description}}</span> </p>
                             </div>
                             {{else}}
-                              <p class="pads"><span class="shadow-text-title1">Gracias por crear un término</span>   <span class="def-term-text">pero sería de gran ayuda si aportases alguna definición</span> </p>
-
+                          <p class="pads mt-4"><span class="shadow-text-title1">Sería de gran ayuda si aportases alguna definición</span>  </p>
                             {{/if}}
+
                             {{#if definition.example}}
                             <div class="shadow-text2">
                               <p class="pads"><span class="shadow-text-title2">Ejemplo:</span>   <span class="def-term-text">{{definition.example}}</span> </p>
                             </div>  
+                            {{else}}
+                          <p class="pads mt-4"><span class="shadow-text-title1">Seguro que se te ocurre algún ejemplo que ayude a los demás </span>  </p>
+
                             {{/if}}
                         </div>           
                         
@@ -72,7 +74,7 @@
                     <form action="/profile/{{definition.id}}/delete" method="post">
                         <button class="btn-9 custom-btn-9" type="submit">&#128163 Borrar</button>
                     </form>
-                        <h5 class="date-box pt-2">Creado el {{prettyDate definition.createdAt}}</h5>
+                        <h5 class="date-box pt-2">Última actualización:{{prettyDate definition.updatedAt}}</h5>
 
                     </div>
                         {{/if}}

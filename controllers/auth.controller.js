@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const { User } = require("../models");
+const {sendRegistrationEmail} = require("../config/mailer.config")
 
 module.exports.register = (req, res, next) => {
   res.render(`register/register`);
@@ -27,7 +28,9 @@ module.exports.doRegister = (req, res, next) => {
         renderWithErrors(errors);
       } else {
         return User.create(req.body)
-        .then((user) => res.redirect("/"));
+        .then((user) => {          
+          sendRegistrationEmail(user);
+          res.redirect("/")});
       }
     })
     .catch((error) => {

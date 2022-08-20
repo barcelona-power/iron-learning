@@ -1,9 +1,9 @@
 const mongoose = require("mongoose");
 
 
-// const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/Iron_learning"
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/iron-learning-data"
 
 mongoose
-  .connect("mongodb://localhost/iron-learning-data")
-  .then(() => console.info("connected DB"))
-  .catch((error) => console.error("error DB", error));
+  .connect(MONGODB_URI)
+  .then(() => console.info("Conectado a la base de datos"))
+  .catch((error) => console.error("error al conectar a la base de datos", error));

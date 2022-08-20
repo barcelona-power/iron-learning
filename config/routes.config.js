@@ -1,14 +1,14 @@
 const express = require("express");
 const router = express.Router();
-//const upload = multer({ dest: 'uploads/' })
-const upload = require("../config/multer.config")
+const multer = require("multer")
+const upload = multer({ dest: 'uploads/' })
 
 const{ user, definition, database, auth, newexample } = require("../controllers");
 
 const secure = require('../middlewares/secure.mid');
 
 router.get("/create-definition", secure.isAuthenticated, definition.formDefinition);
-router.post("/create-definition", upload.single('image'), secure.isAuthenticated, definition.createDefinition)
+router.post("/create-definition", upload.single('file'), secure.isAuthenticated, definition.createDefinition)
 
 router.get("/list", secure.isAuthenticated, definition.listOfDefinitions)
 router.post("/list/:id/delete",secure.isAuthenticated, definition.delete)

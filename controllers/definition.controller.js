@@ -4,7 +4,7 @@ const { Definition, Database } = require("../models");
 module.exports.listOfDefinitions = (req, res, next) => {
   const { name, category } = req.query;
   const criteria = {};
-  if (req.user.admin) {
+  if (!req.user.admin) {
     criteria.author = req.user.id
   }
 
@@ -14,7 +14,6 @@ module.exports.listOfDefinitions = (req, res, next) => {
   if (category){
     criteria.category = new RegExp (category, "i");
 }
-
   Definition.find(criteria)
   .populate("author")
   .then((definitions) => {
@@ -38,6 +37,7 @@ module.exports.createDefinition = (req, res, next) => {
     ...req.body,
     author: req.user.id
   })
+  console.log(req.file)
 
   Definition.create(data)
   .then((data) => res.redirect("/create-definition"))

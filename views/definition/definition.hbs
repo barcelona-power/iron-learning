@@ -36,6 +36,12 @@
             <textarea rows="3" name="example" id="example" class="form-control {{#if errors.example}} is-invalid {{/if}}" value="{{definition.example}}">{{definition.example}}</textarea>
                     {{#if errors.example}}<div class="invalid-feedback">{{errors.example}}</div>{{/if}} 
         </div>
+        <div class="px-5 col-10">
+            <input type="file" class="custom-file-input">
+            <label for="file" class=" form-label">Archivo</label>
+            <input type="file" name="file" value="{{definition.file}}" class="p-4 custom-file-input form-control {{#if errors.file}} is-invalid {{/if}}" type="file" id="file">
+                    {{#if errors.file}}<div class="invalid-feedback">{{errors.file}}</div>{{/if}}
+        </div>
 
         <div class=" col-10">
         <label for="link" class="form-label create-word-back">Fuente</label>

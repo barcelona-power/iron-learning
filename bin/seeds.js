@@ -9,9 +9,8 @@ mongoose.connection.once('open', () => {
     .then(() => Database.create(information))
   // mongoose.connection.dropDatabase()
   //   .then(() => Database.create(information))
-    // Database.create(information)
-    .then(information => console.info(`Successfully created ${information.length} information`))
-    .catch(error => console.error('An error ocurred running seeds', error))
+    .then(information => console.info(`Se creó una base de datos de ${information.length} puntos de información`))
+    .catch(error => console.error('Algo va mal con seeds. corre y escóndete', error))
     .then(() => mongoose.disconnect())
 })
 
