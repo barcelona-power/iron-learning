@@ -1,13 +1,13 @@
 [
     {
-        "name": "lala es la nueva lulu",
-        "description": "algo",
-        "example": "si yo fuera un pirata sería otro algo",
-        "category": "librería",
-        "file": "none",
+        "name": "Node",
+        "description": "Ideado como un entorno de ejecución de JavaScript orientado a eventos asíncronos, Node.js está diseñado para crear aplicaciones network escalables. ",
+        "example": "Es un motor de ejecución de javascript.",
+        "category": "JS",
+        "file": "https://nodejs.org/es/about/",
         "link":"https://media.makeameme.org/created/something-is-missing-6838a8d575.jpg",
         "example1": "misc",
-        "example2": "sports",
+        "example2": "El Node sería como nuestra cocina, el espacio donde cocinaremos nuestros manjares!",
         "example3": "movies",
         "example4": "coocking",
         "example5": "https://res.cloudinary.com/du3v1mwzj/video/upload/v1661001521/iron-learning/videos/IMG_4313_mwndrh.mov"
