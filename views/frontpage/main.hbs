@@ -23,33 +23,32 @@
                         </div>  
                     </div>
                     <div  id="icon-container" >
-                    <img src="/imagenes/iron.png" width="3%" alt="lala" type="button"  class="zoom-example"  data-bs-toggle="collapse" data-bs-target="#{{spacesGone database.name database.example4}}" aria-expanded="false" aria-controls="collapseExample">
-                    <img src="/imagenes/iconos/cine.png" width="6%" alt="lala" type="button"  class="zoom-example" data-bs-toggle="collapse" data-bs-target="#{{spacesGone database.name}}{{database.example1}}" aria-expanded="false" aria-controls="collapseExample">
+                    <img src="/imagenes/iron.png" width="3%" alt="lala" type="button"  class="zoom-example"  data-bs-toggle="collapse" data-bs-target="#a{{spacesGone database.name}}" aria-expanded="false" aria-controls="collapseExample">
+                    <img src="/imagenes/iconos/cine.png" width="6%" alt="lala" type="button"  class="zoom-example" data-bs-toggle="collapse" data-bs-target="#b{{spacesGone database.name}}" aria-expanded="false" aria-controls="collapseExample">
                     
                     {{#if ...currentUser}}
-                    <img src="/imagenes/iconos/deporte.png" width="3.3%"  alt="lala" type="button"  class="zoom-example" data-bs-toggle="collapse" data-bs-target="#{{spacesGone database.name}}{{database.example3}}" aria-expanded="false" aria-controls="collapseExample">
-                    <img src="/imagenes/iconos/cocina.png" width="2.8%"  alt="lala" type="button"  class="zoom-example"  data-bs-toggle="collapse" data-bs-target="#{{spacesGone database.name}}{{database.example2}}" aria-expanded="false" aria-controls="collapseExample">
-                    <a id="logo-iron" class="zoom-example" href="{{database.example5}}"><img src="/imagenes/iconos/cloud-download_13.png" alt="ups, logo? que logo="width="4%"/>
-
+                    <img src="/imagenes/iconos/deporte.png" width="3.3%"  alt="lala" type="button"  class="zoom-example" data-bs-toggle="collapse" data-bs-target="#c{{spacesGone database.name}}" aria-expanded="false" aria-controls="collapseExample">
+                    <img src="/imagenes/iconos/cocina.png" width="2.8%"  alt="lala" type="button"  class="zoom-example"  data-bs-toggle="collapse" data-bs-target="#d{{spacesGone  database.name}}" aria-expanded="false" aria-controls="collapseExample">
                     {{/if}}
                </div>
     </div>
   </div>
   <div id="info-example-container">
 
-<div class="toast collapse card-text-box" id="{{spacesGone database.name}}">
+<div class="toast collapse card-text-box" id="a{{spacesGone database.name}}">
 
     <button type="button" class="btn" data-bs-dismiss="toast" aria-label="Close">&#10060</button>
               <a href="/main/{{database.id}}/newexample/ironhack">Example</a>
  <spam class="spm">Ironhack</spam class="spm">
   <div class="card card-body">
-<p class="card-text-col1"><span style="font-weight:bolder; font-family: Permanent Marker" ></span>{{spacesGone database.name}} </p>
+<p class="card-text-col1"><span style="font-weight:bolder; font-family: Permanent Marker" ></span>{{spacesGone database.example1}} </p>
 
 
                    
   </div>
     <div class="card ">
-          <p class="card-text-box"><span style="font-weight:bolder; font-family: Permanent Marker" ></span>       {{#each ...newexamples as |newexample|}}
+          <p class="card-text-box"><span style="font-weight:bolder; font-family: Permanent Marker" ></span>       
+                    {{#each ...newexamples as |newexample|}}
                     <h5>Ironhack: {{newexample.newexample}}</h5>               
                     {{/each}}</p>
       </div>
@@ -57,21 +56,21 @@
 </div>
 
 
-<div class="toast collapse card-text-box" id="{{spacesGone database.name}}{{database.example1}}">
+<div class="toast collapse card-text-box" id="b{{spacesGone database.name}}">
       <button type="button" class="btn" data-bs-dismiss="toast" aria-label="Close">&#10060</button>
  <spam class="spm">Cine</spam class="spm">
   <div class="card card-body">
-<p class="card-text-col2"><span style="font-weight:bolder; font-family: Permanent Marker" ></span> <a href="{{database.example}}">{{database.example}}</a> </p>
+<p class="card-text-col2"><span style="font-weight:bolder; font-family: Permanent Marker" ></span> {{database.example2}} </p>
   </div>
 </div>
-<div class="toast collapse  card-text-box" id="{{spacesGone  database.name}}{{database.example2}}">
+<div class="toast collapse  card-text-box" id="c{{spacesGone database.name}}">
         <button type="button" class="btn" data-bs-dismiss="toast" aria-label="Close">&#10060</button>
   <spam class="spm">Cocina</spam class="spm">
   <div class="card card-body">
 <p class="card-text-col3"><span style="font-weight:bolder; font-family: Permanent Marker" ></span> {{database.category}}
   </div>
 </div>
-<div class="toast collapse  card-text-box" id="{{spacesGone database.name}}{{database.example3}}">
+<div class="toast collapse  card-text-box" id="d{{spacesGone database.name}}">
         <button type="button" class="btn" data-bs-dismiss="toast" aria-label="Close">&#10060</button>
  <spam class="spm">Deporte</spam class="spm">
   <div class="card card-body">

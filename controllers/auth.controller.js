@@ -14,16 +14,13 @@ module.exports.doRegister = (req, res, next) => {
     });
   }
 
-  const { email, nickname } = req.body;
-  User.findOne({ $or: [{ email }, { nickname }] })
+  const { email } = req.body;
+  User.findOne({ email })
     .then((user) => {
       if (user) {
         const errors = {};
         if (user.email === email) {
           errors.email = "Este correo electrónico ya existe!";
-        }
-        if (user.nickname === nickname) {
-          errors.nickname = "Este nickname ya existe!";
         }
         renderWithErrors(errors);
       } else {
