@@ -368,11 +368,14 @@ a:link{
 }
 
 .date-box{
+  box-shadow: 2px 2px white;
+  text-shadow: 2px 2px white;
   border: 4px dashed;
   border-radius: 30px;
   padding: 0px 10px 6px 10px;
   font-size: 15px;
   font-weight: 900;
+  z-index: 1;
 }
 
 @keyframes move-background {

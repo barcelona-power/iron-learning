@@ -9,7 +9,9 @@
         "example1": "misc",
         "example2": "sports",
         "example3": "movies",
-        "example4": "coocking"
+        "example4": "coocking",
+        "example5": "https://res.cloudinary.com/du3v1mwzj/video/upload/v1661001521/iron-learning/videos/IMG_4313_mwndrh.mov"
+
     },
     {
         "name": "Al fin sin espacios",

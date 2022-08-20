@@ -34,6 +34,19 @@
 
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+
+.img-boxing-2{
+  position: absolute;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  margin-left: 20px;
+  right: 27px;
+  padding: 10px;
+  background-image: linear-gradient(to bottom, rgb(253, 250, 255) 0%, rgb(75, 21, 100) 100%);
+  background-clip: content-box, padding-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .pads{
   margin: 0px;
 }
@@ -94,7 +107,21 @@ center{
 .zoom:hover {
   -ms-transform: scale(2.5); /* IE 9 */
   -webkit-transform: scale(2.5); /* Safari 2.5-8 */
-  transform: scale(2.5) translateX(100px) translateY(30px);  
+  transform: scale(2.5) translateX(80px) translateY(30px);  
+  position: absolute;
+  z-index: 4;
+}
+.zoom2 {
+  transition: transform .2s;
+  width: 200px;
+  height: 200px;
+  position: center;
+}
+
+.zoom2:hover {
+  -ms-transform: scale(2.5); /* IE 9 */
+  -webkit-transform: scale(2.5); /* Safari 2.5-8 */
+  transform: scale(2.5) translateX(-80px) translateY(30px);  
   position: absolute;
   z-index: 4;
 }

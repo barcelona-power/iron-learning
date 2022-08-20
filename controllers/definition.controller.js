@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const { definition } = require(".");
 const { Definition, Database } = require("../models");
 
 module.exports.listOfDefinitions = (req, res, next) => {
@@ -37,7 +38,7 @@ module.exports.createDefinition = (req, res, next) => {
     ...req.body,
     author: req.user.id
   })
-  console.log(req.file)
+  data.file = req.file.path
 
   Definition.create(data)
   .then((data) => res.redirect("/create-definition"))
