@@ -377,6 +377,22 @@ a:link{
   font-weight: 900;
   z-index: 1;
 }
+.date-box-1{
+  top: 1px;
+  box-shadow: 2px 2px white;
+  text-shadow: 2px 2px white;
+  border: 4px dashed;
+  border-radius: 30px;
+  padding: 6px 10px 6px 10px;
+  font-size: 15px;
+  font-weight: 900;
+  z-index: 1;
+}
+.date-box-1-box{
+  bottom: 1px;
+  display: flex;
+  position: absolute;
+}
 
 @keyframes move-background {
   from {

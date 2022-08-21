@@ -26,7 +26,10 @@ module.exports.doNew = (req, res, next) => {
 
 
 module.exports.newlist = (req, res, next) => {
-    Newexample.find()
+    Newexample.find({
+        ...req.query,
+        belongs: req.user.id
+    })
     .populate("belongs")
     .then((list)=>{
         console.log(list)
@@ -35,6 +38,9 @@ module.exports.newlist = (req, res, next) => {
     .catch((error) => next(error))
 }
 module.exports.deleteNewExample = (req, res, next) => {
+    if(!req.user.admin){
+        return res.redirect("/never")
+    }
     Newexample.findByIdAndDelete(req.params.id)
       .then(() => {res.redirect("/main")})
       .catch((error) => next(error))

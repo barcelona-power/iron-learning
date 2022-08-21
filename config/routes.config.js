@@ -20,6 +20,7 @@ router.get("/profile/:id/edit",  secure.isAuthenticated, definition.edit)
 router.post("/profile/:id/delete", secure.isAuthenticated, user.delete)
 
 
+
 router.get("/register", auth.register);
 router.post("/register",auth.doRegister);
 
@@ -28,10 +29,10 @@ router.get("/", auth.login);
 router.post("/", auth.doLogin);
 router.get("/logout", auth.logOut)
 
-router.get("/main", database.listOfDatabase)
-router.get("/main/:id/newexample/:categoryexample", newexample.new)
-router.post("/main/:id/newexample", newexample.doNew)
-router.post("/main/:id/delete", newexample.deleteNewExample)
+router.get("/main", secure.isAuthenticated, database.listOfDatabase)
+router.get("/main/:id/newexample/:categoryexample", secure.isAuthenticated, newexample.new)
+router.post("/main/:id/newexample",secure.isAuthenticated, newexample.doNew)
+router.post("/main/:id/delete", secure.isAuthenticated, newexample.deleteNewExample)
 
 
 
