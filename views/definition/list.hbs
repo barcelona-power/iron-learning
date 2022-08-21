@@ -14,9 +14,9 @@
    <a href="{{definition.link}}"><img src="{{definition.link}}" width="100%" height="100%" class="" alt="..." class="d-flex"> </a> 
     </div>
     <div class="col-md-9">
-                    <h5 class="card-title d-inline-flex mx-3 ">Término: <span class="def-term"> {{definition.name}}</span></h5>               
+                    <h5 class="card-title d-inline-flex ">Término: <span class="def-term"> {{definition.name}}</span></h5>               
                     <h5 class="pads d-inline-flex mx-3">Categoría:  <span class="def-term"> {{definition.category}}</span></h5>
-                    <h5 class="card-title d-inline-flex mx-3 ">Autor: <span class="def-term"> {{ definition.author.nickname}}</span></h5>    
+                    <h5 class="card-title d-inline-flex mx-3 ">Autor: <span class="def-term"> {{upperCase definition.author.nickname}}</span></h5>    
                                             <div class="date-box-1-box">
                         <h5 class="date-box-1 ">Última actualización:{{prettyDate definition.updatedAt}}</h5>
                     </div>

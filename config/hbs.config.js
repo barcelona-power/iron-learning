@@ -8,6 +8,10 @@ hbs.registerHelper('upperCase', (nickname) => nickname.charAt(0).toUpperCase() +
 
 hbs.registerHelper('spacesGone', (spaces) => spaces.split('').filter(e => e.trim().length).join(''))
 
+hbs.registerHelper('isSame', function(value, selected) {
+    return value === selected
+})
+
 hbs.registerHelper('match', function (newexample, database, belongs){
     if(newexample.belongs.id === database.id){
         options.fn(this)
