@@ -30,13 +30,25 @@
                     <img src="/imagenes/iconos/cocina.png" width="2.8%"  alt="lala" type="button"  class="zoom-example"  data-bs-toggle="collapse" data-bs-target="#d{{spacesGone  database.name}}" aria-expanded="false" aria-controls="collapseExample">
                     <img src="/imagenes/iconos/mix.png" width="3.5%"  alt="lala" type="button"  class="zoom-example"  data-bs-toggle="collapse" data-bs-target="#e{{spacesGone  database.name}}" aria-expanded="false" aria-controls="collapseExample">
                     <div class="image-hover-text-container">
+                    {{!--  --}}
                       <div class="image-hover-image">
                         <a id="download-icon" href="{{database.example5}}"><img src="/imagenes/iconos/cloud-download_13.png"  alt="No se what"></a>
-
                       </div>
                       <div class="image-hover-text">
                         <div class="image-hover-text-bubble">
                     <a style="text-decoration: none; color: black"  href="{{database.example5}}">Descargar video del término</a>
+                        </div>
+                      </div>
+                    </div>
+                    {{!--  --}}
+                    <div class="image-hover-text-container-2">
+                      <div class="image-hover-image-2">
+                        <a style="text-decoration: none; color: black" id="download-icon-2" href="{{database.file}}"><img src="/imagenes/iconos/flechaout.png"  alt="No se what"></a>
+
+                      </div>
+                      <div class="image-hover-text-2">
+                        <div class="image-hover-text-bubble-2">
+                          <a href="{{database.file}}">ir a la fuente</a>
                         </div>
                       </div>
                     </div>
@@ -96,8 +108,7 @@
 <div class="toast collapse  card-text-box" id="e{{spacesGone database.name}}">
         <button type="button" class="btn" data-bs-dismiss="toast" aria-label="Close">&#10060</button>
  <spam class="spm">Ejemplos de Usuarios</spam class="spm">
-              <a href="/main/{{database.id}}/newexample/ironhack"> <img src="/imagenes/iconos/create.png" alt="eh" width="10%" style="float:right" class="m-1"></a>
-
+   <a href="/main/{{database.id}}/newexample/ironhack"> <img src="/imagenes/iconos/create.png" alt="eh" width="10%" id="btn-newexample-go"></a>
   <div class="card card-body">
 <p class="card-text-col5">      
     <div class="">

@@ -741,7 +741,7 @@
   line-height: 78px;
   font-size: 20px;
   font-family: 'Bebas Neue', sans-serif;
-  background: linear-gradient(0deg, rgb(240, 229, 202) 0%, rgb(243, 162, 0) 100%);
+  background: linear-gradient(0deg, rgb(240, 229, 202) 0%, rgb(2, 137, 209) 100%);
   border: 0;
   color: #fff;
   letter-spacing: 3px;
@@ -761,14 +761,14 @@
     --slice-4: inset(40% -6px 43% 0);
     --slice-5: inset(80% -6px 5% 0);
   
-  content: 'Profile';
+  content: '---------------------';
   display: block;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, transparent 3%, #d3f10e 3%, #744ed2 5%, #024d12 5%);
+  background: linear-gradient(45deg, transparent 3%, #d3f10e 3%, #744ed2 5%, #930101 5%);
   text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
   clip-path: var(--slice-0);
 }
@@ -843,7 +843,7 @@
   line-height: 78px;
   font-size: 20px;
   font-family: 'Bebas Neue', sans-serif;
-  background: linear-gradient(0deg, rgb(240, 229, 202) 0%, rgb(243, 162, 0) 100%);
+  background: linear-gradient(0deg, rgb(240, 229, 202) 0%, rgb(2, 137, 209) 100%);
   border: 0;
   color: #fff;
   letter-spacing: 3px;
@@ -863,15 +863,14 @@
     --slice-4: inset(40% -6px 43% 0);
     --slice-5: inset(80% -6px 5% 0);
   
-  content: 'Profile';
+  content: '-------------------';
   display: block;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, transparent 3%, #d3f10e 3%, #744ed2 5%, #024d12 5%);
-  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  background: linear-gradient(45deg, transparent 3%, #0237bf 3%, #744ed2 5%, #000000 5%);
   clip-path: var(--slice-0);
 }
 
@@ -1553,6 +1552,8 @@
 {
   border-radius: 10px;
   height: 55px;
+  opacity: 0.3;
+
 }
 
 
@@ -1600,14 +1601,110 @@
   font-size: 25px;
   display: block;
   
+  
 }
 .image-hover-image img:hover
 {
   border-radius: 10px;
   filter: invert;
-  opacity: 0.5;
+  opacity: 1;
   -webkit-transform: rotateZ(-360deg);
 -ms-transform: rotateZ(-360deg);
 transform: rotateZ(-360deg);
 transition: 1s ease;
+}
+
+/*           */
+
+.image-hover-text-container-2
+{
+  position: relative;
+  display: inline-block;
+  margin-left: 5%;
+  width: auto;
+  height: auto;
+  transition: all 0.2s linear;
+
+}
+
+.image-hover-image-2 
+{
+ display: block;
+}
+/* Make the image round */
+.image-hover-image-2 img
+{
+  border-radius: 10px;
+  height: 40px;
+  opacity: 1;
+  -webkit-transform: rotateZ(-45deg);
+  -ms-transform: rotateZ(-45deg);
+  transform: rotateZ(-45deg);
+  opacity: 0.3;
+}
+
+
+
+.image-hover-text-2 
+{
+  position: absolute;
+  top: 20px;
+  left: -45%;
+  width: 100%;  
+  height: 200%;
+  margin: 0 auto;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+  
+}
+.image-hover-text-2:hover 
+{
+  opacity: 1;
+}
+
+
+.image-hover-text-bubble-2 
+{
+  position: relative;
+  box-sizing: border-box;
+  top: 0; left: 0; right: 100%;
+  height: 30px;
+  width: 150px;
+  text-align: center;
+  background: rgba(128, 236, 255, 0.9);
+  border: 1px solid #848484;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 1px;
+  overflow: hidden;
+  font-size: 17px;
+  text-align: center;
+  word-wrap: break-word;
+  text-decoration: none;
+}
+
+.image-hover-text-2 .image-hover-text-title-2
+{
+  font-size: 25px;
+  display: block;
+  
+}
+.image-hover-image-2 img:hover
+{
+  border-radius: 10px;
+  filter: invert;
+  opacity: 1;
+  -webkit-transform: rotateZ(360deg);
+-ms-transform: rotateZ(360deg);
+transform: rotateZ(360deg);
+transition: 1s ease;
+}
+#btn-newexample-go{
+  float: right;
+  margin: 5px;
+}
+#btn-newexample-go:hover{
+border: 1px solid black;
+border-radius: 50%;
+padding: 1px
 }
