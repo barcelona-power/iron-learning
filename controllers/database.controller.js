@@ -13,6 +13,7 @@ module.exports.listOfDatabase = (req, res, next) => {
     Database.find(criteria)
     .then((databases) => {
         return Newexample.find(criteria)
+        .populate("belongs")
         .then((newexamples) => 
         res.render("frontpage/main", {newexamples, databases, name, category})
         )

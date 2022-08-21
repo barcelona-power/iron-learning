@@ -31,7 +31,7 @@ router.get("/logout", auth.logOut)
 router.get("/main", database.listOfDatabase)
 router.get("/main/:id/newexample/:categoryexample", newexample.new)
 router.post("/main/:id/newexample", newexample.doNew)
-
+router.post("/main/:id/delete", newexample.deleteNewExample)
 
 
 

@@ -34,3 +34,9 @@ module.exports.newlist = (req, res, next) => {
     })
     .catch((error) => next(error))
 }
+module.exports.deleteNewExample = (req, res, next) => {
+    Newexample.findByIdAndDelete(req.params.id)
+      .then(() => {res.redirect("/main")})
+      .catch((error) => next(error))
+  };
+  

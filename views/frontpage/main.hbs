@@ -25,43 +25,53 @@
                     <div  id="icon-container" >
                     <img src="/imagenes/iron.png" width="3%" alt="lala" type="button"  class="zoom-example"  data-bs-toggle="collapse" data-bs-target="#a{{spacesGone database.name}}" aria-expanded="false" aria-controls="collapseExample">
                     <img src="/imagenes/iconos/cine.png" width="6%" alt="lala" type="button"  class="zoom-example" data-bs-toggle="collapse" data-bs-target="#b{{spacesGone database.name}}" aria-expanded="false" aria-controls="collapseExample">
-                    
                     {{#if ...currentUser}}
                     <img src="/imagenes/iconos/deporte.png" width="3.3%"  alt="lala" type="button"  class="zoom-example" data-bs-toggle="collapse" data-bs-target="#c{{spacesGone database.name}}" aria-expanded="false" aria-controls="collapseExample">
                     <img src="/imagenes/iconos/cocina.png" width="2.8%"  alt="lala" type="button"  class="zoom-example"  data-bs-toggle="collapse" data-bs-target="#d{{spacesGone  database.name}}" aria-expanded="false" aria-controls="collapseExample">
+                    <img src="/imagenes/iconos/mix.png" width="3.5%"  alt="lala" type="button"  class="zoom-example"  data-bs-toggle="collapse" data-bs-target="#e{{spacesGone  database.name}}" aria-expanded="false" aria-controls="collapseExample">
+                    <div class="image-hover-text-container">
+                      <div class="image-hover-image">
+                        <a id="download-icon" href="{{database.example5}}"><img src="/imagenes/iconos/cloud-download_13.png"  alt="No se what"></a>
+
+                      </div>
+                      <div class="image-hover-text">
+                        <div class="image-hover-text-bubble">
+                    <a style="text-decoration: none; color: black"  href="{{database.example5}}">Descargar video del término</a>
+                        </div>
+                      </div>
+                    </div>
                     {{/if}}
                </div>
+
     </div>
   </div>
   <div id="info-example-container">
-
+{{!-- example 1 --}}
 <div class="toast collapse card-text-box" id="a{{spacesGone database.name}}">
 
     <button type="button" class="btn" data-bs-dismiss="toast" aria-label="Close">&#10060</button>
-              <a href="/main/{{database.id}}/newexample/ironhack">Example</a>
  <spam class="spm">Ironhack</spam class="spm">
   <div class="card card-body">
 <p class="card-text-col1"><span style="font-weight:bolder; font-family: Permanent Marker" ></span>{{spacesGone database.example1}} </p>
-
-
-                   
   </div>
-    <div class="card ">
-          <p class="card-text-box"><span style="font-weight:bolder; font-family: Permanent Marker" ></span>       
-                    {{#each ...newexamples as |newexample|}}
-                    <h5>Ironhack: {{newexample.newexample}}</h5>               
-                    {{/each}}</p>
-      </div>
 
 </div>
 
-
+{{!-- example2 --}}
 <div class="toast collapse card-text-box" id="b{{spacesGone database.name}}">
       <button type="button" class="btn" data-bs-dismiss="toast" aria-label="Close">&#10060</button>
+              <a href="/main/{{database.id}}/newexample/ironhack">Example</a>
+
  <spam class="spm">Cine</spam class="spm">
   <div class="card card-body">
 <p class="card-text-col2"><span style="font-weight:bolder; font-family: Permanent Marker" ></span> {{database.example2}} </p>
   </div>
+
+
+
+
+{{!-- example3 --}}
+
 </div>
 <div class="toast collapse  card-text-box" id="c{{spacesGone database.name}}">
         <button type="button" class="btn" data-bs-dismiss="toast" aria-label="Close">&#10060</button>
@@ -70,6 +80,10 @@
 <p class="card-text-col3"><span style="font-weight:bolder; font-family: Permanent Marker" ></span> {{database.category}}
   </div>
 </div>
+
+
+{{!-- example4 --}}
+
 <div class="toast collapse  card-text-box" id="d{{spacesGone database.name}}">
         <button type="button" class="btn" data-bs-dismiss="toast" aria-label="Close">&#10060</button>
  <spam class="spm">Deporte</spam class="spm">
@@ -77,6 +91,32 @@
 <p class="card-text-col4"> <span style="font-weight:bolder; font-family: Permanent Marker" ></span>  {{database.name}}
   </div>
 </div>
+
+{{!-- example5 --}}
+<div class="toast collapse  card-text-box" id="e{{spacesGone database.name}}">
+        <button type="button" class="btn" data-bs-dismiss="toast" aria-label="Close">&#10060</button>
+ <spam class="spm">Ejemplos de Usuarios</spam class="spm">
+              <a href="/main/{{database.id}}/newexample/ironhack"> <img src="/imagenes/iconos/create.png" alt="eh" width="10%" style="float:right" class="m-1"></a>
+
+  <div class="card card-body">
+<p class="card-text-col5">      
+    <div class="">
+          <p class="card-text-col5 new-example-letter">   
+                    {{#each ../newexamples as |newexample|}}
+                     Anónimo: {{newexample.newexample}}    
+                        {{#if ../../currentUser}}
+                        <form action="/main/{{newexample.id}}/delete" method="post">
+                            <button class="btn-9a custom-btn-9a" type="submit">&#128163 &#9757 Borrar tu ejemplo &#9757 &#128163</button>
+                        </form>
+                        {{/if}}
+                    {{/each}}
+                    </p>
+                    </p>
+      </div>
+  </div>
+</div>
+
+
   </div>
             </div>
         {{/each}}

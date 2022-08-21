@@ -1,15 +1,19 @@
-<div class="m-5">
-
-
-
-
-    <form action="/main/{{data.id}}/newexample" method="POST">
-                    <label for="name" class="form-label">Nuevo ejemplo </label>
-                    <input type="text"  class="form-control" name="newexample" id="newexample"> 
+<div class="edition-box row justify-content-center">
+    <div class="col-12 col-md-8 col-lg-6">
+            <form action="/main/{{data.id}}/newexample" method="POST">
+                    <label for="name" class="form-label" style="color:white">Crea un nuevo ejemplo. Podrás borrarlo si no te gusta y es anónima por si te da vergüenza...</label>
+                    <textarea type="text"  class="form-control" name="newexample" id="newexample" cols="20" rows="5"></textarea>
                     <input type="hidden" name="belongs" value="{{data.id}}">
                     <input type="hidden" name="categoryexample" value="{{data.categoryexample}}">
-            <button type="submit" class="btn btn-primary p-3 col-10">Crear nuevo ejemplo</button>
-            <a href="/main"class="btn btn-primary p-3 col-10">Volver al main</a>
+                    
+
+
+                <div class="justify-content-center px-3 justify-buttons">           
+                    <button type="submit" class="btn   button-52b me-1 mt-1">Creat nuevo ejemplo</button>
+                    <a  class="button-52a btn ms-1 mt-1" href="/main"> <span>Volver a la página principal </span> </a>
+                </div>
     </form>
+    </div>
+
 
 </div>

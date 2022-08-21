@@ -11,7 +11,7 @@ const exampleSchema = new Schema ({
     belongs: {
         // type: String,
         type: Schema.Types.ObjectId,
-        ref: "Definition",
+        ref: "Database",
     } ,
     categoryexample:{
         type: String

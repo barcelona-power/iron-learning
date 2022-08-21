@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-const { definition } = require(".");
 const { Definition, Database } = require("../models");
 
 module.exports.listOfDefinitions = (req, res, next) => {
