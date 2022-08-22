@@ -29,7 +29,7 @@ router.get("/", auth.login);
 router.post("/", auth.doLogin);
 router.get("/logout", auth.logOut)
 
-router.get("/main", secure.isAuthenticated, database.listOfDatabase)
+router.get("/main", database.listOfDatabase)
 router.get("/main/:id/newexample/:categoryexample", secure.isAuthenticated, newexample.new)
 router.post("/main/:id/newexample",secure.isAuthenticated, newexample.doNew)
 router.post("/main/:id/delete", secure.isAuthenticated, newexample.deleteNewExample)
