@@ -12,7 +12,7 @@ cloudinary.config({
 const storage = new CloudinaryStorage({
   cloudinary,
   params: {
-    allowed_formats: ['jpg', 'png', 'gif', ],
+    allowed_formats: ['jpg', 'png', 'gif', 'webp' ],
     folder: 'iron-learning' 
     // resource_type: 'raw' => this is in case you want to upload other type of files, not just images
   }
