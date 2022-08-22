@@ -507,3 +507,10 @@ a:link{
 .edition-box{
   padding-top: 10%;
 }
+
+#vide-position{
+  display: flex;
+  position: absolute;
+  top:3%;
+  right: 2px;
+}

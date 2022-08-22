@@ -1498,6 +1498,7 @@
   -webkit-user-select: none;
   touch-action: manipulation;
   margin-left: 1%;
+  margin-top: 2%;
 }
 
 .button-53:focus {
@@ -1517,6 +1518,7 @@
 .button-53:hover:after {
   bottom: 2px;
   left: 2px;
+  font-size: 2rem;
 }
 
 @media (min-width: 768px) {
