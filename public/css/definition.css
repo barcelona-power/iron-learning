@@ -7,7 +7,7 @@
   width: initial;
   display: block;
   color: black;
-  background-image: url("../imagenes/fondos/101.jpg");
+  background-image: url("https://res.cloudinary.com/du3v1mwzj/image/upload/v1661163557/iron-learning/imgs/fondos/101_jkgy7v.jpg");
   background-size: 100%;  
 }
 .card-box-profile{
@@ -18,7 +18,7 @@
   width: initial;
   display: block;
   color: black;
-  background-image: url("https://fondosmil.com/fondo/20924.jpg");
+  background-image: url("https://res.cloudinary.com/du3v1mwzj/image/upload/v1661168175/iron-learning/imgs/fondos/fondo2_hhxjk7.jpg");
   border: 40px solid;
   background-position-y: 830px;
   background-size:100%;
@@ -225,3 +225,10 @@ center{
 .new-example-letter{
   font-size: 15px;
 }
+#back-error{
+  color: white;
+  padding-bottom: 10%;
+  background-image: url("https://img.wattpad.com/b41fd4694c5fcfbd05d4f6a4e14bbe479c2dc2ec/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f5938594347587645506e392d45773d3d2d3330332e313663663262666263316537366266333530323433363935343432332e676966?s=fit&w=720&h=720");
+  background-size: 30%;
+}
+.fade-in-image { animation: fadeIn 5s; }

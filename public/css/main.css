@@ -1,20 +1,17 @@
 
 body{
   cursor: url("/imagenes/curs0.cur"), pointer;
-  background-image: url("https://fondosmil.com/fondo/35556.jpg");
+  background-image: url("https://res.cloudinary.com/du3v1mwzj/image/upload/v1661163777/iron-learning/imgs/fondos/bigback_sfwrza.jpg");
   
 }
-
-/* a:link{
-    cursor: url("/imagenes/edBus.cur"), pointer;
+::-moz-selection {
+  background-color: orange;
+  color: white;
 }
-
-select{
-    cursor: url("/imagenes/edPreg.cur"), pointer;
+::selection  {
+  background-color: orange;
+  color: white;
 }
-input{
-    cursor: url("/imagenes/edPreg.cur"), pointer;
-}  */
 .spm{
   font-family: "Varela Round";
   font-weight: 900;
@@ -30,7 +27,7 @@ input{
   margin-top: -5%;
 }
 .body-front-img{
-  background-image: url("../imagenes/fondos/wall5.jpeg");
+  background-image: url("https://res.cloudinary.com/du3v1mwzj/image/upload/v1661163655/iron-learning/imgs/fondos/wall1_ctvtuo.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   padding-bottom: 20%;
@@ -52,27 +49,13 @@ z-index: -1;
 
 }
 
-#body-list-img{
-  background-image: url("../imagenes/fondos/wall12.jpeg");
-  background-size: 100%;
-  background-repeat: repeat;
-}
 #body-profile-img{
-  background-image: url("https://fondosmil.com/fondo/35556.jpg");
+  background-image: url("https://res.cloudinary.com/du3v1mwzj/image/upload/v1661163655/iron-learning/imgs/fondos/wall1_ctvtuo.jpg");
   margin-top: none;
 }
 #body-profile-top-img{
   color: white;
   width: 100%;
-}
-#body-profile-bottom-img{
-  color: white;
-  background: url("../imagenes/fondos/fondoBlue.jpg") repeat;
-  width: 100%;
-}
-
-.body-main-img{
-  background: url("../imagenes/fondos/wall8.jpeg") repeat;
 }
 
 a:link{
@@ -80,23 +63,26 @@ a:link{
 }
 #logo-iron{
   width: 2%;
-  cursor: url("/imagenes/curs.cur"), pointer;
+  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"), pointer;
 
 }
 #logo-gitHub{
   width: 2.5%;
-  cursor: url("/imagenes/curs.cur"), pointer;
+  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"), pointer;
+
 
 }
 #logo-wiki{
   width: 2%;
-  cursor: url("/imagenes/curs.cur"), pointer;
+  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"), pointer;
+
 }
 #logo-student{
   width: 2%;
   margin-right: 1%;
   margin-left: 0.3%;
-  cursor: url("/imagenes/curs.cur"), pointer;
+  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"), pointer;
+
 
 }
 .zoom-logo {
@@ -123,9 +109,6 @@ a:link{
   z-index: 4;
   opacity: 1;
 }
-/* .space-evenly {
-  padding: 10px;
-} */
 
 #iniciar-sesión {
   font-size: 30px;
@@ -208,7 +191,7 @@ a:link{
 
 
 .nav-btn span {
-  cursor: url("/imagenes/curs.cur"), pointer;
+  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"), pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
@@ -227,7 +210,8 @@ a:link{
 
 .nav-btn-in span {
   font-family: "Varela Round";
-  cursor: url("/imagenes/curs.cur"), pointer;
+  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"), pointer;
+
   display: inline-block;
   position: relative; 
   transition: 1s;
@@ -495,7 +479,7 @@ a:link{
   margin-top: 1.5%;
   margin-bottom: -1%;
   background-color:#8ec1da;
-  background-image: url("https://fondosmil.com/fondo/35556.jpg");
+  background-image: url("https://res.cloudinary.com/du3v1mwzj/image/upload/v1661163777/iron-learning/imgs/fondos/bigback_sfwrza.jpg");
   background-position: center bottom;
   animation: animatedBackground 30s linear infinite;
   /* Safari and Chrome: */

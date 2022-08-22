@@ -29,7 +29,7 @@
 }
 
 #btn-invitado span:after {
-  content: url(../imagenes/rod-1.png);
+  content: url("https://res.cloudinary.com/du3v1mwzj/image/upload/v1661163528/iron-learning/imgs/fondos/rod-1_dnkikk.png");
   position: absolute;
   opacity: 0;
   top: 80%;
@@ -79,7 +79,6 @@
 }
 
 #btn-log-img span:after {
-  content: url(../imagenes/rod-1.png);
   position: absolute;
   opacity: 0;
   top: 80%;
@@ -1561,7 +1560,7 @@
 .image-hover-text 
 {
   position: absolute;
-  top: -20px;
+  top: -30px;
   left: -45%;
   width: 100%;  
   height: 200%;
@@ -1648,7 +1647,7 @@ transition: 1s ease;
 .image-hover-text-2 
 {
   position: absolute;
-  top: -24px;
+  top: -44px;
   left: -55%;
   width: 100%;  
   height: 200%;

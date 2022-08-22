@@ -23,10 +23,11 @@
                         </div>  
                     </div>
                     <div  id="icon-container" >
-                    <img src="/imagenes/iconos/cine.png" width="6%" alt="lala" type="button"  class="zoom-example" data-bs-toggle="collapse" data-bs-target="#b{{spacesGone database.name}}" aria-expanded="false" aria-controls="collapseExample">
+                    <img src="/imagenes/iconos/cine.png" width="6%" alt="lala" type="button"  class="zoom-example" data-bs-toggle="collapse" data-bs-target="#a{{spacesGone database.name}}" aria-expanded="false" aria-controls="collapseExample">
+                    <img src="/imagenes/iconos/cocina.png" width="2.8%" alt="lala" type="button"  class="zoom-example" data-bs-toggle="collapse" data-bs-target="#b{{spacesGone database.name}}" aria-expanded="false" aria-controls="collapseExample">
                     <img src="/imagenes/iconos/deporte.png" width="3.3%"  alt="lala" type="button"  class="zoom-example" data-bs-toggle="collapse" data-bs-target="#c{{spacesGone database.name}}" aria-expanded="false" aria-controls="collapseExample">
                     {{#if ...currentUser}}
-                    <img src="/imagenes/iconos/cocina.png" width="2.8%"  alt="lala" type="button"  class="zoom-example"  data-bs-toggle="collapse" data-bs-target="#d{{spacesGone  database.name}}" aria-expanded="false" aria-controls="collapseExample">
+                    <img src="/imagenes/iconos/cine.png" width="6%"  alt="lala" type="button"  class="zoom-example"  data-bs-toggle="collapse" data-bs-target="#d{{spacesGone  database.name}}" aria-expanded="false" aria-controls="collapseExample">
                     <img src="/imagenes/iconos/mix.png" width="3.5%"  alt="lala" type="button"  class="zoom-example"  data-bs-toggle="collapse" data-bs-target="#e{{spacesGone  database.name}}" aria-expanded="false" aria-controls="collapseExample">
                     <div class="image-hover-text-container">
                     {{!--  --}}
@@ -59,9 +60,8 @@
   <div id="info-example-container">
 {{!-- example 1 --}}
 <div class="toast collapse card-text-box" id="a{{spacesGone database.name}}">
-
     <button type="button" class="btn" data-bs-dismiss="toast" aria-label="Close">&#10060</button>
- <spam class="spm">Ironhack</spam class="spm">
+ <spam class="spm">Cine</spam class="spm">
   <div class="card card-body">
 <p class="card-text-col1"><span style="font-weight:bolder; font-family: Permanent Marker" ></span>{{spacesGone database.example1}} </p>
   </div>
@@ -71,9 +71,7 @@
 {{!-- example2 --}}
 <div class="toast collapse card-text-box" id="b{{spacesGone database.name}}">
       <button type="button" class="btn" data-bs-dismiss="toast" aria-label="Close">&#10060</button>
-              <a href="/main/{{database.id}}/newexample/ironhack">Example</a>
-
- <spam class="spm">Cine</spam class="spm">
+ <spam class="spm">Cocina</spam class="spm">
   <div class="card card-body">
 <p class="card-text-col2"><span style="font-weight:bolder; font-family: Permanent Marker" ></span> {{database.example2}} </p>
   </div>
@@ -86,7 +84,7 @@
 </div>
 <div class="toast collapse  card-text-box" id="c{{spacesGone database.name}}">
         <button type="button" class="btn" data-bs-dismiss="toast" aria-label="Close">&#10060</button>
-  <spam class="spm">Cocina</spam class="spm">
+  <spam class="spm">Deporte</spam class="spm">
   <div class="card card-body">
 <p class="card-text-col3"><span style="font-weight:bolder; font-family: Permanent Marker" ></span> {{database.category}}
   </div>
@@ -111,9 +109,12 @@
   <div class="card card-body">
 <p class="card-text-col5">      
     <div class="">
-          <p class="card-text-col5 new-example-letter">   
+          <p class=" new-example-letter">   
                     {{#each ../newexamples as |newexample|}}
+                    <div class="card-text-col5">
+
                  &nbsp;&nbsp;&nbsp;&nbsp; &#128526 {{newexample.newexample}}   
+                    </div>
                  <hr> 
                         {{#if ../../currentUser.admin}}
                         <form action="/main/{{newexample.id}}/delete" method="post">
