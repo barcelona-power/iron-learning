@@ -1,4 +1,60 @@
 [
+        {
+        "name": "http",
+        "description": "HTTP, de sus siglas en inglés: Hypertext Transfer Protocol, es el nombre de un protocolo el cual nos permite realizar una petición de datos y recursos, como pueden ser documentos HTML. Es la base de cualquier intercambio de datos en la Web, y un protocolo de estructura cliente-servidor, esto quiere decir que una petición de datos es iniciada por el elemento que recibirá los datos (el cliente), normalmente un navegador Web. Así, una página web completa resulta de la unión de distintos sub-documentos recibidos, como, por ejemplo: un documento que especifique el estilo de maquetación de la página web (CSS), el texto, las imágenes, vídeos, scripts, etc...  ",
+        "example": "Hyper text transmition protocol. Protocolo de la WEB. (puerto 80). En la mayoría de webs lo veremos como https. La s es de seguro, se añade una capa a http de seguridad. Comunicación cifrada entre el cliente y el servidor. Hyper text transmition protocol security. Se suele usar el puerto 443",
+        "category": "Internet",
+        "file": " https://developer.mozilla.org/es/docs/Web/HTTP/Overview",
+        "link":"https://www.arsys.es/blog/file/uploads/2015/12/2015-12-30_http.jpg",
+        "example1": "Es como Soul Goodman para los maleantes que quieren que todo salga bien, negocia por ellos y los pone de acuerdo con los términos del trámite",
+        "example2": "Podriamos decir que el http en el mundo de la cocina es un camarero. Lleva los platos de comida a los comensales de manera profesional y segura. ",
+        "example3": "Cuando en el football americano compran y venden jugadores universitarios como si fueran caramelos...",
+        "example4": "https://asset.cloudinary.com/du3v1mwzj/29ca53f75f0de6cc52658ead8935d310",
+        "video": "https://res.cloudinary.com/du3v1mwzj/video/upload/v1661208900/iron-learning/videos/htt_protocol_qs3rc9.mp4"
+    },
+
+    {
+        "name": "IP",
+        "description": "Una dirección IP es una representación numérica del punto de Internet donde está conectado un dispositivo. Se usa para identificar dónde hay algo y, en cierto modo, qué es. Comprender los fundamentos de las direcciones IP es esencial para desenvolverse por Internet. Aprenda cómo funcionan las direcciones IP y por qué es tan importante proteger la suya.",
+        "example": "Internet protocol. Es la dirección que tiene un dispositivo en internet, o también el protocolo de direccionamento a internet. Se les llama IP a la dirección que tiene un despositivo conectado en una red. Esta consta de 4 números separados por puntos que van del 0 al 255. (cada num son 8 bits).",
+        "category": "Internet",
+        "file": "https://www.avast.com/es-es/c-what-is-an-ip-address",
+        "link":"https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2021/09/ip-ordenador-2463441.jpg?itok=UJFUeR5H",
+        "example1": "",
+        "example2": "La ubicación, la dirección exacta de un restaurante. Si vas por la calle que debes, pero no sabes el nombre del restautante en el que entrar, acabarás comiendo tacos en lugar de sushi",
+        "example3": "En un equipo de futbol, aunque todos formen parte del mismo, tienen cada uno un papel y una posición en la que juegan",
+        "example4": "https://asset.cloudinary.com/du3v1mwzj/0c8c0d0c7e4c3394aa51132279f5fe0f",
+        "video": "https://res.cloudinary.com/du3v1mwzj/video/upload/v1661206576/iron-learning/videos/IP-definicion_g5nt1p.mp4"
+    },
+    {
+        "name": "DNS",
+        "description": "La sigla DNS proviene de la expresión inglesa Domain Name System: es decir, Sistema de Nombres de Dominio. Se trata de un método de denominación empleado para nombrar a los dispositivos que se conectan a una red a través del IP (Internet Protocol o Protocolo de Internet). El DNS se encarga de vincular informaciones asociadas al nombre de dominio que se le asigna a cada equipo. De esta forma, hace que los identificadores binarios relacionados con los equipos adquieran nombres que resultan inteligibles para los seres humanos, facilitando su localización en la red.",
+        "example": "Básicamente es una agenda de direcciones. A partir de los nombres que damos a los dominios se crea como una “agenda”, los servidores DNS. Un servidor DNS te da la localización del servidor más cercana",
+        "category": "Internet",
+        "file": "https://definicion.de/dns/ ",
+        "link":"https://cdn.okitup.com/wp-content/uploads/2019/06/dns.png",
+        "example1": "La cartelera que te dice qué peli va a qué hora en qué cine",
+        "example2": "Podría ser como nuestra guía Michelin de diferentes restaurantes. Tenemos una agenda organizada con los lugares por localidad y por estilo de cocina.",
+        "example3": "La lista de jugadores y a qué equipor pertenecen",
+        "example4": "https://asset.cloudinary.com/du3v1mwzj/f252dbdd61ead4c5b18fe862228eb478",
+        "video": "https://res.cloudinary.com/du3v1mwzj/video/upload/v1661207794/iron-learning/videos/DNS_nisxs1.mp4"
+
+    },
+    {
+        "name": "Puerto",
+        "description": "En informática, un puerto es una interfaz a través de la cual se pueden enviar y recibir los diferentes tipos de datos. En electrónica, telecomunicaciones y hardware, una interfaz es el puerto (circuito físico) a través del que se envían o reciben señales desde un sistema o subsistemas hacia otros. No hay una interfaz universal, sino que existen diferentes estándares (Interfaz USB, interfaz SCSI, etc.) que establecen especificaciones técnicas concretas (características comunes), con lo que la interconexión sólo es posible utilizando la misma interfaz en origen y destino.",
+        "example": "o Port me indica que programa me atiende, punto de información y te permite llegar al programa. Cada puerto tiene un valor numérico. Los ordenadores tienen una serie de puertos (60k disponibles). Cuando entra a internet se reserva un puerto. Me dice que programa utilizo. Puerto importante http 443 y el 80 https.",
+        "category": "Internet",
+        "file": "https://es.wikipedia.org/wiki/Puerto_(inform%C3%A1tica)",
+        "link":"https://www.profesionalreview.com/wp-content/uploads/2020/02/abrir-puertos-router-12.png",
+        "example1": "Si vas al cine y no tienes claro cual es la puerta que tienes que usar, acabarás viendo Frozen cuando querías ver a Leonardo Dicaprio siendo maltratado por un oso maloso",
+        "example2": " Nuestro puerto en el sector culinario seria el Glovo. Nos manda comida que nosotros pagamos de cualquier local y de manera segura ",
+        "example3": "En un equipo de futbol, aunque todos formen parte del mismo, tienen cada uno un papel y una posición en la que juegan",
+        "example4": "https://res.cloudinary.com/du3v1mwzj/video/upload/v1661209961/iron-learning/videos/cliente_q7zyur.mp4",
+        "video": "https://res.cloudinary.com/du3v1mwzj/video/upload/v1661209961/iron-learning/videos/cliente_q7zyur.mp4"
+
+        
+    },
     {
         "name": "Node",
         "description": "Ideado como un entorno de ejecución de JavaScript orientado a eventos asíncronos, Node.js está diseñado para crear aplicaciones network escalables. ",
@@ -9,9 +65,62 @@
         "example1": "El Node de una película és donde se ejecuta,sería o bien el cine o bien nuestro televisor",
         "example2": "El Node sería como nuestra cocina, el espacio donde cocinaremos nuestros manjares!",
         "example3": "El node en el mundo de los deportes sería como el campo, la pista...",
-        "example4": "",
-        "example5": "https://res.cloudinary.com/du3v1mwzj/video/upload/v1661001521/iron-learning/videos/IMG_4313_mwndrh.mov"
+        "example4": "https://asset.cloudinary.com/du3v1mwzj/8172e2cf58adac6d5519f290bd3f2c79",
+        "video": "https://res.cloudinary.com/du3v1mwzj/video/upload/v1661212033/iron-learning/videos/dependencia_qvciv3.mp4"
+    },
+    {
+        "name": "Express ",
+        "description": "Es una librería o mejor dicho, framework, para abrir servidores web",
+        "example": "ExpressJS, o simplemente Express, es un marco de aplicación web para Node.js, lanzado como software gratuito y de código abierto bajo la licencia MIT. Está diseñado para crear aplicaciones web y API. Es el marco de servidor estándar de facto para NodeJS. El autor original lo describió como relativamente mínimo con muchas funciones disponibles como complementos.",
+        "category": "Programa",
+        "file": "http://expressjs.com/es/",
+        "link":"https://miro.medium.com/max/730/1*Jr3NFSKTfQWRUyjblBSKeg.png",
+        "example1": "Sería comparable a la habitación de editaje, donde se van a poner todos los ordenadores en los que se trabajará para hacer la película y la misma habitación en la que todos se pondrán de acuerdo en cómo será el resultado final",
+        "example2": "Si fuese para un banquete, necesitarías tener todas las recetas, ingredientes y cocineros hábiles preparados para cuando haya que cocinar la comida para toda la gente",
+        "example3": "Ejemplo de curling que nadie entendería, así que ni la pongo",
+        "example4": "https://asset.cloudinary.com/du3v1mwzj/8d269a9330c8e03f03eaca95ea78b8ea",
+        "video": "https://res.cloudinary.com/du3v1mwzj/video/upload/v1661210153/iron-learning/videos/express_vsfc6i.mp4"
 
+    },    
+    {
+        "name": "Package.jason ",
+        "description": "El Package es un archivo, con extensión JSON, que contiene información importante sobre el proyecto así como metadatos funcionales (número de version, dependencias, etc.). Esta información es legible por el ser humano. Su ubicación natural es en la raíz del proyecto.",
+        "example": "(un fichero)  que se genera en node – la carta de presentación de nuestra app. (información general, dependencias, dependencias para testing, comandos, descripción…) ",
+        "category": "Programa",
+        "file": " https://alvaroperdiz.com/javascript/node-js/informaci%C3%B3n-basica-package-json/ ",
+        "link":"https://imgs.developpaper.com/imgs/475620012-9caa1a49b47f1460_articlex.png",
+        "example1": "misc",
+        "example2": "Sería básicamente nuestro recetario, donde aparecen los ingredientes con  sus medidas exactas, el tiempo de cocción el modo de preparación… ",
+        "example3": "movies",
+        "example4": "https://res.cloudinary.com/du3v1mwzj/video/upload/v1661209961/iron-learning/videos/cliente_q7zyur.mp4",
+        "video": "https://res.cloudinary.com/du3v1mwzj/video/upload/v1661212533/iron-learning/videos/pack.json_girvct.mp4"
+
+    },    
+    {
+        "name": "Package-lock.json",
+        "description": "package-lock.json sencillamente evita este comportamiento general de actualizar versiones minor o fix de modo que cuando alguien clona nuestro repositorio y ejecuta npm install en su equipo, npm examinará package-lock.json e instalará la versión exacta de los paquete que nosotros habíamos instalado, ignorando así los ^ y ~ de package.json.",
+        "example": "Un fichero que contiene todo el detalle de las dependencias de las dependencias.",
+        "category": "Programa",
+        "file": "https://rubensa.wordpress.com/2019/11/27/pero-que-demonios-es-package-lock-json/ ",
+        "link":"https://timmousk.com/wp-content/uploads/2022/03/lockfile.jpeg",
+        "example1": "misc",
+        "example2": "Seria como la receta de la abuela versión extendida. Receta original con toda la información para realizar tu plato y que explica en que tiendas debes ir a comprar todos los ingredientes para que te quede exactamente igual. Digamos que es para cocinar ese plato exactamente igual.",
+        "example3": "movies",
+        "example4": "https://res.cloudinary.com/du3v1mwzj/video/upload/v1661209961/iron-learning/videos/cliente_q7zyur.mp4",
+        "video": "https://res.cloudinary.com/du3v1mwzj/video/upload/v1661212533/iron-learning/videos/pack.json_girvct.mp4"
+    },
+    {
+        "name": "Dependencias",
+        "description": "Dependencias son todas aquellas librerías de las que 'Depende' la web que se va a poner en marcha",
+        "example": "Todas las librerías que estén en el package.json",
+        "category": "Programa",
+        "file": "https://kinsta.com/es/blog/bibliotecas-javascript/ ",
+        "link":"https://www.arquitecturajava.com/wp-content/uploads/webpack.jpg",
+        "example1": "Toda la gente que no son los actores que trabajan para producir la pelicula",
+        "example2": "Los utensilios que se utilizan, que no has inventado tú, que usarás para cocinar: horno, batidora, mixer-flaker-3000-ultraHD",
+        "example3": "Si no tuvieras un bate de baseball y la pelota, el juego sería batir brazos muy fuerte en el aire...",
+        "example4": "https://asset.cloudinary.com/du3v1mwzj/38c3346570b67cf9306675609c979e70",
+        "video": "https://res.cloudinary.com/du3v1mwzj/video/upload/v1661212033/iron-learning/videos/dependencia_qvciv3.mp4"
     },
     {
         "name": "Vpn",
@@ -23,7 +132,8 @@
         "example1": "El VPN en el mundo de los deportes, es cuando puedes ver en directo las olimpiadas de Japón sin estar allí",
         "example2": "El VPN culinario sería comer sushi de salmón en tu piso de Barcelona. Estás disfrutando de la gastronomía de un país lejano desde tu casa.",
         "example3": "El VPN en el mundo del cine, sería a día de hoy, poder disfrutar del cine internacional. Poder ver peliculas grabadas en cualquier país.",
-        "example4": "coocking"
+        "example4": "coocking",
+        "video": "https://res.cloudinary.com/du3v1mwzj/video/upload/v1661213470/iron-learning/videos/momento_gracioso1_gnigpn.mp4"
     },
     {
         "name": "Intranet",
@@ -35,7 +145,8 @@
         "example1": "La intranet en el mundo de los deportes sería como un partido privado. Por ejemplo un partido de futbol escolar. Se hace para un pequeño grupo de gente controlada. Familiares, amigos cercanos...",
         "example2": "La intranet sería la cocina de un hostal. Pueden hacer uso de ella solo las personas que tienen alquilada una habitación.",
         "example3": "La intranet en el mundo del cine podríamos decir que són películas selectas solo proyectadas en cines concretos. Para un público en concreto.",
-        "example4": "coocking"
+        "example4": "coocking",
+        "video": "https://res.cloudinary.com/du3v1mwzj/video/upload/v1661213470/iron-learning/videos/momento_gracioso1_gnigpn.mp4"
     },
     {
         "name": "Npm",
@@ -47,8 +158,8 @@
         "example1": "misc",
         "example2": "Podríamos decir que el Npm es la cocina de Masterchef. Es un lugar cómodo para cocinar y de manera ágil y fácil puedes encontrar los ingredientes para poder hacer un buen menú.",
         "example3": "movies",
-        "example4": "coocking"
-
+        "example4": "coocking",
+        "video": "https://res.cloudinary.com/du3v1mwzj/video/upload/v1661213470/iron-learning/videos/momento_gracioso1_gnigpn.mp4"
     },
     {
         "name": "Yarn",
@@ -60,33 +171,10 @@
         "example1": "misc",
         "example2": "Hemos descrito Npm como la cocina de Masterchef (Es un lugar cómodo para cocinar y de manera ágil y fácil puedes encontrar los ingredientes para poder hacer un buen menú). Podríamos decir que Yarn es la cocina de Top Chef.",
         "example3": "movies",
-        "example4": "coocking"
+        "example4": "coocking",
+        "video": "https://res.cloudinary.com/du3v1mwzj/video/upload/v1661213470/iron-learning/videos/momento_gracioso1_gnigpn.mp4"
     },
-    {
-        "name": "Package.jason ",
-        "description": "El Package es un archivo, con extensión JSON, que contiene información importante sobre el proyecto así como metadatos funcionales (número de version, dependencias, etc.). Esta información es legible por el ser humano. Su ubicación natural es en la raíz del proyecto.",
-        "example": "(un fichero)  que se genera en node – la carta de presentación de nuestra app. (información general, dependencias, dependencias para testing, comandos, descripción…) ",
-        "category": "Otros",
-        "file": " https://alvaroperdiz.com/javascript/node-js/informaci%C3%B3n-basica-package-json/ ",
-        "link":"https://imgs.developpaper.com/imgs/475620012-9caa1a49b47f1460_articlex.png",
-        "example1": "misc",
-        "example2": "Sería básicamente nuestro recetario, donde aparecen los ingredientes con  sus medidas exactas, el tiempo de cocción el modo de preparación… ",
-        "example3": "movies",
-        "example4": "coocking"
 
-    },
-    {
-        "name": "Package-lock.json",
-        "description": "package-lock.json sencillamente evita este comportamiento general de actualizar versiones minor o fix de modo que cuando alguien clona nuestro repositorio y ejecuta npm install en su equipo, npm examinará package-lock.json e instalará la versión exacta de los paquete que nosotros habíamos instalado, ignorando así los ^ y ~ de package.json.",
-        "example": "Un fichero que contiene todo el detalle de las dependencias de las dependencias.",
-        "category": "Otros",
-        "file": "https://rubensa.wordpress.com/2019/11/27/pero-que-demonios-es-package-lock-json/ ",
-        "link":"https://timmousk.com/wp-content/uploads/2022/03/lockfile.jpeg",
-        "example1": "misc",
-        "example2": "Seria como la receta de la abuela versión extendida. Receta original con toda la información para realizar tu plato y que explica en que tiendas debes ir a comprar todos los ingredientes para que te quede exactamente igual. Digamos que es para cocinar ese plato exactamente igual.",
-        "example3": "movies",
-        "example4": "coocking"
-    },
     {
         "name": "Node_modules",
         "description": ": La carpeta node_modules es un directorio que se crea en la carpeta raíz de nuestro proyecto cuando instalamos paquetes o dependencias mediante npm. De esta forma, desde nuestro código Javascript podemos importar paquetes externos instalados mediante npm, teniéndolos en nuestro proyecto local (no dependen de una ruta externa al proyecto) y sin necesidad de manipularlos manualmente.",
@@ -97,43 +185,8 @@
         "example1": "misc",
         "example2": "Podríamos definirlo como el índice de un libro de cocina. Donde podemos encontrar todas las recetas ordenadas. ",
         "example3": "movies",
-        "example4": "coocking"
-    },
-    {
-        "name": "http",
-        "description": "HTTP, de sus siglas en inglés: Hypertext Transfer Protocol, es el nombre de un protocolo el cual nos permite realizar una petición de datos y recursos, como pueden ser documentos HTML. Es la base de cualquier intercambio de datos en la Web, y un protocolo de estructura cliente-servidor, esto quiere decir que una petición de datos es iniciada por el elemento que recibirá los datos (el cliente), normalmente un navegador Web. Así, una página web completa resulta de la unión de distintos sub-documentos recibidos, como, por ejemplo: un documento que especifique el estilo de maquetación de la página web (CSS), el texto, las imágenes, vídeos, scripts, etc...  ",
-        "example": "Hyper text transmition protocol. Protocolo de la WEB. (puerto 80). En la mayoría de webs lo veremos como https. La s es de seguro, se añade una capa a http de seguridad. Comunicación cifrada entre el cliente y el servidor. Hyper text transmition protocol security. Se suele usar el puerto 443",
-        "category": "Internet",
-        "file": " https://developer.mozilla.org/es/docs/Web/HTTP/Overview",
-        "link":"https://www.arsys.es/blog/file/uploads/2015/12/2015-12-30_http.jpg",
-        "example1": "misc",
-        "example2": "Podriamos decir que el http en el mundo de la cocina es un camarero. Lleva los platos de comida a los comensales de manera profesional y segura. ",
-        "example3": "movies",
-        "example4": "coocking"
-    },
-    {
-        "name": "IP",
-        "description": "Una dirección IP es una representación numérica del punto de Internet donde está conectado un dispositivo. Se usa para identificar dónde hay algo y, en cierto modo, qué es. Comprender los fundamentos de las direcciones IP es esencial para desenvolverse por Internet. Aprenda cómo funcionan las direcciones IP y por qué es tan importante proteger la suya.",
-        "example": "Internet protocol. Es la dirección que tiene un dispositivo en internet, o también el protocolo de direccionamento a internet. Se les llama IP a la dirección que tiene un despositivo conectado en una red. Esta consta de 4 números separados por puntos que van del 0 al 255. (cada num son 8 bits).",
-        "category": "Internet",
-        "file": "https://www.avast.com/es-es/c-what-is-an-ip-address",
-        "link":"https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2021/09/ip-ordenador-2463441.jpg?itok=UJFUeR5H",
-        "example1": "misc",
-        "example2": " La ubicación, la dirección exacta de un restaurante.",
-        "example3": "movies",
-        "example4": "coocking"
-    },
-    {
-        "name": "DNS",
-        "description": "La sigla DNS proviene de la expresión inglesa Domain Name System: es decir, Sistema de Nombres de Dominio. Se trata de un método de denominación empleado para nombrar a los dispositivos que se conectan a una red a través del IP (Internet Protocol o Protocolo de Internet). El DNS se encarga de vincular informaciones asociadas al nombre de dominio que se le asigna a cada equipo. De esta forma, hace que los identificadores binarios relacionados con los equipos adquieran nombres que resultan inteligibles para los seres humanos, facilitando su localización en la red.",
-        "example": "Básicamente es una agenda de direcciones. A partir de los nombres que damos a los dominios se crea como una “agenda”, los servidores DNS. Un servidor DNS te da la localización del servidor más cercana",
-        "category": "Internet",
-        "file": "https://definicion.de/dns/ ",
-        "link":"https://cdn.okitup.com/wp-content/uploads/2019/06/dns.png",
-        "example1": "misc",
-        "example2": "Podría ser como nuestra guía Michelin de diferentes restaurantes. Tenemos una agenda organizada con los lugares por localidad y por estilo de cocina.",
-        "example3": "movies",
-        "example4": "coocking"
+        "example4": "coocking",
+        "video": "https://res.cloudinary.com/du3v1mwzj/video/upload/v1661213470/iron-learning/videos/momento_gracioso1_gnigpn.mp4"
     },
     {
         "name": "Header",
@@ -156,18 +209,6 @@
         "link":"https://www.profesionalreview.com/wp-content/uploads/2020/08/Modo-NAT-03.png",
         "example1": "misc",
         "example2": " ",
-        "example3": "movies",
-        "example4": "coocking"
-    },
-    {
-        "name": "Puerto",
-        "description": "En informática, un puerto es una interfaz a través de la cual se pueden enviar y recibir los diferentes tipos de datos. En electrónica, telecomunicaciones y hardware, una interfaz es el puerto (circuito físico) a través del que se envían o reciben señales desde un sistema o subsistemas hacia otros. No hay una interfaz universal, sino que existen diferentes estándares (Interfaz USB, interfaz SCSI, etc.) que establecen especificaciones técnicas concretas (características comunes), con lo que la interconexión sólo es posible utilizando la misma interfaz en origen y destino.",
-        "example": "o Port me indica que programa me atiende, punto de información y te permite llegar al programa. Cada puerto tiene un valor numérico. Los ordenadores tienen una serie de puertos (60k disponibles). Cuando entra a internet se reserva un puerto. Me dice que programa utilizo. Puerto importante http 443 y el 80 https.",
-        "category": "Internet",
-        "file": "https://es.wikipedia.org/wiki/Puerto_(inform%C3%A1tica)",
-        "link":"https://www.profesionalreview.com/wp-content/uploads/2020/02/abrir-puertos-router-12.png",
-        "example1": "misc",
-        "example2": " Nuestro puerto en el sector culinario seria el Glovo. Nos manda comida que nosotros pagamos de cualquier local y de manera segura ",
         "example3": "movies",
         "example4": "coocking"
     },

@@ -44,7 +44,7 @@ const databaseSchema = new Schema ({
         type:String, 
 
     },
-    example5: {
+    video: {
         type:String, 
 
     },
