@@ -80,13 +80,19 @@
           {{#if currentUser}}
             <a class="nav-link nav-btn" href="/create-definition">
               <span>&#128167 Crear definición</span></a>
-          {{/if}}
+
+       
         </li>
         <li class="nav-item">
           <a class="nav-link nav-btn" href="/list"><span>&#128166 Definiciones
               de usuarios</span></a>
         </li>
-
+        {{else}}
+                <li class="nav-item">
+          <a class="nav-link nav-btn1" href="/list"><span>&#11088&#11088&#11088 Hazte una cuenta para disfrutar de muchísimas ventajas</span></a>
+        </li>
+   {{/if}}
+   
       </ul>
 
       <form class="d-flex col-5" method="GET" role="search" name="filterer">

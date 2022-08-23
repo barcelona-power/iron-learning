@@ -212,7 +212,6 @@ a{
   transition: 0.5s;
   font-family: "Varela Round";
   font-size:74%;
-  
 }
 
 .nav-btn:hover span {
@@ -220,7 +219,6 @@ a{
   transform: 1s;
   font-family: "Varela Round";
   text-shadow: 2px 2px rgb(255, 255, 255);
-
 }
 
 .nav-btn-in span {
@@ -231,10 +229,44 @@ a{
   position: relative; 
   transition: 1s;
   font-size: 65%;
-
 }
 
 .nav-btn-in:hover span {
+  font-size: 80%;
+  transform: 2s;
+  font-family: "Varela Round";
+  color:rgb(0, 0, 0)
+}
+
+
+
+.nav-btn1 span {
+  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"), pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  font-family: "Varela Round";
+  font-size:74%;
+}
+
+.nav-btn1:hover span {
+  font-size: 110%;
+  transform: 1s;
+  font-family: "Varela Round";
+  text-shadow: 2px 2px rgb(0, 153, 255);
+}
+
+.nav-btn1-in span {
+  font-family: "Varela Round";
+  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"), pointer;
+
+  display: inline-block;
+  position: relative; 
+  transition: 1s;
+  font-size: 65%;
+}
+
+.nav-btn1-in:hover span {
   font-size: 80%;
   transform: 2s;
   font-family: "Varela Round";
