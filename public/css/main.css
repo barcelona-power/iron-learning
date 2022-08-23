@@ -1,8 +1,11 @@
 
 body{
-  cursor: url("/imagenes/curs0.cur"), pointer;
+  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs0_jezvuq.cur"), pointer;
   background-image: url("https://res.cloudinary.com/du3v1mwzj/image/upload/v1661163777/iron-learning/imgs/fondos/bigback_sfwrza.jpg");
-  
+}
+button{
+  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"), pointer;
+
 }
 ::-moz-selection {
   background-color: orange;
@@ -58,8 +61,16 @@ z-index: -1;
   width: 100%;
 }
 
+image{
+  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"), pointer;
+  
+}
 a:link{
-  cursor: url("/imagenes/curs.cur"), pointer;
+  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"), pointer;
+}
+a{
+  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs0_jezvuq.cur"), pointer;
+  
 }
 #logo-iron{
   width: 2%;
@@ -100,6 +111,8 @@ a:link{
   transition: transform .2s;
   opacity: 0.4;
   margin-left: 15px;
+  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"), pointer;
+  
 }
 
 .zoom-example:hover {
@@ -108,6 +121,8 @@ a:link{
   transform: scale(1.5);
   z-index: 4;
   opacity: 1;
+  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"), pointer;
+
 }
 
 #iniciar-sesión {
