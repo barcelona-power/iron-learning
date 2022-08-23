@@ -1,11 +1,13 @@
 const nodemailer = require("nodemailer");
 
 
+const EMAIL_PASSWORD = process.env.EMAIL_PASSWORD 
+
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
     user: "iron.learning.welcomer@gmail.com",
-    pass: "bgszmdgpwcclsiyt",
+    pass: EMAIL_PASSWORD
   },
 });
 
@@ -17,11 +19,9 @@ module.exports.sendRegistrationEmail = (user) => {
       subject: "Aprende! comparte! disfruta! crea!",
       html: `
         <h3>Hola ${user.nickname}!</h3>
-        <p>Welcome to <b>todo list app</b></p>
+        ...
+        <p>Me alegra tenerte a bordo con nosotros en <b>iron-learning</b></p>
         <p>please confirm your account using the following link:</p>
-        <a href="http://localhost:3000/users/${user.id}/confirm">
-            Activate your account
-        </a>
     `,
     })
     .then(() => {

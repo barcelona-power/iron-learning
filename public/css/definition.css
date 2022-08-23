@@ -221,8 +221,7 @@ center{
 #no-definition{
   position: absolute;
   display: flex;
-  margin: 5% 0% 0% 23%;
-  font-size: 30px;
+  margin: 5% 0% 0% 18%;
 }
 .new-example-letter{
   font-size: 15px;
