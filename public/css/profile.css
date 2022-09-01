@@ -35,6 +35,8 @@
   display: flex;
   position: absolute;
   top: 10%;
-  left: 6%;
-  
+  right: 8%;
+}
+#body-profile-top-img{
+  color: white;
 }

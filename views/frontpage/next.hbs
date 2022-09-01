@@ -10,106 +10,52 @@
 <div class="body-profile-img">
 <div class="card card-box">
   <div class="row">
-    <div class="col-md-2 img-boxing zoom">
+    <div class="col-md-2 img-boxing zoo">
    <a href="{{database.link}}"><img src="{{database.link}}" width="100%" height="100%" class="" alt="..." class="d-flex"> </a> 
     </div>
     <div class="col-md-9">
-                    <h5 class="card-title d-inline-flex mx-3 ">Término: <span class="def-term"> {{database.name}}</span></h5>               
-                    <h5 class="pads d-inline-flex mx-3">Categoría:  <span class="def-term"> {{database.category}}</span></h5>
+                    <h5 class="card-title d-inline-flex mx-3 ">Tema: <span class="def-term"> {{database.name}}</span></h5>               
                     <div id="text-desc-container">
                         <div class="shadow-text1">
                           <p class="pads"><span class="shadow-text-title1">Descripción:</span>   <span class="def-term-text">{{database.description}}</span> </p>
                         </div>
-                        <div class="shadow-text2">
-                          <p class="pads"><span class="shadow-text-title2"> <img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1661164056/iron-learning/imgs/icons/iron_qpy89p.png" width="4%" alt="Logo de ironhack"></span>   <span class="def-term-text">{{database.example}}</span> </p>
-                        </div>  
                     </div>
                     <div  id="icon-container" >
-                      <img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1661163353/iron-learning/imgs/icons/cine_cb2nfg.png" width="6%" alt="Algo ha ido mal..." type="button"  class="zoom-example" data-bs-toggle="collapse" data-bs-target="#a{{spacesGone database.name}}" aria-expanded="false" aria-controls="collapseExample">
-                      <img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1661163372/iron-learning/imgs/icons/cocina_ja7snr.png" width="2.8%" alt="Algo ha ido mal..." type="button"  class="zoom-example" data-bs-toggle="collapse" data-bs-target="#b{{spacesGone database.name}}" aria-expanded="false" aria-controls="collapseExample">
-                      <img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1661163372/iron-learning/imgs/icons/deporte_fl0qeh.png" width="3.3%"  alt="Algo ha ido mal..." type="button"  class="zoom-example" data-bs-toggle="collapse" data-bs-target="#c{{spacesGone database.name}}" aria-expanded="false" aria-controls="collapseExample">
-                      {{#if ...currentUser}}
-                      <img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1661163318/iron-learning/imgs/icons/mix_lbalji.png" width="3.5%"  alt="Algo ha ido mal..." type="button"  class="zoom-example"  data-bs-toggle="collapse" data-bs-target="#e{{spacesGone  database.name}}" aria-expanded="false" aria-controls="collapseExample">
                           {{!--  --}}
-                          <a id="download-icon" href="{{database.example4}}"><img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1661987304/iron-learning/imgs/icons/downloadmp4_yidmot_loenym.png"  class="zoom-example"  alt="No se what" width="5%"></a>
-                          <img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1661163307/iron-learning/imgs/icons/politica_pxzcyg.png" width="5%"  alt="Algo ha ido mal..." type="button"  class="zoom-example "  data-bs-toggle="collapse" data-bs-target="#d{{spacesGone  database.name}}" aria-expanded="false" aria-controls="collapseExample">
-                          <a  id="" href="{{database.file}}"><img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1661163307/iron-learning/imgs/icons/www_wvbnhw.png" width="4%"  class="zoom-example"  alt="No se what"></a>
+                          <a href="{{database.file}}"><img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1661163307/iron-learning/imgs/icons/www_wvbnhw.png" width="10%"  class="zoom-example"  alt="No se what"></a>
+                          <img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1662073124/iron-learning/imgs/icons/vi1_rbobyn.png" width="12%"  alt="Algo ha ido mal..." type="button"  class="zoom-example "  data-bs-toggle="collapse" data-bs-target="#b{{spacesGone  database.name}}" aria-expanded="false" aria-controls="collapseExample">
+                    {{#if database.video2}}
+                          <img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1662073124/iron-learning/imgs/icons/vi2_i941rl.png" width="12%"  alt="Algo ha ido mal..." type="button"  class="zoom-example "  data-bs-toggle="collapse" data-bs-target="#c{{spacesGone  database.name}}" aria-expanded="false" aria-controls="collapseExample">
 
-                      {{/if}}
+                    {{/if}}
+                    {{#if database.video3}}
+                          <img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1662073124/iron-learning/imgs/icons/vi3_rw5kko.png" width="12%"  alt="Algo ha ido mal..." type="button"  class="zoom-example "  data-bs-toggle="collapse" data-bs-target="#d{{spacesGone  database.name}}" aria-expanded="false" aria-controls="collapseExample">
+
+                    {{/if}}
+
                </div>
 
     </div>
   </div>
   <div id="info-example-container">
-{{!-- example 1 --}}
-<div class="toast collapse card-text-box" id="a{{spacesGone database.name}}">
-    <button type="button" class="btn" data-bs-dismiss="toast" aria-label="Close">&#10060</button>
- <spam class="spm">Cine</spam class="spm">
-  <div class="card card-body">
-<p class="card-text-col1"><span style="font-weight:bolder; font-family: Permanent Marker" ></span>{{ database.example1}} </p>
-  </div>
-
-</div>
-
-{{!-- example2 --}}
-<div class="toast collapse card-text-box" id="b{{spacesGone database.name}}">
-      <button type="button" class="btn" data-bs-dismiss="toast" aria-label="Close">&#10060</button>
- <spam class="spm">Cocina</spam class="spm">
-  <div class="card card-body">
-<p class="card-text-col2"><span style="font-weight:bolder; font-family: Permanent Marker" ></span> {{database.example2}} </p>
-  </div>
-
-
-
-
-{{!-- example3 --}}
-
-</div>
-<div class="toast collapse  card-text-box" id="c{{spacesGone database.name}}">
-        <button type="button" class="btn" data-bs-dismiss="toast" aria-label="Close">&#10060</button>
-  <spam class="spm">Deporte</spam class="spm">
-  <div class="card card-body">
-<p class="card-text-col3"><span style="font-weight:bolder; font-family: Permanent Marker" ></span> {{database.example3}}
-  </div>
-</div>
-
-
-{{!-- video --}}
-
 <div class="toast collapse  card-text-box" id="d{{spacesGone database.name}}">
         <button type="button" class="btn" data-bs-dismiss="toast" aria-label="Close">&#10060</button>
                     <video class="mt-4" id="vide-position" width="270" height="190" controls>
-                        <source src="{{database.video}}" type="video/mp4">    
+                        <source src="{{database.video1}}" type="video/mp4">    
                     </video>
   </div>
-
-
-
-{{!-- example5 --}}
-<div class="toast collapse  card-text-box" id="e{{spacesGone database.name}}">
+<div class="toast collapse  card-text-box" id="c{{spacesGone database.name}}">
         <button type="button" class="btn" data-bs-dismiss="toast" aria-label="Close">&#10060</button>
- <spam class="spm">Ejemplos de Usuarios</spam class="spm">
-   <a href="/main/{{database.id}}/newexample/ironhack"> <img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1661163314/iron-learning/imgs/icons/create_ukwwqk.png" alt="eh" width="8%" id="btn-newexample-go"></a>
-  <div class="card card-body">
-<p class="card-text-col5">      
-          <p class=" new-example-letter">   
-                    {{#each ../newexamples as |newexample|}}
-                          {{#if (match newexample database.id)}}
-                    <div class="card-text-col5">
-                        &nbsp;&nbsp;&nbsp;&nbsp; &#128526 {{newexample.newexample}}    
-                    </div>
-                        <hr> 
-                                {{#if ../../currentUser.admin}}
-                                <form action="/main/{{newexample.id}}/delete" method="post">
-                                    <button class="btn-9a custom-btn-9a" type="submit">&#128163 &#9757 Borrado por Admin &#9757 &#128163</button>
-                                </form>                       
-                                {{/if}}
-                          {{/if}}
-                    {{/each}}
-                    </p>
-                    </p>
+                    <video class="mt-4" id="vide-position" width="270" height="190" controls>
+                        <source src="{{database.video2}}" type="video/mp4">    
+                    </video>
   </div>
-</div>
+<div class="toast collapse  card-text-box" id="b{{spacesGone database.name}}">
+        <button type="button" class="btn" data-bs-dismiss="toast" aria-label="Close">&#10060</button>
+                    <video class="mt-4" id="vide-position" width="270" height="190" controls>
+                        <source src="{{database.video3}}" type="video/mp4">    
+                    </video>
+  </div>
 </div>
   </div>
             </div>

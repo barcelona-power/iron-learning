@@ -99,6 +99,11 @@ center{
 }
 
 
+.zoo {
+  width: 200px;
+  height: 200px;
+  position: center;
+}
 .zoom {
   transition: transform .2s;
   width: 200px;
