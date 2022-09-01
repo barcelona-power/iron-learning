@@ -150,8 +150,8 @@ center{
 #text-welcome-main{
   color: white;
   font-family: Heebo;
-  text-shadow: 2px 2px rgb(9, 187, 232);
-  text-shadow: -2px -2px rgb(19, 186, 233);
+  text-shadow: 1px 1px rgb(9, 187, 232);
+  text-shadow: -1px -1px rgb(19, 186, 233);
   text-align: center;
   font-size: 28px;
   padding-bottom: 1%;

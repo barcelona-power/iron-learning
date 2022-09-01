@@ -15,7 +15,12 @@ const exampleSchema = new Schema ({
     } ,
     categoryexample:{
         type: String
-    }
+    },
+    author: {
+        type: Schema.Types.ObjectId,
+        required: true,
+        ref: "User",
+      },
 })
 
 

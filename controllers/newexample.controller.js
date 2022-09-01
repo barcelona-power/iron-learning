@@ -31,8 +31,8 @@ module.exports.newlist = (req, res, next) => {
         belongs: req.user.id
     })
     .populate("belongs")
+    .populate("author")
     .then((list)=>{
-        console.log(list)
         res.render("frontpage/newexample", {list})
     })
     .catch((error) => next(error))

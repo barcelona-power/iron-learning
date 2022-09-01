@@ -29,7 +29,7 @@ const definitionSchema = new Schema(
 
     file: {
       type: String,
-      default: "/public/imagenes/3688989.jpeg",
+      default: "https://res.cloudinary.com/du3v1mwzj/image/upload/v1661164212/iron-learning/imgs/mix/mordor_yakmyr.jpg",
       validate: {
         validator: function (image) {
           try {

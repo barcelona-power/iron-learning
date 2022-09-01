@@ -1,0 +1,40 @@
+#profile-pic{
+  display: flex;
+  position: absolute;
+  width: 100%;
+  max-width: 100px;
+  margin-left: 1px;
+  padding: -10px;
+  border: 4px  rgb(115, 115, 250);
+  border-style: double;
+  border-radius: 20%;
+  z-index: 1;
+}
+#profile-pic-small{
+  width: 100%;
+  max-width: 50px;
+  padding: -10px;
+  border: 4px  rgb(115, 115, 250);
+  border-style: double;
+  border-radius: 50%;
+}
+#profile-pic-smaller{
+  width: 100%;
+  max-width: 30px;
+  margin-right: 6px;
+  padding: -10px;
+  border: 4px  rgb(115, 115, 250);
+  border-style: double;
+  border-radius: 20%;
+}
+
+
+#modal-profile{
+  z-index: 90;
+  font-size: 12px;
+  display: flex;
+  position: absolute;
+  top: 10%;
+  left: 6%;
+  
+}

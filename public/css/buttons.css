@@ -1,52 +1,5 @@
 
-#btn-invitado {
-  display: flex;
-  position: absolute;
-  font-family: "Varela Round";
-  text-decoration: none;
-  align-items: center;
-  border-radius: 4px;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(14, 9, 98, 0.907),
-    rgba(4, 72, 80, 0.5)
-  );
-  color: #f9fbff;
-  text-align: center;
-  font-size: 28px;
-  padding: 10px;
-  width: 420px;
-  margin-top: 6%;
-  transition: all 0.5s;
-  border-radius: 60px;
-}
 
-#btn-invitado span {
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-  text-align: center;
-}
-
-#btn-invitado span:after {
-  content: url("https://res.cloudinary.com/du3v1mwzj/image/upload/v1661163528/iron-learning/imgs/fondos/rod-1_dnkikk.png");
-  position: absolute;
-  opacity: 0;
-  top: 80%;
-  right: -900px;
-  transition: 0.5s;
-}
-#btn-invitado:hover span {
-  padding-right: 5px;
-  font-size: 32px;
-  transform: 1s;
-  font-family: "Varela Round";
-}
-
-#btn-invitado:hover span:after {
-  opacity: 1;
-  right: -600px;
-}
 
 
 #btn-log-img {
@@ -1353,12 +1306,11 @@
   transition: all 0.3s ease;
 }
 .btn-9:hover {
-  background-color: rgba(0, 0, 0, 0.483);
+  background-color: rgba(0, 0, 0, 0.058);
   box-shadow:  4px 4px 6px 0 rgba(42, 4, 4, 0.5),
               -4px -4px 6px 0 rgba(6, 34, 69, 0.2), 
     inset -4px -4px 6px 0 rgba(56, 4, 4, 0.5),
     inset 4px 4px 6px 0 rgba(1, 29, 64, 0.3);
-  color: rgb(255, 255, 255);
 }
 .btn-9:hover:after {
   -webkit-transform: scale(2) rotate(180deg);
@@ -1526,7 +1478,17 @@
 @import url("https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap");
 
 #body-bien {
+  margin-top: 6%;
   padding: 1%;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  font-family: "Varela Round";
+}
+#button-inv{
+  padding: 1%;
+  margin: 1%;
   display: flex;
   position: absolute;
   justify-content: center;
@@ -1537,7 +1499,7 @@
   margin: 0;
   font-size: 3em;
   padding: 0;
-  color: rgb(4, 25, 255);
+  color: rgb(4, 213, 255);
   text-shadow: 0 0.1em 20px black, 0.05em -0.03em 0 black, 0.05em 0.005em 0 black, 0em 0.08em 0 black, 0.05em 0.08em 0 black, 0px -0.03em 0 black, -0.03em -0.03em 0 black, -0.03em 0.08em 0 black, -0.03em 0 0 black;
 }
 .h1-bien span {
@@ -1643,162 +1605,11 @@
   transition: all 0.2s linear;
 }
 
-.image-hover-image 
-{
- display: block;
-}
+
 /* Make the image round */
-.image-hover-image img
-{
-  border-radius: 10px;
-  height: 55px;
-  opacity: 0.3;
-
-}
 
 
 
-.image-hover-text 
-{
-  position: absolute;
-  top: -30px;
-  left: -45%;
-  width: 100%;  
-  height: 200%;
-  margin: 0 auto;
-  opacity: 0;
-  transition: opacity 0.2s linear;
-  
-}
-.image-hover-text:hover 
-{
-  opacity: 1;
-}
-
-
-.image-hover-text-bubble 
-{
-  position: relative;
-  box-sizing: border-box;
-  top: 0; left: 0; right: 100%;
-  height: 50px;
-  width: 150px;
-  text-align: center;
-  background: rgba(128, 236, 255, 0.9);
-  border: 1px solid #848484;
-  border-radius: 10px;
-  margin: 0 auto;
-  padding: 1px;
-  overflow: hidden;
-  font-size: 17px;
-  text-align: center;
-  word-wrap: break-word;
-  text-decoration: none;
-}
-
-.image-hover-text .image-hover-text-title
-{
-  font-size: 25px;
-  display: block;
-  
-  
-}
-.image-hover-image img:hover
-{
-  border-radius: 10px;
-  filter: invert;
-  opacity: 1;
-  -webkit-transform: rotateZ(-360deg);
--ms-transform: rotateZ(-360deg);
-transform: rotateZ(-360deg);
-transition: 1s ease;
-}
-
-/*           */
-
-.image-hover-text-container-2
-{
-  position: relative;
-  display: inline-block;
-  margin-left: 2%;
-  width: auto;
-  height: auto;
-  transition: all 0.2s linear;
-
-}
-
-.image-hover-image-2 
-{
- display: block;
-}
-/* Make the image round */
-.image-hover-image-2 img
-{
-  border-radius: 10px;
-  height: 60px;
-  opacity: 1;
-  -webkit-transform: rotateZ(-45deg);
-  -ms-transform: rotateZ(-45deg);
-  transform: rotateZ(-45deg);
-  opacity: 0.3;
-}
-
-
-
-.image-hover-text-2 
-{
-  position: absolute;
-  top: -44px;
-  left: -55%;
-  width: 100%;  
-  height: 200%;
-  margin: 0 auto;
-  opacity: 0;
-  transition: opacity 0.2s linear;
-  
-}
-.image-hover-text-2:hover 
-{
-  opacity: 1;
-}
-
-
-.image-hover-text-bubble-2 
-{
-  position: relative;
-  box-sizing: border-box;
-  top: 0; left: 0; right: 100%;
-  height: 60px;
-  width: 120px;
-  text-align: center;
-  background: rgba(128, 236, 255, 0.9);
-  border: 1px solid #848484;
-  border-radius: 10px;
-  margin: 0 auto;
-  padding: 1px;
-  overflow: hidden;
-  font-size: 17px;
-  text-align: center;
-  word-wrap: break-word;
-  text-decoration: none;
-}
-
-.image-hover-text-2 .image-hover-text-title-2
-{
-  font-size: 25px;
-  display: block;
-  
-}
-.image-hover-image-2 img:hover
-{
-  border-radius: 10px;
-  filter: invert;
-  opacity: 1;
-  -webkit-transform: rotateZ(360deg);
--ms-transform: rotateZ(360deg);
-transform: rotateZ(360deg);
-transition: 1s ease;
-}
 #btn-newexample-go{
   float: right;
   margin: 5px;
@@ -1813,4 +1624,81 @@ padding: 1px
   position: absolute;
   padding-top: 5%;
   padding-left: 32%;
+}
+.btn-16 {
+  border: none;
+  color: #000;
+}
+.btn-16:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+  transition: all 0.3s ease;
+}
+.btn-16:hover {
+  color: #000;
+}
+.btn-16:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+.btn-16:active {
+  top: 2px;
+}
+.searchers{
+  padding-top: 1%;
+}
+
+
+
+
+/* CSS */
+.button-87 {
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #2fe7ff 0%, #19a5f032  51%, #00fffb  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  position: absolute;
+  font-family: "Varela Round";
+  text-decoration: none;
+  align-items: center;
+}
+
+.button-87:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-87:active {
+  transform: scale(0.95);
+}
+
+
+#download-icon{
+  margin-left: 10%
 }

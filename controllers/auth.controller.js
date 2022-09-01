@@ -24,7 +24,11 @@ module.exports.doRegister = (req, res, next) => {
         }
         renderWithErrors(errors);
       } else {
-        return User.create(req.body)
+        const user = req.body
+        console.log(req.file)
+        user.profilePic = req.file.path
+        console.log(user.profilePic)
+        return User.create(user)
         .then((user) => {          
           sendRegistrationEmail(user);
           res.redirect("/")});

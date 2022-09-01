@@ -3,9 +3,9 @@ const cloudinary = require('cloudinary').v2;
 const { CloudinaryStorage } = require('multer-storage-cloudinary');
 const multer = require("multer")
  
-const CLOUDINARY_NAME = process.env.CLOUDINARY_NAME 
-const CLOUDINARY_KEY = process.env.CLOUDINARY_KEY 
-const CLOUDINARY_SECRET = process.env.CLOUDINARY_SECRET 
+const CLOUDINARY_NAME = "du3v1mwzj"
+const CLOUDINARY_KEY = "459475185293298"
+const CLOUDINARY_SECRET = "vNNs7t6xI9rA9xf2LYYkpKxE8jY"
 
 
 cloudinary.config({

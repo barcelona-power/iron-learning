@@ -1,8 +1,15 @@
 <div class="body-front-img row justify-content-center ">  
 <div id="create-acount" class="p-3  m-5 col-md-6" >
-    <form method="POST" action="/register" class="row g-3">
+    <form method="POST" action="/register" class="row g-3" enctype="multipart/form-data">
 
-        <label id="iniciar-sesión" class="form-label px-4">Registrarse</label>
+        <label id="iniciar-sesión" class="form-label px-4">Registrarse</label>         
+        <div class="col-md-8">
+            <label for="profilePic"  class="form-label"> Imagen</label>
+        <div class=" col-10">
+            <input type="file" name="profilePic" value="{{definition.profilePic}}" class="custom-file-input form-control {{#if errors.file}} is-invalid {{/if}}" type="file" id="file">
+                    {{#if errors.profilePic}}<div class="invalid-feedback">{{errors.profilePic}}</div>{{/if}}
+        </div>
+        </div>
         {{#if errors}}
 <div class="alert alert-danger d-inline-block" role="alert">
     Existen errores en tu registro, por favor comprueba tus datos!

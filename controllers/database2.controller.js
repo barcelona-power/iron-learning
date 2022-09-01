@@ -1,6 +1,11 @@
-const {Database, Newexample} = require("../models")
+const {Database2, Newexample} = require("../models")
 
-module.exports.listOfDatabase = (req, res, next) => {
+
+module.exports.listOfDatabase2 = (req, res, next) => {
+    res.render("frontpage/next")
+}
+
+module.exports.listOfDatabase2 = (req, res, next) => {
     const { name, category }= req.query;
     const criteria = {};
     
@@ -10,13 +15,12 @@ module.exports.listOfDatabase = (req, res, next) => {
     if (category){
         criteria.category = new RegExp (category, "i");
     }
-    Database.find(criteria)
+    Database2.find(criteria)
     .then((databases) => {
         return Newexample.find()
         .populate("belongs")
-        .populate("author")
         .then((newexamples) => {
-            res.render("frontpage/main", {newexamples, databases, name, category})
+            res.render("frontpage/next", {newexamples, databases, name, category})
         }
         )
     .catch((error) => next.error)

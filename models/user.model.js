@@ -47,6 +47,11 @@ const userSchema = new Schema({
     preference2:{
         type:String
     },
+    profilePic: {
+        type: String,
+        default: "https://res.cloudinary.com/du3v1mwzj/image/upload/v1661164328/iron-learning/imgs/mix/missing1_gbnkgl.webp",
+        required: true
+      },
     admin: {
         type: Boolean,
     }

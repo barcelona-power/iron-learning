@@ -1,11 +1,13 @@
     {{> navbar}}
     <hr>
     <hr>
+    <hr>
+    <hr>
     <h1 id="text-welcome" class="mt-5">Gracias a todos por aportar sus gotas de conocimiento</h1>
     <hr>
     </div>
     {{#each definitions as |definition|}}
-<div id="body-profile-top-img">
+<div >
 <div class="card card-box-profile">
   <div class="row ">
     <div class="col-md-2 img-boxing zoom">
@@ -14,7 +16,8 @@
     <div class="col-md-9">
                     <h5 class="card-title d-inline-flex ">Término: <span class="def-term"> {{definition.name}}</span></h5>               
                     <h5 class="pads d-inline-flex mx-3">Categoría:  <span class="def-term"> {{definition.category}}</span></h5>
-                    <h5 class="card-title d-inline-flex mx-3 ">Autor: <span class="def-term"> {{definition.author.nickname}}</span></h5>    
+                        <h5 class="card-title d-inline-flex ml-3 ">Autor: <span class="def-term"> {{upperCase definition.author.nickname}}</span></h5>
+                         <img id="profile-pic-small" src="{{ definition.author.profilePic}}" alt="eh">
                                             <div class="date-box-1-box">
                         <h5 class="date-box-1 ">Última actualización:{{prettyDate definition.updatedAt}}</h5>
                     </div>

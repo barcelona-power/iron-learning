@@ -1,5 +1,5 @@
 <nav
-  class="navbar navbar-expand-lg fixed-top"
+  class="navbar navbar-expand-lg fixed-top p-0"
   style="background-color: #2ec5fc"
 >
   <div class="container-fluid">
@@ -28,44 +28,40 @@
         {{/if}}
 
       </li>
-    </ul>
+      <div class="dropdown">
+  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    <img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1661554628/iron-learning/imgs/mix/int_skmi7w.png" alt="links" width="60%">
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
     <a id="logo-iron" class="zoom-logo" href="https://www.ironhack.com/es"><img
         src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1661185394/iron-learning/imgs/icons/iron2_ctyoxk.png"
         alt="ups, logo? que logo="
-        width="100%"
+        width="20%"
       />
     </a>
     <a id="logo-gitHub" class="zoom-logo" href="https://github.com/"><img
         src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1661164053/iron-learning/imgs/icons/gitHub_eguzou.png"
         alt="ups, logo? que logo="
-        width="100%"
+        width="20%"
       />
     </a>
     <a
       id="logo-wiki"
       class="zoom-logo"
       href="https://es.wikipedia.org/wiki/Wikipedia:Portada"
-    ><img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1661164053/iron-learning/imgs/icons/wiki_hyz6bi.png" alt="ups, logo? que logo=" width="100%" />
+    ><img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1661164053/iron-learning/imgs/icons/wiki_hyz6bi.png" alt="ups, logo? que logo=" width="20%" />
     </a>
     <a id="logo-student" class="zoom-logo" href="https://my.ironhack.com"><img
         src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1661164053/iron-learning/imgs/icons/ironstudent_gtlyay.png"
         alt="ups, logo? que logo="
-        width="100%"
+        width="20%"
       />
     </a>
+  </ul>
+</div>
+    </ul>
 
-    <a class="navbar-brand nav-btn" href="/main"><span>Página principal</span></a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-lg-0">
         <li class="nav-item">
@@ -76,6 +72,7 @@
                 {{upperCase currentUser.nickname}}</span></a>
           {{/if}}
         </li>
+        
         <li class="nav-item">
           {{#if currentUser}}
             <a class="nav-link nav-btn" href="/create-definition">
@@ -94,8 +91,25 @@
    {{/if}}
    
       </ul>
-
-      <form class="d-flex col-5" method="GET" role="search" name="filterer">
+    <a  class="logo-mod zoom-logo-mod" href="/begin"><img
+        src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1661994461/iron-learning/imgs/mix/mod1_skgqju.png"
+        alt="ups, logo? que logo="
+        width="150%"
+      />
+    </a>
+    <a class="logo-mod zoom-logo-mod" href="/main"><img
+        src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1661994467/iron-learning/imgs/mix/mod2_akf5pg.png"
+        alt="ups, logo? que logo="
+        width="150%"
+      />
+    </a>
+    <a class="logo-mod zoom-logo-mod" href="/next"><img
+        src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1661994467/iron-learning/imgs/mix/mod3_a5ikfg.png"
+        alt="ups, logo? que logo="
+        width="150%"
+      />
+    </a>
+      <form class="d-flex col-3 searchers" method="GET" role="search" name="filterer">
         <select
           id="form-category"
           name="category"
@@ -130,11 +144,3 @@
     </div>
   </div>
 </nav>
-
-<script>
-  let balls = document.getElementsByClassName("ball"); document.onmousemove =
-  function(){ let x = event.clientX * 55/ window.innerWidth +"%"; let y =
-  event.clientY * 150/ window.innerHeight +"%"; for(let i=0;i<2;i++){
-  balls[i].style.left= x; balls[i].style.top= y; balls[i].style.transform=
-  "translate(-"+x+",-"+y+")"; } }
-</script>

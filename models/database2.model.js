@@ -49,6 +49,6 @@ const databaseSchema = new Schema ({
     },
 })
 
-const Database = mongoose.model("Database", databaseSchema);
+const Database2 = mongoose.model("Database2", databaseSchema);
 
-module.exports = Database;
+module.exports = Database2;
