@@ -14,5 +14,6 @@ hbs.registerHelper('spacesGone', (spaces) => spaces.split('').filter(e => e.trim
 
 hbs.registerHelper('match', function (newexample, database){
    return  newexample.belongs.id === database
+   
 })
 

@@ -11,14 +11,24 @@ const databaseSchema = new Schema ({
         type:String,
         trim: true
     },
-    example:{
-        type:String,
-        trim: true
-    },
     category: {
         type:String,
     },
-    file: {
+    videoContent:{
+        type:String,
+        default:"videos del tema"
+    },
+    file1: {
+        type:String,
+        default: "/public/imagenes/3688989.jpeg",
+
+    },
+    file2: {
+        type:String,
+        default: "/public/imagenes/3688989.jpeg",
+
+    },
+    file3: {
         type:String,
         default: "/public/imagenes/3688989.jpeg",
 
@@ -28,33 +38,27 @@ const databaseSchema = new Schema ({
         default: "https://media.makeameme.org/created/something-is-missing-6838a8d575.jpg"  
 
     },
-    example1: {
-        type:String, 
-
-    },
-    example2: {
-        type:String, 
-    },
-    example3: {
-        type:String, 
-        
-    },
-    example4: {
-        type:String, 
-
-    },
     video1: {
         type:String, 
-
     },
     video2: {
         type:String, 
-
     },
     video3: {
         type:String, 
-
     },
+    video4: {
+        type:String, 
+    },
+    video5: {
+        type:String, 
+    },
+    video6: {
+        type:String, 
+    },
+    video7: {
+        type:String, 
+    }
 })
 
 const Database2 = mongoose.model("Database2", databaseSchema);

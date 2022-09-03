@@ -1,10 +1,9 @@
     {{> navbar}}
     
-<h1>Mensaje secreto</h1>  `
+<h1>Mensaje secreto</h1> 
     <hr>
     <hr>
     <h1 id="text-welcome-main" class="mt-5">Te agradeceríamos aportar tus propios ejemplos </h1>
-<img class="fixed-top m-5" src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1661992627/iron-learning/imgs/mix/cube2_taidzw.png" alt="Mod 2" width="3%">
  {{#each databases as |database|}} 
 <div class="body-profile-img">
 <div class="card card-box">
@@ -94,6 +93,7 @@
           <p class=" new-example-letter">   
                     {{#each ../newexamples as |newexample|}}
                           {{#if (match newexample database.id)}}
+                          
                     <div class="card-text-col5">
                         &nbsp;&nbsp;&nbsp;&nbsp; <img id="profile-pic-smaller" src="{{newexample.author.profilePic}}" alt="eeee">{{newexample.newexample}}    
                     </div>
