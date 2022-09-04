@@ -247,6 +247,20 @@
         "example2": " El almacén de los supermercados el Corte inglés.",
         "example3": "movies",
         "example4": "coocking"
+    },
+    {
+        "name": "Coockie",
+        "description": "Las cookies son pequeños fragmentos de texto que los sitios web que visitas envían al navegador. Permiten que los sitios web recuerden información sobre tu visita, lo que puede hacer que sea más fácil volver a visitar los sitios y hacer que estos te resulten más útiles.",
+        "example": "Es como el brazalete que te dan en una fiesta privada para que te puedan reconocer al salir y entrar de las salas. Así saben quien eres sin tener que hablar mucho contigo y proporcionarte el servicio que necesitas, o sacarte la información que les falta...",
+        "category": "Internet",
+        "file": "https://www.xataka.com/basics/que-cookies-que-tipos-hay-que-pasa-desactivas",
+        "link":"https://s.yimg.com/ny/api/res/1.2/AmYEzNSGfcuAlbBHgl0VEQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTk2MDtjZj13ZWJw/https://s.yimg.com/uu/api/res/1.2/T1A2q1.8gUHTIP_L31qpRw--~B/aD00ODA7dz00ODA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/es/animal_mx_205/436aae6922b9a7b5b8d7b9e66460eee9",
+        "example1": "En muchas plataformas para ver series y películas guardan listados de series que sigues, las que te gustan, te ofrecen las que se parecen a las que has visto... las coockies se utilizan para que las páginas que visitas sepan quien eres y ofrecerte una información u otra según la infor que tengan de ti",
+        "example2": "Algunos hornos guardan una configuración de tu ciclo favorito de horneado: temperatura, duración, tipo, etc. O no, ni idea, nunca he visot una así, pero es la idea básicamente",
+        "example3": "Si un jugador entra en un equipo, le asignan un uniforme con número que es el que lo identifica y según el deporte, una posición en la que juega. Si ese jugador se quita la ropa, nadie sabe quien es. Se vuelve completamente invisible",
+        "example4": "https://res.cloudinary.com/du3v1mwzj/image/upload/v1662296396/iron-learning/videos/mod%203%20info/imgs/coc_pfrt6r.webp",
+        "video": "https://res.cloudinary.com/du3v1mwzj/video/upload/v1662251739/iron-learning/videos/mod%203%20info/coockie_hbb8dp.mov"
+
     }
 
     
