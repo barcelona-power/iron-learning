@@ -8,10 +8,10 @@
   "file2": "",
   "file3": "",
   "link": "https://res.cloudinary.com/du3v1mwzj/image/upload/v1662299284/iron-learning/videos/mod%203%20info/imgs/reac_kl2dma.png",
-  "video1": "https://res.cloudinary.com/du3v1mwzj/video/upload/v1662251782/iron-learning/videos/mod%203%20info/React_info_nueva_i9fvht.mov",
+  "video1": "https://res.cloudinary.com/du3v1mwzj/video/upload/v1662255476/iron-learning/videos/mod%203%20info/Como_funciona_ltxoou.mov",
   "video2": "https://res.cloudinary.com/du3v1mwzj/video/upload/v1662251770/iron-learning/videos/mod%203%20info/React1_qrcx2r.mov",
   "video3": "https://res.cloudinary.com/du3v1mwzj/video/upload/v1662251802/iron-learning/videos/mod%203%20info/Limpieza-react_fdlexx.mov",
-  "video4": "",
+  "video4": "https://res.cloudinary.com/du3v1mwzj/video/upload/v1662251782/iron-learning/videos/mod%203%20info/React_info_nueva_i9fvht.mov",
   "video5": "",
   "video6": "",
   "video7": ""
@@ -207,7 +207,7 @@
   {
     "name": "IronContacts",
     "description": "Laboratorio",
-    "videoContent": "1) Crear la tabla   2) Map y Slice  3) Random 4) Ordenar 5) Borrar",
+    "videoContent": "--> Crear la tabla --> Map y Slice  --> Random --> Ordenar --> Borrar",
     "category": "Lab",
     "file1": "https://github.com/ironhack-labs/lab-react-ironcontacts",
     "file2": "",
@@ -292,7 +292,7 @@
   {
     "name": "TaskList",
     "description": "Laboratorio",
-    "videoContent": "1)Comp nuevo y Ul/LI 2).map() y Key() 3)Renderizado Condicional y tuberias 4)Estados  5)Añadir random, convertir arrays 6)Contador 7)Borrado" ,
+    "videoContent": " Componente nuevo y Ul/LI  --> .map() y Key() -->  Renderizado Condicional y tuberias -->  Estados  -->  Añadir random, convertir arrays -->  Contador --> Borrado" ,
     "category": "Lab",
     "file1": "https://github.com/IronPTSolutions/react-list-cond-red",
     "file2": "",
