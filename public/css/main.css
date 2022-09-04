@@ -561,11 +561,9 @@ a{
   padding-top: 10%;
 }
 
-#vide-position{
+.vide-position{
   display: flex;
   position: absolute;
-  top:40%;
-  right: 2px;
 }
 
 #dropdownMenuButton1{

@@ -7,7 +7,8 @@
                     <label for="name" class="form-label edit-word-back">Concepto </label>
                     <input type="text"  class="form-control {{#if errors.name}} is-invalid {{/if}}" name="name" id="name" value="{{definition.name}}"> 
                     {{#if errors.name}}<div class="invalid-feedback">{{errors.name}}</div>{{/if}}
-            </div>
+            </div> 
+
             <div class=" content-container col-5">
                 <label for="category" class="form-label edit-word-back">Categoría</label>
                 <select name="category"  class="form-control {{#if errors.category}} is-invalid {{/if}}" id="category" value="{{definition.category}}">
