@@ -29,15 +29,21 @@ const databaseSchema = new Schema({
   },
   example1: {
     type: String,
+    default: "Por falta de tiempo y/o imaginación, este ejemplo no existe"
   },
   example2: {
     type: String,
+    default: "Por falta de tiempo y/o imaginación, este ejemplo no existe"
+
   },
   example3: {
     type: String,
+    default: "Por falta de tiempo y/o imaginación, este ejemplo no existe"
+
   },
   example4: {
     type: String,
+    
   },
   video: {
     type: String,

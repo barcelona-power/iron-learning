@@ -1589,20 +1589,23 @@
   left: 4px;
   width: calc(100% - 1px);
   height: calc(100% - 1px);
+  opacity: 1;
 }
-
 .button-53:hover:after {
   bottom: 2px;
   left: 2px;
   font-size: 2rem;
 }
+.button-53:hover {
+  opacity: 1;
+}
 
 @media (min-width: 768px) {
   .button-53 {
     font-size: 1.25rem;
+    opacity: 0.5;
   }
 }
-
 .justify-buttons {
   display: flex;
   justify-content: space-evenly;

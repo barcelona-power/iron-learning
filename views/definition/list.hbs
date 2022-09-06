@@ -18,9 +18,6 @@
                     <h5 class="pads d-inline-flex mx-3">Categoría:  <span class="def-term"> {{definition.category}}</span></h5>
                         <h5 class="card-title d-inline-flex ml-3 ">Autor: <span class="def-term"> {{upperCase definition.author.nickname}}</span></h5>
                          <img id="profile-pic-small" src="{{ definition.author.profilePic}}" alt="eh">
-                                            <div class="date-box-1-box">
-                        <h5 class="date-box-1 ">Última actualización:{{prettyDate definition.updatedAt}}</h5>
-                    </div>
                         <div id="text-desc-container">
                           {{#if definition.description}}
                             <div class="shadow-text1">
@@ -38,7 +35,9 @@
                           <p class="pads mt-4"><span class="shadow-text-title1">El usuario no ha aportado un ejemplo </span>  </p>
                             {{/if}}
                         </div>        
-
+                      <div class="date-box-1-box">
+                        <h5 class="date-box-1 ">Última actualización: {{prettyDate definition.updatedAt}}</h5>
+                    </div>
             <div >
         </div>
 </center>

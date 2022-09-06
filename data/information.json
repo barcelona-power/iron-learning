@@ -12,7 +12,6 @@
         "example4": "https://asset.cloudinary.com/du3v1mwzj/29ca53f75f0de6cc52658ead8935d310",
         "video": "https://res.cloudinary.com/du3v1mwzj/video/upload/v1661208900/iron-learning/videos/htt_protocol_qs3rc9.mp4"
     },
-
     {
         "name": "IP",
         "description": "Una dirección IP es una representación numérica del punto de Internet donde está conectado un dispositivo. Se usa para identificar dónde hay algo y, en cierto modo, qué es. Comprender los fundamentos de las direcciones IP es esencial para desenvolverse por Internet. Aprenda cómo funcionan las direcciones IP y por qué es tan importante proteger la suya.",
@@ -89,12 +88,11 @@
         "category": "Programa",
         "file": " https://alvaroperdiz.com/javascript/node-js/informaci%C3%B3n-basica-package-json/ ",
         "link":"https://imgs.developpaper.com/imgs/475620012-9caa1a49b47f1460_articlex.png",
-        "example1": "misc",
+        "example1": "",
         "example2": "Sería básicamente nuestro recetario, donde aparecen los ingredientes con  sus medidas exactas, el tiempo de cocción el modo de preparación… ",
-        "example3": "movies",
+        "example3": "",
         "example4": "https://res.cloudinary.com/du3v1mwzj/video/upload/v1661209961/iron-learning/videos/cliente_q7zyur.mp4",
         "video": "https://res.cloudinary.com/du3v1mwzj/video/upload/v1661212533/iron-learning/videos/pack.json_girvct.mp4"
-
     },    
     {
         "name": "Package-lock.json",
@@ -103,9 +101,9 @@
         "category": "Programa",
         "file": "https://rubensa.wordpress.com/2019/11/27/pero-que-demonios-es-package-lock-json/ ",
         "link":"https://timmousk.com/wp-content/uploads/2022/03/lockfile.jpeg",
-        "example1": "misc",
+        "example1": "",
         "example2": "Seria como la receta de la abuela versión extendida. Receta original con toda la información para realizar tu plato y que explica en que tiendas debes ir a comprar todos los ingredientes para que te quede exactamente igual. Digamos que es para cocinar ese plato exactamente igual.",
-        "example3": "movies",
+        "example3": "",
         "example4": "https://res.cloudinary.com/du3v1mwzj/video/upload/v1661209961/iron-learning/videos/cliente_q7zyur.mp4",
         "video": "https://res.cloudinary.com/du3v1mwzj/video/upload/v1661212533/iron-learning/videos/pack.json_girvct.mp4"
     },
@@ -114,8 +112,8 @@
         "description": "Dependencias son todas aquellas librerías de las que 'Depende' la web que se va a poner en marcha",
         "example": "Todas las librerías que estén en el package.json",
         "category": "Programa",
-        "file": "https://kinsta.com/es/blog/bibliotecas-javascript/ ",
-        "link":"https://www.arquitecturajava.com/wp-content/uploads/webpack.jpg",
+        "file":"https://www.arquitecturajava.com/wp-content/uploads/webpack.jpg",
+        "link": "https://kinsta.com/es/blog/bibliotecas-javascript/ ",
         "example1": "Toda la gente que no son los actores que trabajan para producir la pelicula",
         "example2": "Los utensilios que se utilizan, que no has inventado tú, que usarás para cocinar: horno, batidora, mixer-flaker-3000-ultraHD",
         "example3": "Si no tuvieras un bate de baseball y la pelota, el juego sería batir brazos muy fuerte en el aire...",
@@ -132,7 +130,7 @@
         "example1": "El VPN en el mundo de los deportes, es cuando puedes ver en directo las olimpiadas de Japón sin estar allí",
         "example2": "El VPN culinario sería comer sushi de salmón en tu piso de Barcelona. Estás disfrutando de la gastronomía de un país lejano desde tu casa.",
         "example3": "El VPN en el mundo del cine, sería a día de hoy, poder disfrutar del cine internacional. Poder ver peliculas grabadas en cualquier país.",
-        "example4": "coocking",
+        "example4": "",
         "video": "https://res.cloudinary.com/du3v1mwzj/video/upload/v1661213470/iron-learning/videos/momento_gracioso1_gnigpn.mp4"
     },
     {
@@ -145,7 +143,7 @@
         "example1": "La intranet en el mundo de los deportes sería como un partido privado. Por ejemplo un partido de futbol escolar. Se hace para un pequeño grupo de gente controlada. Familiares, amigos cercanos...",
         "example2": "La intranet sería la cocina de un hostal. Pueden hacer uso de ella solo las personas que tienen alquilada una habitación.",
         "example3": "La intranet en el mundo del cine podríamos decir que són películas selectas solo proyectadas en cines concretos. Para un público en concreto.",
-        "example4": "coocking",
+        "example4": "",
         "video": "https://res.cloudinary.com/du3v1mwzj/video/upload/v1661213470/iron-learning/videos/momento_gracioso1_gnigpn.mp4"
     },
     {
@@ -155,10 +153,10 @@
         "category": "Programa",
         "file": "https://openwebinars.net/blog/que-es-node-package-manager/",
         "link":"https://codigoonclick.com/wp-content/uploads/2019/05/npm-nodejs-1024x640.jpeg",
-        "example1": "misc",
+        "example1": "",
         "example2": "Podríamos decir que el Npm es la cocina de Masterchef. Es un lugar cómodo para cocinar y de manera ágil y fácil puedes encontrar los ingredientes para poder hacer un buen menú.",
-        "example3": "movies",
-        "example4": "coocking",
+        "example3": "",
+        "example4": "",
         "video": "https://res.cloudinary.com/du3v1mwzj/video/upload/v1661213470/iron-learning/videos/momento_gracioso1_gnigpn.mp4"
     },
     {
@@ -168,10 +166,10 @@
         "category": "Programa",
         "file": "https://openwebinars.net/blog/que-es-yarn/",
         "link":"https://ih1.redbubble.net/image.395434020.9542/st,small,845x845-pad,1000x1000,f8f8f8.u2.jpg",
-        "example1": "misc",
+        "example1": "",
         "example2": "Hemos descrito Npm como la cocina de Masterchef (Es un lugar cómodo para cocinar y de manera ágil y fácil puedes encontrar los ingredientes para poder hacer un buen menú). Podríamos decir que Yarn es la cocina de Top Chef.",
-        "example3": "movies",
-        "example4": "coocking",
+        "example3": "",
+        "example4": "",
         "video": "https://res.cloudinary.com/du3v1mwzj/video/upload/v1661213470/iron-learning/videos/momento_gracioso1_gnigpn.mp4"
     },
 
@@ -182,10 +180,10 @@
         "category": "Programa",
         "file": " https://lenguajejs.com/npm/administracion/carpeta-node_modules/",
         "link":"https://lenguajejs.com/npm/administracion/carpeta-node_modules/node_modules-heaviest-object-universe.jpg",
-        "example1": "misc",
+        "example1": "",
         "example2": "Podríamos definirlo como el índice de un libro de cocina. Donde podemos encontrar todas las recetas ordenadas. ",
-        "example3": "movies",
-        "example4": "coocking",
+        "example3": "",
+        "example4": "",
         "video": "https://res.cloudinary.com/du3v1mwzj/video/upload/v1661213470/iron-learning/videos/momento_gracioso1_gnigpn.mp4"
     },
     {
@@ -195,10 +193,10 @@
         "category": "Internet",
         "file": "https://developer.mozilla.org/es/docs/Web/HTTP/Headers",
         "link":"https://www.htmlgoodies.com/wp-content/uploads/2021/04/stylingblocks.png",
-        "example1": "misc",
+        "example1": "",
         "example2": "Podriamos decir que el header es la información general de un producto. El nombre comercial, el tipo de producto, la fecha de caducidad, el productor, el distribuidor… ",
-        "example3": "movies",
-        "example4": "coocking"
+        "example3": "",
+        "example4": ""
     },
     {
         "name": "NAT",
@@ -207,10 +205,10 @@
         "category": "Internet",
         "file": "https://www.ajpdsoft.com/modules.php?name=Encyclopedia&op=content&tid=790",
         "link":"https://www.profesionalreview.com/wp-content/uploads/2020/08/Modo-NAT-03.png",
-        "example1": "misc",
+        "example1": "",
         "example2": " ",
-        "example3": "movies",
-        "example4": "coocking"
+        "example3": "",
+        "example4": ""
     },
     {
         "name": "Promesa",
@@ -219,10 +217,10 @@
         "category": "Otros",
         "file": "https://www.arsys.es/blog/promesas-javascript",
         "link":"https://www.freecodecamp.org/news/content/images/2020/06/Ekran-Resmi-2020-06-06-12.21.27.png",
-        "example1": "misc",
+        "example1": "",
         "example2": "Cuando vas a un restaurante y quieres comer croquetas pero no puedes porque la freidora está estropeada y te dan la opción de una ensalada. ",
-        "example3": "movies",
-        "example4": "coocking"
+        "example3": "",
+        "example4": ""
     },
     {
         "name": "SQL",
@@ -231,10 +229,10 @@
         "category": "Librería",
         "file": "https://definicion.de/sql/",
         "link":"https://blog.powerdata.es/hs-fs/hubfs/iStock-517373542.jpg?width=591&name=iStock-517373542.jpg",
-        "example1": "misc",
+        "example1": "",
         "example2": " El supermercado de el corte inglés. Todo bien organizado por sectores.",
-        "example3": "movies",
-        "example4": "coocking"
+        "example3": "",
+        "example4": ""
     },
     {
         "name": "NoSQL",
@@ -243,10 +241,10 @@
         "category": "Librería",
         "file": "https://es.wikipedia.org/wiki/NoSQL",
         "link":"https://matob.web.id/random/wp-content/uploads/sites/2/2021/12/What-is-NoSQL.jpg",
-        "example1": "misc",
+        "example1": "",
         "example2": " El almacén de los supermercados el Corte inglés.",
-        "example3": "movies",
-        "example4": "coocking"
+        "example3": "",
+        "example4": ""
     },
     {
         "name": "Coockie",
