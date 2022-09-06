@@ -60,7 +60,7 @@ center{
 .def-term{
   background-image:  linear-gradient(to bottom, rgba(255, 255, 255, 0.196), rgba(255, 255, 255, 0.196), rgba(255, 255, 255, 0.196) 0%, rgba(0, 0, 0, 0.146) 100%);
   margin-left: 20px;
-  font-size: 21px;
+  font-size: 28px;
   font-family: "Varela Round";
   border-radius: 5px;
   padding: 0 10px
@@ -239,3 +239,23 @@ center{
   background-size: 30%;
 }
 
+
+#text-descr{
+  font-size: 13px;
+}
+.video-margins{
+  text-align: center;
+  margin-right: 20px;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.096);
+  padding: 0 5px 5px 5px ;
+}
+
+#icon-container{
+  padding-top:5px;
+}
+.icon-container3{
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-evenly;
+
+}
