@@ -1,11 +1,12 @@
 const nodemailer = require("nodemailer");
 
 const EMAIL_PASSWORD = process.env.EMAIL_PASSWORD;
+const EMAIL_MAIL = process.env.EMAIL_MAIL;
 
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "iron.learning.welcomer@gmail.com",
+    user: EMAIL_MAIL,
     pass: EMAIL_PASSWORD,
   },
 });
@@ -19,9 +20,7 @@ module.exports.sendRegistrationEmail = (user) => {
       html: `
         <h3>Hola ${user.nickname}!</h3>
         ...
-        <p>Me alegra tenerte a bordo con nosotros en <b>iron-learning</b></p>
-        <p>please confirm your account using the following link:</p>
-    `,
+        <p>Me alegra tenerte a bordo con nosotros en <b>iron-learning</b></p>  `,
     })
     .then(() => {
       console.log("email sent!");
