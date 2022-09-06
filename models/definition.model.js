@@ -24,12 +24,13 @@ const definitionSchema = new Schema(
       type: String,
       maxLength: [500, "Haz ejemplos fáciles y más cortos..."],
       trim: true,
-      default: "Wikipedia"
+      default: "Wikipedia",
     },
 
     file: {
       type: String,
-      default: "https://res.cloudinary.com/du3v1mwzj/image/upload/v1661164212/iron-learning/imgs/mix/mordor_yakmyr.jpg",
+      default:
+        "https://res.cloudinary.com/du3v1mwzj/image/upload/v1661164212/iron-learning/imgs/mix/mordor_yakmyr.jpg",
       validate: {
         validator: function (image) {
           try {

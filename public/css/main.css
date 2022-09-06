@@ -1,26 +1,26 @@
-
-body{
-  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs0_jezvuq.cur"), pointer;
+body {
+  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs0_jezvuq.cur"),
+    pointer;
   background-image: url("https://res.cloudinary.com/du3v1mwzj/image/upload/v1661560760/iron-learning/imgs/fondos/world_qx1ua4.jpg");
 }
-button{
-  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"), pointer;
-
+button {
+  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"),
+    pointer;
 }
 ::-moz-selection {
   background-color: orange;
   color: white;
 }
-::selection  {
+::selection {
   background-color: orange;
   color: white;
 }
-.spm{
+.spm {
   font-family: "Varela Round";
   font-weight: 900;
   font-size: 16px;
 }
-#edit-img{
+#edit-img {
   background-color: black;
   display: flex;
   position: absolute;
@@ -29,72 +29,73 @@ button{
   height: 110%;
   margin-top: -5%;
 }
-.body-front-img{
+.body-front-img {
   background-image: url("https://res.cloudinary.com/du3v1mwzj/image/upload/v1661163655/iron-learning/imgs/fondos/wall1_ctvtuo.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   padding-bottom: 20%;
 }
-#definition-form-position{
+#definition-form-position {
   padding-top: 3%;
 }
-#body-def-img{
+#body-def-img {
   margin-top: -10%;
-display: flex;
-position: absolute;
-z-index: -1;
+  display: flex;
+  position: absolute;
+  z-index: -1;
 }
-.img-list{
+.img-list {
   display: flex;
   position: absolute;
   margin-top: -30%;
   z-index: -5;
-
 }
 
-#body-profile-img{
+#body-profile-img {
   background-image: url("https://res.cloudinary.com/du3v1mwzj/image/upload/v1661163655/iron-learning/imgs/fondos/wall1_ctvtuo.jpg");
   margin-top: none;
 }
 
-
-image{
-  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"), pointer;
-  
+image {
+  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"),
+    pointer;
 }
-a:link{
-  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"), pointer;
+a:link {
+  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"),
+    pointer;
 }
-a{
-  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs0_jezvuq.cur"), pointer;
-  
+a {
+  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs0_jezvuq.cur"),
+    pointer;
 }
-#logo-iron{
+#logo-iron {
   width: 8%;
-  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"), pointer;
-
+  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"),
+    pointer;
 }
-#logo-gitHub{
+#logo-gitHub {
   width: 8.5%;
-  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"), pointer;
+  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"),
+    pointer;
 }
-#logo-wiki{
+#logo-wiki {
   width: 8%;
-  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"), pointer;
-
+  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"),
+    pointer;
 }
-#logo-student{
+#logo-student {
   width: 8%;
-  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"), pointer;
+  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"),
+    pointer;
 }
-.logo-mod{
+.logo-mod {
   width: 4%;
-  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"), pointer;
+  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"),
+    pointer;
 }
-
 
 .zoom-logo {
-  transition: transform .2s;
+  transition: transform 0.2s;
   margin: 0 0.1%;
 }
 
@@ -105,9 +106,8 @@ a{
   z-index: 4;
 }
 
-
 .zoom-logo-mod {
-  transition: transform .2s;
+  transition: transform 0.2s;
   margin: 0 3% 0 0;
 }
 .zoom-logo-mod:hover {
@@ -117,13 +117,12 @@ a{
   z-index: 4;
 }
 
-
 .zoom-example {
   transition: transform 3s;
   opacity: 0.4;
   margin-left: 1px;
-  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"), pointer;
-  
+  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"),
+    pointer;
 }
 
 .zoom-example:hover {
@@ -132,8 +131,8 @@ a{
   transform: scale(1.5);
   z-index: 4;
   opacity: 1;
-  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"), pointer;
-
+  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"),
+    pointer;
 }
 
 #iniciar-sesión {
@@ -141,10 +140,9 @@ a{
   font-family: "Varela Round";
 }
 
-
-
-#log-in-position{
+#log-in-position {
   padding-top: 15%;
+
 }
 #log-in {
   background-image: linear-gradient(
@@ -156,8 +154,12 @@ a{
   display: inline-flex;
   border-radius: 20px;
   font-family: "Varela Round";
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
-#form-login{
+#form-login {
   padding-left: 3%;
 }
 
@@ -188,7 +190,7 @@ a{
 #list-of {
   margin: 5%;
 }
-#main-page{
+#main-page {
   margin: 3% 4%;
 }
 .ua {
@@ -205,7 +207,7 @@ a{
   justify-content: left;
   align-items: center;
 }
-#iniciar-btn{
+#iniciar-btn {
   font-size: 20px;
   color: rgb(255, 255, 255);
 }
@@ -215,31 +217,31 @@ a{
   align-items: center;
 }
 
-
 .nav-btn span {
-  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"), pointer;
+  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"),
+    pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
   font-family: "Varela Round";
-  font-size:94%;
-  border-bottom: 2px rgba(255, 255, 255, 0.279)  solid; 
+  font-size: 94%;
+  border-bottom: 2px rgba(255, 255, 255, 0.279) solid;
 }
 
 .nav-btn:hover span {
   font-size: 100%;
   transform: 1s;
   font-family: "Varela Round";
-  border-bottom: 3px rgba(255, 255, 255, 0.817)  solid; 
-
+  border-bottom: 3px rgba(255, 255, 255, 0.817) solid;
 }
 
 .nav-btn-in span {
   font-family: "Varela Round";
-  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"), pointer;
+  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"),
+    pointer;
 
   display: inline-block;
-  position: relative; 
+  position: relative;
   transition: 1s;
   font-size: 65%;
 }
@@ -248,18 +250,17 @@ a{
   font-size: 80%;
   transform: 2s;
   font-family: "Varela Round";
-  color:rgb(0, 0, 0)
+  color: rgb(0, 0, 0);
 }
 
-
-
 .nav-btn1 span {
-  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"), pointer;
+  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"),
+    pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
   font-family: "Varela Round";
-  font-size:110%;
+  font-size: 110%;
 }
 
 .nav-btn1:hover span {
@@ -271,10 +272,11 @@ a{
 
 .nav-btn1-in span {
   font-family: "Varela Round";
-  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"), pointer;
+  cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"),
+    pointer;
 
   display: inline-block;
-  position: relative; 
+  position: relative;
   transition: 1s;
   font-size: 65%;
 }
@@ -283,37 +285,42 @@ a{
   font-size: 80%;
   transform: 2s;
   font-family: "Varela Round";
-  color:rgb(0, 0, 0)
+  color: rgb(0, 0, 0);
 }
 
-
-
-#form-category{
+#form-category {
   font-size: 12px;
-  background: -webkit-linear-gradient(top, #7a8494, #ffffff,#7a8494);
+  background: -webkit-linear-gradient(top, #7a8494, #ffffff, #7a8494);
   color: rgb(0, 0, 0);
   border-radius: 20px;
-  border-style: solid double ;
+  border-style: solid double;
   border-width: 1px;
   height: 40px;
   margin-top: 1%;
 }
 
-#form-word{
+#form-word {
   font-size: 12px;
   font-weight: 900;
   margin-top: 1%;
-  background: -webkit-linear-gradient(top, #8cade9, #ffffff, #ffffff, #ffffff, #8cade9);
+  background: -webkit-linear-gradient(
+    top,
+    #8cade9,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #8cade9
+  );
   color: rgb(1, 18, 68);
   text-shadow: 1px 1px white;
   text-shadow: 1.3px 1.3px white;
   border-radius: 20px;
-  border-style: solid double ;
+  border-style: solid double;
   border-width: 1px;
   height: 40px;
 }
 
-#list-of{
+#list-of {
   display: flex;
   border-radius: 30px;
   font-family: "Varela Round";
@@ -322,38 +329,29 @@ a{
   margin-right: 20%;
 }
 
-
-
-
-
-
-
-
-
 /* eyes */
 
-.edgar{
+.edgar {
   display: flex;
   position: fixed;
   z-index: 49;
   right: 2%;
-  top: 12.4%
-  
+  top: 12.4%;
 }
-.eyes-fixed{
+.eyes-fixed {
   z-index: 50;
   display: flex;
   position: fixed;
   width: 100%;
   top: 20%;
 }
-.eyes{
+.eyes {
   position: absolute;
   left: 44%;
   width: 100%;
   text-align: center;
 }
-.eye{
+.eye {
   width: 2%;
   height: 20px;
   background-image: linear-gradient(
@@ -370,9 +368,8 @@ a{
   overflow: hidden;
   border: solid 2px;
   border-radius: 10px;
-
 }
-.ball{
+.ball {
   width: 10px;
   height: 10px;
   background: linear-gradient(
@@ -385,26 +382,21 @@ a{
   position: absolute;
   top: 5%;
   left: 5%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   border-radius: 50%;
   border: 6px solid rgb(109, 74, 8);
 }
 /* eyes */
 
-.overflow-ojos{
-  overflow-x:hidden;
+.overflow-ojos {
+  overflow-x: hidden;
 }
 
-
-
-
-#iniciar-info{
+#iniciar-info {
   font-size: 14px;
 }
 
-
-
-.date-box{
+.date-box {
   box-shadow: 2px 2px white;
   text-shadow: 2px 2px white;
   border: 4px dashed;
@@ -414,7 +406,7 @@ a{
   font-weight: 900;
   z-index: 1;
 }
-.date-box-1{
+.date-box-1 {
   top: 1px;
   box-shadow: 2px 2px white;
   text-shadow: 2px 2px white;
@@ -425,7 +417,7 @@ a{
   font-weight: 900;
   z-index: 1;
 }
-.date-box-1-box{
+.date-box-1-box {
   bottom: 1px;
   display: flex;
   position: absolute;
@@ -435,7 +427,7 @@ a{
   from {
     -webkit-transform: translate3d(0px, 0px, 0px);
   }
-  to { 
+  to {
     -webkit-transform: translate3d(1000px, 0px, 0px);
   }
 }
@@ -443,129 +435,139 @@ a{
   from {
     -webkit-transform: translate3d(0px, 0px, 0px);
   }
-  to { 
+  to {
     -webkit-transform: translate3d(1000px, 0px, 0px);
   }
 }
 
-@-moz-keyframes move-background {    
+@-moz-keyframes move-background {
   from {
     -webkit-transform: translate3d(0px, 0px, 0px);
   }
-  to { 
+  to {
     -webkit-transform: translate3d(1000px, 0px, 0px);
   }
 }
 
-    @-webkit-keyframes move-background {
+@-webkit-keyframes move-background {
   from {
     -webkit-transform: translate3d(0px, 0px, 0px);
   }
-  to { 
+  to {
     -webkit-transform: translate3d(1000px, 0px, 0px);
   }
 }
 
-.background-container{
+.background-container {
   position: fixed;
   top: 0;
-  left:0;
+  left: 0;
   bottom: 0;
   right: 0;
   z-index: -1;
 }
 
 .stars {
- background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
- position: absolute;
+  background: black
+    url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   display: block;
-    z-index: -4;
+  z-index: -4;
 }
 
-.twinkling{
-  width:10000px;
+.twinkling {
+  width: 10000px;
   height: 100%;
-  background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+  background: transparent
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png")
+    repeat;
   background-size: 1000px 1000px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -2;
-    
-    -moz-animation:move-background 70s linear infinite;
-  -ms-animation:move-background 70s linear infinite;
-  -o-animation:move-background 70s linear infinite;
-  -webkit-animation:move-background 70s linear infinite;
-  animation:move-background 70s linear infinite;
-  
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -2;
+
+  -moz-animation: move-background 70s linear infinite;
+  -ms-animation: move-background 70s linear infinite;
+  -o-animation: move-background 70s linear infinite;
+  -webkit-animation: move-background 70s linear infinite;
+  animation: move-background 70s linear infinite;
 }
 
-.clouds{
-  width:10000px;
+.clouds {
+  width: 10000px;
   height: 100%;
-  background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
+  background: transparent
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png")
+    repeat;
   background-size: 1000px 1000px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
 
-   -moz-animation:move-background 150s linear infinite;
-  -ms-animation:move-background 150s linear infinite;
-  -o-animation:move-background 150s linear infinite;
-  -webkit-animation:move-background 150s linear infinite;
-  animation:move-background 150s linear infinite;
+  -moz-animation: move-background 150s linear infinite;
+  -ms-animation: move-background 150s linear infinite;
+  -o-animation: move-background 150s linear infinite;
+  -webkit-animation: move-background 150s linear infinite;
+  animation: move-background 150s linear infinite;
 }
-.moon-is-here{
+.moon-is-here {
   width: 20%;
   float: right;
 }
-#body-cloud{
-  width: 100%; 
-  height:100%;
+#body-cloud {
+  width: 100%;
+  height: 100%;
   margin-top: 1.5%;
   margin-bottom: -1%;
-  background-color:#8ec1da;
+  background-color: #8ec1da;
   background-image: url("https://res.cloudinary.com/du3v1mwzj/image/upload/v1661560760/iron-learning/imgs/fondos/world_qx1ua4.jpg");
   background-position: center bottom;
   animation: animatedBackground 30s linear infinite;
   /* Safari and Chrome: */
   -webkit-animation: animatedBackground 150s linear infinite;
 }
-@keyframes animatedBackground 
-{
-  from { background-position: 0 100%; }
-  to { background-position: 100% 100%; }
+@keyframes animatedBackground {
+  from {
+    background-position: 0 100%;
+  }
+  to {
+    background-position: 100% 100%;
+  }
 }
-@-webkit-keyframes  animatedBackground 
-{
-  from { background-position: 0 100%; }
-  to { background-position: 100% 100%; }
+@-webkit-keyframes animatedBackground {
+  from {
+    background-position: 0 100%;
+  }
+  to {
+    background-position: 100% 100%;
+  }
 }
-#relax-un-rato{
+#relax-un-rato {
   color: rgb(151, 146, 146);
   text-shadow: -2px -2px #c5c7cc;
   padding-top: 900px;
 }
-#final-img-profile{
+#final-img-profile {
   margin-top: -10%;
   z-index: -30;
 }
-.edition-box{
+.edition-box {
   padding-top: 10%;
 }
 
-.vide-position{
+.vide-position {
   display: flex;
   position: absolute;
 }
 
-#dropdownMenuButton1{
+#dropdownMenuButton1 {
   min-width: 60px;
 }

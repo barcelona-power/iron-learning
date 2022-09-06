@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const { User } = require("../models");
-const {sendRegistrationEmail} = require("../config/mailer.config")
+const { sendRegistrationEmail } = require("../config/mailer.config");
 
 module.exports.register = (req, res, next) => {
   res.render(`register/register`);
@@ -24,14 +24,14 @@ module.exports.doRegister = (req, res, next) => {
         }
         renderWithErrors(errors);
       } else {
-        const user = req.body
-        console.log(req.file)
-        user.profilePic = req.file.path
-        console.log(user.profilePic)
-        return User.create(user)
-        .then((user) => {          
+        const user = req.body;
+        console.log(req.file);
+        user.profilePic = req.file.path;
+        console.log(user.profilePic);
+        return User.create(user).then((user) => {
           sendRegistrationEmail(user);
-          res.redirect("/")});
+          res.redirect("/");
+        });
       }
     })
     .catch((error) => {
@@ -44,40 +44,38 @@ module.exports.doRegister = (req, res, next) => {
 };
 
 module.exports.login = (req, res, next) => {
-  res.render("frontpage/frontpage")
-}
+  res.render("frontpage/frontpage");
+};
 
 module.exports.doLogin = (req, res, next) => {
-
   function renderInvalidLogin() {
     res.render("frontpage/frontpage", {
       user: req.body,
-      errors: {email: 'Nickname o contraseña incorrectas'}
+      errors: { email: "Nickname o contraseña incorrectas" },
     });
   }
   const { email, password } = req.body;
   User.findOne({ email })
-  .then(user =>{
-    if(!user){
-      renderInvalidLogin()
-    } else {
-      return user.checkPassword(password)
-      .then(match => {
-        if(match) {
-          req.session.userId = user.id;
-          res.redirect('/main')
-        } else {
-          renderInvalidLogin()
-        }
-      })
-    }
-  })
-  .catch(error => next(error))
-}
+    .then((user) => {
+      if (!user) {
+        renderInvalidLogin();
+      } else {
+        return user.checkPassword(password).then((match) => {
+          if (match) {
+            req.session.userId = user.id;
+            res.redirect("/main");
+          } else {
+            renderInvalidLogin();
+          }
+        });
+      }
+    })
+    .catch((error) => next(error));
+};
 
 module.exports.logOut = (req, res, next) => {
   if (req.session) {
-      req.session.destroy();
-      res.redirect("/");
+    req.session.destroy();
+    res.redirect("/");
   }
-}
+};

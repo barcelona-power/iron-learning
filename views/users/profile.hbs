@@ -1,109 +1,94 @@
         {{> navbar}}  
 <div id="body-cloud">
+  <br>
+  <br>
+  <br>
+  <img id="profile-pic"  src="{{currentUser.profilePic}}" alt="Te falta una imagen">
+    <div class="mt-5" id="body-profile-top-img">
+      <center>En tu libreta tendrás todas las definiciones que has creado y podrás modificarlas</center>
+      <br>
+        <div id="sugerencia">
+          <h2>Aun no tienes una definición propia </h2>
+          <span id="no-definition"> <a href="/create-definition"><img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1661265413/iron-learning/imgs/mix/clicaaqui_lqvouy.png" alt="Aqui" width="50%"></a></span>
+        </div>
+        <div class="d-flex">
+          <button type="button" id="modal-profile" class="button-53" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Mensaje para {{currentUser.nickname}}</button>
+        </div>
 
 
-    <br>
-    <br>
-    <br>
-            <img id="profile-pic"  src="{{currentUser.profilePic}}" alt="Te falta una imagen">
-
-        <div class="mt-5" id="body-profile-top-img">
-         
-        <center>En tu libreta tendrás todas las definiciones que has creado y podrás modificarlas</center>
-    <br>
-
-         <div id="sugerencia">
-             <h2>Aun no tienes una definición propia </h2>
-        <span id="no-definition"> <a href="/create-definition"><img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1661265413/iron-learning/imgs/mix/clicaaqui_lqvouy.png" alt="Aqui" width="50%"></a></span>
-
- 
-         </div>
-         <div class="d-flex">
-            <button type="button" id="modal-profile" class="button-53" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-      Mensaje para {{currentUser.nickname}}
-    </button>
-         </div>
-
-
-    <div  class="modal fade" id="staticBackdrop" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel">Bienvenid@  {{ currentUser.nickname}}!</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-          <h3 id="text-welcome-user">  &nbsp;&nbsp;&nbsp;&nbsp; Nos encanta que nos visites desde  {{currentUser.country}}. 
-          Nos consta que eres fan de ser  {{currentUser.preference1}}.
-          Encontrarás usuarios con aficiones parecidas ya que nos dijiste " {{currentUser.knowledge}}" Se nota que eres valiente y vives la vida a tope.
-          Nos vendrá bien la sabiduría de un expert@ en  {{currentUser.preference2}}. <br> &nbsp;&nbsp;&nbsp;&nbsp; Gracias de antemano por tus aportaciones
-          </h3>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      <div  class="modal fade" id="staticBackdrop" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Bienvenid@  {{ currentUser.nickname}}!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h3 id="text-welcome-user">  &nbsp;&nbsp;&nbsp;&nbsp; Nos encanta que nos visites desde  {{currentUser.country}}. 
+                  Nos consta que eres fan de ser  {{currentUser.preference1}}.
+                  Encontrarás usuarios con aficiones parecidas ya que nos dijiste " {{currentUser.knowledge}}" Se nota que eres valiente y vives la vida a tope.
+                  Nos vendrá bien la sabiduría de un expert@ en  {{currentUser.preference2}}. <br> &nbsp;&nbsp;&nbsp;&nbsp; Gracias de antemano por tus aportaciones
+              </h3>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-        </div>
 
-        {{#each definitions as |definition|}}
+                                  {{#each definitions as |definition|}}
     <div id="body-profile-top-img">
-    <div class="card card-box-profile">
-      <div class="row">
-        <div class="col-md-2 img-boxing zoom">
-      <a href="{{definition.link}}"><img src="{{definition.link}}" width="100%" height="100%" class="" alt="" class="d-flex"> </a> 
-        </div>
-        <div class="col-md-8">
-                        <h5 class="card-title d-inline-flex mx-3 ">Término: <span class="def-term"> {{definition.name}}</span></h5>               
-                        <h5 class="pads d-inline-flex mx-3">Categoría:  <span class="def-term"> {{definition.category}}</span></h5>
-                        <h5 class="card-title d-inline-flex ml-3 ">Autor: <span class="def-term"> {{upperCase definition.author.nickname}}</span></h5>
-                         <img id="profile-pic-small" src="{{ definition.author.profilePic}}" alt="eh">
-
-                        <div id="text-desc-container">
-                          {{#if definition.description}}
-                            <div class="shadow-text1">
-                              <p class="pads"><span class="shadow-text-title1">Descripción:</span>   <span class="def-term-text">{{definition.description}}</span> </p>
-                            </div>
-                            {{else}}
-                          <p class="pads mt-4"><span class="shadow-text-title1">Sería de gran ayuda si aportases alguna definición</span>  </p>
-                            {{/if}}
-
-                            {{#if definition.example}}
-                            <div class="shadow-text2">
-                              <p class="pads"><span class="shadow-text-title2">Ejemplo:</span>   <span class="def-term-text">{{definition.example}}</span> </p>
-                            </div>  
-                            {{else}}
-                          <p class="pads mt-4"><span class="shadow-text-title1">Seguro que se te ocurre algún ejemplo que ayude a los demás </span>  </p>
-
-                            {{/if}}
-                        </div>           
-                        
-                        {{#if ...currentUser}}
-                        <div class="d-flex float-end mt-5 ">
-                        <a href="/profile/{{definition.id}}/edit" class="btn-8 custom-btn-9">&#9997   Editar </a>
-                    <form action="/profile/{{definition.id}}/delete" method="post">
-                        <button class="btn-9 custom-btn-9" type="submit">&#128163 Borrar</button>
-                    </form>
-                        <h5 class="date-box pt-2">Última actualización:{{prettyDate definition.updatedAt}}</h5>
-                    </div>
-                        {{/if}}
+      <div class="card card-box-profile">
+        <div class="row">
+          <div class="col-md-2 img-boxing zoom">
+            <a href="{{definition.link}}"><img src="{{definition.link}}" width="100%" height="100%" class="" alt="" class="d-flex"> </a> 
           </div>
+          <div class="col-md-8">
+            <h5 class="card-title d-inline-flex mx-3 ">Término: <span class="def-term"> {{definition.name}}</span></h5>               
+            <h5 class="pads d-inline-flex mx-3">Categoría:  <span class="def-term"> {{definition.category}}</span></h5>
+            <h5 class="card-title d-inline-flex ml-3 ">Autor: <span class="def-term"> {{upperCase definition.author.nickname}}</span></h5>
+            <img id="profile-pic-small" src="{{ definition.author.profilePic}}" alt="eh">
+              <div id="text-desc-container">
+                        {{#if definition.description}}
+                <div class="shadow-text1">
+                  <p class="pads"><span class="shadow-text-title1">Descripción:</span>   <span class="def-term-text">{{definition.description}}</span> </p>
+                </div>
+                            {{else}}
+                <p class="pads mt-4"><span class="shadow-text-title1">Sería de gran ayuda si aportases alguna definición</span>  </p>
+                              {{/if}}
+                        {{#if definition.example}}
+                <div class="shadow-text2">
+                  <p class="pads"><span class="shadow-text-title2">Ejemplo:</span>   <span class="def-term-text">{{definition.example}}</span> </p>
+                </div>  
+                            {{else}}
+                <p class="pads mt-4"><span class="shadow-text-title1">Seguro que se te ocurre algún ejemplo que ayude a los demás </span>  </p>
+                            {{/if}}
+              </div>           
+                          
+                  {{#if ...currentUser}}
+                  <div class="d-flex float-end mt-5 ">
+                  <a href="/profile/{{definition.id}}/edit" class="btn-8 custom-btn-9">&#9997   Editar </a>
+              <form action="/profile/{{definition.id}}/delete" method="post">
+                  <button class="btn-9 custom-btn-9" type="submit">&#128163 Borrar</button>
+              </form>
+                  <h5 class="date-box pt-2">Última actualización:{{prettyDate definition.updatedAt}}</h5>
+              </div>
+                  {{/if}}
+            </div>
         </div>
         <div class="col-md-2 img-boxing-2 zoom2">
-      <a href="{{definition.file}}"><img src="{{definition.file}}" width="100%" height="100%" class="" alt="..." class="d-flex"> </a> 
+          <a href="{{definition.file}}"><img src="{{definition.file}}" width="100%" height="100%" class="" alt="..." class="d-flex"> </a> 
         </div>
       </div>
-      
-      {{/each}}
-
     </div>
-<center>
-            <div id="text-end-profile">
+                                {{/each}}
+    <center>
+      <div id="text-end-profile">
         <h5 >Ten en cuenta que los admins podrán borrar o modificar tus ejemplos si lo ven necesario</h5>
         <h5 >Es por cuestiones de seguridad nacional</h5>
-        <h5 >Si tienes dudas, recuerda que ცნობისმოყვარე ადამიანი ხარ. კარგი, მაგრამ ვწუხვარ, რომ დრო დავკარგე. <br> Y si no, pulsa este link<a href="/never"> <img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1661267409/iron-learning/imgs/mix/pngwing.com_3_x5uekk.png" alt="Falta link" width="5%"> </a> </h5>   
-        </div>
-</center>
-
+        <h5 >Aquí ofrecemos un resumen de todos los términos de este módulo en video descargablea <a href="/never"> <img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1661267409/iron-learning/imgs/mix/pngwing.com_3_x5uekk.png" alt="Falta link" width="5%"> </a> </h5>   
+      </div>
+    </center>
 </div>    

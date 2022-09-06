@@ -5,96 +5,94 @@ module.exports.listOfDefinitions = (req, res, next) => {
   const { name, category } = req.query;
   const criteria = {};
   if (req.user.admin) {
-    criteria.author = req.user.id
+    criteria.author = req.user.id;
   }
 
   if (name) {
     criteria.name = new RegExp(name, "i");
   }
-  if (category){
-    criteria.category = new RegExp (category, "i");
-}
+  if (category) {
+    criteria.category = new RegExp(category, "i");
+  }
   Definition.find(criteria)
-  .populate("author")
-  .then((definitions) => {
-    return Database.find(criteria)
-      .then((databases) =>
-        res.render("definition/list", { definitions, databases, name, category })
-        
-      )
-      .catch((error) => next(error))
-  });
+    .populate("author")
+    .then((definitions) => {
+      return Database.find(criteria)
+        .then((databases) =>
+          res.render("definition/list", {
+            definitions,
+            databases,
+            name,
+            category,
+          })
+        )
+        .catch((error) => next(error));
+    });
 };
-
-
-
 
 module.exports.formDefinition = (req, res, next) => {
   res.render("definition/definition");
 };
 
 module.exports.createDefinition = (req, res, next) => {
-  const data = ({name, category, description, example, file, link} = {
+  const data = ({ name, category, description, example, file, link } = {
     ...req.body,
-    author: req.user.id
-  })
-  data.file = req.file.path
+    author: req.user.id,
+  });
+  data.file = req.file.path;
 
   Definition.create(data)
-  .then((data) => res.redirect("/create-definition"))
-  .catch((error) => {
-    if(error instanceof mongoose.Error.ValidationError) {
-        res.render("definition/definition", {errors: error.errors, definition: data});
-    } else {
+    .then((data) => res.redirect("/create-definition"))
+    .catch((error) => {
+      if (error instanceof mongoose.Error.ValidationError) {
+        res.render("definition/definition", {
+          errors: error.errors,
+          definition: data,
+        });
+      } else {
         next(error);
-    }
-  })
-}; 
-
-
-
-
-
-
-
-
-
+      }
+    });
+};
 
 module.exports.delete = (req, res, next) => {
   Definition.findByIdAndDelete(req.params.id)
-    .then(() => {res.redirect("/list")})
-    .catch((error) => next(error))
+    .then(() => {
+      res.redirect("/list");
+    })
+    .catch((error) => next(error));
 };
-
-
-
 
 module.exports.edit = (req, res, next) => {
   Definition.findById(req.params.id)
-  .then(definition => {
-    if(definition) {
-      res.render("definition/edit", {definition})
-    } else{
-      res.redirect("/profile")
-    }
-  })
-  .catch((error) => next(error))
-}
-
+    .then((definition) => {
+      if (definition) {
+        res.render("definition/edit", { definition });
+      } else {
+        res.redirect("/profile");
+      }
+    })
+    .catch((error) => next(error));
+};
 
 module.exports.doEdit = (req, res, next) => {
-  const data = ({name, category, description, example, link} = {...req.body})
-  console.log(data)
+  const data = ({ name, category, description, example, link } = {
+    ...req.body,
+  });
+  console.log(data);
   Definition.findByIdAndUpdate(req.params.id, data)
-  .then((data) => {
-    console.log(data)
-    res.redirect("/profile")
-  })
-  .catch((error=> {
-    if(error instanceof mongoose.Error.ValidationError) {
-      res.render("definition/definition", {errors: error.errors, definition: data});
-  } else {
-      next(error);
-  }
-  }) )
-}
+    .then((data) => {
+      console.log(data);
+      res.redirect("/profile");
+    })
+    .catch((error) => {
+      if (error instanceof mongoose.Error.ValidationError) {
+        res.render("definition/definition", {
+          errors: error.errors,
+          definition: data,
+        });
+      } else {
+        next(error);
+      }
+    });
+};

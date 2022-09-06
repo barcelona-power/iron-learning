@@ -1,41 +1,32 @@
-<div>
-
-  <div class="row " >
-    <h1 id="body-bien" class="h1-bien"><span>"IRON</span><span>LE@RNING"</span></h1>
-  </div>
-<div class="body-front-img">
-      <a id="button-inv" href="/main" class="button-87" role="button"> &nbsp;&nbsp;&nbsp;&nbsp;Entrar como invitad@... </a>
-  
-  <div class="row justify-content-center" id="log-in-position">
-    <div id="log-in" class="p-1 m-2 col-lg-4">
-        <form acton="/" method="post" class="p-3">
-            <label id="iniciar-sesión" class="form-label">Inicia Sesión... <span id="iniciar-info"> para ventajas adicionales</span></label>
-                <div class="d-flex pb-3" id="form-login">
-                    <div class="col-md-7 ma-2">
-                      <label  class="form-label">Dirección de correo</label>
-                      <input type="email" name="email"  class="form-control  {{#if errors.email}}is-invalid{{/if}}" value="{{user.email}}" placeholder="IronStundent@bulala.com">
-                      <div id="emailHelp" class="form-text"></div>
-                    {{#if errors.email}}<div class=" invalid-feedback"> {{errors.email}}</div>{{/if}}
-
+<div class="row">
+    <div class="row" >
+        <h1 id="body-bien" class="h1-bien"><span>"IRON</span><span>LE@RNING"</span></h1>
+    </div>
+    <div class="body-front-img">
+        <a id="button-inv" href="/main" class="button-87" role="button"> &nbsp;&nbsp;&nbsp;&nbsp;Entrar como invitad@... </a>
+        <div class="row justify-content-center" id="log-in-position">
+            <div id="log-in" class="p-1 m-2 col-md-4 ">
+                <form acton="/" method="post" class="p-3 ">
+                    <label id="iniciar-sesión" class="form-label">Inicia Sesión... <span id="iniciar-info"> para ventajas adicionales</span></label>
+                    <div class="d-flex pb-3 justify-content-center" id="form-login">
+                        <div class="col-md-5 ">
+                          <label  class="form-label">Dirección de correo</label>
+                          <input type="email" name="email"  class="form-control  {{#if errors.email}}is-invalid{{/if}}" value="{{user.email}}" placeholder="IronStundent@bulala.com">
+                          <div id="emailHelp" class="form-text"></div>
+                        {{#if errors.email}}<div class=" invalid-feedback"> {{errors.email}}</div>{{/if}}
+                        </div>
+                        <div class="col-md-5 mx-2">
+                          <label class="form-label">Contraseña</label>
+                          <input  name="password" type="password" class="form-control seeOrNot" id="exampleInputPassword1" placeholder="@ # $ % & ] *">
+                          <div id="emailHelp" class="form-text"></div>
+                        </div>
                     </div>
-                    <div class="col-md-5">
-                      <label class="form-label">Contraseña</label>
-                      <input  name="password" type="password" class="form-control seeOrNot" id="exampleInputPassword1" placeholder="@ # $ % & ] *">
-                      <div id="emailHelp" class="form-text"></div>
+                    <div class="justify-content-center">           
+                        <button type="submit"  class="btn button-50 ">Inicia sesión</button>
+                        <a  class="button-49 btn mx-1" href="/register"> <span>Regístrate!</span> </a>
                     </div>
-                </div>
-                <div class="justify-content-center px-3">           
-                    <button type="submit"  class="btn  mx-3 button-50 ">Inicia sesión</button>
-                    <a  class="button-49 btn mx-4" href="/register"> <span>Regístrate!</span> </a>
-                </div>
-
-        </form>
-
-    </div >
-  </div>
-  
-</div>
-
-</div>
-
+                </form>
+            </div >
+        </div>
+    </div>
 </div>
