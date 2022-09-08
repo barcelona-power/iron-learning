@@ -3,28 +3,12 @@ const router = express.Router();
 const upload = require("../config/multer.config");
 const proPic = require("../config/multer.config");
 
-const {
-  user,
-  definition,
-  database,
-  auth,
-  newexample,
-  database2,
-  database1,
-} = require("../controllers");
+const { user, definition,  database,  auth,  newexample,  database2,  database1,} = require("../controllers");
 
 const secure = require("../middlewares/secure.mid");
 
-router.get(
-  "/create-definition",
-  secure.isAuthenticated,
-  definition.formDefinition
-);
-router.post("/create-definition",
-  upload.single("file"),
-  secure.isAuthenticated,
-  definition.createDefinition
-);
+router.get("/create-definition",  secure.isAuthenticated,  definition.formDefinition);
+router.post("/create-definition", upload.single("file"),  secure.isAuthenticated,  definition.createDefinition);
 
 router.get("/list", secure.isAuthenticated, definition.listOfDefinitions);
 router.post("/list/:id/delete", secure.isAuthenticated, definition.delete);
@@ -46,24 +30,12 @@ router.get("/logout", auth.logOut);
 router.get("/main", database.listOfDatabase);
 router.get("/main/:id/newexample/:categoryexample",secure.isAuthenticated,newexample.new);
 router.post("/main/:id/newexample", secure.isAuthenticated, newexample.doNew);
-router.post(
-  "/main/:id/delete",
-  secure.isAuthenticated,
-  newexample.deleteNewExample
-);
+router.post(  "/main/:id/delete",secure.isAuthenticated,  newexample.deleteNewExample);
 
 router.get("/next", database2.listOfDatabase2);
-router.get(
-  "/next/:id/newexample/:categoryexample",
-  secure.isAuthenticated,
-  newexample.new
-);
+router.get("/next/:id/newexample/:categoryexample",  secure.isAuthenticated,  newexample.new);
 router.post("/next/:id/newexample", secure.isAuthenticated, newexample.doNew);
-router.post(
-  "/next/:id/delete",
-  secure.isAuthenticated,
-  newexample.deleteNewExample
-);
+router.post("/next/:id/delete",  secure.isAuthenticated,  newexample.deleteNewExample);
 
 router.get("/begin", database1.listOfDatabase1);
 

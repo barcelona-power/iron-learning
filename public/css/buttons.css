@@ -1573,8 +1573,6 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  margin-left: 1%;
-  margin-top: 2%;
 }
 
 .button-53:focus {

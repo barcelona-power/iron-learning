@@ -4,44 +4,45 @@ const Schema = mongoose.Schema;
 const databaseSchema = new Schema({
   name: {
     type: String,
-    required: "Término necesario",
     trim: true,
   },
   description: {
     type: String,
     trim: true,
   },
-  example: {
-    type: String,
-    trim: true,
-  },
   category: {
     type: String,
   },
-  file: {
-    type: String,
-    default: "/public/imagenes/3688989.jpeg",
-  },
-  link: {
-    type: String,
-    default:
-      "https://media.makeameme.org/created/something-is-missing-6838a8d575.jpg",
-  },
   example1: {
     type: String,
+    trim: true,
   },
   example2: {
     type: String,
+    trim: true,
   },
   example3: {
     type: String,
+    trim: true,
   },
   example4: {
     type: String,
+    trim: true,
   },
-  video: {
+  example5: {
     type: String,
+    trim: true,
   },
+  example6: {
+    type: String,
+    trim: true,
+  },
+  img: {
+    type: Array,
+  },
+  link:{
+    type: Array
+  }
 });
 
 const Database1 = mongoose.model("Database1", databaseSchema);

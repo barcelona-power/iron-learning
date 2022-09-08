@@ -1,153 +1,141 @@
-    {{> navbar}}
-    
+{{> navbar}}
+
 <h1>Mensaje secreto</h1>  
-    <hr>
-    <hr>
-    <h1 id="text-welcome-main" class="mt-3">React--> Labs y definiciones</h1>
-    <h5 id="text-welcome-under">Los videos tienen cortes para saltar partes redundantes y quizás el código ya esté escrito cuando te des cuenta. Fíjate bien!</h5>
+<hr>
+<hr>
+<h1 id="text-welcome-main" class="mt-3">React--> Labs y definiciones</h1>
+<h5 id="text-welcome-under">Los videos tienen cortes para saltar partes redundantes y quizás el código ya esté escrito cuando te des cuenta. Fíjate bien!</h5>
 
- {{#each databases as |database|}} 
+{{#each databases as |database|}} 
 <div class="body-profile-img">
-<div class="card card-box">
-  <div class="row">
-    <div class="col-md-2 img-boxing zoom">
-       <a href="{{database.link}}"><img src="{{database.link}}" width="100%" height="100%" class="" alt="..." class="d-flex"> </a> 
-    </div>
-    <div class="col-md-9">
-                    <h5 class="card-title d-inline-flex mx-3 ">Tema: <span class="def-term"> {{database.name}}</span> </h5>                     {{#if database.file.[0]}}
-                          <a href="{{database.file.[0]}}"><img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1661163307/iron-learning/imgs/icons/www_wvbnhw.png" width="60px"  class="zoom-example"  alt="No se what"></a>
-                    {{/if}}
-                    {{#if database.file.[1]}}
-                          <a href="{{database.file.[1]}}"><img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1662248159/iron-learning/imgs/icons/wwr_xtmgu8.png" width="60px"  class="zoom-example"  alt="No se what"></a>
-                    {{/if}}
-                    {{#if database.file.[2]}}
-                          <a href="{{database.file.[2]}}"><img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1662248159/iron-learning/imgs/icons/wwas_dmfqya.png" width="60px"  class="zoom-example"  alt="No se what"></a>
-                    {{/if}}               
-                    <div id="text-desc-container">
-                        <div class="shadow-text1">
-                          <p class="pads"><span class="shadow-text-title1">Descripción:</span>   <span class="def-term-text">{{database.description}}</span> </p>
+      <div class="card card-box-mod3">
+            <div class="row">
+                  <div class="col-md-2 img-boxing zoom">
+                        <a href="{{database.link}}"><img src="{{database.link}}" width="100%" height="100%" class="" alt="..." class="d-flex"> </a> 
+                  </div>
+                  <div class="col-md-9">
+                        <h5 class="card-title d-inline-flex mx-3 ">Tema: <span class="def-term"> {{database.name}}</span> </h5>
+                        {{#if database.file.[0]}}
+                              <a href="{{database.file.[0]}}"><img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1661163307/iron-learning/imgs/icons/www_wvbnhw.png" width="0px"  class="zoom-example"  alt="No se what"></a>
+                        {{/if}}
+                        {{#if database.file.[1]}}
+                              <a href="{{database.file.[1]}}"><img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1662248159/iron-learning/imgs/icons/wwr_xtmgu8.png" width="60px"  class="zoom-example"  alt="No se what"></a>
+                        {{/if}}
+                        {{#if database.file.[2]}}
+                              <a href="{{database.file.[2]}}"><img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1662248159/iron-learning/imgs/icons/wwas_dmfqya.png" width="60px"  class="zoom-example"  alt="No se what"></a>
+                        {{/if}}               
+                        <div id="text-desc-container">
+                              <div class="shadow-text1">
+                                    <p class="pads"><span class="shadow-text-title1">Descripción:</span>   <span class="def-term-text">{{database.description}}</span> </p>
+                              </div>
+                              <div class="shadow-text2">
+                                    <p class="pads"><span class="shadow-text-title2"></span>Contenido: <span class="def-term-text">{{database.videoContent.[0]}}</span> </p>
+                              </div>  
                         </div>
-                        <div class="shadow-text2">
-                          <p class="pads"><span class="shadow-text-title2"></span>Contenido: <span class="def-term-text">{{database.videoContent.[0]}}</span> </p>
-                        </div>  
-                    </div>
-                    <div class="col-md-9 icon-container3">
-                          {{!--  --}}
-                    {{#if database.video.[0]}}
-                          <span class="video-margins">
-                              <img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1662073124/iron-learning/imgs/icons/vi1_rbobyn.png" width="80px"  alt="Algo ha ido mal..." type="button"  class="zoom-example"  data-bs-toggle="collapse" data-bs-target="#b{{spacesGone  database.name}}" aria-expanded="false" aria-controls="collapseExample">
-                              <br>
-                             <span id="text-descr">1.{{database.videoContent.[1]}}</span> 
-                          </span>
-                    {{/if}}
-                    {{#if database.video.[1]}}
-                          <span class="video-margins">
-                          <img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1662073124/iron-learning/imgs/icons/vi2_i941rl.png" width="80px"  alt="Algo ha ido mal..." type="button"  class="zoom-example "  data-bs-toggle="collapse" data-bs-target="#c{{spacesGone  database.name}}" aria-expanded="false" aria-controls="collapseExample">
-                              <br>
-                             <span id="text-descr">2.{{database.videoContent.[2]}}</span> 
-                          </span>
-                    {{/if}}
-                    {{#if database.video.[2]}}
-                          <span class="video-margins">
-                          <img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1662073124/iron-learning/imgs/icons/vi3_rw5kko.png" width="80px"  alt="Algo ha ido mal..." type="button"  class="zoom-example "  data-bs-toggle="collapse" data-bs-target="#d{{spacesGone  database.name}}" aria-expanded="false" aria-controls="collapseExample">
-                                                        <br>
-                             <span id="text-descr">3.{{database.videoContent.[3]}}</span> 
-                          </span>
-                    {{/if}}
-                    {{#if database.video.[3]}}
-                          <span class="video-margins">
-                          <img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1662247561/iron-learning/imgs/icons/vi4_cqsl8q.png" width="80px"  alt="Algo ha ido mal..." type="button"  class="zoom-example "  data-bs-toggle="collapse" data-bs-target="#e{{spacesGone  database.name}}" aria-expanded="false" aria-controls="collapseExample">
-                                                       <br>
-                             <span id="text-descr">4.{{database.videoContent.[4]}}</span> 
-                          </span>
-                    {{/if}}
-                          
-
-               </div>
-               <div class="col-md-9 icon-container3">
-                                    {{#if database.video.[4]}}
-                <span class="video-margins">
-                          <img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1662247562/iron-learning/imgs/icons/vi5_xqdfcg.png" width="80px"  alt="Algo ha ido mal..." type="button"  class="zoom-example "  data-bs-toggle="collapse" data-bs-target="#f{{spacesGone  database.name}}" aria-expanded="false" aria-controls="collapseExample">
-                                                <br>
-                             <span id="text-descr">5.{{database.videoContent.[5]}}</span> 
-                          </span>
-                    {{/if}}
-                    {{#if database.video.[5]}}
-                          <span class="video-margins">
-                          <img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1662247562/iron-learning/imgs/icons/vi6_csoved.png" width="80px"  alt="Algo ha ido mal..." type="button"  class="zoom-example "  data-bs-toggle="collapse" data-bs-target="#g{{spacesGone  database.name}}" aria-expanded="false" aria-controls="collapseExample">
-                                                 <br>
-                             <span id="text-descr">6.{{database.videoContent.[6]}}</span> 
-                          </span>
-                    {{/if}}
-                    {{#if database.video.[6]}}
-                          <span class="video-margins">
-                          <img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1662247561/iron-learning/imgs/icons/vi7_ucbr6k.png" width="80px"  alt="Algo ha ido mal..." type="button"  class="zoom-example "  data-bs-toggle="collapse" data-bs-target="#h{{spacesGone  database.name}}" aria-expanded="false" aria-controls="collapseExample">
-                                                        <br>
-                             <span id="text-descr">7.{{database.videoContent.[7]}}</span> 
-                          </span>  
-                    {{/if}}
-               </div>
-    </div>
-  </div>
-  <div id="info-example-container">
-<div class="toast collapse  card-text-box" id="b{{spacesGone database.name}}">
-        <button type="button" class="btn" data-bs-dismiss="toast" aria-label="Close">&#10060</button>
-  {{database.videoContent.[1]}}
-                    <video class="vide-position" width="100%"  controls>
-                        <source src="{{database.video.[0]}}" type="video/mp4">    
-                    </video>
-  </div>
-<div class="toast collapse  card-text-box" id="c{{spacesGone database.name}}">
-        <button type="button" class="btn" data-bs-dismiss="toast" aria-label="Close">&#10060</button>
-  {{database.videoContent.[2]}}
-
-                    <video class="vide-position" width="100%" controls>
-                        <source src="{{database.video.[1]}}" type="video/mp4">    
-                    </video>
-  </div>
-<div class="toast collapse  card-text-box" id="d{{spacesGone database.name}}">
-        <button type="button" class="btn" data-bs-dismiss="toast" aria-label="Close">&#10060</button>
-  {{database.videoContent.[3]}}
-                    <video class="vide-position" width="100%" controls>
-                        <source src="{{database.video.[2]}}" type="video/mp4">    
-                    </video>
-  </div>
-<div class="toast collapse  card-text-box" id="e{{spacesGone database.name}}">
-        <button type="button" class="btn" data-bs-dismiss="toast" aria-label="Close">&#10060</button>
-  {{database.videoContent.[4]}}
-                    <video class="vide-position" width="100%" controls>
-                        <source src="{{database.video.[3]}}" type="video/mp4">    
-                    </video>
-  </div>
-<div class="toast collapse  card-text-box" id="f{{spacesGone database.name}}">
-        <button type="button" class="btn" data-bs-dismiss="toast" aria-label="Close">&#10060</button>
-  {{database.videoContent.[5]}}
-                    <video class="vide-position" width="100%" controls>
-                        <source src="{{database.video.[4]}}" type="video/mp4">    
-                    </video>
-  </div>
-<div class="toast collapse  card-text-box" id="g{{spacesGone database.name}}">
-        <button type="button" class="btn" data-bs-dismiss="toast" aria-label="Close">&#10060</button>
-  {{database.videoContent.[6]}}
-                    <video id="vide-position" width="100%" controls>
-                        <source src="{{database.video.[5]}}" type="video/mp4">    
-                    </video>
-  </div>
-<div class="toast collapse  card-text-box" id="h{{spacesGone database.name}}">
-        <button type="button" class="btn" data-bs-dismiss="toast" aria-label="Close">&#10060</button>
-  {{database.videoContent.[7]}}
-                    <video class="vide-position" width="100%" height="100%" controls>
-                        <source src="{{database.video.[6]}}" type="video/mp4">    
-                    </video>
-  </div>
-
-</div>
-  </div>
+                        <div class="col-md-9 icon-container3">
+                              {{#if database.video.[0]}}
+                              <span class="video-margins">
+                                    <img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1662073124/iron-learning/imgs/icons/vi1_rbobyn.png" width="80px"  alt="Algo ha ido mal..." type="button"  class="zoom-example"  data-bs-toggle="collapse" data-bs-target="#b{{spacesGone  database.name}}" aria-expanded="false" aria-controls="collapseExample"><br>
+                                    <span id="text-descr">1.{{database.videoContent.[1]}}</span> 
+                              </span>
+                              {{/if}}
+                              {{#if database.video.[1]}}
+                              <span class="video-margins">
+                                    <img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1662073124/iron-learning/imgs/icons/vi2_i941rl.png" width="80px"  alt="Algo ha ido mal..." type="button"  class="zoom-example "  data-bs-toggle="collapse" data-bs-target="#c{{spacesGone  database.name}}" aria-expanded="false" aria-controls="collapseExample"><br>
+                                    <span id="text-descr">2.{{database.videoContent.[2]}}</span> 
+                              </span>
+                              {{/if}}
+                              {{#if database.video.[2]}}
+                              <span class="video-margins">
+                                    <img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1662073124/iron-learning/imgs/icons/vi3_rw5kko.png" width="80px"  alt="Algo ha ido mal..." type="button"  class="zoom-example "  data-bs-toggle="collapse" data-bs-target="#d{{spacesGone  database.name}}" aria-expanded="false" aria-controls="collapseExample"><br>
+                                    <span id="text-descr">3.{{database.videoContent.[3]}}</span> 
+                              </span>
+                              {{/if}}
+                              {{#if database.video.[3]}}
+                              <span class="video-margins">
+                                    <img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1662247561/iron-learning/imgs/icons/vi4_cqsl8q.png" width="80px"  alt="Algo ha ido mal..." type="button"  class="zoom-example "  data-bs-toggle="collapse" data-bs-target="#e{{spacesGone  database.name}}" aria-expanded="false" aria-controls="collapseExample"><br>
+                                    <span id="text-descr">4.{{database.videoContent.[4]}}</span> 
+                              </span>
+                              {{/if}}
+                        </div>
+                        <div class="col-md-9 icon-container3">
+                              {{#if database.video.[4]}}
+                              <span class="video-margins">
+                                    <img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1662247562/iron-learning/imgs/icons/vi5_xqdfcg.png" width="80px"  alt="Algo ha ido mal..." type="button"  class="zoom-example "  data-bs-toggle="collapse" data-bs-target="#f{{spacesGone  database.name}}" aria-expanded="false" aria-controls="collapseExample"><br>
+                                    <span id="text-descr">5.{{database.videoContent.[5]}}</span> 
+                              </span>
+                              {{/if}}
+                              {{#if database.video.[5]}}
+                              <span class="video-margins">
+                                    <img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1662247562/iron-learning/imgs/icons/vi6_csoved.png" width="80px"  alt="Algo ha ido mal..." type="button"  class="zoom-example "  data-bs-toggle="collapse" data-bs-target="#g{{spacesGone  database.name}}" aria-expanded="false" aria-controls="collapseExample"><br>
+                                    <span id="text-descr">6.{{database.videoContent.[6]}}</span> 
+                              </span>
+                              {{/if}}
+                              {{#if database.video.[6]}}
+                              <span class="video-margins">
+                                    <img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1662247561/iron-learning/imgs/icons/vi7_ucbr6k.png" width="80px"  alt="Algo ha ido mal..." type="button"  class="zoom-example "  data-bs-toggle="collapse" data-bs-target="#h{{spacesGone  database.name}}" aria-expanded="false" aria-controls="collapseExample"><br>
+                                    <span id="text-descr">7.{{database.videoContent.[7]}}</span> 
+                              </span>  
+                              {{/if}}
+                        </div>
+                  </div>
             </div>
-        {{/each}}
- </div>
+            <div id="info-example-container">
+                  <div class="toast collapse  card-text-box" id="b{{spacesGone database.name}}">
+                        <button type="button" class="btn" data-bs-dismiss="toast" aria-label="Close">&#10060</button>
+                        {{database.videoContent.[1]}}
+                        <video class="vide-position" width="100%"  controls>
+                              <source src="{{database.video.[0]}}" type="video/mp4">    
+                        </video>
+                  </div>
+                  <div class="toast collapse  card-text-box" id="c{{spacesGone database.name}}">
+                        <button type="button" class="btn" data-bs-dismiss="toast" aria-label="Close">&#10060</button>
+                        {{database.videoContent.[2]}}
+                        <video class="vide-position" width="100%" controls>
+                              <source src="{{database.video.[1]}}" type="video/mp4">    
+                        </video>
+                  </div>
+                  <div class="toast collapse  card-text-box" id="d{{spacesGone database.name}}">
+                        <button type="button" class="btn" data-bs-dismiss="toast" aria-label="Close">&#10060</button>
+                        {{database.videoContent.[3]}}
+                        <video class="vide-position" width="100%" controls>
+                              <source src="{{database.video.[2]}}" type="video/mp4">    
+                        </video>
+                  </div>
+                  <div class="toast collapse  card-text-box" id="e{{spacesGone database.name}}">
+                        <button type="button" class="btn" data-bs-dismiss="toast" aria-label="Close">&#10060</button>
+                        {{database.videoContent.[4]}}
+                        <video class="vide-position" width="100%" controls>
+                              <source src="{{database.video.[3]}}" type="video/mp4">    
+                        </video>
+                  </div>
+                  <div class="toast collapse  card-text-box" id="f{{spacesGone database.name}}">
+                        <button type="button" class="btn" data-bs-dismiss="toast" aria-label="Close">&#10060</button>
+                        {{database.videoContent.[5]}}
+                        <video class="vide-position" width="100%" controls>
+                              <source src="{{database.video.[4]}}" type="video/mp4">    
+                        </video>
+                  </div>
+                  <div class="toast collapse  card-text-box" id="g{{spacesGone database.name}}">
+                        <button type="button" class="btn" data-bs-dismiss="toast" aria-label="Close">&#10060</button>
+                        {{database.videoContent.[6]}}
+                        <video id="vide-position" width="100%" controls>
+                              <source src="{{database.video.[5]}}" type="video/mp4">    
+                        </video>
+                  </div>
+                  <div class="toast collapse  card-text-box" id="h{{spacesGone database.name}}">
+                        <button type="button" class="btn" data-bs-dismiss="toast" aria-label="Close">&#10060</button>
+                        {{database.videoContent.[7]}}
+                        <video class="vide-position" width="100%" height="100%" controls>
+                              <source src="{{database.video.[6]}}" type="video/mp4">    
+                        </video>
+                  </div>
+            </div>
+      </div>
+</div>
+{{/each}}
 <h1 id="relax-un-rato">Relájate y disfruta un rato mirando el firmamento... o juega un rato <a href="https://crisarranz.github.io/proyect-street-ironter/index.html"><img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1661271775/iron-learning/imgs/mix/street_iymrbr.jpg" alt="No image fondue.. con queso" width="5%"></a> </h1>
-  <div class="background-container">
+<div class="background-container">
 <img class="moon-is-here" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png" alt="Mooooon">
 <div class="stars"></div>
 <div class="twinkling"></div>

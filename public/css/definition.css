@@ -1,4 +1,4 @@
-.card-box {
+.card-box-mod1 {
   font-family: "Varela Round";
   margin-bottom: 1%;
   margin: 0 1% 1% 1%;
@@ -8,6 +8,30 @@
   display: block;
   color: black;
   background-image: url("https://res.cloudinary.com/du3v1mwzj/image/upload/v1661163557/iron-learning/imgs/fondos/101_jkgy7v.jpg");
+  background-size: 100%;
+}
+.card-box-mod2 {
+  font-family: "Varela Round";
+  margin-bottom: 1%;
+  margin: 0 1% 1% 1%;
+  padding: 10px 0px;
+  max-width: 100%;
+  width: initial;
+  display: block;
+  color: black;
+  background-image: url("https://res.cloudinary.com/du3v1mwzj/image/upload/v1662601569/iron-learning/imgs/fondos/Captura_de_pantalla_2022-09-08_a_las_3.46.00_ygih5q.png");
+  background-size: 100%;
+}
+.card-box-mod3 {
+  font-family: "Varela Round";
+  margin-bottom: 1%;
+  margin: 0 1% 1% 1%;
+  padding: 10px 0px;
+  max-width: 100%;
+  width: initial;
+  display: block;
+  color: black;
+  background-image: url("https://res.cloudinary.com/du3v1mwzj/image/upload/v1662601433/iron-learning/imgs/fondos/dsadasd_ww04ou.jpg");
   background-size: 100%;
 }
 .card-box-profile {

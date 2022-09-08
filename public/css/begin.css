@@ -1,0 +1,39 @@
+.img-functions{
+  border: rgb(10, 210, 245) groove 8px;
+  border-radius: 50%;
+  transition: transform 0.5s;
+  transform: rotate(-10deg);
+  z-index: 1;
+  width: 100%;
+  max-width: 100px;
+  height: 100%;
+  max-height: 60px;
+}
+.img-functions:hover{
+  border: rgb(10, 210, 245) groove 4px;
+  -ms-transform: scale(6); /* IE 9 */
+  -webkit-transform: scale(6); /* Safari 6-8 */
+  transform: scale(6) translateX(40px) translateY(-20px);;
+  position: absolute;
+  z-index: 4;
+  transition: transform 0.5s;
+  border-radius: 10px;
+  z-index: 2;
+}
+.begin-position{
+margin: auto;
+}
+
+.card-body{
+  background-image: url("https://res.cloudinary.com/du3v1mwzj/image/upload/v1662594777/iron-learning/imgs/fondos/simple-white-background-with-smooth-lines-light-colors_476363-5558_mesrhb.jpg");
+  background-size: cover;
+  width: 100%;
+}
+.img-hover-border:hover{
+  border:rgb(10, 210, 245) inset 5px;
+}
+.img-link-zoom:hover{
+  border-left:rgb(10, 210, 245) inset 5px;
+  border-right:rgb(10, 210, 245) inset 5px;
+  border-radius: 50%;
+}

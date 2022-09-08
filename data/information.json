@@ -259,7 +259,22 @@
         "example4": "https://res.cloudinary.com/du3v1mwzj/image/upload/v1662296396/iron-learning/videos/mod%203%20info/imgs/coc_pfrt6r.webp",
         "video": "https://res.cloudinary.com/du3v1mwzj/video/upload/v1662251739/iron-learning/videos/mod%203%20info/coockie_hbb8dp.mov"
 
-    }
+    },
+    {
+        "name": "Montar componentes",
+        "description": "Ejercicio dedicado a Montar componente, botón de sumar, botón de conatdor automático, botón de ocultar componente y useEffect",
+        "videoContent": ["Un ejercicio donde se explica cómo crear un contador por click, otro efecto automático y cómo ocultar un componente","Botón de sumar y ocultar Componente","Ciclo part 1", "Ciclo part 2", "Montar y desmontar", "Resumen de 1-4", "Cont automático/setInterval","useEffect: detener setInterval"],
+        "category": "React",
+        "file":[],
+        "link": "https://res.cloudinary.com/du3v1mwzj/image/upload/v1662422001/iron-learning/videos/mod%203%20info/imgs/Captura_de_pantalla_2022-09-06_a_las_1.53.01_d2qvob.png",
+        "video": ["https://res.cloudinary.com/dfquwg9et/video/upload/v1662552293/semana%203-4%20mod3/montar_componente1-boto%CC%81n_de_sumar_y_de_ocultar_algo_n0pt4g.mov",
+                "https://res.cloudinary.com/dfquwg9et/video/upload/v1662552304/semana%203-4%20mod3/Montar_componente2-ciclo_part1_l8lqes.mov",
+                "https://res.cloudinary.com/dfquwg9et/video/upload/v1662552279/semana%203-4%20mod3/Montar_componente3-ciclo_2_iuk0xi.mov",
+                "https://res.cloudinary.com/dfquwg9et/video/upload/v1662552225/semana%203-4%20mod3/Montar_componente_4-montar_y_desmontar_lwkuqm.mov",
+                "https://res.cloudinary.com/dfquwg9et/video/upload/v1662552138/semana%203-4%20mod3/Montar_componente-_resumen_seikdw.mov",
+                "https://res.cloudinary.com/dfquwg9et/video/upload/v1662552223/semana%203-4%20mod3/Montar_componente-bot%C3%B3n_automatico_set_interval_ynkhup.mov",
+                "https://res.cloudinary.com/dfquwg9et/video/upload/v1662552161/semana%203-4%20mod3/Montar_componente-desmontado_pero_la_funcion_sigue_tlzoqr.mov"]
+      }
 
     
 ]

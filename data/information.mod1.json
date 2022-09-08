@@ -1,5 +1,41 @@
 [
   {
-"que es dom":1
+  "name":".sort",
+  "description":"Esta función recibe dos valores a comparar y como resultado debe: devolver un valor positivo ( 1 ) si e primer valor es superior al segundo. devolver un valor negativo ( -1 ) si e primer valor es inferior al segundo. devolver un valor cero ( 0 ) si los dos valores son iguales o equivalentes para la ordenación.",
+  "category":"Función",
+  "example1":"Si no se provee compareFunction, los elementos son ordenados convirtiéndolos a strings y comparando la posición del valor Unicode de dichos strings.",
+  "example2":"Ordenar palabras y números ",
+  "example3":"",
+  "example4":"",
+  "example5":"",
+  "example6":"",
+  "img":["https://res.cloudinary.com/du3v1mwzj/image/upload/v1662598385/iron-learning/imgs/imagenes%20de%20funciones/Captura_de_pantalla_2022-09-08_a_las_2.52.59_gwkxt8.png"],
+  "link":["https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/sort", ""]
+},
+  {
+  "name":".map",
+  "description":"Esta función recibe dos valores a comparar y como resultado debe: devolver un valor positivo ( 1 ) si e primer valor es superior al segundo. devolver un valor negativo ( -1 ) si e primer valor es inferior al segundo. devolver un valor cero ( 0 ) si los dos valores son iguales o equivalentes para la ordenación.",
+  "category":"Función",
+  "example1":"Ordenar palabras y números ",
+  "example2":"Si no se provee compareFunction, los elementos son ordenados convirtiéndolos a strings y comparando la posición del valor Unicode de dichos strings.",
+  "example3":"",
+  "example4":"",
+  "example5":"",
+  "example6":"",
+  "img":["https://res.cloudinary.com/du3v1mwzj/image/upload/v1662598385/iron-learning/imgs/imagenes%20de%20funciones/Captura_de_pantalla_2022-09-08_a_las_2.52.59_gwkxt8.png"],
+  "link":["https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/sort", ""]
+},
+  {
+  "name":"",
+  "description":"",
+  "category":"",
+  "example1":"",
+  "example2":"",
+  "example3":"",
+  "example4":"",
+  "example5":"",
+  "example6":"",
+  "img":[""],
+  "link":[""]
 }
 ]

@@ -116,6 +116,15 @@
       />
     </a>
       <form class="d-flex col-4 searchers" method="GET" role="search" name="filterer">
+                <input
+          id="form-word"
+          class="form-select"
+          type="text"
+          name="name"
+          value="{{query.name}}"
+          placeholder="&#128394   Por término..."
+          aria-label="Search"
+        />
         <select
           id="form-category"
           name="category"
@@ -130,17 +139,10 @@
           <option value="Programa" name="category">&#127899 Programas/aplicaciones</option>
           <option value="React" name="category">&#128160 React</option>
           <option value="Lab" name="category">&#128300 Laboratorios</option>
+          <option value="Función" name="category">&#9874 Funciones</option>
           <option value="Otros" name="category">&#128391 Otros...</option>
         </select>
-        <input
-          id="form-word"
-          class="form-select"
-          type="text"
-          name="name"
-          value="{{query.name}}"
-          placeholder="&#128394   Por término..."
-          aria-label="Search"
-        />
+
         <button
           class="nav-btn-in custom-btn1 btn-11"
           id="iniciar-btn"
