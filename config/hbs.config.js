@@ -8,6 +8,10 @@ hbs.registerHelper('upperCase', (nickname) => nickname.charAt(0).toUpperCase() +
 
 hbs.registerHelper('spacesGone', (spaces) => spaces.split('').filter(e => e.trim().length).join(''))
 
+hbs.registerHelper('navActive', (path, route) => path === route ? "active dest" : "")
+hbs.registerHelper('navActiveMod', (path, route) => path === route ? "active destmod" : "")
+hbs.registerHelper('navSpin', (path, route) => path === route ? "fa-spin" : "")
+
 // hbs.registerHelper('isSame', function(value, selected) {
 //     return value === selected
 // })

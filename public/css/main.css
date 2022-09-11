@@ -109,7 +109,7 @@ a {
 
 .zoom-logo-mod {
   transition: transform 0.2s;
-  margin: 0 3% 0 0;
+  margin: 0 0px 0 16px;
 }
 .zoom-logo-mod:hover {
   -ms-transform: scale(1.1); /* IE 9 */
@@ -217,35 +217,49 @@ a {
   align-items: center;
 }
 
-.nav-btn span {
+.nav-btn span{
   cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"),
     pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
   font-family: "Varela Round";
-  font-size: 94%;
-  border-bottom: 2px rgba(255, 255, 255, 0.279) solid;
+  font-size: 90%;
+  border-radius: 10%;
 }
 
-.nav-btn:hover span {
+.nav-btn:hover span{
   font-size: 100%;
   transform: 1s;
   font-family: "Varela Round";
-  border-bottom: 3px rgba(255, 255, 255, 0.817) solid;
+  border-bottom: 3px rgb(255, 255, 255) solid;
+}
+.dest{
+  border-top: 2px solid white ;
+  border-radius: 10%;
+  filter: saturate(5);
+  border-bottom: 3px rgb(255, 255, 255) solid;
+}
+.nav-btn span span{
+  border: none;
+}
+.destmod{
+  z-index: 10;
+  filter: saturate(3)
+}
+.nav-btn:hover span span{
+  border: none;
 }
 
 .nav-btn-in span {
   font-family: "Varela Round";
   cursor: url("https://res.cloudinary.com/du3v1mwzj/raw/upload/v1661163489/iron-learning/imgs/cursor/curs_be8g5h.cur"),
     pointer;
-
   display: inline-block;
   position: relative;
   transition: 1s;
   font-size: 65%;
 }
-
 .nav-btn-in:hover span {
   font-size: 80%;
   transform: 2s;
@@ -566,7 +580,16 @@ a {
 .vide-position {
   display: flex;
   position: absolute;
+  border: rgb(0, 110, 255) solid 10px;
+  border-style: outset;
 }
+.head-toast-main{
+  background-color: rgba(203, 203, 238, 0.279);
+}
+.head-toast-main{
+  background-color: rgba(203, 203, 238, 0.279);
+}
+
 
 #dropdownMenuButton1 {
   min-width: 60px;

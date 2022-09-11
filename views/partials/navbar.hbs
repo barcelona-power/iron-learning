@@ -1,7 +1,4 @@
-<nav
-  class="navbar navbar-expand-lg fixed-top p-0"
-  style="background-color: #2ec5fc"
->
+<nav  class="navbar navbar-expand-lg fixed-top p-0"  style="background-color: #2ec5fc">
   <div class="container-fluid">
     <ul class="navbar-nav me-auto mb-5 mb-lg-0">
       <li class="nav-item">
@@ -14,7 +11,6 @@
           >
             <span>Te esperamos!</span>
             <span>Desconectarse</span></a>
-
         {{else}}
           <a
             class="nav-link active nav-btn-in custom-btn1 btn-12"
@@ -24,9 +20,7 @@
           >
             <span>Nos vemos pronto!</span>
             <span>Regístrate o logeate!</span></a>
-
         {{/if}}
-
       </li>
       <div class="dropdown">
   <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -72,49 +66,48 @@
       <ul class="navbar-nav me-auto mb-lg-0">
         <li class="nav-item">
           {{#if currentUser}}
-            <a class="nav-link nav-btn" href="/profile">
+            <a class="nav-link nav-btn {{navActive "/profile" route}}" href="/profile">
               <span>
-                &#128216 Libreta:
+             <span class="{{navSpin "/profile" route}}"> &#128216</span>   Libreta:
                 {{upperCase currentUser.nickname}}</span></a>
           {{/if}}
         </li>
         
         <li class="nav-item">
           {{#if currentUser}}
-            <a class="nav-link nav-btn" href="/create-definition">
-              <span>&#128167 Crear definición</span></a>
-
-       
+            <a class="nav-link nav-btn {{navActive "/create-definition" route}}" href="/create-definition">
+              <span> <span class="{{navSpin "/create-definition" route}}" >&#128167</span> Crear definición</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-btn" href="/list"><span>&#128166 Definiciones
-              de usuarios</span></a>
+          <a class="nav-link nav-btn {{navActive "/list" route}}" href="/list">
+          <span> <span class="{{navSpin "/list" route}}">&#128166</span> Definiciones de usuarios</span></a>
         </li>
         {{else}}
-                <li class="nav-item">
+                <li class="nav-item {{navActive "/profile" route}}">
           <a class="nav-link nav-btn1" href="/list"><span>&#11088&#11088&#11088 Hazte una cuenta para disfrutar de muchísimas ventajas</span></a>
         </li>
-   {{/if}}
-   
+    {{/if}}
       </ul>
-    <a  class="logo-mod zoom-logo-mod" href="/begin"><img
-        src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1661994461/iron-learning/imgs/mix/mod1_skgqju.png"
-        alt="ups, logo? que logo="
-        width="150%"
-      />
-    </a>
-    <a class="logo-mod zoom-logo-mod" href="/main"><img
-        src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1661994467/iron-learning/imgs/mix/mod2_akf5pg.png"
-        alt="ups, logo? que logo="
-        width="150%"
-      />
-    </a>
-    <a class="logo-mod zoom-logo-mod" href="/next"><img
-        src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1661994467/iron-learning/imgs/mix/mod3_a5ikfg.png"
-        alt="ups, logo? que logo="
-        width="150%"
-      />
-    </a>
+      <a  class="logo-mod zoom-logo-mod {{navActiveMod "/begin" route}}" href="/begin"><img
+          src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1662816000/iron-learning/imgs/mix/mod1_to9dsq.png"
+          alt="ups, logo? que logo="
+          width="80px"
+        />
+      </a>
+      <a class="logo-mod zoom-logo-mod {{navActiveMod "/main" route}}" href="/main"><img
+          src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1662816003/iron-learning/imgs/mix/mod2_wki5ga.png"
+          alt="ups, logo? que logo="
+          width="80px"
+
+        />
+      </a>
+      <a class="logo-mod zoom-logo-mod me-4 {{navActiveMod "/next" route}}" href="/next"><img
+          src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1662816006/iron-learning/imgs/mix/mod3_wayxgo.png"
+          alt="ups, logo? que logo="
+          width="80px"
+
+        />
+      </a>
       <form class="d-flex col-4 searchers" method="GET" role="search" name="filterer">
                 <input
           id="form-word"

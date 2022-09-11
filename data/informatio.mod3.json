@@ -100,7 +100,7 @@
   },
   {
     "name": "useEffect",
-    "description": "Laboratorio en el que se explica el funcionamiento del Hook useEffect: Es una función que recibe una función y un array vacío y ocurre  cuando el componente se monta. El Hook useEffect es un Hook de efecto que nos permite ejecutar tareas secundaria dentro de nuestros componentes funcionales, por ejemplo, podemos emular los métodos de ciclo de vida, sin la necesidad de utilizar componentes de clase.",
+    "description": "Laboratorio en el que se explica el funcionamiento del Hook useEffect: Es una función que recibe una función y un array vacío y ocurre cuando el componente se monta. El Hook useEffect es un Hook de efecto que nos permite ejecutar tareas secundaria dentro de nuestros componentes funcionales, por ejemplo, podemos emular los métodos de ciclo de vida, sin la necesidad de utilizar componentes de clase.",
     "videoContent": ["Separado del lab 'Montar componentes'","Qué es useEffect y cómo implementarlo"],
     "category": "React",
     "file":["https://es.reactjs.org/docs/hooks-effect.html", "https://www.w3schools.com/react/react_useeffect.asp", "https://midu.dev/react-hooks-use-effect-funcionalidad-en-el-ciclo-vida-componentes/"],
@@ -237,6 +237,25 @@
               "https://res.cloudinary.com/dfquwg9et/video/upload/v1662553426/semana%203-4%20mod3/IronStore3_Checkbox_Controlar_inputs_zlyydg.mov",
               "https://res.cloudinary.com/dfquwg9et/video/upload/v1662553400/semana%203-4%20mod3/IronStore3_Checkbox_y_Buscador_otra_forma_wgt9il.mov",
               "https://res.cloudinary.com/dfquwg9et/video/upload/v1662553438/semana%203-4%20mod3/IronStore3_Set_Timeout_vjq8bl.mov"]
+  },
+  {
+    "name": "Controlar Inputs",
+    "description": "Los inputs se controlan dandole la dupla Value y Onchange: value tiene que ser un estado y Onchange el cambio de estado. Siempre que tengamos un elemento de formulario hay que controlarlo",
+    "videoContent": ["Como controlar los inputs. Como ejemplo usa un Searchbar y Checkbox"],
+    "category": "React",
+    "file":[],
+    "link": "https://res.cloudinary.com/du3v1mwzj/image/upload/v1662641571/iron-learning/videos/mod%203%20info%202/Captura_de_pantalla_2022-09-08_a_las_14.51.47_g7pbgg.png",
+    "video": ["https://res.cloudinary.com/dfquwg9et/video/upload/v1662553425/semana%203-4%20mod3/IronStore3_Searchbar_Controlar_inputs_lhxiv0.mov",
+            "https://res.cloudinary.com/dfquwg9et/video/upload/v1662553426/semana%203-4%20mod3/IronStore3_Checkbox_Controlar_inputs_zlyydg.mov"]
+  },  
+  {
+    "name": "setState de varios estados",
+    "description": "Se puede crear un estado conjuntos de varios estados que no necesitan estar por separado, pero es delicado en el uso",
+    "videoContent": ["No hay vídeo, con la foto es suficiente para entenderlo"],
+    "category": "React",
+    "file":[],
+    "link": "https://res.cloudinary.com/du3v1mwzj/image/upload/v1662641580/iron-learning/videos/mod%203%20info%202/Captura_de_pantalla_2022-09-08_a_las_14.36.29_yskqt4.png",
+    "video": [""]
   },
   {
     "name": "",

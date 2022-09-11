@@ -1442,11 +1442,6 @@
   width: 20%;
   z-index: 80;
 }
-.card-text-box {
-  margin-right: 130px;
-  display: block;
-  width: 530px;
-}
 
 .card-text-col1 {
   background: -webkit-linear-gradient(top, #97ea7043, #ffffff, #97ea7043);

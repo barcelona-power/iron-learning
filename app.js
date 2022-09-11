@@ -23,6 +23,7 @@ app.use(loadUser);
 
 app.use((req, res, next) => {
     res.locals.query = req.query;
+    res.locals.route = req.path;
     next()
 })
 
