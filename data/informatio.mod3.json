@@ -18,7 +18,7 @@
   "videoContent": ["Qué son los componentes, para qué sirven y estructura básica", "Organización", "Inyectar JavaScript en Html","Resumen Comps y Props"],
   "category": "React",
   "file": ["https://es.reactjs.org/docs/components-and-props.html","https://www.digitalocean.com/community/tutorials/how-to-create-custom-components-in-react-es", "https://carlosazaustre.es/formas-de-crear-un-componente-en-react"],
-  "link": "https://res.cloudinary.com/du3v1mwzj/image/upload/v1662295029/iron-learning/videos/mod%203%20info/imgs/compo_oxiyyl.webp",
+  "link": "https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m3/react-lists/react-lists-extracting-components.png",
   "video": ["https://res.cloudinary.com/du3v1mwzj/video/upload/v1662251722/iron-learning/videos/mod%203%20info/com1_z5jdrh.mov", 
           "https://res.cloudinary.com/du3v1mwzj/video/upload/v1662251729/iron-learning/videos/mod%203%20info/com2_ybrs3z.mov",
           "https://res.cloudinary.com/du3v1mwzj/video/upload/v1662251837/iron-learning/videos/mod%203%20info/resumen_Props_mc9br7.mov"]
@@ -57,9 +57,9 @@
             "https://res.cloudinary.com/du3v1mwzj/video/upload/v1662255084/iron-learning/videos/mod%203%20info/Boton_de_sumar_resumen_ml4hfu.mov"]
   },
   {
-    "name": "TaskList",
+    "name": "TaskList parte 1",
     "description": "Laboratorio",
-    "videoContent": ["Lab resuelto para aprender el uso de condicionales, organizar componentes, estados y añadir yborrar elementos de una lista","Componentes y Ul/LI",".map() y Key()"," Ren. Condicional y tuberias ","Estados "," Añadir random, convertir arrays"," Contador "," Borrado"] ,
+    "videoContent": ["Lab resuelto para aprender el uso de condicionales, organizar componentes, estados y añadir y borrar elementos de una lista","Componentes y Ul/LI",".map() y Key()"," Ren. Condicional y tuberias ","Estados "," Añadir random, convertir arrays"," Contador "," Borrado"] ,
     "category": "Lab",
     "file": ["https://github.com/IronPTSolutions/react-list-cond-red"],
     "link": "https://res.cloudinary.com/du3v1mwzj/image/upload/v1662300030/iron-learning/videos/mod%203%20info/imgs/Captura_de_pantalla_2022-09-04_a_las_16.00.25_icotgk.png",
@@ -70,7 +70,35 @@
               "https://res.cloudinary.com/du3v1mwzj/video/upload/v1662255555/iron-learning/videos/mod%203%20info/TaskList_5_dv1gi2.mov",
               "https://res.cloudinary.com/du3v1mwzj/video/upload/v1662255448/iron-learning/videos/mod%203%20info/TaskList_6_counter_on7p6k.mov",
               "https://res.cloudinary.com/du3v1mwzj/video/upload/v1662255625/iron-learning/videos/mod%203%20info/TaskList_7_borrado_ul12x2.mov"]
-  },  {
+  },  
+  {
+    "name": "TaskList parte 2",
+    "description": "Laboratorio",
+    "videoContent": [""],
+    "category": "Lab",
+    "file":["https://github.com/IronPTSolutions/react-forms"],
+    "link": "https://res.cloudinary.com/du3v1mwzj/image/upload/v1662300030/iron-learning/videos/mod%203%20info/imgs/Captura_de_pantalla_2022-09-04_a_las_16.00.25_icotgk.png",
+    "video": ["","","","","","","" ]
+  },
+  {
+    "name": "TaskList parte 3",
+    "description": "Laboratorio",
+    "videoContent": [""],
+    "category": "Lab",
+    "file":["https://github.com/IronPTSolutions/react-forms"],
+    "link": "",
+    "video": ["","","","","","","" ]
+  },
+  {
+    "name": "TaskList parte 4",
+    "description": "Laboratorio",
+    "videoContent": [""],
+    "category": "React",
+    "file":[""],
+    "link": "",
+    "video": ["","","","","","","" ]
+  },
+  {
     "name": "IronContacts",
     "description": "Laboratorio",
     "videoContent": ["Lab para crear una tabla con información al que añadir y quitar","Crear la tabla"," Map y Slice"," Random ","Ordenar", "Borrar"],
@@ -137,7 +165,7 @@
             "https://john-florez.gitbook.io/reactjs-book/estado-en-react"],
     "link": "https://res.cloudinary.com/du3v1mwzj/image/upload/v1662294382/iron-learning/videos/mod%203%20info/imgs/state_fifaik.png",
     "video": ["https://res.cloudinary.com/du3v1mwzj/video/upload/v1662251711/iron-learning/videos/mod%203%20info/estado_1_ry7dxy.mov",
-               "https://res.cloudinary.com/du3v1mwzj/video/upload/v1662251739/iron-learning/videos/mod%203%20info/Estado_Rerenderizaci%C3%B3n_doo8sq.mov"]
+            "https://res.cloudinary.com/du3v1mwzj/video/upload/v1662251739/iron-learning/videos/mod%203%20info/Estado_Rerenderizaci%C3%B3n_doo8sq.mov"]
   },
   {
     "name": "CRA",
@@ -255,6 +283,44 @@
     "category": "React",
     "file":[],
     "link": "https://res.cloudinary.com/du3v1mwzj/image/upload/v1662641580/iron-learning/videos/mod%203%20info%202/Captura_de_pantalla_2022-09-08_a_las_14.36.29_yskqt4.png",
+    "video": [""]
+  },
+  {
+    "name": "Borrar de la lista en React",
+    "description": "-1)- Cuando se hace clic, el botón de eliminar llama a la función deleteMovie y le pasa el _id de esa película específica: onClick={ () => deleteMovie(movie._id) }. -2)-La función deleteMovie luego filtra la matriz de películas existente utilizando el método .filter(), para eliminar la película en la que se hizo clic: return movie._id !== movieId;. -3)-El método filter() creará una nueva matriz llamada filteredMovies y excluirá la película en la que se hizo clic de esa nueva matriz. -4)-Por último, la nueva matriz de películas filtradas se establece como el nuevo estado a través de la función de actualización de estado setMovies. Actualizar el estado (variable de estado) hará que el componente se vuelva a renderizar:",
+    "videoContent": ["Ejemplos de cómo borrar elementos de una lista"],
+    "category": "React",
+    "file":["https://foroayuda.es/como-eliminar-un-elemento-todo-onclick-en-react/"],
+    "link": "https://res.cloudinary.com/du3v1mwzj/image/upload/v1663111376/iron-learning/imgs/mod1%20for/Captura_de_pantalla_2022-09-14_a_las_1.22.36_cqcieg.png",
+    "video": ["https://res.cloudinary.com/du3v1mwzj/video/upload/v1662251827/iron-learning/videos/mod%203%20info/Ironcontacts_5_delete_crsbax.mov",
+            "https://res.cloudinary.com/du3v1mwzj/video/upload/v1662255625/iron-learning/videos/mod%203%20info/TaskList_7_borrado_ul12x2.mov"]
+
+  },
+  {
+    "name": "Exportar la función de borrar",
+    "description": "Separar el componente que crea la lista y la que renderiza, creando una función que hay que pasar del padre al hijo para que pueda usarla",
+    "videoContent": [""],
+    "category": "React",
+    "file":[""],
+    "link": "https://res.cloudinary.com/du3v1mwzj/image/upload/v1663113444/iron-learning/imgs/mod1%20for/Captura_de_pantalla_2022-09-14_a_las_1.57.20_kakder.png",
+    "video": [""]
+  },
+  {
+    "name": "toggleShow esconder y mostrar listas",
+    "description": "cómo hacer que cambie el texto del botón según el estado de si se muestra o no el div",
+    "videoContent": [""],
+    "category": "React",
+    "file":[""],
+    "link": "https://res.cloudinary.com/du3v1mwzj/image/upload/v1663160386/iron-learning/imgs/imagenes%20de%20funciones/Captura_de_pantalla_2022-09-14_a_las_14.59.08_nn9d5u.png",
+    "video": [""]
+  },
+  {
+    "name": "",
+    "description": "",
+    "videoContent": [""],
+    "category": "React",
+    "file":[],
+    "link": "",
     "video": [""]
   },
   {

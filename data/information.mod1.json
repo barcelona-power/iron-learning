@@ -22,20 +22,20 @@
   "example4":"",
   "example5":"",
   "example6":"",
-  "img":["https://res.cloudinary.com/du3v1mwzj/image/upload/v1662598385/iron-learning/imgs/imagenes%20de%20funciones/Captura_de_pantalla_2022-09-08_a_las_2.52.59_gwkxt8.png"],
+  "img":["https://res.cloudinary.com/du3v1mwzj/image/upload/v1662598385/iron-learning/imgs/imagenes%20de%20funciones/Captura_de_pantalla_2022-09-08_a_las_2.52.59_gwkxt8.png","https://res.cloudinary.com/du3v1mwzj/image/upload/v1663055842/iron-learning/imgs/mod1%20for/Captura_de_pantalla_2022-09-13_a_las_9.56.12_i8mkhc.png"],
   "link":["https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/sort", ""]
 },
   {
-  "name":"",
+  "name":"setTimeout()",
   "description":"",
-  "category":"",
-  "example1":"",
+  "category":"Función",
+  "example1":"usar setTimeout en React con algo sencillo",
   "example2":"",
   "example3":"",
   "example4":"",
   "example5":"",
   "example6":"",
-  "img":[""],
+  "img":["https://res.cloudinary.com/du3v1mwzj/image/upload/v1663154261/iron-learning/imgs/imagenes%20de%20funciones/Captura_de_pantalla_2022-09-14_a_las_13.14.04_pf3rhf.png"],
   "link":[""]
 }
 ]
