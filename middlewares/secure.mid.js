@@ -13,10 +13,10 @@ module.exports.isAdmin = (req, res, next) => {
     res.redirect("/main");
   }
 };
-module.exports.isCurrentUser = (req, res, next) => {
-  if (req.user.admin) {
-    next();
-  } else {
-    res.redirect("/main");
-  }
-};
+// module.exports.isCurrentUser = (req, res, next) => {
+//   if (req.user.admin) {
+//     next();
+//   } else {
+//     res.redirect("/main");
+//   }
+// };

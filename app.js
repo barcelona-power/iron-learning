@@ -24,6 +24,8 @@ app.use(loadUser);
 app.use((req, res, next) => {
     res.locals.query = req.query;
     res.locals.route = req.path;
+    res.locals.googleApiKey = process.env.GOOGLE_API_KEY
+    res.locals.query = res.query;
     next()
 })
 
@@ -44,7 +46,7 @@ app.use((error, req, res, next) => {
         .render(`errors/500`, { message, metadata })
 });
 
-const port = process.env.PORT || 3005;
+const port = process.env.PORT;
 app.listen(port, () => console.log(`here we go!`))
 
 

@@ -1,0 +1,21 @@
+
+{{> navbar}}  
+<div class="users-box">
+  <form action="/users" method="GET">
+    <div class="input-group">
+        <input type="text" class="form-control g-places-finder" name="address"  value="{{query.address}}"  placeholder="Usuarios">
+        <button class="btn btn-outline-secondary" type="submit"><i class="fa fa-search"></i></button>
+    </div>
+    <input type="hidden" name="lat" value="{{query.lat}}">
+    <input type="hidden" name="lng" value="{{query.lng}}">
+  </form>
+
+  {{#each users as |user|}}
+    <div class="container users-list">
+      <img src={{user.profilePic}} alt="profile picture" width="70px">
+      <h3>{{user.nickname}}</h3>
+      <h5>{{user.country}}</h5> 
+      <h5>{{user.address}}</h5> 
+    </div>
+  {{/each}}
+</div>

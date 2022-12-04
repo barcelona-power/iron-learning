@@ -13,8 +13,7 @@ module.exports.doRegister = (req, res, next) => {
       errors,
     });
   }
-
-  const { email } = req.body;
+  const { email, lat, lng } = req.body;
   User.findOne({ email })
     .then((user) => {
       if (user) {
@@ -25,9 +24,13 @@ module.exports.doRegister = (req, res, next) => {
         renderWithErrors(errors);
       } else {
         const user = req.body;
-        console.log(req.file);
         user.profilePic = req.file.path;
-        console.log(user.profilePic);
+        if(lat && lng){
+          user.location = {
+            type: 'Point',
+            coordinates: [lng, lat]
+          }
+        }
         return User.create(user).then((user) => {
           sendRegistrationEmail(user);
           res.redirect("/");
@@ -72,6 +75,7 @@ module.exports.doLogin = (req, res, next) => {
     })
     .catch((error) => next(error));
 };
+
 
 module.exports.logOut = (req, res, next) => {
   if (req.session) {

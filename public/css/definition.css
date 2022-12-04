@@ -7,7 +7,7 @@
   width: initial;
   display: block;
   color: black;
-  background-image: url("https://res.cloudinary.com/du3v1mwzj/image/upload/v1661163557/iron-learning/imgs/fondos/101_jkgy7v.jpg");
+  background-image: url("https://res.cloudinary.com/dthjynocl/image/upload/v1663547784/imgs/cursor%20y%20fondos/101_tdvyrm.jpg");
   background-size: 100%;
 }
 .card-box-mod2 {
@@ -19,7 +19,7 @@
   width: initial;
   display: block;
   color: black;
-  background-image: url("https://res.cloudinary.com/du3v1mwzj/image/upload/v1662601569/iron-learning/imgs/fondos/Captura_de_pantalla_2022-09-08_a_las_3.46.00_ygih5q.png");
+  background-image: url("https://res.cloudinary.com/dthjynocl/image/upload/v1663547785/imgs/cursor%20y%20fondos/Captura_de_pantalla_2022-09-08_a_las_3.46.00_ygih5q_nhsrpi.png");
   background-size: 100%;
 }
 .card-box-mod3 {
@@ -31,7 +31,7 @@
   width: initial;
   display: block;
   color: black;
-  background-image: url("https://res.cloudinary.com/du3v1mwzj/image/upload/v1662601433/iron-learning/imgs/fondos/dsadasd_ww04ou.jpg");
+  background-image: url("https://res.cloudinary.com/dthjynocl/image/upload/v1663547784/imgs/cursor%20y%20fondos/dsadasd_ww04ou_hovfa1.jpg");
   background-size: 100%;
 }
 .card-box-profile {
@@ -42,7 +42,7 @@
   width: initial;
   display: block;
   color: black;
-  background-image: url("https://res.cloudinary.com/du3v1mwzj/image/upload/v1661168175/iron-learning/imgs/fondos/fondo2_hhxjk7.jpg");
+  background-image: url("https://res.cloudinary.com/dthjynocl/image/upload/v1663547784/imgs/cursor%20y%20fondos/fondo2_x84ddb.jpg");
   border: 40px solid;
   background-position-y: 830px;
   background-size: 100%;
@@ -52,7 +52,7 @@
   border-radius: 15px;
   margin-left: 20px;
   padding: 10px;
-  background-image: url("https://res.cloudinary.com/du3v1mwzj/image/upload/v1661204635/iron-learning/imgs/icons/goto_fyu1xv.png");
+  background-image: url("https://res.cloudinary.com/dthjynocl/image/upload/v1663549792/imgs/a%20links/goto_wpaybt.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -106,7 +106,7 @@ center {
 .shadow-text1 {
   box-shadow: 2px 2px rgba(48, 58, 2, 0.452), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 5px;
-  padding: 5px 10px;
+  padding: 5px 10px; 
 }
 .shadow-text2 {
   margin-top: 10px;

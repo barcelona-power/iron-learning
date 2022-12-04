@@ -5,7 +5,7 @@
     <hr>
     <h1 id="text-welcome-main" class="mt-5">Te agradeceríamos aportar tus propios ejemplos </h1>
  {{#each databases as |database|}} 
-<div class="body-profile-img">
+<div>
 <div class="card card-box-mod2 ">
   <div class="row">
     <div class="col-md-2 img-boxing zoom">
@@ -23,15 +23,15 @@
                         </div>  
                     </div>
                     <div  id="icon-container" >
-                      <img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1661163353/iron-learning/imgs/icons/cine_cb2nfg.png" width="6%" alt="Algo ha ido mal..." type="button"  class="zoom-example" data-bs-toggle="collapse" data-bs-target="#a{{spacesGone database.name}}" aria-expanded="false" aria-controls="collapseExample">
-                      <img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1661163372/iron-learning/imgs/icons/cocina_ja7snr.png" width="2.8%" alt="Algo ha ido mal..." type="button"  class="zoom-example" data-bs-toggle="collapse" data-bs-target="#b{{spacesGone database.name}}" aria-expanded="false" aria-controls="collapseExample">
-                      <img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1661163372/iron-learning/imgs/icons/deporte_fl0qeh.png" width="3.3%"  alt="Algo ha ido mal..." type="button"  class="zoom-example" data-bs-toggle="collapse" data-bs-target="#c{{spacesGone database.name}}" aria-expanded="false" aria-controls="collapseExample">
+                      <img src="https://res.cloudinary.com/dthjynocl/image/upload/v1663549993/imgs/a%20links/cine_jnb6fv.png" width="6%" alt="Algo ha ido mal..." type="button"  class="zoom-example" data-bs-toggle="collapse" data-bs-target="#a{{spacesGone database.name}}" aria-expanded="false" aria-controls="collapseExample">
+                      <img src="https://res.cloudinary.com/dthjynocl/image/upload/v1663549994/imgs/a%20links/cocina_xuy7eo.png" width="2.8%" alt="Algo ha ido mal..." type="button"  class="zoom-example" data-bs-toggle="collapse" data-bs-target="#b{{spacesGone database.name}}" aria-expanded="false" aria-controls="collapseExample">
+                      <img src="https://res.cloudinary.com/dthjynocl/image/upload/v1663549998/imgs/a%20links/deporte_ofbmvk.png" width="3.3%"  alt="Algo ha ido mal..." type="button"  class="zoom-example" data-bs-toggle="collapse" data-bs-target="#c{{spacesGone database.name}}" aria-expanded="false" aria-controls="collapseExample">
                       {{#if ...currentUser}}
-                      <img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1661163318/iron-learning/imgs/icons/mix_lbalji.png" width="3.5%"  alt="Algo ha ido mal..." type="button"  class="zoom-example"  data-bs-toggle="collapse" data-bs-target="#e{{spacesGone  database.name}}" aria-expanded="false" aria-controls="collapseExample">
+                      <img src="https://res.cloudinary.com/dthjynocl/image/upload/v1663550019/imgs/a%20links/mix_lbalji_idxkht.png" width="3.5%"  alt="Algo ha ido mal..." type="button"  class="zoom-example"  data-bs-toggle="collapse" data-bs-target="#e{{spacesGone  database.name}}" aria-expanded="false" aria-controls="collapseExample">
                           {{!--  --}}
-                          <a id="download-icon" href="{{database.example4}}"><img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1661987304/iron-learning/imgs/icons/downloadmp4_yidmot_loenym.png"  class="zoom-example"  alt="No se what" width="5%"></a>
-                          <img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1661163307/iron-learning/imgs/icons/politica_pxzcyg.png" width="5%"  alt="Algo ha ido mal..." type="button"  class="zoom-example "  data-bs-toggle="collapse" data-bs-target="#d{{spacesGone  database.name}}" aria-expanded="false" aria-controls="collapseExample">
-                          <a  id="" href="{{database.file}}"><img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1661163307/iron-learning/imgs/icons/www_wvbnhw.png" width="4%"  class="zoom-example"  alt="No se what"></a>
+                          <a id="download-icon" href="{{database.example4}}"><img src="https://res.cloudinary.com/dthjynocl/image/upload/v1663549998/imgs/a%20links/downloadmp4_yidmot_nn4pxo.png"  class="zoom-example"  alt="No se what" width="5%"></a>
+                          <img src="https://res.cloudinary.com/dthjynocl/image/upload/v1663550028/imgs/a%20links/politica_v7onbq.png" width="5%"  alt="Algo ha ido mal..." type="button"  class="zoom-example "  data-bs-toggle="collapse" data-bs-target="#d{{spacesGone  database.name}}" aria-expanded="false" aria-controls="collapseExample">
+                          <a  id="" href="{{database.file}}"><img src="https://res.cloudinary.com/dthjynocl/image/upload/v1663550020/imgs/a%20links/www_loomue.png" width="4%"  class="zoom-example"  alt="No se what"></a>
 
                       {{/if}}
                </div>
@@ -85,7 +85,7 @@
 <div class="collapse head-toast-main" id="e{{spacesGone database.name}}">
         <button type="button" class="btn" data-bs-dismiss="toast" aria-label="Close">&#10060</button>
  <spam class="spm">Ejemplos de Usuarios</spam class="spm">
-   <a href="/main/{{database.id}}/newexample/ironhack"> <img src="https://res.cloudinary.com/du3v1mwzj/image/upload/v1661163314/iron-learning/imgs/icons/create_ukwwqk.png" alt="eh" width="8%" id="btn-newexample-go"></a>
+   <a href="/main/{{database.id}}/newexample/ironhack"> <img src="https://res.cloudinary.com/dthjynocl/image/upload/v1663549993/imgs/a%20links/create_faqqko.png" alt="eh" width="8%" id="btn-newexample-go"></a>
   <div class="card card-body">
 <p class="card-text-col5">      
           <p class=" new-example-letter">   

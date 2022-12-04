@@ -1,4 +1,4 @@
-const { Definition } = require("../models");
+const { Definition, User } = require("../models");
 
 module.exports.profile = (req, res, next) => {
   const { name, category } = req.query;
@@ -20,6 +20,34 @@ module.exports.profile = (req, res, next) => {
       res.render("users/profile", { definitions, name, category });
     })
     .catch((error) => next(error));
+};
+
+module.exports.list = (req, res, next) => {
+  const {lat, lng } = req.query;
+  const criteria = {};
+  if(lat && lng) {
+    criteria.location = {
+      $near: {
+        $geometry: {
+          type: "Point",
+          coordinates: [lng, lat]
+        },
+        // this can set the maximum distance for the search area
+        $maxDistance: 1000
+      }
+    }
+  }
+  User.find(criteria)
+    .then((users) => {
+      return User.find(criteria)
+        .then((user) =>
+          res.render("users/list", {
+            users,
+            user
+          })
+        )
+        .catch((error) => next(error));
+    });
 };
 
 module.exports.delete = (req, res, next) => {

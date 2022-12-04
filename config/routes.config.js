@@ -13,6 +13,8 @@ router.post("/create-definition", upload.single("file"),  secure.isAuthenticated
 router.get("/list", secure.isAuthenticated, definition.listOfDefinitions);
 router.post("/list/:id/delete", secure.isAuthenticated, definition.delete);
 
+router.get("/users", secure.isAuthenticated, user.list)
+
 router.get("/never", user.never);
 
 router.get("/profile", secure.isAuthenticated, user.profile);
@@ -28,7 +30,7 @@ router.post("/", auth.doLogin);
 router.get("/logout", auth.logOut);
 
 router.get("/main", database.listOfDatabase);
-router.get("/main/:id/newexample/:categoryexample",secure.isAuthenticated,newexample.new);
+router.get("/main/:id/newexample/:categoryexample",secure.isAuthenticated,  newexample.new);
 router.post("/main/:id/newexample", secure.isAuthenticated, newexample.doNew);
 router.post(  "/main/:id/delete",secure.isAuthenticated,  newexample.deleteNewExample);
 

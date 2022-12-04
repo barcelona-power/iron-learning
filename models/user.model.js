@@ -64,6 +64,18 @@ const userSchema = new Schema({
       "https://res.cloudinary.com/du3v1mwzj/image/upload/v1661164328/iron-learning/imgs/mix/missing1_gbnkgl.webp",
     required: true,
   },
+  address: String,
+  location: {
+    type: {
+      type: String, 
+      enum: ['Point'],
+      required: true
+    },
+    coordinates: {
+      type: [Number],
+      required: true
+    }
+  },
   admin: {
     type: Boolean,
   },
@@ -86,6 +98,8 @@ userSchema.pre("save", function (next) {
 userSchema.methods.checkPassword = function (passwordToCheck) {
   return bcrypt.compare(passwordToCheck, this.password);
 };
+
+userSchema.index({ location: '2dsphere' });
 
 const User = mongoose.model("User", userSchema);
 

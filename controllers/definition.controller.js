@@ -7,7 +7,6 @@ module.exports.listOfDefinitions = (req, res, next) => {
   if (req.user.admin) {
     criteria.author = req.user.id;
   }
-
   if (name) {
     criteria.name = new RegExp(name, "i");
   }
@@ -29,6 +28,7 @@ module.exports.listOfDefinitions = (req, res, next) => {
         .catch((error) => next(error));
     });
 };
+
 
 module.exports.formDefinition = (req, res, next) => {
   res.render("definition/definition");
