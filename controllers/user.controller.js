@@ -33,7 +33,7 @@ module.exports.list = (req, res, next) => {
           coordinates: [lng, lat]
         },
         // this can set the maximum distance for the search area
-        $maxDistance: 1000
+        $maxDistance: 100
       }
     }
   }
