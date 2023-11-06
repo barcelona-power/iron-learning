@@ -16,16 +16,14 @@
     {{/if}}
                 <div class="col-md-8">
                     <label for="address"  class="form-label"> Address</label>
-                        <div class="input-group">
+                        {{!-- <div class="input-group">
                             <span class="input-group-text"><i class="fa-solid fa-map-location-dot"></i></span>
                             <input id="address" type="text" name="address"  class="form-control g-places-finder {{#if errors.address}}is-invalid{{/if}}" value="{{user.address}}"  placeholder="Tu dirección"
                                         {{#if errors.address}}<div class=" invalid-feedback"> {{errors.address}}</div>{{/if}}
-                        </div>
+                        </div> --}}
                 </div>
                 <input type="hidden" name="lat" value="{{user.lat}}">
                 <input type="hidden" name="lng" value="{{user.lng}}">
-
-
             <div class="d-flex col-md-9">
                 <div class="col-md-8">
                     <label for="nickname"  class="form-label"> Nickname</label>
@@ -42,7 +40,8 @@
                     <div class="input-group">
                         <span class="input-group-text"><i class="fa fa-earth-oceania fa-fw"></i></span>
                         <select class="col-md-7" name="country" class="form-control {{#if errors.country}}is-invalid{{/if}}" value="{{user.country}}">
-                        <option value="AL">Albania</option>
+                            <option selected disabled value="Sel">Selecciona</option>
+                            <option value="AL">Albania</option>
                             <option value="Alemania">Alemania</option>
                             <option value="Afganistán">Afganistán</option>
                             <option value="Andorra">Andorra</option>
@@ -106,7 +105,7 @@
                             <option value="Emiratos">Emiratos Árabes Unidos</option>
                             <option value="Eritrea">Eritrea</option>
                             <option value="Eslovenia">Eslovenia</option>
-                            <option value="España" selected>España</option>
+                            <option value="España">España</option>
                             <option value="US">Estados Unidos</option>
                             <option value="Estonia">Estonia</option>
                             <option value="Etiopía">Etiopía</option>

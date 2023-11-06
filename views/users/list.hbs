@@ -9,8 +9,10 @@
     <input type="hidden" name="lat" value="{{query.lat}}">
     <input type="hidden" name="lng" value="{{query.lng}}">
   </form>
-
+ <h3>My First Map</h3>
+    <div id="map"></div>
   {{#each users as |user|}}
+  
     <div class="container users-list">
       <img src={{user.profilePic}} alt="profile picture" width="70px">
       <h3>{{user.nickname}}</h3>

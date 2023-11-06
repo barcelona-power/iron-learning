@@ -1,7 +1,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Security-Policy" content="font-src 'self' data:;" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IronHack definiciones</title>
     <link
@@ -19,7 +19,7 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-    <link
+    {{!-- <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Tangerine"
     />
@@ -46,20 +46,19 @@
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Varela+Round"
-    />
+    /> --}}
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
-
+    <style>
+       #map {
+        height: 500px;
+        width: 100%;
+       }
+    </style>
   </head>
   <body class="overflow-ojos">
     {{{body}}}
@@ -69,6 +68,6 @@
       crossorigin="anonymous"  ></script>
     <script src="/js/g-places.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key={{ googleApiKey }}&libraries=places&callback=initGooglePlaces"></script>
+    <script type="text/javascript" src="/js/g-places.js"></script>
   </body>
-
 </html>

@@ -10,20 +10,20 @@ const WORK_FACTOR = 10;
 const userSchema = new Schema({
   nickname: {
     type: String,
-    required: "Nombre obligatorio",
+    // required: "Nombre obligatorio",
     maxLength: [23, "te has pasado tres pueblos con el tamaño"],
     trim: true,
     unique: true,
   },
   country: {
     type: String,
-    required: "De alguna ciudad debes de ser...",
+    // required: "De alguna ciudad debes de ser...",
     maxLength: [20, "Esa ciudad es del señor de los anillos?"],
     trim: true,
   },
   email: {
     type: String,
-    required: "El email es obligatorio. Prometemos enviar mucho spam",
+    // required: "El email es obligatorio. Prometemos enviar mucho spam",
     trim: true,
     lowercase: true,
     unique: true,
@@ -43,39 +43,34 @@ const userSchema = new Schema({
   },
   knowledge: {
     type: String,
-    required: "Algún conocimiento tendrás... ",
-    maxLength: [
-      500,
-      "Sabes demasiadas cosas... debes olvidar algo para aprender nueva información. Limítate a 500 caracteres",
-    ],
+    // required: "Algún conocimiento tendrás... ",
+    maxLength: [500,"Sabes demasiadas cosas... debes olvidar algo para aprender nueva información. Limítate a 500 caracteres"],
     trim: true,
   },
   preference1: {
     type: String,
-    required:
-      "Será más facil si nos dices tus preferencias. Así te facilitamos la información adecuada",
+    // required:"Será más facil si nos dices tus preferencias. Así te facilitamos la información adecuada",
   },
   preference2: {
     type: String,
   },
   profilePic: {
     type: String,
-    default:
-      "https://res.cloudinary.com/du3v1mwzj/image/upload/v1661164328/iron-learning/imgs/mix/missing1_gbnkgl.webp",
-    required: true,
+    default:"https://res.cloudinary.com/du3v1mwzj/image/upload/v1661164328/iron-learning/imgs/mix/missing1_gbnkgl.webp",
+    // required: true,
   },
   address: String,
-  location: {
-    type: {
-      type: String, 
-      enum: ['Point'],
-      required: true
-    },
-    coordinates: {
-      type: [Number],
-      required: true
-    }
-  },
+  // location: {
+  //   type: {
+  //     type: String, 
+  //     enum: ['Point'],
+  //     required: true
+  //   },
+  //   coordinates: {
+  //     type: [Number],
+  //     required: true
+  //   }
+  // },
   admin: {
     type: Boolean,
   },

@@ -29,7 +29,6 @@ module.exports.listOfDefinitions = (req, res, next) => {
     });
 };
 
-
 module.exports.formDefinition = (req, res, next) => {
   res.render("definition/definition");
 };

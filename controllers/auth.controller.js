@@ -24,7 +24,7 @@ module.exports.doRegister = (req, res, next) => {
         renderWithErrors(errors);
       } else {
         const user = req.body;
-        user.profilePic = req.file.path;
+        // user.profilePic = req.file.path;
         if(lat && lng){
           user.location = {
             type: 'Point',

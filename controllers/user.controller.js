@@ -7,7 +7,6 @@ module.exports.profile = (req, res, next) => {
   if (!req.user.admin) {
     criteria.author = req.user.id;
   }
-
   if (name) {
     criteria.name = new RegExp(name, "i");
   }
@@ -18,8 +17,12 @@ module.exports.profile = (req, res, next) => {
     .populate("author")
     .then((definitions) => {
       res.render("users/profile", { definitions, name, category });
+        console.log("criterrrriiiaiaaaalll");
+
     })
     .catch((error) => next(error));
+        console.log("criterrrriiiaiaaaalll");
+
 };
 
 module.exports.list = (req, res, next) => {

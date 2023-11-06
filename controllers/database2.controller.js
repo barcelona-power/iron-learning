@@ -20,6 +20,8 @@ module.exports.listOfDatabase2 = (req, res, next) => {
           name,
           category,
         });
+        console.log("el 2", databases);
+
       })
       .catch((error) => next.error);
   });

@@ -26,3 +26,4 @@ const exampleSchema = new Schema({
 const Newexample = mongoose.model("Newexample", exampleSchema);
 
 module.exports = Newexample;
+

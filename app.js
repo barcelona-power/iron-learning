@@ -18,13 +18,14 @@ require("./config/db.config");
 require("./config/hbs.config");
 
 const {session, loadUser } = require('./config/session.config');
+
 app.use(session);
 app.use(loadUser);
 
 app.use((req, res, next) => {
     res.locals.query = req.query;
     res.locals.route = req.path;
-    res.locals.googleApiKey = process.env.GOOGLE_API_KEY
+    // res.locals.googleApiKey = process.env.GOOGLE_API_KEY
     res.locals.query = res.query;
     next()
 })

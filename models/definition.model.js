@@ -26,7 +26,6 @@ const definitionSchema = new Schema(
       trim: true,
       default: "Wikipedia",
     },
-
     file: {
       type: String,
       default:

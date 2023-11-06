@@ -1,0 +1,120 @@
+[{
+  "_id": {
+    "$oid": "64f1f81d21503000d6a9d392"
+  },
+  "name": "Tech Innovators",
+  "business_name": "Innovative Tech Solutions Inc.",
+  "vat": "123456789",
+  "direcction": "1234 Tech Street",
+  "country": "United States",
+  "logo": "https://res.cloudinary.com/dxnzcewsy/image/upload/v1690504705/videojuegos/cyberpunk-2077-portada-ficha-01-1877357_xbaozp.webp",
+  "numberEmployes": 50,
+  "id_user": {
+    "$oid": "64f1f76422539ea74d29fa28"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2023-09-01T14:41:33.100Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-01T14:41:33.100Z"
+  },
+  "id_advertisement": [
+    "64f1f93a37102fbaaf669b75",
+    "64f1f93a37102fbaaf669b78",
+    "64f1f93a37102fbaaf669b79"
+  ]
+},
+{
+  "_id": {
+    "$oid": "64f1f81d21503000d6a9d393"
+  },
+  "name": "Global Services Corp",
+  "business_name": "Global Professional Services Ltd.",
+  "vat": "987654321",
+  "direcction": "5678 Service Avenue",
+  "country": "United Kingdom",
+  "logo": "https://res.cloudinary.com/dxnzcewsy/image/upload/v1690504705/videojuegos/red-dead-redemption-2-caratula-provisional_f0vr81.webp",
+  "numberEmployes": 200,
+  "id_user": {
+    "$oid": "64f1f76422539ea74d29fa2d"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2023-09-01T14:41:33.102Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-01T14:41:33.102Z"
+  },
+  "id_advertisement": [
+    "64f1f93a37102fbaaf669b7d",
+    "64f1f93a37102fbaaf669b75",
+    "64f1f93a37102fbaaf669b7c"
+  ]
+},
+{
+  "_id": {
+    "$oid": "64f1f81d21503000d6a9d394"
+  },
+  "name": "Food Delight",
+  "business_name": "Delicious Eats LLC",
+  "vat": "246813579",
+  "direcction": "789 Food Court",
+  "country": "Canada",
+  "logo": "https://res.cloudinary.com/dxnzcewsy/image/upload/v1690504702/videojuegos/uncharted-4-caratula_akvoku.webp",
+  "numberEmployes": 30,
+  "id_user": {
+    "$oid": "64f1f76422539ea74d29fa2d"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2023-09-01T14:41:33.103Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-01T14:41:33.103Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "64f1f81d21503000d6a9d395"
+  },
+  "name": "GreenTech Solutions",
+  "business_name": "Sustainable Tech Innovations Ltd.",
+  "vat": "135792468",
+  "direcction": "234 Eco Street",
+  "country": "Australia",
+  "logo": "https://res.cloudinary.com/dxnzcewsy/image/upload/v1690504701/videojuegos/Super_Mario_Oddysey_Cara%CC%81tula_sbb7lr.webp",
+  "numberEmployes": 80,
+  "id_user": {
+    "$oid": "64f1f76422539ea74d29fa2d"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2023-09-01T14:41:33.103Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-01T14:41:33.103Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "64f1f81d21503000d6a9d396"
+  },
+  "name": "Fashion Forward",
+  "business_name": "Trendy Fashionistas Inc.",
+  "vat": "567890123",
+  "direcction": "345 Fashion Avenue",
+  "country": "France",
+  "logo": "https://res.cloudinary.com/dxnzcewsy/image/upload/v1690504702/videojuegos/forza-horizon-5-cartel-2379291_c5ab8m.webp",
+  "numberEmployes": 150,
+  "id_user": {
+    "$oid": "64f1f76422539ea74d29fa2d"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2023-09-01T14:41:33.105Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-01T14:41:33.105Z"
+  }
+}]

@@ -3,7 +3,7 @@ const { Database, Newexample } = require("../models");
 module.exports.listOfDatabase = (req, res, next) => {
   const { name, category } = req.query;
   const criteria = {};
-
+  console.log("abababa")
   if (name) {
     criteria.name = new RegExp(name, "i");
   }
